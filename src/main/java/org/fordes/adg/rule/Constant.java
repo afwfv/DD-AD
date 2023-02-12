@@ -8,7 +8,7 @@ public class Constant {
 
     public static final String UPDATE = "# Update time: {}\r\n";
 
-    public static final String REPO = "# Repo URL: https://github.com/fordes123/adg-rule\r\n\r\n";
+    public static final String REPO = "# Repo URL: https://github.com/afwfv/DD-AD\r\n\r\n";
 
     public static final String LOCAL_RULE_SUFFIX = ROOT_PATH + File.separator + "rule";
 
