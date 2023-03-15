@@ -31,6 +31,7 @@ application:
       - 'https://github.com/reek/anti-adblock-killer/blob/master/anti-adblock-killer-filters.txt' #anti-adblock-killer
       - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
       - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt' #AdRules
+      - 'https://www.xlxbk.cn/allow.txt' #xlx白名单
     #本地规则
     local: #本地规则请将文件移动到项目路径rule目录中
       - 'mylist.txt'
