@@ -1,8 +1,5 @@
 <div align="center">
-<h1>AD Filter Subscriber</h1>
-  <p>
-    一个简易的 Java 程序，用于整合不同来源的广告过滤规则，帮助你构建属于自己的规则集
-  </p>
+<h1>DD-AD</h1>
 <h2 id="c">🎯 规则订阅</h2>
 
 | 名称           | 说明                                                                   |                                             Github                                             |                                         jsDelivr                                         |
