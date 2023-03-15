@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: adg-rule
+  profiles:
+    active: prod  #切换至 dev 即可输出调试信息
+
+logging:
+  file:
+    path: ./logs
+
+application:
+  config:
+    expected_quantity: 2000000
+    fault_tolerance:  0.001
+  rule:
+    #远程规则
+    remote:
+      - 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt'  #adblock-nocoin-list
+      - 'https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt' #Scam Blocklist
+      - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
+      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter
+      - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List
+      - 'https://abp.oisd.nl/basic/' #OISD Blocklist Basic
+      - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
+      - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
+      - 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' #yhosts
+      - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
+      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base
+      - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule
+      - 'https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt' #neohosts
+      - 'https://github.com/reek/anti-adblock-killer/blob/master/anti-adblock-killer-filters.txt' #anti-adblock-killer
+    #本地规则
+    local: #本地规则请将文件移动到项目路径rule目录中
+      - 'mylist.txt'
+  output:
+    path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
+    files:
+      all.txt:    #输出文件名
+        - DOMAIN  #域名规则，仅完整域名
+        - REGEX   #正则规则，包含正则的域名规则，AdGH支持
+        - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
+        - HOSTS   #Hosts规则
+      dns.txt:
+        - DOMAIN
+        - REGEX
+        - HOSTS
+      hosts.txt:
+        - HOSTS
+#      regex.txt:
+#        - REGEX
+#      domain.txt:
+#        - DOMAIN
+#      modify.txt:
+#        - MODIFY
