@@ -1,0 +1,60 @@
+name: Update Filters
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - 'README_en.md'
+      - '.github/**'
+      - '.devcontainer/**'
+      - 'LICENSE'
+    branches: [ main ]
+  schedule:
+    - cron: 0 */8 * * *
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  Update_Filters:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+      
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Jar
+        run:  mvn spring-boot:run
+
+      - name: Commit Changes
+        id: commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 🚀 CI Updated
+
+      - name: GitHub Push
+        if: steps.commit.outputs.changes_detected == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          branch: ${{github.ref}}
+
+      - name: Mirror Refresh
+        run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}/rule'
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 1
