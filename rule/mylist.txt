@@ -469,24 +469,31 @@
 @@||t9.baidu.com^$important
 @@||t8.baidu.com^$important
 !-------------黑名单--------------------
-#酷安"提到的好物"
-||coolapk.com/v6/page/dataList?$replace=/extra_entities//
-||coolapk.com/v6/feed/detail?$replace=/extra_entities//
-||coolapk.com/v6/main/indexV?$replace=/extra_entities//
-||coolapk.com/v6/feed/detail?$replace=/extra_title//
-||coolapk.com/v6/feed/detail?$replace=/include_goods//
-
-#去除"什么值得买"
-||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
-#去除热搜
-||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
-||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
-#去除随机应用推荐
-||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
-#去除评论区下某广告
-||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
-||log.uu.163.com^$important
-||ksmobile.com^$important
+! 信息流及评论区广告
+||ctobsnssdk.com^
+||pangolin.snssdk.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk-toutiao-b.com^
+||pglstatp-toutiao.com^
+||dm.toutiao.com^
+||ulogs.umeng.com^
+||aaid.umeng.com^
+||tnc*.zijieapi.com^
+||mssdk-bu.bytedance.com^
+! 帖子详情好物推荐
+||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
+! 帖子详情赞助内容
+||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
+! 发现页去除酷品
+||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
+! 应用游戏页去除推广视频
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
+! 去除首页还有什么值得买推广
+||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
+||ctobsnssdk.com^
+||pangolin.snssdk.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk-toutiao-b.com^
 #夏普电视开机广告
 ||flnet.com^$important
 ||miaozhen.com^$important
