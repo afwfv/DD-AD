@@ -15,20 +15,20 @@ application:
   rule:
     #远程规则
     remote:
-      - 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt'  #adblock-nocoin-list
-      - 'https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt' #Scam Blocklist
+      - 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt'  #adblock-nocoin-list
+      - 'https://github.com/durablenapkin/scamblocklist/blob/master/adguard.txt' #Scam Blocklist
       - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
       - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter
       - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List
-      - 'https://abp.oisd.nl/basic/' #OISD Blocklist Basic
+      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt' #OISD Blocklist Full
       - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
       - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
-      - 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' #yhosts
       - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
       - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base
       - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule
-      - 'https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt' #neohosts
       - 'https://github.com/reek/anti-adblock-killer/blob/master/anti-adblock-killer-filters.txt' #anti-adblock-killer
+      - 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt' #halflife-list
+      - 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
       - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
       - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt' #AdRules
       - 'https://www.xlxbk.cn/allow.txt' #白名单
