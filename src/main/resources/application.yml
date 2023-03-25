@@ -12,6 +12,8 @@ application:
   config:
     expected_quantity: 2000000
     fault_tolerance:  0.001
+    warn_limit: 7
+    batch_size: 10000
   rule:
     #远程规则
     remote:

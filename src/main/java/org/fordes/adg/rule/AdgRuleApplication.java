@@ -5,7 +5,6 @@ import cn.hutool.bloomfilter.BloomFilterUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
@@ -28,6 +27,8 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 @Slf4j
 @EnableAsync
@@ -57,19 +58,17 @@ public class AdgRuleApplication {
     ApplicationRunner ruleRunner() {
         return args -> {
             TimeInterval interval = DateUtil.timer();
-            Map<RuleType, Set<BufferedOutputStream>> typeFileMap = MapUtil.newHashMap();
 
-            // 初始化，根据配置建立文件
-            if (outputConfig.getFiles().isEmpty()) {
-                log.info("未配置输出文件，程序退出");
-                return;
-            }
-            outputConfig.getFiles().forEach((fileName, types) -> {
+            //建立文件
+            Map<String, BufferedOutputStream> fileStream = outputConfig.getFiles().keySet().stream().map(fileName -> {
                 File file = Util.createFile(outputConfig.getPath() + File.separator + fileName);
-                types.forEach(type -> Util.safePut(typeFileMap, type, FileUtil.getOutputStream(file)));
-            });
+                return Map.entry(fileName, FileUtil.getOutputStream(file));
+            }).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+            Map<RuleType, Set<BufferedOutputStream>> typeStreamMap = new ConcurrentHashMap<>();
+            outputConfig.getFiles().forEach((fileName, types) ->
+                    types.forEach(type -> Util.safePut(typeStreamMap, type, fileStream.get(fileName))));
 
-            //使用布隆过滤器实现去重
+            //初始化布隆过滤器
             long numOfBits = Util.optimalNumOfBits(filterConfig.getExpectedQuantity(), filterConfig.getFaultTolerance());
             int numOfHashFunctions = Util.optimalNumOfHashFunctions(filterConfig.getExpectedQuantity(), numOfBits);
             BitSetBloomFilter filter = BloomFilterUtil.createBitSet((int) numOfBits, (int) numOfBits, numOfHashFunctions);
@@ -78,7 +77,7 @@ public class AdgRuleApplication {
             ruleConfig.getRemote().stream()
                     .filter(StrUtil::isNotBlank)
                     .map(URLUtil::normalize)
-                    .forEach(e -> remoteRuleHandler.handle(e, filter, typeFileMap));
+                    .forEach(e -> remoteRuleHandler.handle(e, filter, typeStreamMap));
 
             //本地规则
             ruleConfig.getLocal().stream()
@@ -88,15 +87,16 @@ public class AdgRuleApplication {
                         return FileUtil.isAbsolutePath(e) ?
                                 e : FileUtil.normalize(Constant.LOCAL_RULE_SUFFIX + File.separator + e);
                     })
-                    .forEach(e -> localRuleHandler.handle(e, filter, typeFileMap));
+                    .forEach(e -> localRuleHandler.handle(e, filter, typeStreamMap));
 
             do {
                 ThreadUtil.safeSleep(1000);
             } while (ruleExecutor.getActiveCount() > 0);
 
             //关闭文件流
-            typeFileMap.values().forEach(e -> e.forEach(Util::safeClose));
-            log.info("规则数量: {}, 总耗时：{} s", Util.count, interval.intervalSecond());
+            typeStreamMap.values().forEach(e -> e.forEach(Util::safeClose));
+            typeStreamMap.clear();
+            log.info("规则数量: {}, 总耗时：{} s", 0L, interval.intervalSecond());
             SpringApplication.exit(applicationContext);
         };
     }

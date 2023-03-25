@@ -6,7 +6,9 @@ import cn.hutool.core.io.IoUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.fordes.adg.rule.config.FilterConfig;
 import org.fordes.adg.rule.enums.RuleType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
@@ -22,6 +24,12 @@ import java.util.Set;
 @EnableAsync
 public class RemoteRuleHandler extends AbstractRuleHandler {
 
+    private Charset charset = Charset.defaultCharset();
+
+    @Autowired
+    public RemoteRuleHandler(FilterConfig config) {
+        super(config);
+    }
 
     @Override
     InputStream getContentStream(String ruleUrl) {
@@ -42,8 +50,13 @@ public class RemoteRuleHandler extends AbstractRuleHandler {
     }
 
     @Override
+    Charset getCharset() {
+        return charset;
+    }
+
+    @Override
     @Async("ruleExecutor")
-    public void handle(String ruleUrl, BloomFilter filter, Map<RuleType, Set<BufferedOutputStream>> typeFileMap) {
-        super.handle(ruleUrl, filter, typeFileMap);
+    public void handle(String ruleUrl, BloomFilter filter, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+        super.handle(ruleUrl, filter, typeStreamMap);
     }
 }

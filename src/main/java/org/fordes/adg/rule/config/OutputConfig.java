@@ -5,13 +5,13 @@ import org.fordes.adg.rule.enums.RuleType;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 输出配置
  *
- * @author DD-AD on 2022/9/19
+ * @author fordes123 on 2022/9/19
  */
 @Data
 @Component
@@ -26,5 +26,5 @@ public class OutputConfig {
     /**
      * 输出文件列表
      */
-    private Map<String, List<RuleType>> files;
+    private Map<String, Set<RuleType>> files;
 }

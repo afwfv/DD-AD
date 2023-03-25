@@ -1,5 +1,6 @@
 package org.fordes.adg.rule.enums;
 
+import cn.hutool.core.util.StrUtil;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.lang.NonNull;
@@ -18,8 +19,8 @@ public enum RuleType {
     /**
      * 域名规则，形如 xxx.com、xx.oo.com
      */
-    DOMAIN("域名规则", true, Collections.emptyList(),
-            List.of("^[\\u4e00-\\u9fa5,a-z,A-Z,0-9][\\u4e00-\\u9fa5,a-z,A-Z,0-9,\\-]*[\\.]+[\\u4e00-\\u9fa5,a-z,A-Z,0-9,-]*[\\u4e00-\\u9fa5,a-z,A-Z,0-9,\\^]$"), Collections.emptyList()),
+    DOMAIN("域名规则", true, List.of(StrUtil.DOT),
+            List.of("^[\\u4e00-\\u9fa5,a-z,A-Z,0-9][\\u4e00-\\u9fa5,a-z,A-Z,0-9,\\-,\\.]*[\\u4e00-\\u9fa5,a-z,A-Z,0-9,\\^]$"), Collections.emptyList()),
     /**
      * Hosts规则
      */

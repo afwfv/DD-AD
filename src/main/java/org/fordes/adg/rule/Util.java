@@ -12,7 +12,7 @@ import org.fordes.adg.rule.enums.RuleType;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -22,23 +22,21 @@ import java.util.concurrent.locks.ReentrantLock;
 import static cn.hutool.core.thread.ThreadUtil.sleep;
 
 /**
- * @author DD-AD on 2022/9/19
+ * @author fordes123 on 2022/9/19
  */
 @Slf4j
 public class Util {
 
     static final Lock lock = new ReentrantLock();
 
-    static int count = 0;
-
-    public static void writeToStream(BufferedOutputStream out, Collection<String> content, String ruleUrl) {
+    public static void writeToStream(BufferedOutputStream out,
+                                     Collection<String> content, String ruleUrl, Charset charset) {
         if (lock.tryLock()) {
             try {
-                out.write(StrUtil.format(Constant.COMMENT_TEMPLATE, ruleUrl).getBytes(StandardCharsets.UTF_8));
+                out.write(StrUtil.format(Constant.COMMENT_TEMPLATE, ruleUrl).getBytes(charset));
                 for (String line : content) {
-                    out.write(line.getBytes(StandardCharsets.UTF_8));
-                    out.write(StrUtil.CRLF.getBytes(StandardCharsets.UTF_8));
-                    count++;
+                    out.write(line.getBytes(charset));
+                    out.write(StrUtil.LF.getBytes(charset));
                 }
             } catch (IOException e) {
                 log.error("写入文件失败 => {}", e.getMessage());
@@ -47,7 +45,7 @@ public class Util {
             }
         } else {
             sleep(1000);
-            writeToStream(out, content, ruleUrl);
+            writeToStream(out, content, ruleUrl, charset);
         }
     }
 
