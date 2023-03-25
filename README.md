@@ -9,6 +9,5 @@
 | `hosts.txt`  | 仅由`HOSTS`规则构成，适用于几乎所有设备                                              | [Link](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/hosts.txt)  | [Link](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule/hosts.txt)  |
 | `modify.txt` | 仅包含 `MODIFY` 规则, `modify.txt` + `dns.txt` = `all.txt`                | [Link](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/modify.txt) | [Link](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule/modify.txt) |
 | `mylist.txt` | 本仓库维护的补充规则                                                           | [Link](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/mylist.txt) | [Link](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule/mylist.txt) |
-
 <h3>说明</h3>
 1.针对番茄小说广告添加了规则
