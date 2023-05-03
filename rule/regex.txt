@@ -1,6 +1,12 @@
 [ADFS Adblock List]
+!  _____    _____                        _____  
+! |  __ \  |  __ \               /\     |  __ \ 
+! | |  | | | |  | |  ______     /  \    | |  | |
+! | |  | | | |  | | |______|   / /\ \   | |  | |
+! | |__| | | |__| |           / ____ \  | |__| |
+! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-05-03 13:23:52
+! Last Modified: 2023-05-03 13:32:03
 ! Homepage: https://github.com/afwfv/DD-AD.git
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
@@ -77,6 +83,8 @@
 ||union*.365inews.com^
 ## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
 ||acookie.*.gif?
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+||mishop.pandora.xiaomi.com.^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||ads*.dfiles.eu^
 ||aj2*.online^
@@ -108,6 +116,8 @@
 ||access.pangolin-sdk-toutiao-*.com^
 ||ad.*.xiaomi.com^
 ||ads*-adnow.com^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+@@||ulog*.*.com^$important
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||collector-*.px-client.net^
@@ -143,6 +153,7 @@
 ||log-*.zadn.vn^
 ||hbbtv.*.de^
 ||hostingcloud.*.wasm^
+||mads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||mobileanalytics.*.amazonaws.com^
 ||mistat.*.xiaomi.com^
@@ -161,29 +172,24 @@
 ||play*.videos.vidto.me^
 ||n*adserv.com^
 ||popadex-*.us-east-1.elb.amazonaws.com^
-||mads*z.com^
 ||polaris*-normal-lq.zijieapi.com^
 ||prebid-*.rubiconproject.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
-||s*-fe-scm.pglstatp-toutiao.com^
+||tracking.*.miui.com^
 ||stat.*.v-56.com^
 ||stats-*.p2pnow.ru^
-||tblog-*.kgslb.com^
 ||s*a.pstatp.com^
-||toujing*.top^
 ||sf*-be-pack.pglstatp-toutiao.com^
 ||sense-*.tapdb.net^
-||s*.skencituer.com^
 ||stats2.*.fdnames.com^
+||s*-fe-scm.pglstatp-toutiao.com^
+||tblog-*.kgslb.com^
+||toujing*.top^
+||tracker*.qcloud.com^
+||s*.skencituer.com^
 ||sads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
-||tracking.*.miui.com^
 ||transit*.wslog.chinanetcenter.com^
 ||v*-be-pack.pglstatp-toutiao.com^
-||tracker*.qcloud.com^
 ||ulog*.*^
 ||v*.denakop.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-||mishop.pandora.xiaomi.com.^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
