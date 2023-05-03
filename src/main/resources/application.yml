@@ -1,6 +1,6 @@
 spring:
   application:
-    name: adg-rule
+    name: DD-AD
   profiles:
     active: prod  #切换至 dev 即可输出调试信息
 
@@ -17,16 +17,21 @@ application:
   rule:
     #远程规则
     remote:
-    #      - 'https://example.org/rule.txt'
+       - 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts' #1024网站及澳门皇家赌场及恶意广告主机列表
+       - 'https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt' #halflife-list
+       - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
+       - 'https://www.xlxbk.cn/allow.txt' #白名单
+       - 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt' #酷安大萌主
+       - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt' #AdRules
     #本地规则
     local: #本地规则请将文件移动到项目路径rule目录中
-  #      - 'local-rule.txt'
+       - 'mylist.txt'
   output:
     file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
       [ADFS Adblock List]
       ! Title: ${name}
       ! Last Modified: ${date}
-      ! Homepage: https://github.com/fordes123/ad-filters-subscriber/
+      ! Homepage: https://github.com/afwfv/DD-AD.git
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
     files:
       all.txt: #输出文件名
