@@ -29,6 +29,12 @@ application:
   output:
     file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
       [ADFS Adblock List]
+      !  _____    _____                        _____  
+      ! |  __ \  |  __ \               /\     |  __ \ 
+      ! | |  | | | |  | |  ______     /  \    | |  | |
+      ! | |  | | | |  | | |______|   / /\ \   | |  | |
+      ! | |__| | | |__| |           / ____ \  | |__| |
+      ! |_____/  |_____/           /_/    \_\ |_____/ 
       ! Title: ${name}
       ! Last Modified: ${date}
       ! Homepage: https://github.com/afwfv/DD-AD.git
