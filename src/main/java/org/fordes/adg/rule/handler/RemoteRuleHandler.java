@@ -1,6 +1,6 @@
 package org.fordes.adg.rule.handler;
 
-import cn.hutool.bloomfilter.BloomFilter;
+import cn.hutool.bloomfilter.BitSetBloomFilter;
 import cn.hutool.core.exceptions.ExceptionUtil;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.http.HttpRequest;
@@ -22,13 +22,13 @@ import java.util.Set;
 @Slf4j
 @Component
 @EnableAsync
-public class RemoteRuleHandler extends AbstractRuleHandler {
+public class RemoteRuleHandler extends RuleHandler {
 
     private Charset charset = Charset.defaultCharset();
 
     @Autowired
-    public RemoteRuleHandler(FilterConfig config) {
-        super(config);
+    public RemoteRuleHandler(FilterConfig config, BitSetBloomFilter filter) {
+        super(config, filter);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class RemoteRuleHandler extends AbstractRuleHandler {
 
     @Override
     @Async("ruleExecutor")
-    public void handle(String ruleUrl, BloomFilter filter, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
-        super.handle(ruleUrl, filter, typeStreamMap);
+    public void handle(String ruleUrl, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+        super.handle(ruleUrl, typeStreamMap);
     }
 }

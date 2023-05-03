@@ -1,6 +1,6 @@
 package org.fordes.adg.rule.handler;
 
-import cn.hutool.bloomfilter.BloomFilter;
+import cn.hutool.bloomfilter.BitSetBloomFilter;
 import cn.hutool.core.io.FileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.fordes.adg.rule.config.FilterConfig;
@@ -24,11 +24,11 @@ import java.util.Set;
 @Slf4j
 @EnableAsync
 @Component
-public class LocalRuleHandler extends AbstractRuleHandler {
+public class LocalRuleHandler extends RuleHandler {
 
     @Autowired
-    public LocalRuleHandler(FilterConfig config) {
-        super(config);
+    public LocalRuleHandler(FilterConfig config, BitSetBloomFilter filter) {
+        super(config, filter);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class LocalRuleHandler extends AbstractRuleHandler {
 
     @Async("ruleExecutor")
     @Override
-    public void handle(String ruleUrl, BloomFilter filter, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
-        super.handle(ruleUrl, filter, typeStreamMap);
+    public void handle(String ruleUrl, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+        super.handle(ruleUrl, typeStreamMap);
     }
 }
