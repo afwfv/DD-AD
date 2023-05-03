@@ -1,6 +1,6 @@
 spring:
   application:
-    name: adg-rule
+    name: DD-AD
   profiles:
     active: prod  #切换至 dev 即可输出调试信息
 
@@ -10,10 +10,10 @@ logging:
 
 application:
   config:
-    expected_quantity: 2000000
-    fault_tolerance:  0.001
-    warn_limit: 7
-    batch_size: 10000
+    expected_quantity: 2000000  #预期规则数量
+    fault_tolerance: 0.001 #容错率
+    warn_limit: 7 #警告阈值, 规则长度小于该值时会输出警告日志
+    batch_size: 10000 #写入文件的批次大小
   rule:
     #远程规则
     remote:
@@ -23,13 +23,18 @@ application:
       - 'https://www.xlxbk.cn/allow.txt' #白名单
       - 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt' #酷安大萌主
       - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt' #AdRules
-    #本地规则
-    local: #本地规则请将文件移动到项目路径rule目录中
+    #本地规则，请将文件移动到项目路径rule目录中
+    local:
       - 'mylist.txt'
   output:
+    file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
+      [ADFS Adblock List]
+      ! Title: ${name}
+      ! Last Modified: ${date}
+      ! Homepage: https://github.com/afwfv/DD-AD.git
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
     files:
-      all.txt:    #输出文件名
+      all.txt: #输出文件名
         - DOMAIN  #域名规则，仅完整域名
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
         - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
@@ -40,9 +45,9 @@ application:
         - HOSTS
       hosts.txt:
         - HOSTS
-#      regex.txt:
-#        - REGEX
-#      domain.txt:
-#        - DOMAIN
+      regex.txt:
+        - REGEX
+      domain.txt:
+        - DOMAIN
       modify.txt:
         - MODIFY
