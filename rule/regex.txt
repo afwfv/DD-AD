@@ -6,8 +6,10 @@
 ! | |__| | | |__| |           / ____ \  | |__| |
 ! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-05-08 08:36:41
+! Last Modified: 2023-05-08 16:10:03
 ! Homepage: https://github.com/afwfv/DD-AD.git
+## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
+||tnc*.zijieapi.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
 ||ytvwhbejc.com'
@@ -28,7 +30,6 @@
 ||zazgbqg*.xyz^
 ||api-access.pangolin-sdk-toutiao-*.com^
 ||js.*2023*.xyz^
-||tnc*.zijieapi.com^
 @@||cdn-msp*.18comic.*^
 ||zbc6hye*.xyz^
 ||opnked*.xyz^
@@ -42,7 +43,6 @@
 ||impservice*.youdao.com^
 ||120.27.*.html
 ||impservice*.yodao.com^
-||8*.tianya.cn^
 ||113.17.188.*.js
 ||ax.*.ifeng.com^
 ||onetrust.
@@ -53,45 +53,23 @@
 ||vns86.oss-*.aliyuncs.com^
 ||122.225.103.*.htm
 ||asd8900.oss-*.aliyuncs.com^
-## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
-||sax*.sina.
-||bdcpro*.techweb.com.cn^
-||dm*.ppzuowen.com^
-||dm*.yxlady.com^
-||bd*-ys.km.com^
-||same*.stockstar.com^
-||uc*.atobo.com^
-||gcw*.2liang.cn^
-||d*.ruiwen.com^
-||fanpingbi*.gaokao.com^
-||dn*.ixinwei.com^
-||a*.chajiaotong.com^
-||bdlm*.hc360.com^
-||fpb1.chinacar.
-728x90.jpg|
-||ya*.dwstatic.com^
-||d*.xinshipu.com^
-||fpb*.51edu.com^
-||sam*.baby-kingdom.com^
-||qpb*.sohu.com^
-||static*.365inews.com^
-||union*.365inews.com^
-||ysdm*.ys137.com.cn^
-||at*.doubanio.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+||bdcpro*.techweb.com.cn^
+||bd*-ys.km.com^
 ||ads*.dfiles.eu^
 ||aj2*.online^
 ||ads.*.yahoo.com^
+||bdlm*.hc360.com^
+||8*.tianya.cn^
 ||ac*.786ip.com^
-||bj*.9669.cn^
 ||allsportsflix.*^
 ||ads*.dfiles.ru^
 ||ads.livetv*.me^
 ||ad*.mac-torrent-download.net^
 ||adservice.google.*^
-||bj1*.online^
 ||ac*.pingguolv.com^
 ||ad.kisstvshow.*^
+||at*.doubanio.com^
 ||admicro*.vcmedia.vn^
 ||ads*.depositfiles.com^
 ||ads*.depositfiles.org^
@@ -113,11 +91,28 @@
 ||ad.*.xiaomi.com^
 ||ads*-adnow.com^
 ## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
+||sax*.sina.
+||dm*.ppzuowen.com^
+||dm*.yxlady.com^
+||same*.stockstar.com^
+||uc*.atobo.com^
+||gcw*.2liang.cn^
+||d*.ruiwen.com^
+||fanpingbi*.gaokao.com^
+||dn*.ixinwei.com^
+||a*.chajiaotong.com^
+||fpb1.chinacar.
+728x90.jpg|
+||ya*.dwstatic.com^
+||d*.xinshipu.com^
+||fpb*.51edu.com^
+||sam*.baby-kingdom.com^
+||qpb*.sohu.com^
+||static*.365inews.com^
+||union*.365inews.com^
+||ysdm*.ys137.com.cn^
+## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
 ||acookie.*.gif?
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-||mishop.pandora.xiaomi.com.^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||collector-*.px-client.net^
@@ -128,6 +123,7 @@
 ||fads*s.com^
 ||dm-*.toutiao.com^
 ||collector.hamsterix.*^
+||bj*.9669.cn^
 ||counter*.stat.ovh^
 ||collect.*.miui.com^
 ||collector-*.px-cloud.net^
@@ -137,6 +133,7 @@
 ||cas.*.criteo.com^
 ||dj1*.online^
 ||display-ad-*.kgslb.com^
+||bj1*.online^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||fra-*.braze.eu^
 ||liveweb*.msstatic.com^
@@ -153,7 +150,6 @@
 ||log-*.zadn.vn^
 ||hbbtv.*.de^
 ||hostingcloud.*.wasm^
-||mads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||mobileanalytics.*.amazonaws.com^
 ||mistat.*.xiaomi.com^
@@ -172,25 +168,30 @@
 ||play*.videos.vidto.me^
 ||n*adserv.com^
 ||popadex-*.us-east-1.elb.amazonaws.com^
+||mads*z.com^
 ||polaris*-normal-lq.zijieapi.com^
 ||prebid-*.rubiconproject.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+||s*-fe-scm.pglstatp-toutiao.com^
 ||stat.*.v-56.com^
 ||stats-*.p2pnow.ru^
+||tblog-*.kgslb.com^
 ||s*a.pstatp.com^
+||toujing*.top^
 ||sf*-be-pack.pglstatp-toutiao.com^
 ||stats*.credit-cooperatif.coop^
 ||sense-*.tapdb.net^
-||stats2.*.fdnames.com^
-||s*-fe-scm.pglstatp-toutiao.com^
-||tblog-*.kgslb.com^
-||toujing*.top^
-||tracker*.qcloud.com^
 ||s*.skencituer.com^
+||stats2.*.fdnames.com^
 ||sads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||tracking.*.miui.com^
 ||transit*.wslog.chinanetcenter.com^
 ||v*-be-pack.pglstatp-toutiao.com^
+||tracker*.qcloud.com^
 ||ulog*.*^
 ||v*.denakop.com^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+||mishop.pandora.xiaomi.com.^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+@@||ulog*.*.com^$important
