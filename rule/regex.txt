@@ -6,7 +6,7 @@
 ! | |__| | | |__| |           / ____ \  | |__| |
 ! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-05-15 00:07:47
+! Last Modified: 2023-05-15 08:38:31
 ! Homepage: https://github.com/afwfv/DD-AD.git
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
@@ -46,20 +46,48 @@
 ||ax.*.ifeng.com^
 ||onetrust.
 ||121.204.246.*.gif
-||js*.abolezi.com^
 ||218.26.217.*.html
 ||ja*.gamersky.com^
 ||vns86.oss-*.aliyuncs.com^
 ||122.225.103.*.htm
 ||asd8900.oss-*.aliyuncs.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
+||sax*.sina.
 ||bdcpro*.techweb.com.cn^
+||dm*.ppzuowen.com^
 ||bd*-ys.km.com^
+||uc*.atobo.com^
+||d*.ruiwen.com^
+||fanpingbi*.gaokao.com^
+||dn*.ixinwei.com^
+||a*.chajiaotong.com^
+||bdlm*.hc360.com^
+||ac*.786ip.com^
+728x90.jpg|
+||ya*.dwstatic.com^
+||d*.xinshipu.com^
+||fpb*.51edu.com^
+||static*.365inews.com^
+||ysdm*.ys137.com.cn^
+||ac*.pingguolv.com^
+||at*.doubanio.com^
+||dm*.yxlady.com^
+||same*.stockstar.com^
+||gcw*.2liang.cn^
+||ac*.faxingchina.com^
+||fpb1.chinacar.
+||js*.abolezi.com^
+||sam*.baby-kingdom.com^
+||qpb*.sohu.com^
+||union*.365inews.com^
+## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
+||acookie.*.gif?
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+||mishop.pandora.xiaomi.com.^
+## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||ads*.dfiles.eu^
 ||aj2*.online^
 ||ads.*.yahoo.com^
-||bdlm*.hc360.com^
-||ac*.786ip.com^
 ||bj*.9669.cn^
 ||allsportsflix.*^
 ||ads*.dfiles.ru^
@@ -67,9 +95,7 @@
 ||ad*.mac-torrent-download.net^
 ||adservice.google.*^
 ||bj1*.online^
-||ac*.pingguolv.com^
 ||ad.kisstvshow.*^
-||at*.doubanio.com^
 ||admicro*.vcmedia.vn^
 ||ads*.depositfiles.com^
 ||ads*.depositfiles.org^
@@ -77,7 +103,6 @@
 ||ads*-normal*.zijieapi.com^
 ||aj1*.online^
 ||ap*.jj20.com^
-||ac*.faxingchina.com^
 ||aem-collector-*.kgslb.com^
 ||aff*.kolektiva.net^
 ||analytics-ad-*.kgslb.com^
@@ -90,31 +115,8 @@
 ||access.pangolin-sdk-toutiao-*.com^
 ||ad.*.xiaomi.com^
 ||ads*-adnow.com^
-## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
-||sax*.sina.
-||dm*.ppzuowen.com^
-||dm*.yxlady.com^
-||same*.stockstar.com^
-||uc*.atobo.com^
-||gcw*.2liang.cn^
-||d*.ruiwen.com^
-||fanpingbi*.gaokao.com^
-||dn*.ixinwei.com^
-||a*.chajiaotong.com^
-||fpb1.chinacar.
-728x90.jpg|
-||ya*.dwstatic.com^
-||d*.xinshipu.com^
-||fpb*.51edu.com^
-||sam*.baby-kingdom.com^
-||qpb*.sohu.com^
-||static*.365inews.com^
-||union*.365inews.com^
-||ysdm*.ys137.com.cn^
-## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
-||acookie.*.gif?
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-||mishop.pandora.xiaomi.com.^
+@@||ulog*.*.com^$important
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||collector-*.px-client.net^
@@ -134,8 +136,6 @@
 ||cas.*.criteo.com^
 ||dj1*.online^
 ||display-ad-*.kgslb.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||fra-*.braze.eu^
 ||liveweb*.msstatic.com^
@@ -174,6 +174,7 @@
 ||polaris*-normal-lq.zijieapi.com^
 ||prebid-*.rubiconproject.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+||tracking.*.miui.com^
 ||stat.*.v-56.com^
 ||stats-*.p2pnow.ru^
 ||s*a.pstatp.com^
@@ -188,7 +189,6 @@
 ||s*.skencituer.com^
 ||sads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
-||tracking.*.miui.com^
 ||transit*.wslog.chinanetcenter.com^
 ||v*-be-pack.pglstatp-toutiao.com^
 ||ulog*.*^
