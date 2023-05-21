@@ -6,8 +6,10 @@
 ! | |__| | | |__| |           / ____ \  | |__| |
 ! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-05-21 16:08:22
+! Last Modified: 2023-05-22 00:07:50
 ! Homepage: https://github.com/afwfv/DD-AD.git
+## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
+||tnc*.zijieapi.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
 ||ytvwhbejc.com'
@@ -27,7 +29,6 @@
 ||zazgbqg*.xyz^
 ||api-access.pangolin-sdk-toutiao-*.com^
 ||js.*2023*.xyz^
-||tnc*.zijieapi.com^
 @@||cdn-msp*.18comic.*^
 ||zbc6hye*.xyz^
 ||opnked*.xyz^
@@ -62,16 +63,19 @@
 ||dn*.ixinwei.com^
 ||a*.chajiaotong.com^
 ||bdlm*.hc360.com^
+||ac*.786ip.com^
 728x90.jpg|
 ||ya*.dwstatic.com^
 ||d*.xinshipu.com^
 ||fpb*.51edu.com^
 ||static*.365inews.com^
 ||ysdm*.ys137.com.cn^
+||ac*.pingguolv.com^
 ||at*.doubanio.com^
 ||dm*.yxlady.com^
 ||same*.stockstar.com^
 ||gcw*.2liang.cn^
+||ac*.faxingchina.com^
 ||fpb1.chinacar.
 ||js*.abolezi.com^
 ||sam*.baby-kingdom.com^
@@ -81,14 +85,10 @@
 ||acookie.*.gif?
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||mishop.pandora.xiaomi.com.^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
-@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||ads*.dfiles.eu^
 ||aj2*.online^
 ||ads.*.yahoo.com^
-||ac*.786ip.com^
 ||bj*.9669.cn^
 ||allsportsflix.*^
 ||ads*.dfiles.ru^
@@ -96,7 +96,6 @@
 ||ad*.mac-torrent-download.net^
 ||adservice.google.*^
 ||bj1*.online^
-||ac*.pingguolv.com^
 ||ad.kisstvshow.*^
 ||admicro*.vcmedia.vn^
 ||ads*.depositfiles.com^
@@ -105,7 +104,6 @@
 ||ads*-normal*.zijieapi.com^
 ||aj1*.online^
 ||ap*.jj20.com^
-||ac*.faxingchina.com^
 ||aem-collector-*.kgslb.com^
 ||aff*.kolektiva.net^
 ||analytics-ad-*.kgslb.com^
@@ -118,6 +116,9 @@
 ||access.pangolin-sdk-toutiao-*.com^
 ||ad.*.xiaomi.com^
 ||ads*-adnow.com^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+@@||ulog*.*.com^$important
+@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||collector-*.px-client.net^
