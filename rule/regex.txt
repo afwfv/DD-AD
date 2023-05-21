@@ -6,10 +6,8 @@
 ! | |__| | | |__| |           / ____ \  | |__| |
 ! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-05-21 00:08:01
+! Last Modified: 2023-05-21 08:40:52
 ! Homepage: https://github.com/afwfv/DD-AD.git
-## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
-||tnc*.zijieapi.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
 ||ytvwhbejc.com'
@@ -29,6 +27,7 @@
 ||zazgbqg*.xyz^
 ||api-access.pangolin-sdk-toutiao-*.com^
 ||js.*2023*.xyz^
+||tnc*.zijieapi.com^
 @@||cdn-msp*.18comic.*^
 ||zbc6hye*.xyz^
 ||opnked*.xyz^
@@ -47,6 +46,7 @@
 ||ax.*.ifeng.com^
 ||onetrust.
 ||121.204.246.*.gif
+||js*.abolezi.com^
 ||218.26.217.*.html
 ||ja*.gamersky.com^
 ||vns86.oss-*.aliyuncs.com^
@@ -77,7 +77,6 @@
 ||gcw*.2liang.cn^
 ||ac*.faxingchina.com^
 ||fpb1.chinacar.
-||js*.abolezi.com^
 ||sam*.baby-kingdom.com^
 ||qpb*.sohu.com^
 ||union*.365inews.com^
@@ -85,6 +84,9 @@
 ||acookie.*.gif?
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||mishop.pandora.xiaomi.com.^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+@@||ulog*.*.com^$important
+@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||ads*.dfiles.eu^
 ||aj2*.online^
@@ -116,9 +118,6 @@
 ||access.pangolin-sdk-toutiao-*.com^
 ||ad.*.xiaomi.com^
 ||ads*-adnow.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
-@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||collector-*.px-client.net^
