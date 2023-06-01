@@ -6,10 +6,8 @@
 ! | |__| | | |__| |           / ____ \  | |__| |
 ! |_____/  |_____/           /_/    \_\ |_____/ 
 ! Title: regex.txt
-! Last Modified: 2023-06-01 00:08:39
+! Last Modified: 2023-06-01 08:53:21
 ! Homepage: https://github.com/afwfv/DD-AD.git
-## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
-||tnc*.zijieapi.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 ||sf*-fe-tos.pglstatp-toutiao.com^
 ||ytvwhbejc.com'
@@ -29,6 +27,7 @@
 ||zazgbqg*.xyz^
 ||api-access.pangolin-sdk-toutiao-*.com^
 ||js.*2023*.xyz^
+||tnc*.zijieapi.com^
 @@||cdn-msp*.18comic.*^
 ||zbc6hye*.xyz^
 ||opnked*.xyz^
@@ -48,7 +47,6 @@
 ||onetrust.
 ||121.204.246.*.gif
 ||218.26.217.*.html
-||ja*.gamersky.com^
 ||vns86.oss-*.aliyuncs.com^
 ||122.225.103.*.htm
 ||asd8900.oss-*.aliyuncs.com^
@@ -68,6 +66,7 @@
 ||ya*.dwstatic.com^
 ||d*.xinshipu.com^
 ||fpb*.51edu.com^
+||ja*.gamersky.com^
 ||static*.365inews.com^
 ||ysdm*.ys137.com.cn^
 ||ac*.pingguolv.com^
@@ -81,10 +80,13 @@
 ||sam*.baby-kingdom.com^
 ||qpb*.sohu.com^
 ||union*.365inews.com^
+## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+||mishop.pandora.xiaomi.com.^
 ## 👇This Part Merge from: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt
 ||acookie.*.gif?
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-||mishop.pandora.xiaomi.com.^
+@@||ulog*.*.com^$important
+@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||ads*.dfiles.eu^
 ||aj2*.online^
@@ -127,9 +129,6 @@
 ||ads*-adnow.com^
 ||analytics.*.sky.com^
 ||batchlogging*-noneu.truecaller.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-@@||ulog*.*.com^$important
-@@||p*-ppx.byteimg.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||browser-update.*.top^
 ||cs*.mp3bars.com^
@@ -190,7 +189,6 @@
 ||flurry.agentportal-*.yahoodns.net^
 ||hbbtv.*.de^
 ||host*.rigbyandpeller.com^
-||imp-*.jampp.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||liveweb*.msstatic.com^
 ||iptracker-lb-*.amazonaws.com^
@@ -221,6 +219,7 @@
 ||log*.ku6.com^
 ||log*.aliyuncs.com^
 ||log-*.zadn.vn^
+||imp-*.jampp.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||pixel*.production-public.tubi.io^
 ||pijama.*.elasticbeanstalk.com^
@@ -248,7 +247,6 @@
 ||s*.skencituer.com^
 ||polaris*-normal-lq.zijieapi.com^
 ||pxl-*.ozone.ru^
-||sads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||stat.*.v-56.com^
 ||t*.zcvh.net^
@@ -258,17 +256,17 @@
 ||sense-*.tapdb.net^
 ||sensorsdata*.read.duokan.com^
 ||stats2.*.fdnames.com^
-||tblog-*.kgslb.com^
 ||ssp*.rtb.beeline.ru^
 ||stat*.1internet.tv^
 ||st-*.dynamicyield.com^
 ||stats*.videonow.ru^
+||sads*z.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 ||trk*.vidible.tv^
-||xlog*-*.tiktokv.com^
 ||tracking.*.miui.com^
 ||util-*.simply-hentai.com^
 ||transit*.wslog.chinanetcenter.com^
+||tblog-*.kgslb.com^
 ||v*-be-pack.pglstatp-toutiao.com^
 ||toujing*.top^
 ||tracking*.euroads.fi^
@@ -276,3 +274,5 @@
 ||ulog*.*^
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||v*.denakop.com^
+## 👇This Part Merge from: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+||xlog*-*.tiktokv.com^
