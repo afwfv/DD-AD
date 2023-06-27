@@ -25,7 +25,6 @@ application:
       - 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts' #1024网站及澳门皇家赌场及恶意广告主机列表
       - 'https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt' #halflife-list
       - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
-      - 'https://file-git.trli.club/allow/Domains' #白名单
     #本地规则，请将文件移动到项目路径rule目录中
     local:
       - 'mylist.txt'
@@ -36,7 +35,7 @@ application:
       ! Last Modified: ${date}
       ! Homepage: https://github.com/afwfv/DD-AD.git
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
-    files:
+    文件:
       all.txt: #输出文件名
         - DOMAIN  #域名规则，仅完整域名
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
