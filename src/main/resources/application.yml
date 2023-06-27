@@ -18,7 +18,9 @@ application:
     #远程规则
     remote:
       - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
+      - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
       - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
+      - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule
       - 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt' #halflife-list
       - 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts' #1024网站及澳门皇家赌场及恶意广告主机列表
       - 'https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt' #halflife-list
