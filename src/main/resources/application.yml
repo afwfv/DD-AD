@@ -18,12 +18,10 @@ application:
     #远程规则
     remote:
       - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
-      - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
       - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
       - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule
       - 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt' #halflife-list
       - 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts' #1024网站及澳门皇家赌场及恶意广告主机列表
-      - 'https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad.txt' #halflife-list
       - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
     #本地规则，请将文件移动到项目路径rule目录中
     local:
@@ -35,7 +33,7 @@ application:
       ! Last Modified: ${date}
       ! Homepage: https://github.com/afwfv/DD-AD.git
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
-    文件:
+    files:
       all.txt: #输出文件名
         - DOMAIN  #域名规则，仅完整域名
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
