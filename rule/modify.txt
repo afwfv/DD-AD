@@ -1,30 +1,7 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-06-28 04:47:30
+! Last Modified: 2023-06-28 05:22:17
 ! Homepage: https://github.com/afwfv/DD-AD.git
-## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-::1 localhost
-## 👇This Part Merge from: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt
-||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
-||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/version^
-^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version
-||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
-||coolapk.com/v6/feed/detail?$replace=/extra_entities//
-||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/top_notice^
-||coolapk.com/v6/feed/detail?$replace=/include_goods//
-||coolapk.com/v6/page/dataList?$replace=/extra_entities//
-||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
-||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
-||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/advert^
-||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
-^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+
-||coolapk.com/v6/main/indexV?$replace=/extra_entities//
-||i0.hdslb.com/bfs/live/user_cover/581775ed57beef0dd64c1f6b611da48409b2c4fa.jpg@672w_378h_1c_!web-home-common-cover.avif
-||hw-ot-ad.a.yximgs.com^$important^
-||i0.hdslb.com/bfs/vc/9c699f2acbcad00197e92c401b835d2c6aba8a55.png@924w_429h_!web-dynamic.avif
-^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\?
-||i0.hdslb.com/bfs/live/new_room_cover/9a95a8efc6ee0e07574e3a538a73613318672d50.jpg@1050w_591h_!web-video-rcmd-live-cover.avif
-||coolapk.com/v6/feed/detail?$replace=/extra_title//
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /ad-sign.*/
@@ -52,6 +29,31 @@
 /lf.fqnovel.*/
 /snssdk.*/
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
+## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+::1 localhost
+## 👇This Part Merge from: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt
+||coolapk.com/v6/feed/detail?$replace=/detailSponsorCard//
+||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/version^
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version
+||coolapk.com/v6/main/init?$replace=/\{"data":\[\{"entityType":"card"\,"entityTemplate":"textCard"\,"title":"\\u70ed\\u95e8\\u641c\\u7d22".*?\}\,\{"entityType":"card"\,"entityTemplate":"configCard"/\{"data":[\{"entityType":"card"\,"entityTemplate":"configCard"/
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/top_notice^
+||coolapk.com/v6/feed/detail?$replace=/include_goods//
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/v6/main/indexV8?$replace=/\{"entityType":"card"\,"entityTemplate":"listCard".*?\}\,\{"id/{"id/
+||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
+||sdk.alibaba.com.ailbaba.me/xgapp.php/v\d/advert^
+||coolapk.com/v6/main/indexV8?$replace=/\,\{.*?"entityType": "card"\,"entityTemplate":"apkImageCard".*?\}\,\{"id"/,{"id"/
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+
+||coolapk.com/v6/main/indexV?$replace=/extra_entities//
+||i0.hdslb.com/bfs/live/user_cover/581775ed57beef0dd64c1f6b611da48409b2c4fa.jpg@672w_378h_1c_!web-home-common-cover.avif
+||hw-ot-ad.a.yximgs.com^$important^
+||i0.hdslb.com/bfs/vc/9c699f2acbcad00197e92c401b835d2c6aba8a55.png@924w_429h_!web-dynamic.avif
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\?
+||i0.hdslb.com/bfs/live/new_room_cover/9a95a8efc6ee0e07574e3a538a73613318672d50.jpg@1050w_591h_!web-video-rcmd-live-cover.avif
+||coolapk.com/v6/feed/detail?$replace=/extra_title//
+## 👇This Part Merge from: https://adaway.org/hosts.txt
+::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
@@ -5333,8 +5335,6 @@ _adslist.
 @@||aq.qq.com^$document
 @@||aikanvod.miguvideo.com^$document
 @@||guid.tpns.tencent.com^$document
-## 👇This Part Merge from: https://adaway.org/hosts.txt
-::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 ||demand.supply^$script
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
