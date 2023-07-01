@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-01 08:52:53
+! Last Modified: 2023-07-01 16:09:16
 ! Homepage: https://github.com/afwfv/DD-AD.git
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
@@ -56,8 +56,6 @@
 ||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: https://adaway.org/hosts.txt
 ::1  localhost
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
-.advombat.ru^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 /advertiserwidget.
 /phpads/*
@@ -5199,8 +5197,6 @@ _adslist.
 /bigad_
 /download/ad/*$domain=~dr.dk
 /google_afs_widget/*
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
-||demand.supply^$script
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 @@||flash.sec.miui.com^$document
 @@||hot.browser.miui.com^$document
@@ -5337,6 +5333,8 @@ _adslist.
 @@||aq.qq.com^$document
 @@||aikanvod.miguvideo.com^$document
 @@||guid.tpns.tencent.com^$document
+## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+||demand.supply^$script
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 ||dynamicoxygen.com^$third-party
 ||etargetnet.com^$third-party
@@ -6035,6 +6033,7 @@ _adslist.
 ||adfrika.com^$third-party
 ||adorion.net^$third-party
 ||gammae.com^$third-party
+||increaserev.com^$third-party
 ||clickintext.net^$third-party
 ||gpsecureads.com^$third-party
 ||getmyfreetraffic.com^$third-party
@@ -8067,6 +8066,7 @@ fanlesstech.com###HTML4 > .widget-content
 ||meetsexygirls.org^$popup
 webcarstory.com###Ads
 ||cpng.lol.^$popup
+startpage.com##.pa-bg-carousel
 ||loopaautomate.com^$third-party
 ||data-px.services^$popup
 ||thygrepuwo.pro^$popup
@@ -9304,7 +9304,6 @@ imgbb.com##.abnr
 ||imgtaxi.com/ttb02673583fb.js
 failory.com##.blog-column-ad
 doge-faucet.com##.bspot
-||increaserev.com^$third-party
 lightnovelpub.com##.adsbox
 ||mncvjhg.com^$third-party
 ||dianomi.com/brochures.epl?
@@ -17348,7 +17347,6 @@ automobile-catalog.com,itnewsonline.com##table[width="300"]
 |http://*/*_ad.js$domain=~pcpop.com|~xitek.com
 /js/pcbook.js?
 /showpage2.asp?u=$script,third-party
-startpage.com##.pa-bg-carousel
 /module/adsview/*
 bleepingcomputer.com#?#.post_wrap:-abp-contains(AdBot)
 ||189.gd^*.html$third-party
@@ -20039,6 +20037,7 @@ zbporn.com,zbporn.tv##.view-aside-block
 fapnado.xxx##.zpot-horizontal
 @@/banner/ad/*$image,domain=achaloto.com
 ||121zou.com^$subdocument
+||28hse.com/adsman/www/images/
 /js/gg0.js
 salife.com.au##.salife-slot
 drivespark.com,filmibeat.com,gizbot.com##.photos-add
@@ -24912,7 +24911,6 @@ pcdown.net##.bzxz
 cww.net.cn##.adlinkL
 58.com##a[href*="to8to.com"]
 ||meipian.me^*/api_ad/
-||28hse.com/adsman/www/images/
 jiaodong.net###leftBanner
 ||rjsos.com/channel/laomo_dibu.png
 loldk.com##a[href^="http://www.esportsclub.cn/home/"]
@@ -28229,6 +28227,7 @@ chem99.com###J_tcode
 ||lgmi.com/left_right_
 ||lianty.com/getImg?id=
 jrj.com.cn##.piboxtwo
+@@||g.alicdn.com/??*/criteo
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###game_rank
 iwan.baidu.com##.banner-container
 jrj.com.cn##.jrj-ad
@@ -36826,7 +36825,6 @@ gamer.com.tw,pili.com.tw#@#.text-ads
 ||adxadtracker.com^$third-party
 .mailing.*/oo/$image
 _mongo_stats/
-@@||g.alicdn.com/??*/criteo
 /estatistica.js
 /pixel/PageStatistics.gif?
 /viewTracking.min.js
@@ -42115,6 +42113,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||bz-berlin.de/_stats/
 ||jobs.ch/api/v1/public/product/track/
 ||arlt.com/analytics/
+||moviepilot.de/assets/autotrack-
 ||_tcp.academyofconsciousleadership.net^
 ||dejure.org/cgi-bin/sitzung.fcgi?
 ||inside-channels.ch/proxy/engine/api/v1/auth/ping/
@@ -43746,7 +43745,6 @@ tuliu.com###vFloat
 jingyu.com##.stream-app
 finance.sina.com.cn###hq_main_top_tgWrap
 @@||addthis.com/*-angularjs.min.js$script,domain=ead.senac.br|missingkids.com|missingkids.org
-||moviepilot.de/assets/autotrack-
 @@||ssl-images-amazon.com^*/satelliteLib-$script,domain=audible.com
 baike.com###newsfix-on
 @@||community.brave.com/t/$xmlhttprequest
