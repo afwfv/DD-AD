@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-05 00:10:28
+! Last Modified: 2023-07-05 08:51:25
 ! Homepage: https://github.com/afwfv/DD-AD.git
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
@@ -36,10 +36,10 @@
 ||hw-ot-ad.a.yximgs.com^$important^
 ||i0.hdslb.com/bfs/vc/9c699f2acbcad00197e92c401b835d2c6aba8a55.png@924w_429h_!web-dynamic.avif
 ||i0.hdslb.com/bfs/live/new_room_cover/9a95a8efc6ee0e07574e3a538a73613318672d50.jpg@1050w_591h_!web-video-rcmd-live-cover.avif
-## 👇This Part Merge from: https://adaway.org/hosts.txt
-::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||_.partner.0-infotracactive.net.daraz.com^
+## 👇This Part Merge from: https://adaway.org/hosts.txt
+::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 /advertiserwidget.
 /phpads/*
@@ -5843,6 +5843,7 @@ _adslist.
 ||popcash.net^$document
 ||ademails.com^$third-party
 ||adscpm.net^$third-party
+||cpaclickz.com^$third-party
 ||123date.me^$third-party
 ||adplugg.com^$third-party
 ||caroda.io^$third-party
@@ -11418,7 +11419,6 @@ nextshark.com###nextshark_com_leaderboard_top
 ||pereliaastroid.com^$popup
 ||vidora.com^$third-party
 kollelbudget.com###text-78
-||cpaclickz.com^$third-party
 ||acplat.online^$popup
 ||anmdr.link^$popup
 ||outhulem.net^$popup
@@ -13187,6 +13187,7 @@ arabiaweather.com##.mpu-card
 ||rhombusads.com^$third-party
 metar-taf.com##.controls-right
 ||securedsmcd.com^$popup
+trueachievements.com,truesteamachievements.com,truetrophies.com##.nn_player_w
 ||nehodyshy.pro^$popup
 ||precedentadministrator.com^$popup
 ||rbxtrk.com^$popup
@@ -15712,6 +15713,7 @@ footztube.com##[href^="/tp/out"]
 usasexguide.nl##.isg_background_border_banner
 @@||yibada.com^$generichide
 foxbusiness.com##.pre-content
+/skin/middle.$domain=iimanhua.cc|iimh.net
 bettycrocker.com##.recipeAd
 unlockboot.com##.ubhome-banner
 palimas.org##.video-promo
@@ -17964,7 +17966,6 @@ xxbrits.com##.block-offer
 /r/*?_r=$object,subdocument,third-party
 gfycat.com##.side-slot
 embed.listcorp.com##a[href^="https://j.moomoo.com/"]
-trueachievements.com,truesteamachievements.com,truetrophies.com##.nn_player_w
 mymovies.net##.skyright
 golfweather.com##.ox300x250
 sashares.co.za##.wppopups-whole
@@ -20608,7 +20609,6 @@ zhongkao.com##.focusBox
 tmall.com###J_Recommend
 ||3g.qq.com/lview?
 www.qq.com##div[class^="adRight"]
-/skin/middle.$domain=iimanhua.cc|iimh.net
 ||bdstatic.com/img/image/su/
 ||mm7920.com:8888/upload/*.gif
 ||zzsky.com/images/a_d_
@@ -29449,6 +29449,7 @@ hexieshe.com,hexieshe.xyz,xxshe.info##.entry-title > p
 chinatp.com.cn###FloatL_2
 firefox.com.cn,firefoxchina.cn###thside-left-banner
 baobao.baidu.com##.qb-relate-box
+@@||113.com.tw/www/image/index-ad.png
 jinhua.com.cn##.banner465
 taoguba.com.cn##.NewH_top_left + .left
 ||ebioweb.com/newsf/js/news_top_banner.js
@@ -37937,7 +37938,6 @@ baidu.com##.opr-zhaopin-ad-ctn
 ||boomerang.com.au^$third-party
 ||avmws.com^$third-party
 /anametrix/*
-@@||113.com.tw/www/image/index-ad.png
 /gtm-tracking-events.
 /performancetimer.js
 ||webminepool.com^$third-party
