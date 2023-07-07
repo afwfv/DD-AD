@@ -1,7 +1,14 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-07 08:49:56
+! Last Modified: 2023-07-07 16:10:41
 ! Homepage: https://github.com/afwfv/DD-AD.git
+## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+::1 localhost
+## 👇This Part Merge from: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt
+||i0.hdslb.com/bfs/live/user_cover/581775ed57beef0dd64c1f6b611da48409b2c4fa.jpg@672w_378h_1c_!web-home-common-cover.avif
+||hw-ot-ad.a.yximgs.com^$important^
+||i0.hdslb.com/bfs/vc/9c699f2acbcad00197e92c401b835d2c6aba8a55.png@924w_429h_!web-dynamic.avif
+||i0.hdslb.com/bfs/live/new_room_cover/9a95a8efc6ee0e07574e3a538a73613318672d50.jpg@1050w_591h_!web-video-rcmd-live-cover.avif
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /ad-sign.*/
@@ -29,13 +36,6 @@
 /lf.fqnovel.*/
 /snssdk.*/
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
-## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-::1 localhost
-## 👇This Part Merge from: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt
-||i0.hdslb.com/bfs/live/user_cover/581775ed57beef0dd64c1f6b611da48409b2c4fa.jpg@672w_378h_1c_!web-home-common-cover.avif
-||hw-ot-ad.a.yximgs.com^$important^
-||i0.hdslb.com/bfs/vc/9c699f2acbcad00197e92c401b835d2c6aba8a55.png@924w_429h_!web-dynamic.avif
-||i0.hdslb.com/bfs/live/new_room_cover/9a95a8efc6ee0e07574e3a538a73613318672d50.jpg@1050w_591h_!web-video-rcmd-live-cover.avif
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 /advertiserwidget.
 /phpads/*
@@ -5172,12 +5172,12 @@ _adslist.
 /bigad_
 /download/ad/*$domain=~dr.dk
 /google_afs_widget/*
-## 👇This Part Merge from: https://adaway.org/hosts.txt
-::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 ||demand.supply^$script
+## 👇This Part Merge from: https://adaway.org/hosts.txt
+::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 ||shortcuteffort.com/84/
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
@@ -9500,7 +9500,6 @@ mangable.com,tutorial9.net,webdesign.org##.bsarocks
 ||adstuna.com^$third-party
 ||adop.co^$popup
 ||gaming-box.com^$popup
-ladbible.com##.css-1dgm0zi-Advert
 ||v6rxv5coo5.com^$popup
 ||femvxitrquzretxzdq.info^$popup
 ||zlinkm.com^$popup
@@ -19477,6 +19476,7 @@ sexhd.pics##.tx
 @@||tra.scds.pmdstatic.net/advertising-core/$domain=voici.fr
 iheartradio.ca##.slot-topNavigation
 @@||hwcdn.net^$script,domain=mp4upload.com
+ladbible.com##.css-1dgm0zi-Advert
 thefreedictionary.com###Content_CA_AD_1_BC
 fapnado.com##[class^="xpot"]
 redferret.net##.redfads
@@ -22002,7 +22002,6 @@ rising.cn##.ggqh
 ||xtgreat.com^$third-party
 ifeng.com,sohu.com##.ad950
 168gamer.com,168gamer.net##.b_tad
-duba.com##a[w="topad"]
 pilifx.com##.imoney
 qiushibaike.com##.shopwindow
 ||jsdelivr.net/gh/te89899/
@@ -31041,6 +31040,7 @@ abbao.cn#@##adContent
 /bitrix/spread.php?
 ||leadformix.com^$third-party
 ||snapdeal.biz^$third-party
+duba.com##a[w="topad"]
 /matomo.php
 ||invoc.us^$third-party
 nextapple.com##div[class^="na-ad-"]
@@ -37008,7 +37008,6 @@ gohome.com.hk,idv.st#@##adFrame
 ||sinaimg.cn^$domain=172.86.179.138|208.94.244.100|208.94.244.98|a88.us|ac168.info|ac88.info|aisex.com|cnnice.biz|go543.com
 /shopify_stats.js
 /analytics_wbc.
-||user-clicks.com^$third-party
 /nielsenscv53.$script
 ||c1exchange.com^$third-party
 ||clickbrainiacs.com^$third-party
@@ -41210,6 +41209,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||fernomius.com^$third-party
 ||booking.com/logo?
 ||appdynamics.com/geo/$third-party
+||user-clicks.com^$third-party
 ||shopeemobile.com/*/tr/
 ||facebook.com/tr?
 ||zazzle.de/svc/px
