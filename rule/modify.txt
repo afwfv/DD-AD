@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-10 08:49:05
+! Last Modified: 2023-07-10 16:11:26
 ! Homepage: https://github.com/afwfv/DD-AD.git
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
@@ -31,8 +31,6 @@
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
 ## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 ::1 localhost
-## 👇This Part Merge from: https://adaway.org/hosts.txt
-::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 ||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
@@ -5146,8 +5144,6 @@ _adslist.
 /bigad_
 /download/ad/*$domain=~dr.dk
 /google_afs_widget/*
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
-||demand.supply^$script
 ## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
 @@||flash.sec.miui.com^$document
 @@||hot.browser.miui.com^$document
@@ -5285,6 +5281,8 @@ _adslist.
 @@||aikanvod.miguvideo.com^$document
 @@||guid.tpns.tencent.com^$document
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+||demand.supply^$script
+## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 ||dianomi.com^$document
 ||addynamix.com^$third-party
 ||adssend.net^$third-party
@@ -5390,6 +5388,7 @@ _adslist.
 ||adnet.com^$third-party
 ||adsforallmedia.com^$third-party
 ||adzbazar.com^$third-party
+||afyads.com^$third-party
 ||adacts.com^$third-party
 ||adnet.lt^$third-party
 ||adhese.com^$third-party
@@ -12265,6 +12264,7 @@ proprivacy.com###main-popup
 ||rewqpqa.net^$popup
 ||chainbelt.top^$popup
 ||monkyank.com^$popup
+freebeacon.com##.inline-campaign-wrapper
 fivebooks.com##.Leaderboard-container
 ||tradeexpert.net^$third-party
 ||trafficlearn.com^$third-party
@@ -13029,7 +13029,6 @@ hwbot.org###partner-tiles
 ||defas.site^$popup
 coingecko.com###top-announcement-header
 @@||voeunblock.com^$subdocument
-||afyads.com^$third-party
 ||alxbgo.com^$popup
 ||espncdn.shop/nwm-dbh.min3.js
 ||paidonresults.net^$third-party
@@ -14585,6 +14584,8 @@ fanlesstech.com###footer-1
 ||wbsadsdel2.com^$popup
 ||revimedia.com^$popup
 ||znqip.org^$popup
+## 👇This Part Merge from: https://adaway.org/hosts.txt
+::1  localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 nypost.com##.widget_nypost_dfp_ad_widget
 .life/ads/
@@ -16114,6 +16115,7 @@ zbporn.com##.box-f
 @@||hinagiku-u.ed.jp/wp54/wp-content/themes/hinagiku/images/$image,~third-party
 ||163disk.com/static/aimgs/d
 multiup.eu,multiup.org#?#.trtbl:-abp-has(.warnIp)
+||3dmgame.com/page/js/push_browser.js
 naturalblaze.com##.trfkye8nxr
 topfiveforex.com##[href^="https://betfury.io/"]
 dappradar.com,euroweeklynews.com,thefinancialbrand.com##[rel*="sponsored"]
@@ -17242,7 +17244,6 @@ smutty.com##.tig_following_tags2
 slaynews.com##[href="https://slaynews.com/ads/"]
 forum.ragezone.com##[data-widget-key="widget_partners"]
 vivud.com##.inplayer_banners
-freebeacon.com##.inline-campaign-wrapper
 /moneymaker/js/tmpp.js
 haveibeenpwned.com#?#.actionsBar:-abp-has(.why1Password)
 hitbdsm.com##a[href^="https://go.rabbitsreviews.com/"]
@@ -21445,7 +21446,6 @@ kocpc.com.tw###scroll_div
 iqiyi.com##.site-title_right
 8xia.com,9553.com,99danji.com##.high-down
 baidu.com##.hotad-list-box
-||3dmgame.com/page/js/push_browser.js
 itavcn.com###ADE
 @@||doc110.com^*/ad.css?$stylesheet
 so.com###mohe-biu_gouwu > .g-card
@@ -27569,6 +27569,7 @@ hc360.com###endAccessories1
 ||mycodes.net/js/$image
 keywin.org##.appdownload
 ||yimg.com/cv/api/hk/fp_czy_ad/
+@@||jsjiami.com^$generichide
 ||cdndm.com/3/2015/$domain=1kkk.com|dm5.com
 @@||939394.xyz^$generichide
 ||strip.taobaocdn.com/tfscom/$subdocument
@@ -36051,7 +36052,6 @@ _hitcount1.
 ||kanshushi.com/js/nxnhsqe.
 /event_logging/*
 /web_answertip.
-@@||jsjiami.com^$generichide
 @@||tui.click/js/ads.js
 /fortvision-fb-web.
 /js/indextools/*
