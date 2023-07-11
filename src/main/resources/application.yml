@@ -1,6 +1,6 @@
 spring:
   application:
-    name: DD-AD
+    name: adg-rule
   profiles:
     active: prod  #切换至 dev 即可输出调试信息
 
@@ -14,24 +14,26 @@ application:
     fault_tolerance: 0.001 #容错率
     warn_limit: 7 #警告阈值, 规则长度小于该值时会输出警告日志
     batch_size: 10000 #写入文件的批次大小
+
+  # 规则源配置，remote为远程规则，local为本地规则，支持多个规则源
   rule:
-    #远程规则
+
+    # 仅支持 http/https，不限定响应内容格式
     remote:
-      - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
-      - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
-      - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule
-      - 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt' #halflife-list
-      - 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts' #1024网站及澳门皇家赌场及恶意广告主机列表
-      - 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt' #保留广告奖励
-    #本地规则，请将文件移动到项目路径rule目录中
+#      - name: 'example rule' #规则名称
+#        path: 'https://example.org/rule.txt' #规则地址
+#      - 'https://example.org/rule2.txt' #旧版写法, 不推荐
+
+    #本地规则请将文件放置到项目路径rule目录中
     local:
-      - 'mylist.txt'
+#      - name: 'local rule'
+#        path: 'local-rule.txt'
   output:
     file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
       [ADFS Adblock List]
       ! Title: ${name}
       ! Last Modified: ${date}
-      ! Homepage: https://github.com/afwfv/DD-AD.git
+      ! Homepage: https://github.com/fordes123/ad-filters-subscriber/
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
     files:
       all.txt: #输出文件名
