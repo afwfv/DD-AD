@@ -44,7 +44,7 @@ application:
       ! Last Modified: ${date}
       ! Homepage: https://github.com/afwfv/DD-AD
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
-    文件:
+    files:
       all.txt: #输出文件名
         - DOMAIN  #域名规则，仅完整域名
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
