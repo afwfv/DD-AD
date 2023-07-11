@@ -1,6 +1,6 @@
 spring:
   application:
-    name: adg-rule
+    name: DD-AD
   profiles:
     active: prod  #切换至 dev 即可输出调试信息
 
@@ -20,14 +20,23 @@ application:
 
     # 仅支持 http/https，不限定响应内容格式
     remote:
-#      - name: 'example rule' #规则名称
-#        path: 'https://example.org/rule.txt' #规则地址
-#      - 'https://example.org/rule2.txt' #旧版写法, 不推荐
+      - name: 'AdAway'
+        path: 'https://adaway.org/hosts.txt'
+      - name: '大圣净化'
+        path: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts'
+      - name: 'AWAvenue'
+        path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.tx'
+      - name: 'halflife'
+        path: 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt'
+      - name: '1024网站及澳门皇家赌场及恶意广告主机列表'
+        path: 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts'
+      - name: '保留广告奖励'
+        path: 'https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt'
 
     #本地规则请将文件放置到项目路径rule目录中
     local:
-#      - name: 'local rule'
-#        path: 'local-rule.txt'
+      - name: 'DD-AD'
+        path: 'DD-AD.txt'
   output:
     file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
       [ADFS Adblock List]
