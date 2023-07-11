@@ -10,6 +10,7 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.fordes.adg.rule.config.RuleConfig;
 import org.fordes.adg.rule.util.SpringUtil;
 import org.fordes.adg.rule.util.RuleUtil;
 import org.fordes.adg.rule.config.FilterConfig;
@@ -43,7 +44,7 @@ public abstract class RuleHandler {
 
     abstract Charset getCharset();
 
-    public void handle(String ruleUrl, final Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+    public void handle(RuleConfig.Prop prop, final Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
 
         TimeInterval interval = DateUtil.timer();
         AtomicReference<Integer> invalid = new AtomicReference<>(0);
@@ -51,9 +52,8 @@ public abstract class RuleHandler {
 
         Map<RuleType, Set<String>> dataMap = MapUtil.newHashMap();
         //按行读取并处理
-        int i = 0;
         try {
-            BufferedReader bufferedReader = IoUtil.getReader(getContentStream(ruleUrl), getCharset());
+            BufferedReader bufferedReader = IoUtil.getReader(getContentStream(prop.getPath()), getCharset());
             IoUtil.readLines(bufferedReader, (LineHandler) line -> {
                 String content = RuleUtil.clearRule(line);
                 if (StrUtil.isEmpty(content)) {
@@ -63,7 +63,7 @@ public abstract class RuleHandler {
                 } else {
                     bloomFilter.add(content);
                     if (content.length() < config.getWarnLimit()) {
-                        log.warn("发现短规则: {} -> {}，来源: {}", line, content, ruleUrl);
+                        log.warn("发现短规则: {} -> {}，来源: {}", line, content, prop.getName());
                     }
 
                     Arrays.stream(RuleType.values()).filter(ruleType -> RuleUtil.validRule(content, ruleType))
@@ -71,7 +71,7 @@ public abstract class RuleHandler {
 
                     if (dataMap.values().stream().map(Set::size).reduce(Integer::sum).orElse(0) > config.getBatchSize()) {
                         dataMap.forEach((type, data) -> typeStreamMap.getOrDefault(type, Collections.emptySet())
-                                .forEach(e -> RuleUtil.writeToStream(e, data, ruleUrl, getCharset())));
+                                .forEach(e -> RuleUtil.writeToStream(e, data, prop, getCharset())));
                         dataMap.clear();
                     }
                 }
@@ -80,10 +80,10 @@ public abstract class RuleHandler {
             log.error(ExceptionUtil.stacktraceToString(e));
         } finally {
             dataMap.forEach((type, data) -> typeStreamMap.getOrDefault(type, Collections.emptySet())
-                    .forEach(e -> RuleUtil.writeToStream(e, data, ruleUrl, getCharset())));
+                    .forEach(e -> RuleUtil.writeToStream(e, data, prop, getCharset())));
             dataMap.clear();
             log.info("规则<{}> 耗时 => {} ms 无效数 => {} 重复数 => {}",
-                    ruleUrl, interval.intervalMs(), invalid.get(), repeat.get());
+                    prop.getName(), interval.intervalMs(), invalid.get(), repeat.get());
         }
     }
 

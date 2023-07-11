@@ -4,6 +4,7 @@ import cn.hutool.bloomfilter.BitSetBloomFilter;
 import cn.hutool.core.io.FileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.fordes.adg.rule.config.FilterConfig;
+import org.fordes.adg.rule.config.RuleConfig;
 import org.fordes.adg.rule.enums.RuleType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
@@ -43,7 +44,7 @@ public class LocalRuleHandler extends RuleHandler {
 
     @Async("ruleExecutor")
     @Override
-    public void handle(String ruleUrl, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
-        super.handle(ruleUrl, typeStreamMap);
+    public void handle(RuleConfig.Prop prop, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+        super.handle(prop, typeStreamMap);
     }
 }

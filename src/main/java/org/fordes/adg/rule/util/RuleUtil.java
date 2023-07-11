@@ -8,6 +8,7 @@ import cn.hutool.core.util.ReUtil;
 import cn.hutool.core.util.StrUtil;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.fordes.adg.rule.config.RuleConfig;
 import org.fordes.adg.rule.constant.Constants;
 import org.fordes.adg.rule.enums.RuleType;
 
@@ -30,10 +31,12 @@ public class RuleUtil {
     static final Lock lock = new ReentrantLock();
 
     public static void writeToStream(BufferedOutputStream out,
-                                     Collection<String> content, String ruleUrl, Charset charset) {
+                                     Collection<String> content, RuleConfig.Prop prop, Charset charset) {
         if (lock.tryLock()) {
             try {
-                out.write(StrUtil.format(Constants.PART_TEMPLATE, ruleUrl).getBytes(charset));
+                String tag = prop.getName().equals(prop.getPath()) ?
+                        prop.getName() : StrUtil.format("{} ({})", prop.getName(), prop.getPath());
+                out.write(StrUtil.format(Constants.PART_TEMPLATE, tag).getBytes(charset));
                 for (String line : content) {
                     out.write(line.getBytes(charset));
                     out.write(StrUtil.LF.getBytes(charset));
@@ -46,7 +49,7 @@ public class RuleUtil {
             }
         } else {
             sleep(1000);
-            writeToStream(out, content, ruleUrl, charset);
+            writeToStream(out, content, prop, charset);
         }
     }
 
@@ -175,13 +178,4 @@ public class RuleUtil {
         return Math.max(1, (int) Math.round((double) m / n * Math.log(2)));
     }
 
-    public static void safeClose(BufferedOutputStream bufferedOutputStream) {
-        if (bufferedOutputStream != null) {
-            try {
-                bufferedOutputStream.close();
-            } catch (IOException e) {
-                log.error("关闭流出错，{}", e.getMessage());
-            }
-        }
-    }
 }

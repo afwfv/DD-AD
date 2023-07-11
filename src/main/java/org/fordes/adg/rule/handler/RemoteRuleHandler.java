@@ -7,6 +7,7 @@ import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.fordes.adg.rule.config.FilterConfig;
+import org.fordes.adg.rule.config.RuleConfig;
 import org.fordes.adg.rule.enums.RuleType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
@@ -56,7 +57,7 @@ public class RemoteRuleHandler extends RuleHandler {
 
     @Override
     @Async("ruleExecutor")
-    public void handle(String ruleUrl, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
-        super.handle(ruleUrl, typeStreamMap);
+    public void handle(RuleConfig.Prop prop, Map<RuleType, Set<BufferedOutputStream>> typeStreamMap) {
+        super.handle(prop, typeStreamMap);
     }
 }
