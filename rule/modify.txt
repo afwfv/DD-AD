@@ -1,7 +1,9 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-11 00:10:21
+! Last Modified: 2023-07-11 08:42:19
 ! Homepage: https://github.com/afwfv/DD-AD.git
+## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+::1 localhost
 ## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /ad-sign.*/
@@ -29,8 +31,6 @@
 /lf.fqnovel.*/
 /snssdk.*/
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
-## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-::1 localhost
 ## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
 /advertiserwidget.
 /phpads/*
@@ -9025,7 +9025,6 @@ business-standard.com##.advertisement-bg
 ||o333o.com^$popup
 ||unbeedrillom.com^$popup
 ||blzz.xyz^$third-party
-animalcrossingworld.com##.at-sidebar-1
 ||trafficdok.com^$popup
 ||xliirdr.com^$popup
 ||adapex.io^$third-party
@@ -19319,6 +19318,7 @@ windows101tricks.com##.zanui-container
 kisscos.net###v-overlay
 ferrarichat.com##.funzone
 4dayweek.io##.notadvert-tile-wrapper
+animalcrossingworld.com##.at-sidebar-1
 pornhub.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporngay.com##img[src*="blob:" i]:not(video)
 rpg.net##a[href^="http://www.rpg.net/ads/"]
 jamieoliver.com##.top-avocado
@@ -20877,7 +20877,6 @@ axios-http.cn###right-sider
 ||iupian.com/mstyle/js/topinfo.js
 cotton.pink##.adsbyfalcon
 gameinns.com##a[url^="/api/ads?"]
-fx678.com##div[id^="hta_"]
 ||hellocenter.xyz^*.mp4$rewrite=abp-resource:blank-mp4,domain=localmv1.com
 94itv.app##a[href="https://leo535.com/"]
 ltn.com.tw##.NC3
@@ -30173,6 +30172,7 @@ mrbird.cc#@#.social-icons
 @@||taobao.com/go/app/tmall/login-api.php?
 @@/images/*/*.gif$domain=maichun5.info|myhhg.com
 /event?adblk=
+fx678.com##div[id^="hta_"]
 /stats.hitbox.com/*
 /dotomi_tracking/*
 /visualrevenue.js
@@ -34862,7 +34862,6 @@ samsung.com#?#.template-item:-abp-has(> .wrap-sub-title > div > .ad)
 /facebook-tracking/*
 /gaCustom.
 /tnsmetrix/*
-||brightedge.com^$third-party
 /seostats/*
 .ct.sendgrid.net/$image
 /jquery.google-analytics.
@@ -39142,6 +39141,7 @@ gucheng.com##img[data-mv-ad]
 ||vidazoo.com/aggregate?
 ||urldefense.com^$image,third-party
 ||erate.co.il^$third-party
+||brightedge.com^$third-party
 ||stetic.com^$third-party
 ||radiotime.com/Report.ashx?
 ||tracker.stats.in.th^$third-party
