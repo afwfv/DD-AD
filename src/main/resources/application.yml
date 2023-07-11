@@ -25,7 +25,7 @@ application:
       - name: '大圣净化'
         path: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts'
       - name: 'AWAvenue'
-        path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.tx'
+        path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt'
       - name: 'halflife'
         path: 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt'
       - name: '1024网站及澳门皇家赌场及恶意广告主机列表'
@@ -42,9 +42,9 @@ application:
       [ADFS Adblock List]
       ! Title: ${name}
       ! Last Modified: ${date}
-      ! Homepage: https://github.com/fordes123/ad-filters-subscriber/
+      ! Homepage: https://github.com/afwfv/DD-AD
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
-    files:
+    文件:
       all.txt: #输出文件名
         - DOMAIN  #域名规则，仅完整域名
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
