@@ -14,9 +14,9 @@
 | `regex.txt`   | `REGEX` 正则规则，包含正则的域名规则，AdGH支持                                                 | [Link](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/regex.txt) | [Link](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//regex.txt) |
 
 <h3>说明</h3>
-<p1>广告过滤规则整合，使用 <a href="https://github.com/fordes123/ad-filters-subscriber">fordes123/ad-filters-subscriber</a>定时更新</p1>
-<p2>1.针对番茄小说广告添加了规则</p2>
-<p3>2.针对七猫小说广告添加了规则</p3>
+<p>广告过滤规则整合，使用 <a href="https://github.com/fordes123/ad-filters-subscriber">fordes123/ad-filters-subscriber</a>定时更新</p>
+<p>1.针对番茄小说广告添加了规则</p>
+<p>2.针对七猫小说广告添加了规则</p>
 <h3>访问次数</h3>
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
