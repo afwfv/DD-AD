@@ -1,4 +1,5 @@
 <div align="center">
+<a href="https://t.me/DDadsss">tg频道</a>
 <h1>DD-AD</h1>
 <h2 id="c">🎯 规则订阅</h2>
 
@@ -15,8 +16,6 @@
 <h3>说明</h3>
 <p>1.针对番茄小说广告添加了规则</p>
 <p>2.针对七猫小说广告添加了规则</p>
-<h3>DD-AD tg频道</h3>
-<p>https://t.me/DDadsss</p>
-<h4>访问次数</h4>
+<h3>访问次数</h3>
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
