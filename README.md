@@ -17,6 +17,6 @@
 <p>2.针对七猫小说广告添加了规则</p>
 <h3>DD-AD tg频道</h3>
 <p>https://t.me/DDadsss</p>
-<h3>访问次数</h3>
+<h4>访问次数</h4>
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
