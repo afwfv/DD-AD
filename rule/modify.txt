@@ -1,38 +1,28 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-12 00:10:14
+! Last Modified: 2023-07-12 00:37:39
 ! Homepage: https://github.com/afwfv/DD-AD
-## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
-## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
-::1  localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
-/ad-sign.*/
 ||119.29.29.29^$app=com.kmxs.reader,important
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader,important
+||drs.wtzw.com^$app=com.kmxs.reader,important
 ||119.29.29.29/d?clientip=1&dn=tx-proxy.pull.yximgs.com$third-party,app=com.kmxs.reader,important
 ||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
-/bytegoofy.*/
+||gecko.snssdk.com^$app=com.kmxs.reader,important
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
 ||lf-cdn-tos.bytescm.com^$third-party,app=com.kmxs.reader,important
 ||mssdk.volces.com^$third-party,app=com.kmxs.reader,important
-/byteorge.*/
-/mgsdk-sign.*/
-/fqnovelvod.*/
+/snssdk.*/
 ||lf-cdn-tos.bytescm.com^$app=com.kmxs.reader,important
 ||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 ||a-remad.qm989.com^$app=com.kmxs.reader,important
 /pangolin-sdk.*/
 ||open.kuaishouzt.com^$third-party,app=com.kmxs.reader,important
-/zijieapi.*/
-/bytedance.*/
-||drs.wtzw.com^$app=com.kmxs.reader,important
-||gecko.snssdk.com^$app=com.kmxs.reader,important
-||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
-/lf.fqnovel.*/
-/snssdk.*/
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
@@ -5144,10 +5134,12 @@ _adslist.
 /bigad_
 /download/ad/*$domain=~dr.dk
 /google_afs_widget/*
-## 👇This Part Merge from: 保留广告奖励 (https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt)
-||_.partner.0-infotracactive.net.daraz.com^
+## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
+::1  localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||demand.supply^$script
+## 👇This Part Merge from: 保留广告奖励 (https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt)
+||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 timesofindia.indiatimes.com##.addblock
 ||taggify.net^$third-party
