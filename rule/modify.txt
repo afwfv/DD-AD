@@ -1,10 +1,8 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-11 20:46:28
-! Homepage: https://github.com/afwfv/DD-AD.git
-## 👇This Part Merge from: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-::1 localhost
-## 👇This Part Merge from: /home/runner/work/DD-AD/DD-AD/rule/mylist.txt
+! Last Modified: 2023-07-11 20:56:49
+! Homepage: https://github.com/fordes123/ad-filters-subscriber/
+## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /ad-sign.*/
 ||119.29.29.29^$app=com.kmxs.reader,important
@@ -31,11 +29,13 @@
 /lf.fqnovel.*/
 /snssdk.*/
 ||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader,important
-## 👇This Part Merge from: https://adaway.org/hosts.txt
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
+## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
 ::1  localhost
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+## 👇This Part Merge from: 保留广告奖励 (https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt)
 ||_.partner.0-infotracactive.net.daraz.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
 _skinad.
@@ -5146,9 +5146,9 @@ _adslist.
 /bigad_
 /download/ad/*$domain=~dr.dk
 /google_afs_widget/*
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||demand.supply^$script
-## 👇This Part Merge from: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt
+## 👇This Part Merge from: 保留广告奖励 (https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt)
 @@||flash.sec.miui.com^$document
 @@||hot.browser.miui.com^$document
 @@||wx.qlogo.cn^$document
@@ -5284,7 +5284,7 @@ _adslist.
 @@||aq.qq.com^$document
 @@||aikanvod.miguvideo.com^$document
 @@||guid.tpns.tencent.com^$document
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||dianomi.com^$document
 ||addynamix.com^$third-party
 ||adssend.net^$third-party
@@ -5388,7 +5388,6 @@ _adslist.
 ||adhunt.net^$third-party
 ||adtechus.com^$third-party
 ||adnet.com^$third-party
-||ahvclick.com^$third-party
 ||adsforallmedia.com^$third-party
 ||adzbazar.com^$third-party
 ||afyads.com^$third-party
@@ -5616,7 +5615,7 @@ _adslist.
 ||adireland.com^$third-party
 ||affifix.com^$third-party
 ||adk2.co^$third-party
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 timesofindia.indiatimes.com##.addblock
 ||taggify.net^$third-party
 allbusiness.com##.ad--tag
@@ -11004,6 +11003,7 @@ tutiempo.net##.ContBannerTop
 ||zlink9.com^$popup
 ||displayvertising.com^$popup
 ||wistia.com/assets/external/googleAds.js
+||ahvclick.com^$third-party
 ||atala-apw.com^$popup
 ||e-planning.net^$third-party
 road.cc###Top-Billboard
@@ -12266,7 +12266,6 @@ proprivacy.com###main-popup
 ||rewqpqa.net^$popup
 ||chainbelt.top^$popup
 ||monkyank.com^$popup
-freebeacon.com##.inline-campaign-wrapper
 fivebooks.com##.Leaderboard-container
 ||tradeexpert.net^$third-party
 ||trafficlearn.com^$third-party
@@ -12733,7 +12732,6 @@ asianjournal.com##.asian-widget
 ||lessemf.com/images/banner-
 ||dumbpop.com^$popup
 ||memesng.com/ads
-stocksnap.io##.inline-carbon
 ||detectiveconanworld.com/images/support-us-brave.png
 huddle.today##.huddle-big-box-placement
 ||newrtbbid.com^$popup
@@ -14587,7 +14585,7 @@ fanlesstech.com###footer-1
 ||wbsadsdel2.com^$popup
 ||revimedia.com^$popup
 ||znqip.org^$popup
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 nypost.com##.widget_nypost_dfp_ad_widget
 .life/ads/
 ||ysm.ezprice.net^$third-party
@@ -14725,7 +14723,6 @@ target.com#?#div[data-test="@web/site-top-of-funnel/ProductCardWrapper"]:-abp-co
 beforeitsnews.com##.x1x2prx2lbnm
 @@||warpwire.net/AD/
 @@||tenki.jp/storage/static-images/top-ad/
-||3dmgame.com/sw/zjworld/js/index.
 bubbaporn.com,kalporn.com,koloporno.com,pornodingue.com,pornodoido.com,pornozot.com,serviporno.com,voglioporno.com##.banners-footer
 @@||minigame.aeriagames.jp/css/videoad.css
 .com/qxads/
@@ -17246,6 +17243,7 @@ smutty.com##.tig_following_tags2
 slaynews.com##[href="https://slaynews.com/ads/"]
 forum.ragezone.com##[data-widget-key="widget_partners"]
 vivud.com##.inplayer_banners
+freebeacon.com##.inline-campaign-wrapper
 /moneymaker/js/tmpp.js
 haveibeenpwned.com#?#.actionsBar:-abp-has(.why1Password)
 hitbdsm.com##a[href^="https://go.rabbitsreviews.com/"]
@@ -17813,6 +17811,7 @@ rawstory.com#?#.body-description > div:-abp-contains(ADVERTISEMENT)
 afkgaming.com##.ozw5N
 porntube.com##.pre-footer
 proporn.com,vivatube.com##.livecams
+stocksnap.io##.inline-carbon
 speedtest.net##.top-placeholder
 androidpolice.com##.w-pencil-banner
 gottanut.com##.coverUpVid-Dskt
@@ -18744,7 +18743,6 @@ flingtube.com###sponsoredBy
 @@||connatix.com*/connatix.player.$script,domain=ebaumsworld.com|funker530.com|washingtonexaminer.com
 ||xiyouence.com^$popup,third-party
 ||265la.com/html/
-||3dmgame.com/templets/common/show_js/show_js.js
 ||kuaizitech.com^$third-party
 captainaltcoin.com,dailyboulder.com,lostintechnology.com,ripplecoinnews.com,utahgunexchange.com,webkinznewz.ganzworld.com##.widget_text
 notbanksyforum.com##a[href^="http://l-13.org/"]
@@ -20162,7 +20160,7 @@ nintendolife.com,purexbox.com,pushsquare.com,timeextension.com##.insert
 hdtube.porn,pornid.xxx,rat.xxx##.cs-under-player
 /dzwww/ad_dzw_inner.js
 outlook.live.com#?#div.customScrollBar > div > div[id][class]:-abp-has(img[src$="/images/ads-olk-icon.png"])
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||loli.net/2019/04/24/5cc0027b4f2f1.png
 ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 ||xywy.com/zhixing/
@@ -21142,7 +21140,6 @@ alu.cn##.Tg_230x80
 ||banma.com/statics/scripts/common/dialogAdJs.js
 @@||cbjs.baidu.com/js/m.js$domain=fxpan.com|iyingdi.com|pic.tiexue.net
 ||mql5.com/rq?
-@@||jswenhui.com^*/ad/
 ||51wangdai.com/Images/bad_*0
 jurong.cn##.ad_190_60_5s
 ||sportscn.com/js/commerical
@@ -21408,7 +21405,6 @@ firefoxchina.cn###tab-mod-tehui
 netbardh.com##.pos-navbar-ad
 steachs.com##.sidebar:first-child
 www.kafan.cn##.comeing_show_box[style="padding:10px;"]
-@@||jwpcdn.com/player/plugins/googima/*/googima.js$domain=viu.tv
 douyu.com##a[href*=".miaozhen.com"]
 nodejs.cn###biz_nav
 ||lbx777.*/css/lbxgg02
@@ -23753,6 +23749,7 @@ kekeshici.com###pcAd
 gpshk.cc,yxzp.net##img[width="770"]
 5icool.org##.ads300_show
 douban.com#?#.rec_topics:-abp-has(>.rec_topics_name[href^="https://erebor.douban."])
+||3dmgame.com/templets/common/show_js/show_js.js
 ||foodmate.net/file/script/A
 ||qiyipic.com/common/*vivo
 ||cnbeta.com/assets/images/*_670_90.
@@ -25133,6 +25130,7 @@ ipcfun.com###crumb_r
 qq.com##.AdTop-Article-QQ
 ||tt1069.com/bbs/zgg_
 @@||520cc.cc^*/ad.php
+||3dmgame.com/sw/zjworld/js/index.
 qqxiuzi.cn##div[onclick][style]
 onlinedown.net##.g-huodong
 opdown.com##.gxxz-btn
@@ -29942,7 +29940,7 @@ duanwenxue.com##.shuang11_mb
 ||lelekan.com/sp/fmt.js
 92wy.com##.adhengfu
 7654.com##div[class^="sidebarimg"]
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /omniture/visitorapi.
 ||mmccint.com^$third-party
 /analyticstick.
@@ -30754,6 +30752,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#?##content_right > 
 ||bildirt.com^$third-party
 /o.gif?
 /uisprime/track
+@@||jswenhui.com^*/ad/
 ||personyze.com^$third-party
 ||adinsight.com^$third-party
 ||pingdom.net^$third-party
@@ -30983,6 +30982,7 @@ webkaka.com##a[href*="/click/a_d_"]
 @@||kfcclub.com.tw/web/*/ad
 /ga?type=
 ||predicta.net^$third-party
+@@||jwpcdn.com/player/plugins/googima/*/googima.js$domain=viu.tv
 /email_opened_tracking_pixel?
 gfan.com,gfan.net.cn#@##shareBox
 /popanalytics.
@@ -38044,7 +38044,7 @@ bejson.com##img[src^="data"]
 /opdc.gif?
 ||openvenue.com^$third-party
 /NNAnalyticsWPSites.
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||zucks.net^$third-party
 ||aicontents.net^$third-party
 ||contiamo.com^$third-party
@@ -41783,9 +41783,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||igma.com/api/figment-proxy/
 ||blogtoppen.dk^*/bt_tracker.js
 ||embedly.com/widgets/xcomm.html$third-party
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||smetrics.teambeachbody.com^.com^
-## 👇This Part Merge from: https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt
+## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||bankinter.com/res/img/documento_cargado.gif?
 ||365xuet.com/assets/web/js/main.jsr_
 1905.com##+js(json-prune,videolink)
