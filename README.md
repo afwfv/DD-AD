@@ -1,6 +1,6 @@
 <div align="center">
-<a href="https://t.me/DDadsss">tg频道</a>
 <h1>DD-AD</h1>
+<a href="https://t.me/DDadsss">✈️ tg频道</a>
 <h2 id="c">🎯 规则订阅</h2>
 
 | 名称            | 说明                                                                   |                                       Github                                       |                                                jsdelivr                                                 |
