@@ -1,11 +1,7 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-12 00:42:41
+! Last Modified: 2023-07-12 08:49:10
 ! Homepage: https://github.com/afwfv/DD-AD
-## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
-## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
-::1  localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||drs.wtzw.com^$app=com.kmxs.reader
@@ -25,6 +21,10 @@
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
+## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
+::1  localhost
 ## 👇This Part Merge from: 保留广告奖励 (https://raw.githubusercontent.com/lingeringsound/10007_auto/master/adb.txt)
 ||_.partner.0-infotracactive.net.daraz.com^
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
@@ -5341,7 +5341,6 @@ _adslist.
 ||adbit.biz^$third-party
 ||adm.shinobi.jp^$third-party
 ||33across.com^$third-party
-||adworkmedia.net^$third-party
 ||360ads.com^$third-party
 ||adgatemedia.com^$third-party
 ||adaos-ads.net^$third-party
@@ -10492,7 +10491,6 @@ rediff.com###world_right1
 @@||vidtodoo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com
 indy100.com,sportsclimax.com###top_banner
 ||b.marfeelcache.com/statics/marfeel/gardac-sync.js
-flicksmore.com##.image_auto
 ||allporncomic.com/round-bread-60fe/
 allkeyshop.com,cdkeyit.it,cdkeynl.nl,cdkeypt.pt,clavecd.es,goclecd.fr,keyforsteam.de##.background-link-left
 timesnownews.com##._1ML8q
@@ -13351,6 +13349,7 @@ ocado.com##.fops-item--advert
 ||baronsoffers.com^$third-party
 ||tradedoubler.com^$third-party
 ||tubeadnetwork.com^$third-party
+||adworkmedia.net^$third-party
 ||tncred.com^$popup
 /^https?:\/\/.*\.(club|xyz|top|casa)\//$popup,domain=123movies2022.org|123moviesme.online|9anime.to|databasegdriveplayer.co|dood.la|dood.so|dood.to|dood.video|dood.watch|dood.ws|doodcdn.com|fmovies.to|fmovies.world|fplayer.info|gogoanimes.to|gogoplay1.com|masahub.net|mixdrop.co|redirect-ads.com|strtpe.link|voe-unblock.com|wawacity.work
 ||lostun.com^$third-party
@@ -15194,6 +15193,7 @@ weatherpro.com##.medium-rectangle-wrapper-2
 livemint.com##.rhsWidgetNotAdFree
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|embed.comicbook.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|worldsurfleague.com
 ~umeng.com##a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img
+flicksmore.com##.image_auto
 wsj.com##[aria-label="Sponsored Offers"]
 pornhub.com#?#:-abp-properties(height: 300px; width: 315px;)
 ||0460.com/images/ad/
@@ -15483,7 +15483,6 @@ ubergizmo.com##.ubergizmo-dfp-ad
 ||jsyd139.com^$third-party
 /code/cpc.asp?
 pollunit.com#?#.owl-carousel:-abp-has(.carousel-ad)
-||380tv.com/upload/*-ad-
 fuqer.com##.area
 @@||banner.customer.kyruus.com^$domain=doctors.bannerhealth.com
 techadvisor.com##.outer-wrapper
@@ -25789,6 +25788,7 @@ pan.baidu.com##.decrease-active
 autohome.com.cn###ad_ic_video
 ||52dytt.net/images/bbs_btn.gif
 jsbooks.com.cn#@#.left-ads
+||380tv.com/upload/*-ad-
 ifeng.com##.right_gg
 ||775mz.com/js/jquery.js
 ||moonbbs.com/data/attachment/portal/
@@ -28324,7 +28324,6 @@ qiuziti.com##.popularize
 ||mzhhdn.com/hongbao.jpg
 ||zol.com.cn/active/*tmall
 galacg.me,unecne.com##.metaslider
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=4gtv.tv|881903.com|ani.gamer.com.tw|appledaily.com|hamivideo.hinet.net|line.me|linetv.tw|litv.tv|mytvsuper.com|nextmedia.com|now.com|tvb.com|udn.com|ulifestyle.com.hk
 ||pstatp.com/origin/13816000374e83a453717.jpg
 nfuwow.com###dl-left-first
 ||bdstatic.com/tb/mobile/sglobal/img/bannerLogo_
@@ -36692,6 +36691,7 @@ _analytics/lib/
 ||oproi.com^$third-party
 /event.cgi?
 /audience_science_
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=4gtv.tv|881903.com|ani.gamer.com.tw|appledaily.com|hamivideo.hinet.net|line.me|linetv.tw|litv.tv|mytvsuper.com|nextmedia.com|now.com|tvb.com|udn.com|ulifestyle.com.hk
 ||united-infos.net^$third-party
 _newrelic_min.
 /f.gif?
