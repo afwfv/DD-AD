@@ -1,7 +1,9 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-13 00:10:15
+! Last Modified: 2023-07-13 08:49:15
 ! Homepage: https://github.com/afwfv/DD-AD
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||drs.wtzw.com^$app=com.kmxs.reader
@@ -21,8 +23,6 @@
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
-## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
 ## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
 ::1  localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
@@ -7308,6 +7308,7 @@ theteche.com###custom_html-8
 ||mb-npltfpro.com^$popup
 ||hoopbeingsmigraine.com^$popup
 swarajyamag.com##._1eNH8
+goal.com##.aside_ad-rail__cawG6
 voiranime.com###mg_vd
 ||s3.amazonaws.com^*/f10ac63cd7
 ||tracker19875.space^$popup
@@ -16844,7 +16845,6 @@ lawandcrime.com,mediaite.com##.sidebar-hook
 ||hxqu.com^$third-party
 @@||jobs.bg/front_job_search.php$~third-party
 sexyandfunny.com###sexy-links
-goal.com##.aside_ad-rail__cawG6
 tetris.com##.verticalAx
 dailydooh.com##[id^="rectdiv"]
 namethatporn.com##.a_br_b
@@ -26074,6 +26074,7 @@ liaoxuefeng.com###x-sponsor-b
 liaoxuefeng.com###x-sponsor-a
 live.bilibili.com##.container-wrapper[style="height:446px;min-width:1280px"]
 58cam.com##.syads
+hinews.cn##div[id^="hi_gg_"]
 mse.360.cn##a[id^="banner"]
 ||391k.com/pc/gg/
 ||guitarchina.com/1/*.gif
@@ -35087,7 +35088,6 @@ hcbbs.com##table[width="100%"][bordercolor="#CCCCCC"]
 ||mysocialpixel.com^$third-party
 /1.js?ssfrid=$script,third-party
 ||stated.io^$third-party
-hinews.cn##div[id^="hi_gg_"]
 /revenuescience.
 ||interstateanalytics.com^$third-party
 tuwan.com##div[style$="height:90px;"]
@@ -37270,6 +37270,7 @@ douban.com#@#.download-ad
 ||pixelrevenue.com^$third-party
 ||simplereach.com^$third-party
 /r/ucb.js$script,~third-party
+||xtremepush.com^$third-party
 /rich-relevance.
 /stats?callback=
 ||apsislead.com^$third-party
@@ -41215,7 +41216,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||coinwebmining.com^$third-party
 ||stat24.ru^$third-party
 ||the-sun.com/assets/client/analyticsListeners~
-||xtremepush.com^$third-party
 ||reachmax.cn^$third-party
 ||sundaysky.com/sst.gif?
 ||data.imakenews.com^$third-party
