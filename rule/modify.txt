@@ -1,11 +1,7 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-13 16:10:55
+! Last Modified: 2023-07-14 00:10:10
 ! Homepage: https://github.com/afwfv/DD-AD
-## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
-## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
-::1  localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||drs.wtzw.com^$app=com.kmxs.reader
@@ -25,6 +21,10 @@
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
+## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
+::1  localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
@@ -9017,6 +9017,7 @@ business-standard.com##.advertisement-bg
 ||o333o.com^$popup
 ||unbeedrillom.com^$popup
 ||blzz.xyz^$third-party
+animalcrossingworld.com##.at-sidebar-1
 ||trafficdok.com^$popup
 ||xliirdr.com^$popup
 ||adapex.io^$third-party
@@ -19310,7 +19311,6 @@ windows101tricks.com##.zanui-container
 kisscos.net###v-overlay
 ferrarichat.com##.funzone
 4dayweek.io##.notadvert-tile-wrapper
-animalcrossingworld.com##.at-sidebar-1
 pornhub.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporngay.com##img[src*="blob:" i]:not(video)
 rpg.net##a[href^="http://www.rpg.net/ads/"]
 jamieoliver.com##.top-avocado
@@ -20869,6 +20869,7 @@ axios-http.cn###right-sider
 ||iupian.com/mstyle/js/topinfo.js
 cotton.pink##.adsbyfalcon
 gameinns.com##a[url^="/api/ads?"]
+fx678.com##div[id^="hta_"]
 ||hellocenter.xyz^*.mp4$rewrite=abp-resource:blank-mp4,domain=localmv1.com
 94itv.app##a[href="https://leo535.com/"]
 ltn.com.tw##.NC3
@@ -30164,7 +30165,6 @@ mrbird.cc#@#.social-icons
 @@||taobao.com/go/app/tmall/login-api.php?
 @@/images/*/*.gif$domain=maichun5.info|myhhg.com
 /event?adblk=
-fx678.com##div[id^="hta_"]
 /stats.hitbox.com/*
 /dotomi_tracking/*
 /visualrevenue.js
@@ -34854,6 +34854,7 @@ samsung.com#?#.template-item:-abp-has(> .wrap-sub-title > div > .ad)
 /facebook-tracking/*
 /gaCustom.
 /tnsmetrix/*
+||brightedge.com^$third-party
 /seostats/*
 .ct.sendgrid.net/$image
 /jquery.google-analytics.
@@ -39133,7 +39134,6 @@ gucheng.com##img[data-mv-ad]
 ||vidazoo.com/aggregate?
 ||urldefense.com^$image,third-party
 ||erate.co.il^$third-party
-||brightedge.com^$third-party
 ||stetic.com^$third-party
 ||radiotime.com/Report.ashx?
 ||tracker.stats.in.th^$third-party
