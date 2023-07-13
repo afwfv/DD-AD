@@ -1,9 +1,11 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-13 08:49:15
+! Last Modified: 2023-07-13 16:10:55
 ! Homepage: https://github.com/afwfv/DD-AD
 ## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 ::1 localhost
+## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
+::1  localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||drs.wtzw.com^$app=com.kmxs.reader
@@ -23,8 +25,6 @@
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
-## 👇This Part Merge from: AdAway (https://adaway.org/hosts.txt)
-::1  localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
@@ -6230,6 +6230,7 @@ venea.net##.ag_banner
 ||riverhit.com^$popup
 ||precedechampion.com^$popup
 ||wbidder2.com^$popup
+releasestv.com##.ast-above-header-wrap
 ||stopadblocker.com^$popup
 ||nyadra.com^$popup
 ||clicksvenue.com^$popup
@@ -15225,7 +15226,6 @@ coingolive.com##[href^="https://bitpreco.com/"]
 seattlepi.com##.pt40
 asmag.com,indy100.com,tiresandparts.net##.top_banner
 airfactsjournal.com##.avia_image
-releasestv.com##.ast-above-header-wrap
 publicflashing.me##div.hentry
 wethegeek.com##.popup-dialog
 teenpornvideo.fun##.sponsor-link-mob
@@ -23045,6 +23045,7 @@ duba.com,newduba.cn##.search_promotion
 csdn.net##.csdn-tracking-statistics[style$="250px;"]
 hao123.com###lefttip
 iqiyi.com##.cell-left
+vikacg.com##div[id^="home-row-ads"]
 bing.com###b_results > li[style*="padding-bottom: 8px;"][style*="235, 235, 235"]
 5217kdy1.xyz##.alert-success + center
 cartoon18.com#?#.row:-abp-has(.badge:-abp-contains(ad))
@@ -32213,7 +32214,6 @@ icbc.com.cn#@#.adLeft
 tvboxnow.com##td[style="width:15%;height:100%;"]
 ||commander1.com^$third-party
 ||salesgenius.com^$third-party
-vikacg.com##div[id^="home-row-ads"]
 news.lyd.com.cn##td[width="300px"] > table[width="300"] > tbody > tr:nth-last-child(n+2)
 @@||annhe.net^$generichide
 /bbhd_*_kkis.js
@@ -37825,6 +37825,7 @@ rjfcw.cn##li[style*="1200px"]
 /trackingFooter.
 bejson.com##img[src^="data"]
 ||web-stat.fr^$third-party
+||breaktime.com.tw^$third-party
 nfstar.net#?#.myui-panel-bg:-abp-has(strong:-abp-contains(广告))
 18comic.org,18comic.vip,18comic1.art,18comic2.art###guide-modal
 ||nstracking.com^$third-party
@@ -41721,7 +41722,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||realitytvworld.com/images/pixel.gif
 ||citibank.com.sg/jso/js/fp.js
 ||foursquare.com/v2/private/logactions
-||breaktime.com.tw^$third-party
 ||zappos.com/err.cgi?
 ||myfinance.com/widget/
 ||allevents.in/actracker/
