@@ -1,7 +1,9 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-16 00:09:12
+! Last Modified: 2023-07-16 08:54:33
 ! Homepage: https://github.com/afwfv/DD-AD
+## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||drs.wtzw.com^$app=com.kmxs.reader
@@ -21,8 +23,6 @@
 ||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
-## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
