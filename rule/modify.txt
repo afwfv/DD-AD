@@ -1,28 +1,17 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-16 08:54:33
+! Last Modified: 2023-07-16 13:05:55
 ! Homepage: https://github.com/afwfv/DD-AD
 ## 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 ::1 localhost
 ## 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
-||drs.wtzw.com^$app=com.kmxs.reader
-||open.kuaishouzt.com^$third-party,app=com.kmxs.reader
-||119.29.29.29/d?clientip=1&dn=tx-proxy.pull.yximgs.com$third-party,app=com.kmxs.reader
-||lf-cdn-tos.bytescm.com^$app=com.kmxs.reader
-||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
-||a-remad.qm989.com^$app=com.kmxs.reader
-||119.29.29.29^$app=com.kmxs.reader
-||gecko.snssdk.com^$app=com.kmxs.reader
-||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
-||auni.telecome.cn/a/mdna/report?v=1.0&t=m&p=74D0EA2A0C54C3F489A9130BA98A7AE3$third-party,app=com.kmxs.reader
-||mssdk.volces.com^$third-party,app=com.kmxs.reader
 /snssdk.*/
-||lf-cdn-tos.bytescm.com^$third-party,app=com.kmxs.reader
 ||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
-||webcast5-open-hl.douyin.com^$app=com.kmxs.reader
+||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
 ## 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 /advertiserwidget.
 /phpads/*
