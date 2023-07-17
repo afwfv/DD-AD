@@ -128,7 +128,7 @@ public class RuleUtil {
         content = StrUtil.isNotBlank(content) ? StrUtil.trim(content) : StrUtil.EMPTY;
 
         //有效性检测
-        if (ReUtil.contains(Constants.EFFICIENT_REGEX, content)) {
+        if (content.length() >= 1024 || ReUtil.contains(Constants.EFFICIENT_REGEX, content)) {
             return StrUtil.EMPTY;
         }
 
