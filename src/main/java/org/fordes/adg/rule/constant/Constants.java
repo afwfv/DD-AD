@@ -11,7 +11,7 @@ public class Constants {
     /**
      * 基本的有效性检测正则，!开头，[]包裹，非特殊标记的#号开头均视为无效规则
      */
-    public static final String EFFICIENT_REGEX = "^!|^#[^#,^@,^%,^\\$]?|^\\[.*\\]$";
+    public static final String EFFICIENT_REGEX = "^!|^#[^#,^@,^%,^\\$]|^\\[.*\\]$";
 
     /**
      * 去除首尾基础修饰符号 的正则，方便对规则进行分类
@@ -22,7 +22,7 @@ public class Constants {
     /**
      * 分段规则来源
      */
-    public static final String PART_TEMPLATE = "## 👇This Part Merge from: {}\n";
+    public static final String PART_TEMPLATE = "! 👇This Part Merge from: {}\n";
 
     /**
      * 日期占位符
