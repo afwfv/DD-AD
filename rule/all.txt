@@ -1,92 +1,7 @@
 [ADFS Adblock List]
 ! Title: all.txt
-! Last Modified: 2023-07-20 00:08:55
+! Last Modified: 2023-07-20 08:42:20
 ! Homepage: https://github.com/afwfv/DD-AD
-! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
-||hot.browser.miui.com^
-||v3-novelapp.fqnovelvod.com^
-@@||pan.quark.cn^
-||lf9-app-pkg-sign.bytesmanager.com^
-||pangolin-sdk-toutiao.com^
-||open.kuaishouzt.com^
-||lf9-orange.byteorge.com^
-||miaozhen.com^
-||sf1-ttcdn-tos.pstatp.com^
-@@||api.coolapk.com^
-||apps.bytesfield.com^
-@@||pic.imgdb.cn
-||dig.zjurl.cn^
-@@||msg.douyu.com^
-||ctobsnssdk.com^
-||kde.qq.com^
-||catalog.gamepass.com^
-||s2s.adjust.cn^
-@@||cn.app.chat.xiaomi.net^
-||uapi.ads.heytapmobi.com^
-||cdn-new-ad.wtzw.com^
-||p6-ad-sign.byteimg.com^
-@@||myquark.cn^
-||v26-novelapp.fqnovelvod.com^
-@@||sdk.open.talk.gepush.com^
-||p9-ad-sign.byteimg.com^
-||lf3-orange.byteorge.com^
-||ads3-normal-lq.zijieapi.com^
-||cdn-ad.wtzw.com^
-||sf3-ttcdn-tos.pstatp.com^
-||toblog.ctobsnssdk.com^
-@@||avatar.coolapk.com^
-||a-qmad.qimao.com^
-@@||lf3-cdn-tos.bytegoofy.com^
-||flnet.com^
-||dm.toutiao.com^
-||saveu5-normal-lf.zijieapi.com^
-||smad.ms.zhangyue.net^
-@@||bootcdn.net^
-||lf6-orange.byteorge.com^
-||pangolin.snssdk.com^
-||ulogs.umeng.com^
-||aiclk.com^
-||ads3-normal-lf.zijieapi.com^
-@@||api.sec.miui.com^
-@@||gift.douyucdn.cn^
-||ads5-normal-lq.zijieapi.com^
-@@||drive.quark.cn^
-||v6-novelapp.fqnovelvod.com^
-@@||316.coolapk1s.com^
-@@||m.jingxi.com^
-@@||bjfesdk.douyucdn.cn^
-||mssdk.volces.com^
-||sf6-ttcdn-tos.pstatp.com^
-@@||lf6-cdn-tos.bytegoofy.com^
-||saad.ms.zhangyue.net^
-||p3-ad-sign.byteimg.com^
-||mssdk-bu.bytedance.com^
-||a-remad.qm989.com^
-||adx.ads.heytapmobi.com^
-@@||umengjmacs.m.taobao.com^
-||ad.zijieapi.com^
-@@||360.cn^
-||aaid.umeng.com^
-||p6-ad.byteimg.com^
-@@||jstatic.3.cn^
-||ads5-normal-lf.zijieapi.com^
-@@||payapp.weixin.qq.com^
-||sentry-app.ireader.com^
-@@||lf1-cdn-tos.bytegoofy.com^
-! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
-||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
-/snssdk.*/
-||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
-/pglstatp-toutiao.*/
-||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
-##京东
-||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
-/pangolin-sdk.*/
-||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
-! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
-||tnc*.zijieapi.com^
-! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
 ! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 127.0.0.1 c.sayhi.360.cn
 127.0.0.1 ggs.myzaker.com
@@ -1735,6 +1650,91 @@
 127.0.0.1 vstat.v.blog.sohu.com
 127.0.0.1 msg.ptqy.gitv.tv
 127.0.0.1 ads-go.adroi.com.cn
+! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
+! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
+||hot.browser.miui.com^
+||v3-novelapp.fqnovelvod.com^
+@@||pan.quark.cn^
+||lf9-app-pkg-sign.bytesmanager.com^
+||pangolin-sdk-toutiao.com^
+||open.kuaishouzt.com^
+||lf9-orange.byteorge.com^
+||miaozhen.com^
+||sf1-ttcdn-tos.pstatp.com^
+@@||api.coolapk.com^
+||apps.bytesfield.com^
+@@||pic.imgdb.cn
+||dig.zjurl.cn^
+@@||msg.douyu.com^
+||ctobsnssdk.com^
+||kde.qq.com^
+||catalog.gamepass.com^
+||s2s.adjust.cn^
+@@||cn.app.chat.xiaomi.net^
+||uapi.ads.heytapmobi.com^
+||cdn-new-ad.wtzw.com^
+||p6-ad-sign.byteimg.com^
+@@||myquark.cn^
+||v26-novelapp.fqnovelvod.com^
+@@||sdk.open.talk.gepush.com^
+||p9-ad-sign.byteimg.com^
+||lf3-orange.byteorge.com^
+||ads3-normal-lq.zijieapi.com^
+||cdn-ad.wtzw.com^
+||sf3-ttcdn-tos.pstatp.com^
+||toblog.ctobsnssdk.com^
+@@||avatar.coolapk.com^
+||a-qmad.qimao.com^
+@@||lf3-cdn-tos.bytegoofy.com^
+||flnet.com^
+||dm.toutiao.com^
+||saveu5-normal-lf.zijieapi.com^
+||smad.ms.zhangyue.net^
+@@||bootcdn.net^
+||lf6-orange.byteorge.com^
+||pangolin.snssdk.com^
+||ulogs.umeng.com^
+||aiclk.com^
+||ads3-normal-lf.zijieapi.com^
+@@||api.sec.miui.com^
+@@||gift.douyucdn.cn^
+||ads5-normal-lq.zijieapi.com^
+@@||drive.quark.cn^
+||v6-novelapp.fqnovelvod.com^
+@@||316.coolapk1s.com^
+@@||m.jingxi.com^
+@@||bjfesdk.douyucdn.cn^
+||mssdk.volces.com^
+||sf6-ttcdn-tos.pstatp.com^
+@@||lf6-cdn-tos.bytegoofy.com^
+||saad.ms.zhangyue.net^
+||p3-ad-sign.byteimg.com^
+||mssdk-bu.bytedance.com^
+||a-remad.qm989.com^
+||adx.ads.heytapmobi.com^
+@@||umengjmacs.m.taobao.com^
+||ad.zijieapi.com^
+@@||360.cn^
+||aaid.umeng.com^
+||p6-ad.byteimg.com^
+@@||jstatic.3.cn^
+||ads5-normal-lf.zijieapi.com^
+@@||payapp.weixin.qq.com^
+||sentry-app.ireader.com^
+@@||lf1-cdn-tos.bytegoofy.com^
+! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
+||tnc*.zijieapi.com^
+! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
+||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
+/snssdk.*/
+||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
+/pglstatp-toutiao.*/
+||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
+##京东
+||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
+/pangolin-sdk.*/
+||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
 ! 👇This Part Merge from: AWAvenue (https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt)
 ||bd-pclivemate.pull.yximgs.com^
 ||googletagservices-cn.com^
@@ -5050,6 +5050,8 @@
 ||trace.qq.com^
 ||ssl.trace.zhiziyun.com^
 ||trafficjunky.net^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+~Prebid.js
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ###BodyTopAds
 /phpads/*
@@ -15016,8 +15018,6 @@ _right_ad.
 ###adb_bottom
 ###rm_ad_text
 /google_afs_widget/*
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-~Prebid.js
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ##.add-position-right
 ##.ad--native
@@ -33452,6 +33452,8 @@ _right_ad.
 ||adoptdischarged.com^
 ||drivewayperrydrought.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||ejghgjhhgadcdchjaada.ru.^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ##.topAdWrap
 ##.u-ads
 ##.topAdContainer
@@ -35022,8 +35024,6 @@ tei-c.org#@##msad
 ##.tourFeatureAd
 ##.widget_viral_advertisement
 modelhorseblab.com#@#.ad_global_header
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||ejghgjhhgadcdchjaada.ru.^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||korunabevy.com^
 ||plsrcmp.com^
@@ -56043,6 +56043,11 @@ modelhorseblab.com#@#.ad_global_header
 ||pacontainer.s3.amazonaws.com^
 ||d1lihuem8ojqxz.cloudfront.net^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||cintent.streanplay.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 timesofindia.indiatimes.com##.addblock
 picrew.me##.play-Imagemaker_Footer
 autosport.com,motorsport.com##.ms-hapb
@@ -65030,11 +65035,6 @@ u.today##.something
 gamecopyworld.com,gamecopyworld.eu##[href*="@"]
 ||znqip.org^$popup
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||cintent.streanplay.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||23.234.217.11^
 ||eyoupie.cn^
 ||agkacg.xyz^
@@ -70089,6 +70089,18 @@ ubmcmm.baidustatic.com
 ||8feichai.com^
 ||feiyuchuanmei.love^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||8*.tianya.cn^
+||zhizhizhizhi.oss-*.aliyuncs.com^
+||adi*.cnool.net^
+||113.17.188.*.js
+||ax.*.ifeng.com^
+||121.204.246.*.gif
+||120.27.*.html
+||218.26.217.*.html
+||vns86.oss-*.aliyuncs.com^
+||122.225.103.*.htm
+||asd8900.oss-*.aliyuncs.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 .life/ads/
 ##a[href*="/ppffj.me/"]
 ||ysm.ezprice.net^$third-party
@@ -75027,18 +75039,6 @@ hdtube.porn,pornid.xxx,rat.xxx##.cs-under-player
 outlook.live.com#?#div.customScrollBar > div > div[id][class]:-abp-has(img[src$="/images/ads-olk-icon.png"])
 ###footer_fix_ggw
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||8*.tianya.cn^
-||zhizhizhizhi.oss-*.aliyuncs.com^
-||adi*.cnool.net^
-||113.17.188.*.js
-||ax.*.ifeng.com^
-||121.204.246.*.gif
-||120.27.*.html
-||218.26.217.*.html
-||vns86.oss-*.aliyuncs.com^
-||122.225.103.*.htm
-||asd8900.oss-*.aliyuncs.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||free-cdn.oss-cn-shanghai.aliyuncs.com^
 ||iads.xinmin.cn^
 ||1.jushtong.com^
@@ -75414,6 +75414,16 @@ outlook.live.com#?#div.customScrollBar > div > div[id][class]:-abp-has(img[src$=
 ||ecmb.bdimg.com^
 ||7car.com.cn^
 ||ggcode.2345.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||sax*.sina.
+||same*.stockstar.com^
+||ya*.dwstatic.com^
+||impservice*.youdao.com^
+||js*.abolezi.com^
+||sam*.baby-kingdom.com^
+||impservice*.yodao.com^
+||ja*.gamersky.com^
+||a*.chajiaotong.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||loli.net/2019/04/24/5cc0027b4f2f1.png
 ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
@@ -85032,16 +85042,6 @@ duanwenxue.com##.shuang11_mb
 ||lelekan.com/sp/fmt.js
 92wy.com##.adhengfu
 7654.com##div[class^="sidebarimg"]
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||sax*.sina.
-||same*.stockstar.com^
-||ya*.dwstatic.com^
-||impservice*.youdao.com^
-||js*.abolezi.com^
-||sam*.baby-kingdom.com^
-||impservice*.yodao.com^
-||ja*.gamersky.com^
-||a*.chajiaotong.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||cliquelead.com^
 ||bawdybalance.com^
@@ -101316,6 +101316,20 @@ bejson.com##img[src^="data"]
 ||a8.uridoki.net^
 ||wvvw.france24.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||bc.geocities.
+||collector-*.px-client.net^
+||stats-*.p2pnow.ru^
+||mcdp-*.outbrain.com^
+||stats2.*.fdnames.com^
+||servo-report.dvdfab.
+||tracker.twenga.
+||fb_servpub-a.akamaihd.net^
+|71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
+||analytics-api.dvdfab.
+||aff*.kolektiva.net^
+||pixel.archive.
+||log-*.previewnetworks.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||zucks.net^$third-party
 ||aicontents.net^$third-party
 ||contiamo.com^$third-party
@@ -105036,20 +105050,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||igma.com/api/figment-proxy/
 ||blogtoppen.dk^*/bt_tracker.js
 ||embedly.com/widgets/xcomm.html$third-party
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||bc.geocities.
-||collector-*.px-client.net^
-||stats-*.p2pnow.ru^
-||mcdp-*.outbrain.com^
-||stats2.*.fdnames.com^
-||servo-report.dvdfab.
-||tracker.twenga.
-||fb_servpub-a.akamaihd.net^
-|71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
-||analytics-api.dvdfab.
-||aff*.kolektiva.net^
-||pixel.archive.
-||log-*.previewnetworks.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||smetricstur.www.svenskaspel.se^
 ||downeconomywp.advancedtech.com^
@@ -115051,9 +115051,9 @@ arketing.indianadunes.com^
 ||tr.news.labelleadresse.com^
 ||smetrics.sasktel.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||smetrics.teambeachbody.com^.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||solutions.|pages.indigovision.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||smetrics.teambeachbody.com^.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||branch2.udl.io^
 ||collect.state.centrum24.pl^
@@ -118520,6 +118520,15 @@ litix.io
 ||stadig.ifeng.com^
 ||links.email.greenlight.me^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats.zone-annuaire.
+||stat.*.v-56.com^
+||matt.mercadolibre.
+||onetrust.
+||sta.zone-telechargement.
+||stats*.credit-cooperatif.coop^
+||acookie.*.gif?
+||stats.zone-telechargement.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||bankinter.com/res/img/documento_cargado.gif?
 ||365xuet.com/assets/web/js/main.jsr_
 eastmoney.com##.advertisement
@@ -121528,12 +121537,3 @@ epwk.com##.head_banner
 55haitao.com##.bbs-bottom-popup
 ||odnoklassniki.ru/dk?cmd=videoStatNew
 xyj321.com##.foot_alert_wrap
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats.zone-annuaire.
-||stat.*.v-56.com^
-||matt.mercadolibre.
-||onetrust.
-||sta.zone-telechargement.
-||stats*.credit-cooperatif.coop^
-||acookie.*.gif?
-||stats.zone-telechargement.
