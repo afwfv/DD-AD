@@ -1,9 +1,7 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-25 08:44:42
+! Last Modified: 2023-07-25 16:10:00
 ! Homepage: https://github.com/afwfv/DD-AD
-! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /snssdk.*/
@@ -17,6 +15,9 @@
 ! 👇This Part Merge from: AWAvenue (https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt)
 ||*-ad.wtzw.com^
 ||*-ad-*.byteimg.com^
+||*.log.aliyuncs.com^
+! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ###BodyTopAds
 /phpads/*
@@ -28919,6 +28920,7 @@ dosgamesarchive.com##.skyscraper_big
 ||superadexchange.com^$popup
 ||ilaterdeallyi.info^$popup
 ||fundsbe.com^$popup
+douploads.net##a[href^="https://href.li/?"]
 faroutmagazine.co.uk##.amp-next-page-separator
 zenger.news##.tb_e2rr695
 theblaze.com##[data-category="SPONSORED"]
@@ -33561,7 +33563,6 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 xhamster.com##.xplayer-hover-menu
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?#.tweet:-abp-has(.promo)
 /wamobantong.oss-
-douploads.net##a[href^="https://href.li/?"]
 geekzone.co.nz#?#.container:-abp-has(a[title="Affiliate link"])
 ##.listok > a > img[style^="width:980px;height:"]
 empflix.com##.pInterstitialx
@@ -35738,6 +35739,7 @@ xnxxvideoporn.com##.player_bn
 ||1ketang.com/Runtime/js/play
 |http://*/js/ad/
 ||is686.com^$third-party
+||3czol.com/ad/
 techwalla.com##.component-article-section-jwplayer-wrapper
 crictracker.com##div[class^="ad-block-"]
 /crifan_com/padaili.png
@@ -40521,7 +40523,6 @@ airav.cc###bottom-adv
 360kan.com##.b-ifradjx
 ||douyu.com/japi/sign/web/getinfo
 163.com##.tie-ad-bar
-||3czol.com/ad/
 gdmm.com##.adtop > .module
 104.com.tw###aidma-job
 le.com##div[data-type="bottomLayerView"]
@@ -41924,6 +41925,7 @@ iqiyi.com##.oppo
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###worldcup_guess_frs_wrap
 chinatimes.com##.tab_4_box
 @@||ads.tiktok.com^$generichide
+@@||haiwai.com^$generichide
 52av.one##.message + center
 ||76fengyun.com/jsa/
 ||91p49.com/*.mp4
@@ -50996,7 +50998,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##.op_tvplay_main
 ||stats2.com^$third-party
 /countbk.
 ||kameleoon.eu^$third-party
-@@||haiwai.com^$generichide
 /track.ads/*
 ||200218.com^$third-party
 /googleAnalytics1.

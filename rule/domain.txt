@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: domain.txt
-! Last Modified: 2023-07-25 08:44:42
+! Last Modified: 2023-07-25 16:10:00
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||hot.browser.miui.com^
@@ -88,8 +88,11 @@
 ||hw-ot-ad.a.yximgs.com^
 ||ulogjs.gifshow.com^
 ||adashbc.ut.taobao.com^
+||httpdns.ocloud.oppomobile.com^
 ||union.baidu.com^
 ||chat1.jd.com^
+||pagead2.googlesyndication.com^
+||logs.amap.com^
 ||mobileservice.cn^
 ||v2-ad.video.yximgs.com^
 ||w1.xskwai.com^
@@ -102,10 +105,13 @@
 ||api-access.pangolin-sdk-toutiao.com^
 ||ads-video-qc.xhscdn.com^
 ||w1.zskwai.com^
+||umsns.com^
+||track.uc.cn^
 ||p.l.qq.com^
-||h-adashx.ut.taobao.com^
 ||csjplatform.com^
+||h-adashx.ut.taobao.com^
 ||log-upload.mihoyo.com^
+||image-ad.sm.cn^
 ||ads.heytapmobi.com^
 ||sdk.beizi.biz^
 ||tnc5-bjlgy.zijieapi.com^
@@ -118,16 +124,23 @@
 ||ad-log-upload.mihoyo.com^
 ||res.hubcloud.com.cn^
 ||w1.iskwai.com^
+||o2o.api.xiaomi.com^
 ||ad.xiaomi.com^
+||crashlyticsreports-pa.googleapis.com^
+||events-drcn.op.dbankcloud.cn^
 ||api.htp.hubcloud.com.cn^
 ||v3-ad.video.yximgs.com^
-||android.bugly.qq.com^
 ||collect.kugou.com^
+||jpush.io^
 ||adservice.google.cn^
 ||mobads-logs.baidu.com^
+||applog.lc.quark.cn^
 ||w1.lskwai.com^
 ||is.snssdk.com^
+||tracker.gitee.com^
+||adtrack.quark.cn^
 ||imtmp.net^
+||log.avlyun.com^
 ||adclick.tencentmusic.com^
 ||tx-ad.a.yximgs.com^
 ||cnzz.com^
@@ -143,23 +156,30 @@
 ||qzs.gdtimg.com^
 ||w1.nskwai.com^
 ||p.s.360.cn^
+||beacons.gvt2.com^
 ||bd-origin.pull.yximgs.com^
 ||open.kwaizt.com^
 ||w1.gskwai.com^
 ||bd-rwk.pull.etoote.com^
 ||dxp.baidu.com^
 ||v1-ad.video.yximgs.com^
+||audid-api.taobao.com^
+||data.mistat.xiaomi.com^
 ||adxlog-adnet.vivo.com.cn.dsa.dnsv1.com.cn^
+||jiguang.cn^
+||beacon.qq.com^
 ||nsclick.baidu.com^
 ||w1.sskwai.com^
 ||w1.hskwai.com^
 ||mdp-usertrace-cn.heytapmobi.com^
+||applog.uc.cn^
 ||googletagservices.com^
 ||hya.comp.360os.com^
 ||log.tbs.qq.com^
 ||janapi.jd.com^
 ||qqdata.ab.qq.com^
 ||v.adx.hubcloud.com.cn^
+||track.lc.quark.cn^
 ||sdktmp.hubcloud.com.cn^
 ||res2.hubcloud.com.cn^
 ||ads.google.cn^
@@ -171,33 +191,37 @@
 ||sdkoptedge.chinanetcenter.com^
 ||adsfile.bssdlbig.kugou.com^
 ||bd-proxy.pull.yximgs.com^
+||api-adservices.apple.com^
+||beacon-api.aliyuncs.com^
 ||logtj.kugou.com^
 ||roi.soulapp.cn^
 ||adxlog-adnet.vivo.com.cn^
 ||entry.baidu.com^
 ||w1.cskwai.com^
 ||dataflow.biliapi.com^
+||jpush.cn^
 ||public.gdtimg.com^
 ||tracker.ai.xiaomi.com^
+||analytics.95516.com^
 ||adcdn.tencentmusic.com^
 ||log-upload-os.hoyoverse.com^
 ||xlmzc.cnjp-exp.com^
 ||jswebcollects.kugou.com^
 ||dutils.com^
-||otheve.beacon.qq.com^
 ||eclick.baidu.com^
 ||ali-ad.a.yximgs.com^
+||dualstack-logs.amap.com^
 ||httpdns.bcelive.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||advertising.apple.com^
 ||ads-img-qc.xhscdn.com^
+||analyze.lemurbrowser.com^
 ||res3.hubcloud.com.cn^
 ||us.l.qq.com^
 ||cfg.imtt.qq.com^
 ||w1.qskwai.com^
 ||bd.pull.yximgs.com^
 ||w1.askwai.com^
-||data.flurry.com^
 ||hmma.baidu.com^
 ||bd-adaptive.pull.yximgs.com^
 ||bd-livemate.pull.yximgs.com^
@@ -213,25 +237,32 @@
 ||tmead.y.qq.com^
 ||ulogs.umengcloud.com^
 ||w1.rskwai.com^
+||flurry.com^
 ||tracking.miui.com^
 ||adsense.google.cn^
+||ads.oppomobile.com^
 ||mon.snssdk.com^
 ||adexpo.tencentmusic.com^
 ||adjust.cn^
 ||api-access.pangolin-sdk-toutiao3.com^
+||jpush.html5.qq.com^
 ||img-c.heytapimage.com^
 ||pgdt.ugdtimg.com^
 ||c.sayhi.360.cn^
+||firebaselogging-pa.googleapis.com^
 ||henzanapp.com^
 ||imageplus.baidu.com^
 ||mtj.baidu.com^
 ||wxa.wxs.qq.com^
 ||w1.uskwai.com^
 ||adkwai.com^
+||hexagon-analytics.com^
+||bugly.qq.com^
 ||p3-tt.byteimg.com^
 ||success.ctobsnssdk.com^
 ||tnc2-bjlgy.zijieapi.com^
 ||w1.fskwai.com^
+||crashlytics.com^
 ||api-access.pangolin-sdk-toutiao4.com^
 ||tdid.m.qq.com^
 ||xlog.jd.com^
@@ -239,6 +270,7 @@
 ||hm.baidu.com^
 ||tnc3-bjlgy.zijieapi.com^
 ||lm10111.jtrincc.cn^
+||analysis.yozocloud.cn^
 ||hye.comp.360os.com^
 ||ads.music.126.net^
 ||open.e.kuaishou.com^
@@ -249,6 +281,7 @@
 ||ad.qq.com^
 ||adstats.tencentmusic.com^
 ||h.trace.qq.com^
+||httpdns.huaweicloud.com^
 ||hyt.comp.360os.com^
 ||cm.bilibili.com^
 ||googleadservices.com^
@@ -260,7 +293,6 @@
 ||open.e.kuaishou.cn^
 ||apiyd.my91app.com^
 ||mi.gdt.qq.com^
-||cfg.flurry.com^
 ||ad-scope.com.cn^
 ||api-htp.beizi.biz^
 ||oth.str.mdt.qq.com^
@@ -274,6 +306,7 @@
 ||ads.95516.com^
 ||monitor.music.qq.com^
 ||stat.y.qq.com^
+||log1.cmpassport.com^
 ||adapi.yynetwk.com^
 ||mobads.baidu.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
@@ -27361,7 +27394,6 @@
 ||d1ac2du043ydir.cloudfront.net^
 ||d21rudljp9n1rr.cloudfront.net^
 ||go.clicknplay.to^
-||pagead2.googlesyndication.com^
 ||d1ayv3a7nyno3a.cloudfront.net^
 ||creative.live.tktube.com^
 ||d1o1guzowlqlts.cloudfront.net^
@@ -33955,6 +33987,7 @@ ubmcmm.baidustatic.com
 ||g12083144435.co^
 ||agkn.com^
 ||leadhit.io^
+||highfalutinbox.com^
 ||awesomeattack.com^
 ||furryfork.com^
 ||b1.b2b168.net^
@@ -36546,7 +36579,6 @@ ubmcmm.baidustatic.com
 ||a8cv.favorric.com^
 ||stats.spreadtheworld.net^
 ||metrics.internationalwinechallenge.com^
-||track.uc.cn^
 ||hspbotdetection.azurewebsites.net^
 ||pear.youzful-by-ca.fr^
 ||vst.sibnet.ru^
@@ -36590,6 +36622,7 @@ ubmcmm.baidustatic.com
 ||a8.minion-wifi.com^
 ||a8cv.www.bitlock.jp^
 ||mdws.cua.com^
+||sadbmetrics.nextspain.es^
 ||processor.asccommunications.com^
 ||analytics.pgncs.notion.so^
 ||knotkettle.com^
@@ -36629,6 +36662,7 @@ ubmcmm.baidustatic.com
 ||kingsandqueens.splowser.com^
 ||stats.lefthoek.com^
 ||analytics.makeitmeme.com^
+||sadbmetrics.mondragoncitychallenge.com^
 ||rsx.afterpay.com^
 ||metrics.paperdirect.com^
 ||rps-p2.rockpapershotgun.com^
@@ -37217,7 +37251,6 @@ ubmcmm.baidustatic.com
 ||analytics.convertlanguage.com^
 ||green-griffin-860.appspot.com^
 ||cv.bc-force.com^
-||highfalutinbox.com^
 ||a8clk.kaitori-retrog.jp^
 ||donjigrad.viessmann.rs^
 ||advantage.digitalsunray.com^
@@ -38840,6 +38873,7 @@ ubmcmm.baidustatic.com
 ||ws.audioeye.com^
 ||a8.push.capsules.jp^
 ||a8clk.hom.adebtt.info^
+||sadbmetrics.relevo.com^
 ||pulse.delta.com^
 ||rtxpx-a.akamaihd.net^
 ||d24cze5sab2jwg.cloudfront.net^
@@ -39427,7 +39461,6 @@ ubmcmm.baidustatic.com
 ||plausible.zest.dev^
 ||nostalgicknot.com^
 ||a8.cyclemarket.jp^
-||firebaselogging-pa.googleapis.com^
 ||data.info.lumxpert.signify.com^
 ||stats.coachinghive.com^
 ||metrics.timberland.com^
@@ -42192,6 +42225,7 @@ arketing.indianadunes.com^
 ||mri.iradimed.com^
 ||jmzill.manterolcasa.com^
 ||acton.brightspeed.com^
+||secure.vols7feed.com^
 ||smetrics.bbva.com.uy^
 ||smetrics.lesbonnesbouilles.fr^
 ||smetrics.crocs.com.hk^
@@ -42434,6 +42468,7 @@ arketing.indianadunes.com^
 ||tr.serviceclient.bf-depannage.fr^
 ||fsegfy.lepoint.fr^
 ||a14418.actonservice.com^
+||secure.visionarycompany52.com^
 ||tr.news-chocolat.com^
 ||jln3.clstudios.com^
 ||smetrics.marketing.lighting.philips.com.hk^
@@ -43917,7 +43952,6 @@ arketing.indianadunes.com^
 ||marketing.visitbatonrouge.com^
 ||smetrics.chemistanddruggist.co.uk^
 ||smetrics.mylifestages.org^
-||sadbmetrics.nextspain.es^
 ||resources.lumestrategies.com^
 ||stats.seat.fr^
 ||tr.info-fr.assurant.com^
@@ -43966,7 +44000,6 @@ arketing.indianadunes.com^
 ||hiyksu.karllagerfeldparis.com^
 ||kyvpze.vidaxl.co.uk^
 ||marketing.lakecountyfl.gov^
-||sadbmetrics.mondragoncitychallenge.com^
 ||newsletters.bancsabadell.com^
 ||a25929001.actonservice.com^
 ||tr.emailium.fr^
@@ -47549,7 +47582,6 @@ arketing.indianadunes.com^
 ||pbox.no.photobox.com^
 ||sut.dailyfx.com^
 ||northplains.actonservice.com^
-||sadbmetrics.relevo.com^
 ||eennme.vidaxl.sk^
 ||images.web.pirelli.com^
 ||images.response.softchoice.com^
@@ -47678,6 +47710,7 @@ arketing.indianadunes.com^
 ||sstats.estore-tco.com^
 ||a17538.actonservice.com^
 ||eventos.usj.es^
+||secure.wait8hurl.com^
 ||tr.contact.canalplay.com^
 ||exhibition.edm.globalsources.com^
 ||comm.toro.com^
@@ -52016,7 +52049,6 @@ biddingx.com
 ||www.letterbox-path.com^
 ||web.sensilab.sk^
 ||link.sevencooks.com^
-||secure.vols7feed.com^
 ||da.hornbach.be^
 ||get.fudigo.com^
 ||c.lolamarket.com^
@@ -52234,7 +52266,6 @@ weizhenwx.com
 ||links.br.discoveryplus.com^
 ||www.srvtrkxx1.com^
 ||branch.xoxloveheart.com^
-||secure.visionarycompany52.com^
 ||pixel.augsburger-allgemeine.de^
 ||blavity.black.news^
 ||link-staging.samewave.com^
@@ -52382,7 +52413,6 @@ scorecardresearch.com
 ||sqs.quoka.de^
 ||trackcommon.hujiang.com^
 ||go.qantaswellbeing.com^
-||secure.wait8hurl.com^
 ||content.stage.mini.pix.style^
 ||test.asteride.co^
 ||ablink.help.shopwell.com^
@@ -53739,7 +53769,6 @@ aqours.today
 ||l.e.domain.com.au^
 ||m.aetv.com^
 ||aod.echovisuals.com^
-||beacon.qq.com^
 ||ablink.promos.timhortons.com^
 ||sk-batteryimport.m-shop.me^
 ||i.temiz.co^
