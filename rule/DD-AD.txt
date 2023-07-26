@@ -40,11 +40,8 @@
 ||s2s.adjust.cn^
 ||ctobsnssdk.com^
 ||pangolin.snssdk.com^
-||pangolin-sdk-toutiao.com^
-||dm.toutiao.com^
 ||ulogs.umeng.com^
 ||aaid.umeng.com^
-||tnc*.zijieapi.com^
 ||mssdk-bu.bytedance.com^
 ! 帖子详情好物推荐
 ||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
@@ -57,8 +54,6 @@
 ! 去除首页还有什么值得买推广
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||ctobsnssdk.com^
-||pangolin.snssdk.com^
-||pangolin-sdk-toutiao.com^
 #夏普电视开机广告
 ||flnet.com^
 ||miaozhen.com^
