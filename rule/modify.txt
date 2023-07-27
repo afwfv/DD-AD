@@ -1,11 +1,7 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-27 08:38:38
+! Last Modified: 2023-07-27 16:09:18
 ! Homepage: https://github.com/afwfv/DD-AD
-! 👇This Part Merge from: AWAvenue (https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt)
-||*-ad.wtzw.com^
-||*-ad-*.byteimg.com^
-||*.log.aliyuncs.com^
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 /snssdk.*/
@@ -16,6 +12,10 @@
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
 ||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
+! 👇This Part Merge from: AWAvenue (https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt)
+||*-ad.wtzw.com^
+||*-ad-*.byteimg.com^
+||*.log.aliyuncs.com^
 ! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 ::1 localhost
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
