@@ -22,36 +22,38 @@
 @@||gift.douyucdn.cn^
 #360
 @@||360.cn^
-!酷安
+#酷安
 @@||316.coolapk1s.com^
 @@||api.coolapk.com^
 @@||avatar.coolapk.com^
 @@||umengjmacs.m.taobao.com^
-!抖音网页
+#抖音网页
 @@||lf3-cdn-tos.bytegoofy.com^
 @@||lf6-cdn-tos.bytegoofy.com^
 @@||lf1-cdn-tos.bytegoofy.com^
-##京东
+#京东
 @@||m.jingxi.com^
 @@||jstatic.3.cn^
+#笔趣阁
+@@||www.bqgyy.com^
 
 !-------------黑名单--------------------
-! 信息流及评论区广告
+#信息流及评论区广告
 ||s2s.adjust.cn^
 ||ctobsnssdk.com^
 ||pangolin.snssdk.com^
 ||ulogs.umeng.com^
 ||aaid.umeng.com^
 ||mssdk-bu.bytedance.com^
-! 帖子详情好物推荐
+#帖子详情好物推荐
 ||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /
-! 帖子详情赞助内容
+#帖子详情赞助内容
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
-! 发现页去除酷品
+#发现页去除酷品
 ||api2.coolapk.com/v6/main/init$replace=/{"id":1170.*?}\,/ /
-! 应用游戏页去除推广视频
+#应用游戏页去除推广视频
 ||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
-! 去除首页还有什么值得买推广
+#去除首页还有什么值得买推广
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
 ||ctobsnssdk.com^
 #夏普电视开机广告
@@ -96,6 +98,13 @@
 ||cdn-ad.wtzw.com^
 ||a-qmad.qimao.com^
 ||mssdk.volces.com^
+#笔趣阁网页广告
+||hlryzsqo.icu^
+||scenery.hk^
+||xiedao.hk^
+||bcnsport.us^
+||ncbtsdea.xyz^
+||vjyaghdw.icu^
 !-----------------待定-----------------
 #小米浏览器热点资讯
 ||hot.browser.miui.com^
