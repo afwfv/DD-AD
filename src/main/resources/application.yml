@@ -22,12 +22,14 @@ application:
     remote:
       - name: '大圣净化'
         path: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts'
-      - name: 'AWAvenue'
-        path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt'
+      - name: 'adblock_list'
+        path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt'
       - name: 'halflife'
         path: 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt'
       - name: '1024网站及澳门皇家赌场及恶意广告主机列表'
         path: 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts'
+      - name: 'adblock_privacy'
+        path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt'
     #本地规则请将文件放置到项目路径rule目录中
     local:
       - name: 'DD-AD'
