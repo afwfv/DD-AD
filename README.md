@@ -1,7 +1,7 @@
-<div align="center">
-<h1>DD-AD</h1>
-<a href="https://t.me/DDadsss">✈️ tg频道</a>
-<h2 id="c">🎯 规则订阅</h2>
+**<div align="center">**
+**<h1>DD-AD</h1>**
+**<a href="https://t.me/DDadsss">✈️ tg频道</a>**
+**h2 id="c">🎯 规则订阅</h2>**
 
 | 名称            | 说明                                                                   |                                       Github                                       |                                                jsdelivr                                                 |
 |---------------|:---------------------------------------------------------------------|:----------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|
@@ -13,10 +13,10 @@
 | `DD-AD.txt` | 由本仓库维护的私有规则，主要是对上游规则的补充                                              | [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt) | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//DD-AD.txt) |
 | `regex.txt`   | `REGEX` 正则规则，包含正则的域名规则，AdGH支持                                                 | [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/regex.txt) | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//regex.txt) |
 
-<h3>说明</h3>
-<p>广告过滤规则整合，使用 <a href="https://github.com/fordes123/ad-filters-subscriber">fordes123/ad-filters-subscriber</a>定时更新</p>
-<p>1.针对番茄小说广告添加了规则</p>
-<p>2.针对七猫小说广告添加了规则</p>
-<h3>访问次数</h3>
+**<h3>说明</h3>**
+**<p>广告过滤规则整合，使用 <a href="https://github.com/fordes123/ad-filters-subscriber">fordes123/ad-filters-subscriber</a>定时更新</p>**
+**p>1.针对番茄小说广告添加了规则</p>**
+**<p>2.针对七猫小说广告添加了规则</p>**
+**<h3>访问次数</h3>**
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
