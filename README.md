@@ -22,5 +22,6 @@
 
 2.**针对七猫小说广告添加了规则**
 
-**访问次数**
+##### 访问次数
+
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
