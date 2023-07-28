@@ -1,8 +1,8 @@
-# <center> DD-AD </center>
+# DD-AD
 
-## <center> [***✈️ tg 频道***](https://t.me/DDadsss) </center>
+## [***✈️ tg 频道***](https://t.me/DDadsss)
 
-### <center> 🎯 ***规则订阅*** </center>
+### 🎯 ***规则订阅***
 
 | 名称         | 说明                                                                                        |                                         Github                                         |                                 jsdelivr                                  |
 | ------------ | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
@@ -14,14 +14,14 @@
 | `DD-AD.txt`  | 由本仓库维护的私有规则，主要是对上游规则的补充                                              |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//DD-AD.txt)  |
 | `regex.txt`  | `REGEX` 正则规则，包含正则的域名规则，AdGH 支持                                             |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/regex.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//regex.txt)  |
 
-#### <center> 说明 </center>
+#### 说明
 
 广告过滤规则整合，使用 *[ad-filters-subscriber](https://github.com/fordes123/ad-filters-subscriber)*
 
-<center> 1.**针对番茄小说广告添加了规则** </center>
+1.**针对番茄小说广告添加了规则**
 
-<center> 2.**针对七猫小说广告添加了规则** </center>
+2.**针对七猫小说广告添加了规则**
 
-##### <center>访问次数 </center>
+##### 访问次数
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
