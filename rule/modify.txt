@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-07-28 00:08:48
+! Last Modified: 2023-07-28 08:38:26
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: AWAvenue (https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt)
 ||*-ad.wtzw.com^
@@ -16,8 +16,6 @@
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/
 /pangolin-sdk.*/
 ||api2.coolapk.com/v6/page/dataList$replace=/{"entityType":"card"\,"entityTemplate":"apkImageCard".*?\\u0022}"}\,/ /
-! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
-::1 localhost
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ###BodyTopAds
 /phpads/*
@@ -23715,6 +23713,8 @@ modelhorseblab.com#@#.ad_global_header
 ||apprupt.com^$third-party
 ||0redirb.com^$popup
 ||aglaulou.com^$popup
+! 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+::1 localhost
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 timesofindia.indiatimes.com##.addblock
 ||tracker-2.com^$popup
