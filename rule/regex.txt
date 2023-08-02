@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2023-08-02 00:08:43
+! Last Modified: 2023-08-02 08:39:55
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||p*.adkwai.com^
@@ -26,8 +26,6 @@
 |71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
 |piwik.
 directtrack.*.js
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-~Prebid.js
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||bdcpro*.techweb.com.cn^
 ||dm*.ppzuowen.com^
@@ -60,6 +58,8 @@ directtrack.*.js
 ||sam*.baby-kingdom.com^
 ||qpb*.sohu.com^
 ||asd8900.oss-*.aliyuncs.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+~Prebid.js
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||zhizhizhizhi.oss-*.aliyuncs.com^
 ||uc*.atobo.com^
@@ -253,10 +253,6 @@ directtrack.*.js
 ||t.delfi.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
-||vckcafprbb._tcp.abcotv.hb.tt.omtrdc.net^
-||xizlxlflsi._dmarc.hb.tt.omtrdc.net^
-||uwkoqimpdh._tcp.aetv.hb.tt.omtrdc.net^
-||zzdewpyihb._tcp.aarp.hb.tt.omtrdc.net^
 ||vwymdcjirv._tcp.aarp.hb.tt.omtrdc.net^
 ||xcztjggjgx._tcp.abcotv.hb.tt.omtrdc.net^
 ||tracking*.euroads.fi^
@@ -267,15 +263,19 @@ directtrack.*.js
 ||xlog*-*.tiktokv.com^
 ||wrgjxhsgij._tcp.arkena.hb.tt.omtrdc.net^
 ||track.zalando.
-||zewdpmtypi._tcp.abcnews.hb.tt.omtrdc.net^
 ||tracking-*.trnox.com^
+||ubacollect-*.cloud.dbankcloud.cn^
+||ynovrhljia._tcp.aem.hb.tt.omtrdc.net^
+||track.*.roku.com^
+||vckcafprbb._tcp.abcotv.hb.tt.omtrdc.net^
+||xizlxlflsi._dmarc.hb.tt.omtrdc.net^
+||uwkoqimpdh._tcp.aetv.hb.tt.omtrdc.net^
+||zzdewpyihb._tcp.aarp.hb.tt.omtrdc.net^
+||tracker.twenga.
+||zewdpmtypi._tcp.abcnews.hb.tt.omtrdc.net^
 ||wa.gmx.
 ||track.tiara.
 ||wredoakyhs._tcp.abcotv.hb.tt.omtrdc.net^
-||ubacollect-*.cloud.dbankcloud.cn^
 ||tw*.netcore.co.in^
-||ynovrhljia._tcp.aem.hb.tt.omtrdc.net^
-||track.*.roku.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
-||tracker.twenga.
