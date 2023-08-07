@@ -1,6 +1,6 @@
 # DD-AD
 
-## [***✈️ tg 频道***](https://t.me/DDadsss)
+## [***✈️ tg 频道***](https://t.me/DDadsss)</br>[***QQ群***](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=z4tq1QhIHdGOX6PslCFBqDRBqH6WGfXb&authKey=Inrcu9LZL6G6%2F26qpdxo9WEAw0nQuJ%2FpIqGuKsrX1kOgSVSZRQkyLxqfvKoJDlEB&noverify=0&group_code=666178576)
 
 ## 🎯 ***规则订阅***
 
