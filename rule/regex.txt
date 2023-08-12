@@ -1,9 +1,11 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2023-08-12 15:32:03
+! Last Modified: 2023-08-12 16:08:04
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
+||api*-normal-lq.fqnovel.com^
 ||p*.adkwai.com^
+||api*-normal-hl.fqnovel.com^
 ||p*-ad.byteimg.com^
 ||ads*-normal-lq.zijieapi.com^
 ||ads*-normal-lf.zijieapi.com^
@@ -13,6 +15,7 @@
 ||p*-local-ads.byteimg.com^
 ||ads*-normal.zijieapi.com^
 ||p*-ad-aweme.byteimg.com^
+||api*-normal-lf.fqnovel.com^
 ||p*-ad-sign.byteimg.com^
 ||sf*-ttcdn-tos.pstatp.com^
 ||ads*-normal-hl.zijieapi.com^
@@ -237,11 +240,12 @@ directtrack.*.js
 ||tracking-*.trnox.com^
 ||st-*.dynamicyield.com^
 ||t.delfi.
-||ubacollect-*.cloud.dbankcloud.cn^
 ||track.*.roku.com^
 ||stat.*.v-56.com^
+||stats-*.p2pnow.ru^
 ||telemetry*.transcend.io^
 ||tnc16-*.byteoversea.com^
+||stats2.*.fdnames.com^
 ||stat.tiara.
 ||stats.zone-telechargement.
 ||stats.zone-annuaire.
@@ -249,7 +253,6 @@ directtrack.*.js
 ||stat*.1internet.tv^
 ||stats*.videonow.ru^
 ||track.tiara.
-||tw*.netcore.co.in^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||xlog*-*.tiktokv.com^
 ||xizlxlflsi._dmarc.hb.tt.omtrdc.net^
@@ -258,10 +261,10 @@ directtrack.*.js
 ||xcztjggjgx._tcp.abcotv.hb.tt.omtrdc.net^
 ||zewdpmtypi._tcp.abcnews.hb.tt.omtrdc.net^
 ||wa.gmx.
+||ubacollect-*.cloud.dbankcloud.cn^
 ||wxvicckcrh._tcp.arkena.hb.tt.omtrdc.net^
+||tw*.netcore.co.in^
 ||ynovrhljia._tcp.aem.hb.tt.omtrdc.net^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats-*.p2pnow.ru^
 ||onetrust.
-||stats2.*.fdnames.com^
 ||tracker.twenga.
