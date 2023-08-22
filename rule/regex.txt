@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2023-08-22 08:32:43
+! Last Modified: 2023-08-22 16:09:12
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||p*.adkwai.com^
@@ -57,13 +57,6 @@
 ||sam*.baby-kingdom.com^
 ||qpb*.sohu.com^
 ||asd8900.oss-*.aliyuncs.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||zhizhizhizhi.oss-*.aliyuncs.com^
-||uc*.atobo.com^
-||ya*.dwstatic.com^
-||union*.365inews.com^
-||vns86.oss-*.aliyuncs.com^
-||ysdm*.ys137.com.cn^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 |71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
 |piwik.
@@ -85,6 +78,8 @@ directtrack.*.js
 ||analytics.*.sky.com^
 ||analytics-rollout-*.amazonaws.com^
 ||appanalysis*.banggood.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||cnt.yeptube.
@@ -122,15 +117,12 @@ directtrack.*.js
 ||collector.xhamster*.
 ||bi-eventtracker-*.amazonaws.com^
 ||batchlogging*-noneu.truecaller.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||iptracker-lb-*.amazonaws.com^
 ||grs.dbankcloud.
 ||gtmdev.jabra.
 ||kmmudmaxfg._tcp.meet.aem.hb.tt.omtrdc.net^
-||lfosjghqbh._tcp.aem.hb.tt.omtrdc.net^
 ||fb_servpub-a.akamaihd.net^
 ||idfzvjhwcn._tcp.meet.abcotv.hb.tt.omtrdc.net^
 ||geotargetly-api-*.com^
@@ -156,6 +148,11 @@ directtrack.*.js
 ||flurry.agentportal-*.yahoodns.net^
 ||host*.rigbyandpeller.com^
 ||imp-*.jampp.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
 ||mobileanalytics.*.amazonaws.com^
@@ -164,6 +161,7 @@ directtrack.*.js
 ||logger-*.dailymotion.com^
 ||mapi-log.qoo*.jp^
 ||log*.vietnamplus.vn^
+||lfosjghqbh._tcp.aem.hb.tt.omtrdc.net^
 ||mcdp-*.outbrain.com^
 ||ottwqtfywh._tcp.aem.hb.tt.omtrdc.net^
 ||mon*-platform-*.tiktokv.com^
@@ -187,17 +185,10 @@ directtrack.*.js
 ||pixel.archive.
 ||lnqkyvufpn._tcp.aem.hb.tt.omtrdc.net^
 ||log*.byteoversea.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||solutions.|pages.indigovision.com^
 ||stat.*.v-56.com^
-||stats-*.p2pnow.ru^
 ||report*.appmetrica.webvisor.com^
-||stats*.credit-cooperatif.coop^
 ||sdk.fra-*.braze.eu^
 ||rum*.a.trbcdn.net^
 ||sensorsdata*.read.duokan.com^
@@ -212,14 +203,22 @@ directtrack.*.js
 ||sta.zone-telechargement.
 ||stat*.1internet.tv^
 ||st-*.dynamicyield.com^
-||stats*.videonow.ru^
 ||pxl-*.ozone.ru^
 ||rum*.cdnvideo.ru^
 ||sgtm.fashionunited.
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||zhizhizhizhi.oss-*.aliyuncs.com^
+||uc*.atobo.com^
+||ya*.dwstatic.com^
+||union*.365inews.com^
+||vns86.oss-*.aliyuncs.com^
+||ysdm*.ys137.com.cn^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
 ||t*.zcvh.net^
+||stats-*.p2pnow.ru^
 ||vwymdcjirv._tcp.aarp.hb.tt.omtrdc.net^
+||stats*.credit-cooperatif.coop^
 ||telemetry*.transcend.io^
 ||tnc16-*.byteoversea.com^
 ||tracking*.euroads.fi^
@@ -231,6 +230,7 @@ directtrack.*.js
 ||stats.zone-annuaire.
 ||track.zalando.
 ||tracking-*.trnox.com^
+||stats*.videonow.ru^
 ||wa.gmx.
 ||t.delfi.
 ||track.tiara.
