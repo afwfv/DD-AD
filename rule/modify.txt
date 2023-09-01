@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2023-09-01 16:10:01
+! Last Modified: 2023-09-02 00:08:54
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||api2.coolapk.com/v6/main/indexV8$replace=/{"entityType":"card"\,"entityTemplate":"listCard".*?}"}\,/ /
@@ -10148,6 +10148,7 @@ _square_ad.
 ##.ad-enabled
 ###ima_ads-4
 _square_ad-
+##.ad-width-728
 /siteads.
 ###homead
 ##.ad-sitewide
@@ -10391,7 +10392,6 @@ tieba.baidu.com##.more_btn_package
 /advertsky.
 /zcredirect?$popup
 ###ad_anchor
-/atrk.js
 ###adbnr
 ###im_popupDiv
 ###ad-Superbanner
@@ -10688,7 +10688,6 @@ www.raybt.com##td[width="13"]
 ###Content_CA_AD_1_BC
 ##.Adtext
 ###headline_ad
-.cn/b.gif?
 ##.ad-panorama
 -popup-ad.
 -468x80/
@@ -12056,7 +12055,6 @@ _ad_small.
 ###sponsor_right
 /myvids/mltbn2/*$script,subdocument
 /buyclicks/*
-/in/track?data=
 ###ads_160
 /peel.php?
 ###right_block_ads
@@ -17399,6 +17397,7 @@ www.le.com###full_Column_small
 /dfp.min.js$third-party
 ###div-social-ads
 ###adcolumn
+##.ad-width-300
 ###adsense-tag
 ##.ad-720-affiliate
 /ad/get_
@@ -18375,6 +18374,7 @@ _advertise.
 /video2adrenderer.
 ###googlead01
 ###ads-bg
+##.ad-wireframe
 /banner/amazon/*
 ###footerAdBottom
 ###LayoutBottomAdBox
@@ -18556,6 +18556,7 @@ nfmovies.com##[src*="/pic/tu/"]
 ###AdSense2
 ###sponsor-links
 ###AdSense3
+##.ad-with-background
 ###AdSense1
 ###Adv8
 ###adspace_header
@@ -19254,7 +19255,6 @@ jump.bdimg.com,tieba.baidu.com##.platform_aside_tieba_partner
 ###ad-desktop-takeover-int
 ###adspacer
 ###top_ad_area
-.com/c.gif?
 ###ad-player
 ###adzone-top
 ##.ad-bordered
@@ -19288,6 +19288,7 @@ jump.bdimg.com,tieba.baidu.com##.platform_aside_tieba_partner
 ###logo_ad
 ###masSearchAd
 ##.ad-carousel
+##.ad-wireframe-wrapper
 /ceef/gdt3g0/tbt/*
 ###backad
 ###ad-top
@@ -19494,7 +19495,6 @@ jump.bdimg.com,tieba.baidu.com##.u_mytbmall
 /adserve-
 ##.ad-slot-header
 ###right_advertisement
-/senddata?site=inpage
 ###ad_wrapper
 /bottom_ads.
 /wpx-bannerize_
@@ -20169,7 +20169,6 @@ cookinglight.com#@#div[data-native_ad]
 ##.ads.bottom
 ##.adDrawer
 ##.adcont
-##.ad-width-728
 ##.adsboth
 ##.leaderboard_banner_ad
 ##.taboola-above-article
@@ -27502,7 +27501,6 @@ komplett.dk,komplett.no,komplett.se,komplettbedrift.no,komplettforetag.se,newegg
 ##.topAdverts
 ##.ad_shuffling_text
 ##.adv_right
-##.ad-width-300
 ##.adSummary
 ##.otd-ad-top
 ##.header-ad-container
@@ -28417,7 +28415,6 @@ ads.nipr.ac.jp,burzahrane.hr#@#.ads-header
 ##.ad_bank_wrapper
 ##.inline-story-add
 ##.leaderboardAdWrapper
-##.ad-wireframe
 ##.adops
 ##.gen_side_ad
 ##.home-module--advertisement
@@ -28593,7 +28590,6 @@ gemini.yahoo.com#@#.ads
 ##.mod_ad_container
 ##.c-ad-mpu-primary
 ##.visibleAd
-##.ad-with-background
 ##.ggl_ads_row
 ##.articleAdTop
 ##.c-adunit--billboard
@@ -29323,7 +29319,6 @@ m.nettiauto.com,m.nettikaravaani.com,m.nettikone.com,m.nettimarkkina.com,m.netti
 ##.banners-weekad
 ##.jw-ad-label
 ##.new_ad_normal
-##.ad-wireframe-wrapper
 ##[href^="https://goldcometals.com/clk.trk"]
 ##.google-sponsored
 ##[href="//jjgirls.com/sex/ChaturbateCams"]
@@ -29809,7 +29804,6 @@ $removeparam=a_aid,domain=expressvpn.com|vpnarea.com
 esputnik.com/repository/applications/commons/hidden.png
 /beacon/init?
 /gatrack.
-||_ldap._tcp.hb-fa-dev.tt.omtrdc.net^
 @@||googletagmanager.com/gtm.js$domain=hipolink.net
 /dcstag_
 @@||googletagmanager.com/gtm.js$domain=moniteurautomobile.be
@@ -30224,6 +30218,7 @@ ppomppu.co.kr#%#AG_onLoad(() => { if (/^https:\/\/(www\.|m\.|)ppomppu\.co\.kr\/(
 /omniture/script.
 @@||nohup.it/js/webtrekk_js-media.js$domain=radioitalia.it
 /StatRecorder.asp?
+/atrk.js
 contactmonkey.com/api/v1/tracker$image
 /plugins/aurora-heatmap$stylesheet,script
 @@||logic-immo.com/lib/xiti/xiti.js$script,~third-party
@@ -30474,6 +30469,7 @@ blog.fc2.com#?#.side-menu > div.sidebar-style > script[src^="//counter1.fc2.com/
 ||12fou.com^$third-party
 open.convertkit-mail*.com$image
 /visit/init?
+.cn/b.gif?
 $cookie=sbjs_migrations
 @@||inspsearchapi.com^$domain=zoo.com|dogpile.com
 @@||lastampa.it/modulo/tracciatori/js/webtrekk.js
@@ -30792,7 +30788,6 @@ gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-te
 blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward(3)
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
 @@||noizz.pl/*&srcc=ucs$removeparam=utm_source
-||_ktelnet._tcp.hb-api.tt.omtrdc.net^
 /event/track?
 /nm_tr_combined-min.js
 /datadome/*
@@ -30827,7 +30822,6 @@ $removeparam=irclickid
 /RankingLogging.
 /analytics-dotcom/*
 /blank.gif?*%
-||_msrps._tcp.hb-fa-stage.tt.omtrdc.net^
 /benchmarketingsmarttag/*
 @@||paypal.com/xoplatform/logger/api/logger$domain=play.leagueofkingdoms.com
 @@||st.dynamicyield.com/st?$domain=dafiti.com.co
@@ -31001,7 +30995,6 @@ cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward
 /si-tracking.
 @@||track.nzz.ch/*/api/oauth/
 /log-ads.
-||_mboxedge26.tt.omtrdc.net^
 /tablytics.
 /track_proxy?
 gm.mmstat.com$image
@@ -31039,7 +31032,6 @@ $cookie=BDh,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.
 ?action=track_visitor&
 @@||googletagmanager.com/gtm.js$domain=nykaa.com
 /tracking/log?
-||_ldap._tcp.hb.tt.omtrdc.net^
 weather.com#%#//scriptlet('set-constant', 'DprSdk.setHooks', 'noopFunc')
 /public/statsd
 @@||pixel.quantserve.com/seg/$script,domain=photos.essence.com
@@ -31596,6 +31588,7 @@ apteka.ru#%#window.yaCounter14913877={ reachGoal: function() {} };
 /keypress.js$script
 @@||googletagmanager.com/gtm.js$domain=bestradio.fm
 /counter/action_
+/in/track?data=
 /analytics-secure.
 /marketing-analytics.js
 /collect?d=
@@ -36589,7 +36582,6 @@ megatorrents.kg##a[href^="http://www.net.kg/stat.php"]
 @@||js.datadome.co/tags.js$domain=auth.garena.com
 thg.ru#?#td[valign="top"] > table > tbody > tr:has(> td > table[cellpadding="0"] a[href^="http://top100.rambler.ru/"])
 /cdn-cgi/beacon/*
-||_ldap-admin._tcp.hb-fa-stage.tt.omtrdc.net^
 /imp_check.php
 /ga_cookie_track
 .com/v.gif?
@@ -37542,6 +37534,7 @@ znak.com##.relap
 $cookie=ss_cpvisit
 @@||google-analytics.com/plugins/ua/ecommerce.js$domain=flyingv.cc
 @@||motherboard.vice.com^*/vmp_analytics.js
+.com/c.gif?
 @@||googletagmanager.com/gtag/js$domain=dholic.co.jp
 $cookie=Exitbee_vid
 /locotrack.js
@@ -37729,6 +37722,7 @@ hitkino.org#?#td[valign="top"] > table.white_text > tbody > tr:has(> td[backgrou
 @@||googletagmanager.com/gtm.js$domain=daily.co.jp
 @@||api64.ipify.org^$domain=rbfa.be
 @@||googletagmanager.com/gtm.js$domain=jreastmall.com
+/senddata?site=inpage
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
 @@||sportsgrid.com/decor/javascript/magnify_stats.js
 /trck/etms/*
@@ -43614,6 +43608,7 @@ $removeparam=utm_umguk
 ||api.ffbbbdc6d3c353211fe2ba39c9f744cd.com^$third-party
 ||_tcp.att.hb.tt.omtrdc.net^
 ||appboycdn.com^$third-party
+||_ktelnet._tcp.hb-api.tt.omtrdc.net^
 ||afairweb.com^$third-party
 ||authorinsights.com^$third-party
 ||actuallysnake.com^$third-party
@@ -43644,8 +43639,10 @@ $removeparam=utm_umguk
 ||amp.vg^$third-party
 ||api.tatadigital.com/analytics-engine/
 ||apa.org^$cookie=TAFSessionId
+||_ldap._tcp.hb-fa-dev.tt.omtrdc.net^
 ||aliexpress.$removeparam=aff_fsk
 ||aliexpress.$removeparam=utparam
+||_msrps._tcp.hb-fa-stage.tt.omtrdc.net^
 ||_sip._tcp.bellmedia.hb.tt.omtrdc.net^
 ||antiadtape.com/stat/
 ||amazon.*$removeparam=adgrpid
@@ -43879,6 +43876,7 @@ $removeparam=utm_umguk
 ||apathetictheory.com^$third-party
 ||alwayslucky.com/platform/webvitals
 ||app.link/_r?sdk=*&callback=branch_callback
+||_mboxedge26.tt.omtrdc.net^
 ||aa.hwigroup.com^$domain=hardware.info
 ||amazon.*/dp/$removeparam=tag
 ||asahibeer.co.jp/tracking.js
@@ -43937,6 +43935,7 @@ $removeparam=utm_umguk
 ||automaticflock.com^$third-party
 ||_tsdns._tcp.hb-fa-dev.tt.omtrdc.net^
 ||ab-in-den-urlaub.de/TrackingPixel_
+||_ldap._tcp.hb.tt.omtrdc.net^
 ||akamaihd.net^*.gif?d=
 ||amazon.*/e/loi/imp?
 ||assets.alicdn.com/g/alilog/aplus_plugin_xwj/index.js
@@ -43974,7 +43973,6 @@ $removeparam=utm_umguk
 ||aax-eu-dub.amazon.com^$script
 ||amazon.*$removeparam=ingress
 ||amazonaws.com/appmonitors/
-||awstrack.me^$third-party
 ||advconversion.com^$third-party
 ||arena-quantum.co.uk^$third-party
 ||authedwebmine.cz^$third-party,domain=~webmine.cz
@@ -44229,7 +44227,6 @@ $removeparam=utm_umguk
 ||assiatv.com/css/stat.js
 ||adblock-analytics.io^$third-party
 ||adxadtracker.com^$third-party
-||awswaf.com^$third-party
 ||affilbox.cz^$third-party
 ||aolcdn.com/omniunih_int.js
 ||ancestry.com/core.js
@@ -44451,6 +44448,7 @@ $removeparam=utm_umguk
 ||audimark.de/tracking/
 ||analytik.xyz^$third-party
 ||a.pr-cy.ru/assets/img/analysis-counter.png$third-party
+||_ldap-admin._tcp.hb-fa-stage.tt.omtrdc.net^
 ||agoda.com^$removeparam=tag
 ||analytics.tiendaenoferta.com^$third-party
 ||api.elysium.opera.com/api/elysium/log_session_info
@@ -44819,7 +44817,6 @@ $removeparam=utm_umguk
 ||dmdentertainment.com^*/video_debug.gif?
 ||betarget.de^$third-party
 ||delvenetworks.com/player/plugins/analytics/
-||durationmedia.net^$third-party
 ||cc.loginfra.com/cc$removeparam=nsc
 ||ck.ncclick.co.kr^$third-party
 ||cr-nielsen.com^$third-party
@@ -45464,6 +45461,7 @@ $removeparam=utm_umguk
 ||chaturbate.com/api/adblocker/
 ||daumcdn.net^*/awsa.js
 ||cdn.hivps.xyz/analytics-
+||awswaf.com^$third-party
 ||b16.nakanohito.jp^$third-party
 ||coremetrics.com^$third-party
 ||data.digitalks.az^$third-party
@@ -46362,6 +46360,7 @@ $removeparam=utm_umguk
 ||crwdcntrl.net^$third-party
 ||cnstats.ru^$third-party
 ||cyberlink.com^$removeparam=affid
+||awstrack.me^$third-party
 ||brightside.me/metric-collector
 ||d-markets.net^$third-party
 ||divergentoffer.com^$third-party
@@ -47179,6 +47178,7 @@ $removeparam=utm_umguk
 ||admjmp.com^$popup
 ||ancientsend.com^$popup
 ||adboost.it^$popup
+||download-file.org^$popup
 ||hot-mob.com^$third-party
 ||topadvert.ru^$third-party
 ||becoquin.com^$popup
@@ -47378,6 +47378,7 @@ $removeparam=utm_umguk
 ||bidvertiser.com^$popup
 ||imho.ru^$third-party
 ||text-link-ads.com^$third-party
+||download-portal.net^$popup
 ||baect.com^$popup
 ||doctorpost.net^$popup
 ||adlooxtracking.com^$third-party
@@ -47565,6 +47566,7 @@ $removeparam=utm_umguk
 ||sitesense-oo.com^$third-party
 ||adsring.com^$third-party
 ||digitalthrottle.com^$third-party
+||download-performance.com^$popup
 ||21find.com^$popup
 ||circumstantialeltondirtiness.com^$popup
 ||broadstreetads.com^$third-party
@@ -48016,6 +48018,7 @@ $removeparam=utm_umguk
 ||best4fuck.com^$popup
 ||veoxa.com^$third-party
 ||datedate.today^$popup
+||download-ready.net^$popup
 ||a2dfp.net^$third-party
 ||directrev.com^$popup
 ||cadlsyndicate.com^$popup
@@ -48123,6 +48126,7 @@ $removeparam=utm_umguk
 ||foremedia.net^$third-party
 ||adpay.com^$third-party
 ||aj1574.online^$popup
+||downloadboutique.com^$popup
 ||bumq.com^$third-party
 ||aso1.net^$popup
 ||ospreymedialp.com^$third-party
@@ -48242,7 +48246,6 @@ $removeparam=utm_umguk
 ||adsterra.com^$third-party
 ||befrx.com^$popup
 ||adxpub.com^$third-party
-||exitbee.com^$third-party
 ||trafmag.com^$third-party
 ||24-sportnews.com^$popup
 ||city-ads.de^$third-party
@@ -48467,6 +48470,7 @@ $removeparam=utm_umguk
 ||adreactor.com^$third-party
 ||webshark.pl^$third-party
 /(https?:\/\/)104\.197\..{100,}/
+||download-adblock-zen.com^$popup
 ||magnetisemedia.com^$third-party
 ||crt.livejasmin.com^$popup
 ||dissipatebackyarduncle.com^$popup
@@ -48814,6 +48818,7 @@ $removeparam=utm_umguk
 ||dateguys.online^$popup
 ||adomik.com^$third-party
 ||buyadvupfor24.com^$popup
+||down1oads.com^$popup
 ||adhealers.com^$popup
 ||clicks4tc.com^$popup
 ||apptjmp.com^$popup
@@ -49292,6 +49297,7 @@ $removeparam=utm_umguk
 ||enecto.com^$third-party
 ||internetslang.com/jass/
 ||find-ip-address.org^$third-party
+||durationmedia.net^$third-party
 ||emailretargeting.com^$third-party
 ||eveonline.com/redir.asp$third-party
 ||hlserve.com^$third-party
@@ -50853,6 +50859,7 @@ $removeparam=utm_umguk
 ||hostpush.info^$third-party
 ||googletagmanager.com/gtm.js$script,xmlhttprequest,redirect=googletagmanager-gtm,important,domain=pcjisaku.com
 ||lcs.naver.com/m?u=$removeparam=domContentLoadedEventStart
+||exitbee.com^$third-party
 ||id.verticalhealth.net/script.js?partnerid=
 ||fitanalytics.com^$third-party
 ||emarketeer.com/tracker/
@@ -51139,7 +51146,6 @@ $removeparam=utm_umguk
 ||lcs.naver.com/m?u=$removeparam=pid
 ||fashion-press.net^$removeparam=media
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=straitstimes.com
-||lfov.net^$third-party
 ||freshrelevance.com^$third-party
 ||hits.tv8.com.tr/save_video_event
 ||early-birds.io^$third-party
@@ -52554,7 +52560,6 @@ iai.tv##.auw--container
 ||getflowads.net^$popup
 all-nettools.com,britsabroad.com,filesharingtalk.com,kiwibiker.co.nz,printroot.com###ad_global_below_navbar
 ||freakads.com^$third-party
-||download-portal.net^$popup
 ||outoctillerytor.com^$popup
 ||machineseeker.com/data/ofni/
 fmforums.com##.cWidgetContainer
@@ -52725,7 +52730,6 @@ nepallivetoday.com##.adsimage
 thedailydigest.com##.promocion_celda
 ||xobr219pa.com^$popup
 ||viensvoircesite.com^$third-party
-||download-performance.com^$popup
 ||findlnk.com^$popup
 trademe.co.nz##.tm-display-ad__wrapper
 filmibeat.com##.infinite-scroll-add
@@ -53627,6 +53631,7 @@ autostraddle.com##.end-of-article-ads
 ||yourcoolfeed.com^$popup
 topminecraftservers.org##.grey-section
 ||tnctrx.com^$popup
+progamerage.com##.vc_separator
 ||idlebrain.com/images5/main-
 @@||thegay.com/upd/*/static/js/*.js|$domain=thegay.com
 radiomixer.net##.ai-placement
@@ -53985,7 +53990,6 @@ digitalpoint.com###header_middle
 blockchair.com##.top-buttons-wrap
 ||searchx.eu^$third-party
 motortrend.com##._1Ib8n
-||down1oads.com^$popup
 ||insta-cash.net^$popup
 ||rexsrv.com^$popup
 ||adrama.to/bbb.php
@@ -54489,7 +54493,6 @@ filmibeat.com##.filmibeat-top-ad
 ||23.109.87.139^$popup
 ||wbsadsdel.com^$popup
 ||hoctor-pharity.xyz^$popup
-||download-file.org^$popup
 ||userscript.zone/s.js
 scanboat.com###content > .margin-tb-25
 assamtribune.com###left_level_before_tags
@@ -54950,6 +54953,7 @@ forum.wordreference.com###topSupp
 ||livezombymil.com^$popup
 ||g.doubleclick.net^$domain=spiegel.de
 forum.xda-developers.com##.notices--thnoticesplus_topbar
+zillow.com##.vPTHT
 ||premiumaffi.com^$popup
 beermoneyforum.com##.js-notices
 ||hss2x.com^$popup
@@ -55347,7 +55351,6 @@ insidebitcoins.com##.banner-cta-wrapper
 ||julia-liz.com^$popup
 ||softballcreeperamuse.com^$popup
 ||hss2y.com^$popup
-||download-ready.net^$popup
 ||februaryreductionapplet.com^$popup
 techadvisor.com##.leaderBoardHolder
 ||mediaxchange.co^$popup
@@ -55908,6 +55911,7 @@ india.com##.top-horizontal-banner
 addictivetips.com###at_popup_modal
 stylist.co.uk##.css-rybqcx
 tripstodiscover.com##.fs-dynamic
+militarywatchmagazine.com##.v-size--x-small.theme--light
 streamingsites.com##.styles_adverticementBlock__FINvH
 tecmint.com###tecmint_incontent
 planetminecraft.com###ultra_wide
@@ -57754,7 +57758,6 @@ smallbusiness.co.uk##.homepage-banner-container
 kollelbudget.com###text-82
 ||cams.imagetwist.com/in/?track=$subdocument
 kollelbudget.com###text-83
-||downloadboutique.com^$popup
 ||slimspots.com^$popup
 ||koushoku.org/proxy?
 ||ltn.hitomi.la/zncVMEzbV/
@@ -58101,6 +58104,7 @@ windows2universe.org###google_mockup
 lethbridgeherald.com###stickybox
 ||noerwe5gianfor19e4st.com^$popup
 ||rukplaza.com^$third-party
+lasvegassun.com##.varWrapper
 businessgreen.com###rdm-below-header
 kentonline.co.uk##.PSDRGC
 gogetaroomie.com###top-space
@@ -58125,7 +58129,6 @@ flv2mp3.by##.content-right-bar
 ||knockknockads.com^$popup
 ||googlesyndication.com/safeframe/$domain=spiegel.de
 ||eastfeukufu.info^$popup
-||download-adblock-zen.com^$popup
 ||targetingnow.com^$popup
 ||ozongees.com^$popup
 hentaihaven.icu,hentaihaven.xxx,hentaistream.tv,nhentai.io##.script_manager_video_master
@@ -58595,6 +58598,7 @@ spiceworks.com###sidebar-bottom-ad
 animehub.ac###main-content > center
 thehustle.co##.c-layout--trends
 idropnews.com##.related-posts
+businessday.ng##.vc_custom_1627979893469
 ||spellingunacceptable.com^$popup
 ||serve.williamhillcasino.com^$popup
 playstationtrophies.org,xboxachievements.com###vnt-lb-a
@@ -60154,6 +60158,7 @@ merriam-webster.com##.max-h-\[94px\].min-h-\[94px\].max-w-\[730px\]
 ||cross-system.com^$script,third-party
 ||the-binary-trader.biz^$popup
 ||serumlisp.com^$popup
+osuskins.net##.vad-container
 techspree.net##.hustle-popup
 classicreload.com###content-top
 ||titsandtits.com/api/spots/
@@ -60217,6 +60222,7 @@ news18.com##.closestickybtn
 ||downlon.com^$popup
 ||smrtgs.com^$popup
 ||pornstargold.com/af8b32fc37c0.js
+battlefordsnow.com,cfjctoday.com,everythinggp.com,filmdaily.co,huskiefan.ca,larongenow.com,meadowlakenow.com,nanaimonewsnow.com,northeastnow.com,panow.com,rdnewsnow.com,sasknow.com,vernonmatters.ca##.vc_single_image-wrapper
 amgreatness.com###ag-lead
 yts.mx##.durs-bordered
 ||flowln.com^$popup
@@ -62419,6 +62425,7 @@ u.today##.something
 ||peach-static.ebu.io/pipe-*.min.js
 ||microsoft.com^$removeparam=ocid
 ||paypalobjects.com^*/pixel.gif
+||lfov.net^$third-party
 ||luminate.com^$third-party
 ||osdata.solutions^$third-party
 ||nos.netease.com/udc-web/*.log.js
@@ -64095,7 +64102,6 @@ u.today##.something
 ||scanverify.com^$third-party
 ||pmbox.biz^$third-party
 ||rankchamp.de^$third-party
-||static.iyzipay.com/buyer-protection/assets/js/analytics.js
 ||qzonestyle.gtimg.cn/qzone/v8/ic/iframeReport.js
 ||plista.com/getuid?
 ||returnpath.net^$third-party
@@ -64508,10 +64514,8 @@ u.today##.something
 ||profitmetrics.io^$third-party
 ||smarketer.de^$third-party
 ||sponsored.com^$third-party
-||static.me.me/static/versions/js/external/google_analytics-*.js
 ||soundcloud.com^$ping
 ||rollbar.com^$third-party
-||static.karte.io^$third-party
 ||slideshare.net/frontend_tracking/
 ||qgraph.io/dist/aiqua-wp.js
 ||rakuten-static.com/com/rat/
@@ -64747,7 +64751,6 @@ u.today##.something
 ||shopperapproved.com^$third-party
 ||pstatp.com^*/ttstatistics.
 ||qwerpdf.com/trk23/
-||static.krone.at/wcm/donau/extern/anti_adblocker/check.js
 ||programmatictrader.com^$third-party
 ||shippinginsights.com^$third-party
 ||s3.ap-northeast-2.amazonaws.com/adpick.co.kr/apis/apTracker.v*.js
@@ -64948,7 +64951,6 @@ u.today##.something
 ||qq.com/stdlog
 ||pressplay.cc/marketing/event
 ||putags.com^$third-party
-||static.metro.co.uk/rta2/
 ||properm.ru/top/counter_new.php?
 ||report-uri.io^$third-party
 ||puffypaste.com^$third-party
@@ -65288,7 +65290,6 @@ u.today##.something
 ||streamadblocker.store/stat/
 ||t.destentor.nl^$image
 ||t.tubantia.nl^$image
-||statsinsight.com^$third-party
 ||toldyouso.lol^$all
 ||stroeerdigitalmedia.de^$domain=planetsnow.de
 ||technolutions.net/ping?
@@ -65311,14 +65312,11 @@ u.today##.something
 ||swiftypecdn.com/te.js$third-party
 ||views.b1tv.ro/track.js
 ||statistika.lv^$third-party
-||streambeam.io^$third-party
 ||stats.fomo.com^$third-party
 ||streamadblocker.xyz/stat/
 ||tracking-sap.frodx.com^$third-party
 ||tribdss.com/meter/$third-party
-||sub2tech.com^$third-party
 ||tastefulsongs.com^$third-party
-||technical-service.net^$third-party
 ||taboolasyndication.com/log/
 ||trackersimulator.org^$third-party
 ||tio.ch/lib/videojs/video-js-tiostats.js
@@ -65359,14 +65357,11 @@ u.today##.something
 ||studocu.com/27m703Hm/init.js
 ||track.clkfly.com^$all
 ||volkswagen-italia.it^*/tracking/
-||sugodeku.com^$third-party
 ||webd.home.news.cn/1.gif?
 ||weltsport.appspot.com/hstrck-detect.js^
 ||terra.com.br/metrics/
 ||tr.computeruniverse.net/*/hm?p=
 ||theatlantic.com/assets/static/theatlantic/img/sherlock.gif?
-||superstats.com^$third-party
-||statsmachine.com^$third-party
 ||tiktok.com^$removeparam=share_author_id
 ||vesseltracker.com/assets/js/leaflet-ais-trackingsymbols/
 ||toomics.com^$removeparam=pid
@@ -65387,7 +65382,6 @@ u.today##.something
 ||wigglygeese.com^$third-party
 ||sync.ebis.ne.jp^$third-party
 ||tag.goadopt.io^$third-party
-||stats4all.com^$third-party
 ||strtapewithadblock.art/stat/
 ||stats-jobstreet-sg-en-prod.supercharge-srp.co^$domain=jobstreet.com.sg
 ||strtpe.link/stat/
@@ -65402,10 +65396,8 @@ u.today##.something
 ||thetimes.co.uk/track?
 ||totalcsgo.com/ctrack/
 ||tumblr.com/analytics.html?
-||toast.com/sendid?
 ||vonzeitzuzeit.de/tracking
 ||tag.getdrip.com^$third-party
-||teletarget.ru^$third-party
 ||tastelesstrees.com^$third-party
 ||unequalbrake.com^$third-party
 ||tangerine.io^$third-party
@@ -65422,22 +65414,18 @@ u.today##.something
 ||verifyvegetable.com^$third-party
 ||static.narrativ.com/tags/narrativ-pub.
 ||stats.fr^$third-party
-||traceparts.com/logs
 ||travelocity.com/cl/data/typeahead_client_metrics.json
 ||uol.com.br/*/stats^
 ||v20.cnnd.vn/index2.html
 ||tag.search.sensefuel.live^$third-party
 ||tag.wknd.ai^$third-party
 ||tiktok.com^$removeparam=share_app_id
-||statsbox.nl^$third-party
 ||systemizecoat.com^$third-party
 ||vteximg.com.br/scripts/vtex.tagmanager.helper.js
 ||whale.naver.com^$removeparam=wpid
-||sundaysky.com^$third-party
 ||the-group.net/aether/
 ||steadfastsystem.com^$third-party
 ||us.web3-lab.com*/*/stats
-||thench.net^$third-party
 ||tk.mediacategory.com^$third-party
 ||statuscake.com^$third-party
 ||svadba.net.ru/counter$third-party
@@ -65448,8 +65436,6 @@ u.today##.something
 ||t.co/i/adsct*tw_sale_amount=
 ||sumome.com/apps/contentanalytics/
 ||weidian.com^$removeparam=/distributorid|wfr|ifr|share_relation/
-||totallylayouts.com/tumblr/visitor-counter/counter.js
-||swiftmining.win^$third-party
 ||top.gde.ru/isapi$third-party
 ||tpcs.payu.in/pixelwithcookie.gif$domain=hindustantimes.com
 ||track.tagesanzeiger.ch/cre*/static/tracking^
@@ -65499,6 +65485,7 @@ u.today##.something
 ||teknosa.com^$removeparam=cid
 ||streeteasy.com/cZdhF737/init.js
 ||tripadvisor.*/cookiepingback?
+||www.google.*/velog/
 ||tr.lfeeder.com^$third-party
 ||tweakers.net/*/event-tracking/
 ||wizcase.com/?$removeparam=vid
@@ -65518,7 +65505,6 @@ u.today##.something
 ||to.getnitropack.com^$third-party
 ||udemy.com/api-2.0/ecl?
 ||wikipedia.de/tracking.js
-||topix.net/t6track/
 ||techcrunch.com/wp-json/wp/v*/tc_events
 ||warmafterthought.com^$third-party
 ||trackjs.com^$third-party
@@ -65534,6 +65520,7 @@ u.today##.something
 ||static.stylight.net/js_external/trackjs.*.js
 ||tag.aumago.com^$third-party,script
 ||webtekno.com/ajax-ping
+||www.net.kg^$third-party
 ||top.bodr.net/c.php$third-party
 ||wryfinger.com^$third-party
 ||tophits4u.de^$third-party
@@ -65546,21 +65533,17 @@ u.today##.something
 ||wdr.de/*/tracker/
 ||sumome.com/apps/heatmaps/
 ||techraptor.net/sites/default/files/google_analytics/gtag.js
-||tailtarget.com^$third-party
 ||static.wellsfargo.com/tracking/
 ||tanks.lv/top/stats.php
 ||wp-stats.com^$third-party
 ||stats.live-video.net^$domain=kick.com
 ||stiffstem.com^$third-party
-||tgknt.com^$third-party
 ||super.cz/*/visibleimpress?
 ||tag.aticdn.net/*/at.js$script,redirect=ati-smarttag,domain=tv5monde.com
 ||unnaturalcaption.com^$third-party
 ||tunein.com/api/*/comscore
-||threatbook.cn^$third-party
 ||tracker.metricool.com^$third-party
 ||thenextweb.com/geppetto/s.js
-||sumologic.com^$third-party,domain=~sumologic.net
 ||sunios.de^$third-party
 ||technologynetworks.com/ApprovedGuid/
 ||wsknow.net/jssdk/track/
@@ -65578,31 +65561,29 @@ u.today##.something
 ||tijd.be/track/
 ||util.geeksforgeeks.org/post/api/usertracking
 ||weather.com.cn/a1.js
+||www.hitseller.de^$removeparam=etcc_med
 ||surveymonkey.com/resp/api/metrics
 ||wiztube.xyz/cdn-cgi/trace
 ||westats.dev^$third-party
 ||uid.mavencoalition.io^$xmlhttprequest,redirect=noopjson
-||toast.com/log
 ||swaven.com/px.png
 ||teknosa.com^$removeparam=aid
 ||vidtech.cbsinteractive.com/uvpjs/*/lib/tracking/mux.js
 ||track.mp3vizor.com^$third-party
 ||wizcase.com/?$removeparam=pageview_id
 ||theguru.co.kr/weblog/gtracker.php
-||tagcdn.com^$third-party
 ||sweetshow.com/r_log.php
 ||webtv.bundestag.de/iptv/js/youbora^
 ||successfulscent.com^$third-party
 ||uh.nakanohito.jp^$third-party
-||statsig.com^$third-party
 ||vedomosti.ru/boom?
 ||web.snapchat.com/web-analytics-
+||www.electronic4you.de^$removeparam=idealoid
 ||wotif.com/cl/2x2.gif?
 ||terabox.com/abdr?
 ||track.91app.io^$third-party
 ||visualstudio.com/v*/track$third-party
 ||vinsight.de^$domain=tvspielfilm.de
-||tracemyip.org/vlg/
 ||stuttgarter-nachrichten.de/cre-1.0/tracking/device.js
 ||visualwebsiteoptimizer.com^$domain=wetter.com
 ||tagcdn.com/pix/?
@@ -65634,10 +65615,8 @@ u.today##.something
 ||video.mediaset.it/polymediashowanalytics/
 ||webryblog.biglobe.ne.jp/beacon/
 ||super.cz/*/miss?
-||supportxmr.com^$third-party
 ||uc.xddi.ru^$third-party
 ||tags.soloway.ru^$third-party
-||successfultogether.co.uk^$third-party
 ||teenporn.ws/zaq/cron.php
 ||winfuture.de/ajax/pixel^
 ||sweetslope.com^$third-party
@@ -65651,30 +65630,30 @@ u.today##.something
 ||thicktrucks.com^$third-party
 ||venetrigni.com^$third-party
 ||utsgw.gmarket.co.kr/vi/send
-||sushipool.com^$third-party
 ||trl.upperbooking.com^$third-party
 ||vroom.be^*/stats.js?
 ||tosshub.com/sites/common/resources/trackdata/min/itgdtrack*.js
 ||visitlog.net^$third-party
 ||udcm.yahoo.com^$domain=d3ward.github.io
+||www.hitseller.de^$removeparam=sPartner
 ||t-online.de/px.js
 ||worldhistory.org/analytics/pageview.js
 ||statistics.aldi-international.com/consent/collect
+||static.me.me/static/versions/js/external/google_analytics-*.js
 ||subscribe.ru/1.gif/$image
 ||tes-game.ru/stat/
 ||tp-link.com^*/addHits.html
 ||termsfeed.com/track/
 ||videoseyred.in^$cookie=/^vstrack_ga/
+||static.karte.io^$third-party
 ||steadfastsound.com^$third-party
 ||ucankus.com/inc/hhit.asp
 ||unagi*.amazon.*/events/
 ||thinkablefloor.com^$third-party
 ||streamtapeadblockuser.xyz/stat/
-||steelhousemedia.com^$third-party
 ||trickycelery.com^$third-party
 ||static.olx.pl/static/*/js/tracking/ninja.js$important,domain=olx.pl
 ||taggstar.com^*/taggstar.min.js
-||stormcontainertag.com^$third-party
 ||t24.com.tr/api/json/activity.php
 ||tradedoubler.com^$cookie=GUID
 ||wellgroomedbat.com^$third-party
@@ -65696,6 +65675,7 @@ u.today##.something
 ||webtalking.ru/counter/$third-party
 ||stats.makethebusiness.com^$third-party
 ||ucoz.net/stat/
+||www.galaxus.de^$removeparam=pcscpId
 ||success.trendmicro.com/jslibrary/*/NetworkTracking.js
 ||structurerod.com^$third-party
 ||t2bot.ru/inc/adsCount.php
@@ -65706,7 +65686,6 @@ u.today##.something
 ||wellmadefrog.com^$third-party
 ||vnecdn.net/*/?action=
 ||teknosa.com^$removeparam=source
-||tidningsnatet.se^$third-party
 ||v.youku.com^$removeparam=scm
 ||tsite.jp/static/analytics/
 ||tranquilside.com^$third-party
@@ -65716,17 +65695,13 @@ u.today##.something
 ||tmall.com^$removeparam=ali_trackid
 ||wildernesscamera.com^$third-party
 ||tags.news.com.au^$~script
-||sterlingwoods.com^$third-party
 ||tapdb.net^$third-party
 ||terra.com.mx/js/metricspar_
-||statistiche-web.com^$third-party
 ||womanear.com^$third-party
-||thestat.net^$third-party
 ||sulkycook.com^$third-party
 ||tmobi.tcdn.nl/*/beacon?
 ||trendyol.com/Resources/Scripts/Libs/EventCollector/eventcollector
 ||tjrwrestling.net^$cookie=_pbjs_userid_consent_data
-||tget.me^$third-party
 ||syslab.ru/cnt/$third-party
 ||tracking.affiliateclub.cz^$third-party
 ||tracking.wisepops.com^$third-party
@@ -65758,10 +65733,10 @@ u.today##.something
 ||stetic.com^$third-party
 ||trsbf.com/static/fbs.min.js
 ||uspoloassn.com^$removeparam=ref
-||tedo-stats.de^$third-party
 ||tracking.donnemagazine.it^$script
 ||stretchsister.com^$third-party
 ||vost.com.ua/count.js
+||www.ebay.$removeparam=campid
 ||sumo.com/api/event/
 ||statsadvance-01.net^$third-party
 ||subscribe.ru/stat/$third-party
@@ -65780,7 +65755,6 @@ u.today##.something
 ||wccftech.com/cnt*.js?ts=
 ||tripadvisor.*/impressionrecord
 ||wetransfer.zendesk.com^$removeparam=amp%3Btoken
-||statuncore.com^$third-party
 ||swarm.video/stats/
 ||wise.com^$removeparam=clickref
 ||streamta.pe/stat/
@@ -65815,6 +65789,7 @@ u.today##.something
 ||visualrevenue.com^$domain=focus.de
 ||ui-portal.de/prompt/permission/latest/tracking.min.js
 ||topiz.ru^$third-party
+||www.ebay.$removeparam=amdata
 ||threedy.ai/api/event/
 ||tv-tokyo.co.jp/index/scatalyst/
 ||streamadblocker.com/stat/
@@ -65830,32 +65805,27 @@ u.today##.something
 ||vimeo.com^$cookie=_scid
 ||thunderingrose.com^$third-party
 ||tiktok.com^$removeparam=web_id
-||stattrax.com^$third-party
 ||turkcell.com.tr/static_lib/assets/scripts/turkcell/google-analytics^
 ||wq.jd.com^$removeparam=pvid
 ||sulkybutter.com^$third-party
 ||uai.com.br^*/analytics.js
 ||static.stands4.com/*/page.analytics.min.js$domain=lyrics.com
-||tiktokv.com/web/report?
 ||webstats.thesoul-publishing.com/track/ws.gif
 ||thespecialsearch.com^$third-party
 ||vboro.de^$third-party
 ||wsj.com^$removeparam=reflink
 ||tms.delta.com/privacy/$image
-||tanx.com^$third-party
 ||terriblethumb.com^$third-party
 ||travel-assets.com^*/experimentrecorder
 ||videa.hu/flvplayer_setcookie.php?
 ||topolino.it^*/omniture.php?
 ||thriftbooks.com/scripts/sp.js
 ||waryfog.com^$third-party
-||themesltd.com/online-users-counter/$third-party
 ||swisscom.ch/eumcollector/beacons/
 ||trk.olnl.net^$third-party
 ||target.georiot.com/Proxy.ashx$removeparam=tsid
 ||unitymedia.de/beacon/
 ||tastelesstrucks.com^$third-party
-||subscribers.com^$third-party
 ||tuttocagliari.net/pixel
 ||stuttgarter-zeitung.de/cms/hitcount
 ||surfsnow.jp/common/js/analytics_
@@ -65865,24 +65835,19 @@ u.today##.something
 ||tingz.co/analytics/mp/track
 ||tracking.smartselling.cz^$third-party
 ||underthesnow.ru/engine/modules/counter-
-||t4ft.de^$third-party
-||statswebtown.com^$third-party
 ||trace21.dsb-ebusiness.com^$third-party
 ||videogame.it/a/logview/
-||swiss-counter.com^$third-party
 ||weather.com/api/v*/script/dprSdkScript.js$script,redirect=noopjs
 ||suchmaschinen-ranking-hits.de^$third-party
 ||static.talpanetwork.com/prod/js/components/talpa-analytics/
 ||ustat.info^$third-party
 ||worldgravity.com^$third-party
 ||stats4free.de^$third-party
-||statsit.com^$third-party
 ||top.mail.ru/tpc.js
 ||top.list.ru^$third-party
 ||tribl.io/firm_tracking.js
 ||walla.co.il/CountsHP.asp?
 ||vc.ru/booster/daily/hits
-||stats4u.net^$third-party
 ||tidytrail.com^$third-party
 ||wataugademocrat.com/shared-content/art/stats/common/tracker.js
 ||wscatalog.ru/dizain/cycounter.gif
@@ -65895,7 +65860,6 @@ u.today##.something
 ||vk.com/rtrg$third-party
 ||wionews.com^$cookie=myPPID
 ||wetransfer.com^$removeparam=amp;utm_medium
-||stripedcollar.net^$third-party
 ||tracking.parte.com^$third-party
 ||wiley.com^$removeparam=/elq/
 ||teamviewer.com/api/log/
@@ -65904,11 +65868,9 @@ u.today##.something
 ||tubepleasure.com/r_log.php
 ||tmserverside.mango.com/g/collect
 ||tremendoustreatment.com^$third-party
-||statpipe.ru^$third-party
 ||vivaldi.*/rep/rep.js
 ||taboola.com^*/json?tim=
 ||web.snrbox.com/tck/$xmlhttprequest,redirect=nooptext
-||statsy.net^$third-party
 ||tudg.qq.com/dataimport^
 ||wetransfer.zendesk.com^$removeparam=amp%3Btrk
 ||wl.jd.com^$third-party
@@ -65919,7 +65881,6 @@ u.today##.something
 ||v.youku.com^$removeparam=ptag
 ||static.wattpad.com/js/tracker/app.js
 ||weblytics.io^$third-party
-||sumome.com^$third-party
 ||unarmedindustry.com^$third-party
 ||vipstatic.com/mars/
 ||twitter.com/1.1/jot/client_event.json
@@ -65928,7 +65889,6 @@ u.today##.something
 ||tracking.mammemagazine.it^$script
 ||weiyun.com/cgi-bin/tianshu_report
 ||tagesschau.de/resources/framework/js/sitestat.js
-||tda.io^$third-party
 ||static.ws.126.net/f2e/products/analysis/
 ||tracking02.adweb.co.kr^$third-party
 ||trendyol.com^$removeparam=utm_subaff
@@ -65942,8 +65902,6 @@ u.today##.something
 ||sundaysky.com/sst.gif?
 ||toomics.com^$removeparam=subpid
 ||stcounter.com^$third-party
-||statssheet.com^$third-party
-||thesmilingpencils.com^$third-party
 ||wellsfargo.com/tas|
 ||westjr.co.jp/*/analyze_tag.js
 ||teknosa.com^$removeparam=campid
@@ -65956,14 +65914,11 @@ u.today##.something
 ||tantifilm.top^*/ping
 ||tumblr.com/services/cslog
 ||sunset.com/tia/
-||tourradar.com/def/partner?$third-party
 ||tvigle.ru/track/
 ||user-stats.rbl.ms^$third-party
 ||vercel.com^$removeparam=sfmc_journey_name
 ||swaven.com/widget/track/
-||tds.io^$third-party
 ||stmg-prod.mirror.co.uk/analytics.config.json
-||team-rec.jp^$third-party
 ||teknosa.com^$removeparam=crid
 ||travelocity.com/cl/data/bingpixels.json?
 ||throattrees.com^$third-party
@@ -65977,9 +65932,7 @@ u.today##.something
 ||wildxtraffic.com^$third-party
 ||statistik.motorpresse.de^$third-party
 ||webanalytics.europa.eu/ppms.js
-||theoplayer.com/t?
 ||w-api.baomoi.com/api/*/log/
-||tinyurl.com/pixel.gif/
 ||t5.ro/trafic^$third-party
 ||tf1.fr^$cookie=ABTasty
 ||tiktok.com/ttwid/check/
@@ -65999,6 +65952,7 @@ u.today##.something
 ||toku.yahoo.co.jp^$removeparam=fr
 ||statistiche-free.com^$third-party
 ||toothpasterabbits.com^$third-party
+||static.krone.at/wcm/donau/extern/anti_adblocker/check.js
 ||theadex.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de
 ||stripchat.com^$removeparam=realDomain
 ||uteka.ru/rpc/stat/
@@ -66013,7 +65967,6 @@ u.today##.something
 ||wazzup.me/libs/track.js
 ||where-to-buy.co/libraries/ca/tracking/
 ||travelocity.com/minify/exp.core.channeltracking
-||ta.sbird.xyz^$third-party
 ||terabox.com/api/analytics
 ||warnwing.com^$third-party
 ||statsp.fpop.net^$third-party
@@ -66034,41 +65987,34 @@ u.today##.something
 ||talpa-analytics.$third-party
 ||temnos.com^$third-party
 ||tagesschau.de/resources/framework/js/tracking.js
-||studiostack.com^$third-party
 ||theindex.moe/api/ip-info$redirect=noopjson
 ||wistfulflight.com^$third-party
 ||stayfriends.de/mobilemember/js/framework/sf_tracking.js
 ||toothbrushnote.com^$third-party
 ||static1.dmcdn.net/js/cpe/cpeEventTracking.min.js
-||stats21.com^$third-party
 ||video.laxd.com^$removeparam=ref
 ||trivago.de/search/log
 ||walbusch.de^$ping
 ||synergizeonline.net/trackpoint/
-||strossle.it^$third-party
-||swetrix.org^$third-party
 ||uttermosthobbies.com^$third-party
 ||t.blog.livedoor.jp/u.js
 ||tamgrt.com^*&pixel_version=
 ||vimeo.com^$cookie=afUserId
 ||tms.marriott.com/error/e.gif
-||surveyscout.com^$third-party
 ||streamtape.com/stat/
 ||trivago.*/log?sLog=
-||surfcounters.com^$third-party
 ||teltarif.de/ttt.go?
 ||tanx.com/t/tanxcollect.js
 ||taobao.com^$removeparam=traceId
 ||t.afi-b.com^$third-party
+||www.ebay.$removeparam=mkrid
 ||vengefulgrass.com^$third-party
 ||travelocity.com/api/datacapture/track
-||statsrely.com^$third-party
 ||terra.com.mx^*/metrics_end.js
 ||tatsumi-sys.jp^$third-party
 ||tr.webantenna.info^$third-party
 ||superficialeyes.com^$third-party
 ||vvvvid.it/vvvvid/video/*/event
-||tenping.kr^$third-party
 ||tradingview.com^$removeparam=source
 ||tracker.departapp.com/api/collect?
 ||urbanairship.com^$third-party
@@ -66084,7 +66030,6 @@ u.today##.something
 ||top.azur.ru/?id=
 ||wetransfer.zendesk.com^$removeparam=amp%3Butm_medium
 ||static.tonkosti.ru/tonkosti/www/js/snvars.js
-||tagmanager.cn^$third-party
 ||taobao.com^$removeparam=scm
 ||vimeo.com^$cookie=_scid_r
 ||static.sahibinden.com/assets/analytics*.js
@@ -66101,11 +66046,9 @@ u.today##.something
 ||tweakers.net^*&p=$image
 ||superficialsquare.com^$third-party
 ||suumo.jp/jj/jjcommon/js/send-beacon.js
-||tout.com/tracker.js
 ||taptap.*/webapiv2/log/
 ||trueroas.io^$third-party
 ||sweetwater.com/p2TBVNJZ/init.js
-||track.laredoute.fr^$image
 ||static.yandex.net/browser-updater/stripe/script.js
 ||taboolasyndication.com^*/log/
 ||therealreal.com/ev56mY37/init.js
@@ -66117,7 +66060,6 @@ u.today##.something
 ||wp.pl/?rid=
 ||strangesink.com^$third-party
 ||tresorit.com/page-init-tracking.*.js
-||targetix.net^$third-party
 ||sueddeutsche.de/statistics?eventType=
 ||top.gg/api/auctions/i
 ||ucuzabilet.com/ajax/referrerAnalytics
@@ -66142,7 +66084,6 @@ u.today##.something
 ||t.paypal.com^$image
 ||tumblebirds.com^$third-party
 ||t.hln.be^$image
-||stats2.com^$third-party
 ||vesti.ru/counter/
 ||t.gelderlander.nl^$image
 ||teenytinytongue.com^$third-party
@@ -66154,7 +66095,6 @@ u.today##.something
 ||statuesquebrush.com^$third-party
 ||stopify.co^$all
 ||taboola.com/?uid=
-||tnative.ru^$third-party
 ||v*.sitecounter.site^$third-party
 ||turnto.com/webEvent/$third-party
 ||statsforever.com^$third-party
@@ -66172,11 +66112,9 @@ u.today##.something
 ||wise.com^$removeparam=adref
 ||telemetry.api.wmcdp.io^$third-party
 ||wikihow.com/x/collect
-||tinypass.com^*/track?
 ||ts.fi/Statistics/Log$image
 ||widgets.pinterest.com/*/urls/count.json
 ||ups.xplosion.de/ctx?event_id=$removeparam
-||storygize.net^$third-party
 ||tiava.com/js/analytics
 ||um.viuapi.io/loggingservice/
 ||teethfan.com^$third-party
@@ -66227,18 +66165,16 @@ u.today##.something
 ||texturetrick.com^$third-party
 ||typicalteeth.com^$third-party
 ||woopic.com/z.gif
+||www.hitseller.de^$removeparam=etcc_cmp
 ||subscribe.washingtonpost.com/acquisition/views/tracking
 ||swellstocking.com^$third-party
 ||www-direct.motorcycle.com/eventStream
-||submitnet.net^$third-party
 ||trendyol.com^$removeparam=_ga
-||tm-awx.com/pageview
 ||toptracker.ru/buttons/counter.gif
 ||tutorthing.com^$third-party
 ||wieistmeineip.de/ip-adresse/$third-party
 ||untidyrice.com^$third-party
 ||volleybox.net/media/js/analytics/
-||strs.jp^$third-party
 ||synovite-scripts.com^$third-party
 ||teknosa.com^$removeparam=sid
 ||travelocity.com/minify/exp.core.tvlytracking
@@ -66246,7 +66182,6 @@ u.today##.something
 ||validate.onecount.net/js/v_sb.js
 ||techstage.de/js/techstage/webtrekk_scrollposition.js
 ||webapp-middleware.21buttons.com/event_log/
-||sumokoin.com^$third-party
 ||www.alternate.de^$removeparam=campaign
 ||thehill.com/6zcfGH4h/init.js
 ||theregister.com^$removeparam=td
@@ -66254,10 +66189,8 @@ u.today##.something
 ||vidoo.de/api_v*/index.php?service=analytics&
 ||thcdn.com/*/tracking/*.js$domain=myprotein.ru|myprotein.com|myprotein.com.ua|myprotein.sk|myprotein.co.za
 ||whistleout.com.au^$cookie=ARRAffinity
-||sumo.com^$third-party
 ||weather.com/weather/assets/omniture-app-measurement.*.js
 ||turbobit.net/ajax/fdlogger/
-||streem.com.au^$third-party
 ||sumome.com/api/event/?
 ||suddensoda.com^$third-party
 ||www-direct.autoguide.com/eventStream
@@ -66268,17 +66201,14 @@ u.today##.something
 ||web.vstat.info^$removeparam=user_agent
 ||whistleout.com.au^$cookie=ARRAffinitySameSite
 ||vercel.com^$removeparam=sfmc_journey_id
-||tbex.ru^$third-party
 ||terra.com.br/coletor/
 ||tvid.in/sdk/loader.js
 ||uim.tifbs.net/js/*.js$script,redirect=noopjs,domain=web.de|gmx.net|gmx.ch|gmx.at
 ||ws.audioeye.com^$third-party
-||tinypass.com/checkout/offer/trackShow
 ||terrificgoose.com^$third-party
 ||tubedupe.com/js/td_track.js
 ||tijd.be/fb2?
 ||trv.upperbooking.com^$third-party
-||stattooz.com^$third-party
 ||sunknudsen.com/static/media/js/fathom
 ||supervisegoldfish.com^$third-party
 ||tv8.daioncdn.net/events?
@@ -66300,16 +66230,14 @@ u.today##.something
 ||waplog.mobi^$third-party
 ||wipe.de^$third-party
 ||statnews.com/wp-content/compiled/js/stat-dfp.js
-||streetmetrics.io^$third-party
 ||webim.ru/*/track.php
 ||taboola.com^*/notify-impression?$third-party
 ||vinted.de/relay/events
 ||vyatka-grad.ru/wp-content/cache/*/amp-analytics-*.js
 ||vkcache.com/js/amung_counter.js
-||stroeerdigitalmedia.de^$third-party
 ||storesurprise.com^$third-party
 ||wise.com^$removeparam=partnerID
-||tetigi.com^$third-party
+||static.metro.co.uk/rta2/
 ||wawacity.*/bypass
 ||twitter.com$removeparam=refsrc
 ||tlctv.com.tr/assets/default/images/pixel.gif
@@ -66318,14 +66246,12 @@ u.today##.something
 ||tubitv.com/oz/performance/metrics
 ||topshop.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/trans_pixel.gif
 ||trackvoluum.com^$third-party
-||threadloom.com/ga/
 ||tumblr.com/impixu?
 ||wtag.estlier.net^$third-party
 ||workoperation.com^$third-party
 ||track.ddmanager.ru^$third-party
 ||trust.zone/api_ip_info.php?$third-party
 ||webassign.net/services/cubby/bff/analytics
-||survicate.com^$third-party
 ||usenetoffer.download/metrika^
 ||tiresomethunder.com^$third-party
 ||tumblr.app.link^$removeparam=_p
@@ -66341,7 +66267,6 @@ u.today##.something
 ||thirstytwig.com^$third-party
 ||vidoo.de/api_v*/index.php?service=stats&
 ||strtape.cloud/stat/
-||tinyclues.com^$third-party
 ||targetman.ru^$third-party
 ||surveywall-api.survata.com^$third-party
 ||trgtcdn.com^$third-party
@@ -66350,7 +66275,6 @@ u.today##.something
 ||taobao.com/tracker.
 ||waggishpig.com^$third-party
 ||uncoveredexpert.com^$third-party
-||touchcommerce.com/tagserver/logging/
 ||webwise.com^$third-party
 ||wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope
 ||storystack.com^$third-party
@@ -66378,7 +66302,6 @@ u.today##.something
 ||tm1-001.com^$third-party
 ||tweakers.net/x/scripts/min/ptBO.js
 ||stats.pcsg-server.de/js/
-||surveywriter.com^$third-party
 ||thesun.ie/track?
 ||trendyol.com^$removeparam=adjust_t
 ||wiseref.com^$third-party
@@ -66388,7 +66311,6 @@ u.today##.something
 ||stol.it/pcookie?
 ||tags.news.com.au^$script
 ||tendersugar.com^$third-party
-||theactivetag.com^$third-party
 ||statnews.com/wp-content/compiled/js/stat-hubspot-tracker.js
 ||static.plista.com/async.js$third-party
 ||web.tv/analytics/
@@ -66396,6 +66318,8 @@ u.today##.something
 ||wikipedia.org^$removeparam=wprov
 ||tag.aticdn.net/*/smarttag.js$script,redirect=ati-smarttag,domain=rte.ie,important
 ||wirecomic.com^$third-party
+||www.ebay.$removeparam=_trkparms
+||www.lidl.de^$removeparam=msktc
 ||sweet-candy.jp/c.php?$third-party
 ||theblock.co/api/analytics
 ||trib.al$removeparam=fbclid
@@ -66419,7 +66343,6 @@ u.today##.something
 ||wawel-service.pl/checkleadforvisitor
 ||summerhamster.com^$third-party
 ||uecdn.es/js/pbmu.js
-||telemetric.dk^$third-party
 ||voonik.com/analytics.min.js
 ||wblt.oui.sncf/prod/*/vsca.js
 ||szsmtk.com^$third-party
@@ -66431,7 +66354,6 @@ u.today##.something
 ||torimochi.line-apps.com^$image,redirect=1x1-transparent.gif
 ||streamtape.xyz/stat/
 ||sugarops.com/w?action=impression$third-party
-||track.byzon.swelen.net^$third-party
 ||todomercadoweb.es/pixel
 ||whiskyqueue.com^$third-party
 ||tagm.tchibo.de/ai.aspx
@@ -66441,7 +66363,6 @@ u.today##.something
 ||video-library.showheroes.com/player/ad_tag?
 ||statistichegratis.net^$third-party
 ||straightnest.com^$third-party
-||thron.com/shared/plugins/tracking/
 ||wondershare.com/wsid/com/static/utils/track.js
 ||wsj.com/cookies/pixel.gif
 ||vercel.com^$removeparam=sfmc_activity_name
@@ -66481,14 +66402,12 @@ u.today##.something
 ||webwise.org^$third-party
 ||summerobject.com^$third-party
 ||t13.cl/hit/
-||surefire.link^$third-party
 ||tweakers.nl/track/
 ||stats.lt^$third-party
 ||track.vitringez.com/tracking.js
 ||tag.hariken.co^$third-party
 ||strongvpn.com/aff/
 ||tr.indeed.com/m/basecamp/analytics.js
-||tildacdn.com/pixel.png
 ||syteapi.com/et?
 ||t.beop.io^$third-party
 ||suntcontent.se^$third-party
@@ -66504,19 +66423,16 @@ u.today##.something
 ||tiendeo.*/_statsapi/
 ||tedioustooth.com^$third-party
 ||wearbasin.com^$third-party
-||stellaservice.com^$third-party
 ||tracking.venturify.at^$third-party
 ||uq.force.com/auraAnalytics^
 ||toyota.com/analytics/
-||top50-solar.de/solarcount/
 ||static.vocento.com/tag-manager/latest/vtm.js
 ||stylitics.com/api/engagements
 ||synthesizespoon.com^$third-party
 ||vidmoly.me/metric.php?
 ||vs4.com/impr.php
 ||static.vdmximg.com/wp-includes/js/u_hits_control.js
-||streamsend.com^$third-party
-||tinystat.ir^$third-party
+||www.hitseller.de^$removeparam=idealoid
 ||ucoz.ru/stat/
 ||t.oned.io/onedio-visit.img?_t=
 ||sync.bumlam.com^$third-party
@@ -66548,7 +66464,6 @@ u.today##.something
 ||tori.fi/img/none.gif$image
 ||teltarif.de/ttt.go?$image
 ||ucoz.kz/stat/
-||tkx.mp.lura.live/rest/v2/server_time
 ||symbolizebeast.com^$third-party
 ||storytelling.nzz.ch/track-manager^
 ||stiffgame.com^$third-party
@@ -66563,7 +66478,6 @@ u.today##.something
 ||statnews.com/wp-content/compiled/js/stat-adobe-analytics.js
 ||wct-1.com/wct.js
 ||ws.zoominfo.com/pixel/
-||tbcconnect.ge^$third-party
 ||trendyol.com^$removeparam=tyutm_campaign
 ||weiyun.com/proxy/domain/boss.qzone.qq.com/fcg-bin/fcg_rep_strategy?
 ||wpfc.ml/b.gif$image,redirect=1x1-transparent.gif,domain=thestoryexchange.org
@@ -66577,17 +66491,15 @@ u.today##.something
 ||syl.ru/misc/js/global/tracker.js
 ||waaw.ac/cdn-cgi/trace
 ||vidmoly.me/log.php
-||statowl.com^$third-party
+||static.iyzipay.com/buyer-protection/assets/js/analytics.js
 ||tonkosti.ru/go.php?
 ||studeersnel.nl/27m703Hm/init.js
-||sync.tv^$third-party
 ||vinted.it/relay/events
 ||stats2.agilecrm.com^$third-party
 ||t.ad.nl^$image
 ||t.rentcafe.com/rctv*.min.js
 ||touchcommerce.com/tagserver/logging/$third-party
 ||static1.dmcdn.net/js/cpe/cpeEvent.min.js
-||statisfy.net^$third-party
 ||tapjoy.net^$third-party
 ||wakefulcook.com^$third-party
 ||web-g-p.com/info/js/cookie.js
@@ -66611,7 +66523,6 @@ u.today##.something
 ||vidoza.net/papi/*/addevent/promo_data
 ||virgoplato.com^$third-party
 ||store.lixil.co.jp/*/Amasty_Xsearch/js/widgets/analytics-data-collector.js
-||stonecalcom.com^$third-party
 ||wurking.global.ssl.fastly.net/ingestly-ingest/
 ||tokyo-np.co.jp^$removeparam=rct
 ||systemed.fr/itya.js
@@ -66620,6 +66531,7 @@ u.today##.something
 ||vyg.mobi^$third-party
 ||vc.ru^$cookie=/osnova-aid|fingerprint|adblock-state/
 ||trk.mail.ru^$image,ping
+||www.ebay.$removeparam=_trksid
 ||themanual.com^$cookie=dtPageViewId
 ||tourmake.it^*/stat/
 ||sweepsheep.com^$third-party
@@ -66632,12 +66544,10 @@ u.today##.something
 ||w-api.baomoi.com^$image
 ||tracker.thinkermail.com^$third-party
 ||track.special-offers.online^$third-party
-||stormiq.com^$third-party
 ||thirdweb.com^$cookie=/^ph_phc_/
 ||unseenreport.com^$third-party
 ||wateryvan.com^$third-party
 ||www.alternate.de^$removeparam=partner
-||talpa-analytics.com^$third-party
 ||udc.yahoo.com/*/yql?
 ||tripadvisor.$cookie=TAUnique
 ||superjob.ru/ws/
@@ -66670,7 +66580,6 @@ u.today##.something
 ||taringa.net/ajax/track-visit.php
 ||unusedquestion.com^$third-party
 ||williams-sonoma.com^$cookie=_abck
-||statun.com^$third-party
 ||streamtape.to/stat/
 ||vercel.com^$removeparam=redirected
 ||users.51.la^$third-party
@@ -66681,7 +66590,7 @@ u.today##.something
 ||target.mixi.media^$third-party
 ||toweringrun.com^$third-party
 ||static.olx.com.br/olx/js/lurker.min.js
-||stats4you.com^$third-party
+||www.hitseller.de^$removeparam=etcc_produkt
 ||t.unbounce.com^$third-party
 ||worriednumber.com^$third-party
 ||statistiche.it^$third-party
@@ -66721,7 +66630,6 @@ u.today##.something
 ||trnox.com/ssp/ws/*/action/log?
 ||wumii.com/images/pixel.png
 ||uim.tifbs.net^$third-party
-||supercounters.com^$third-party
 ||terra.com.mx^*/metrics_begin.js
 ||tk.ilius.net/tr.gif?
 ||visilabs.com^$third-party
@@ -66740,13 +66648,10 @@ u.today##.something
 ||videostats.kakao.com/log^
 ||stripchat.com/pixel/
 ||stripe.com/?event=
-||taxel.jp^$third-party
 ||ufe.helixo.co/api/v1/stats
 ||top.zp.ua/counter/
-||stippleit.com^$third-party
 ||trkn.us^$third-party
 ||survey.io/log?
-||tns-sifo.se^$third-party
 ||web100kz.com^$third-party
 ||statistik-gallup.net^$third-party
 ||twgreatdaily.com/site/js/name/stat
@@ -66770,222 +66675,205 @@ u.today##.something
 ||stats.publitas.com/publitas-stats/track
 ||synthira.ru/*.php|$script
 ||whirlwealth.com^$third-party
-||staticiv.com^$third-party
 ||unileversolutions.com/*/js/trackUser.
 ||tagsd.com/newServing/tracking_id.php^
 ||t*.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js
 ||weg.de/etc/designs/comvel/clientlibs/tracking
 ||wowow.co.jp/API/new_prg/get_tracking_url.php
 ||static.terratraf.io^$third-party
-||statsigapi.net^$third-party
 ||stavka.tv/metrika/watch.js
 ||weather.com$removeparam=par
 ||vevo.com/event/
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||yandex.fr/clck/click
 ||zerkalo.io^$removeparam=vk
-||www.ebay.$removeparam=_trkparms
-||www.lidl.de^$removeparam=msktc
-||www.hitseller.de^$removeparam=sPartner
+||youboranqs01.com/ping
+||yandex.*/sport/$removeparam=persistent_id
+||xxxbunker.com/ajax/guestlog
 ||yastatic.net/*/rsya-tag-users/
+||zerkalo.io/stat/
+||zoom.us^$cookie=_zm_ctaid
+||xhamster.com^$removeparam=from
+||zara.com/integration/zenit/events/hit
+||youtube-nocookie.com/gen_204?
 ||zonastat.com/installer.html?param=
+||yimg.jp/images/listing/tool/cv/$script,redirect=noopjs,domain=nissan.co.jp
 ||you.com/api/events
 ||xiaohongshu.com^$cookie=xhsTrackerId
+||zavvi.com^$removeparam=affil
 ||yvesrocher.com.tr/images/__utm.gif^
+||zongheng.com^*/logger.min.js
+||www.yandex.$removeparam=clid
+~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="http://metrika.yandex.ru/stat/"]
 ||yvesrocher.com.tr/images/avenseo/tr_TR/avenseo-uniq.min.js
+||zoom.us^$cookie=_zm_visitor_guid
+||yandex.*/cy?base=0&host=
+||zhihu.com/zbst/events/
 ||yandex.*/promo/$removeparam=utm-term
 ||xiaohongshu.com/api/v2/collect
 ||yextevents.com^$third-party
-||www.ebay.$removeparam=mkrid
+||yvesrocher.com.tr/images/js/tracking^
+||zone-telechargement.ninja/bypassmajs
+||zhanzhang.toutiao.com^$third-party
+||youborafds01.com^$third-party
+||yahoo.com/neo/ymstat
+||xxvidsx.com^$removeparam=site
+||yandex.*/news/$removeparam=persistent_id
 ||yandex.*/sport/$removeparam=msid
+||yes24.com/sysimage/Contents/Scripts/c/logging/clickstream.min.js
+||yandex.*/clck/
 ||youtube.com/gen_204
 ||zenaps.com^$removeparam=cookie
+||zoomflow.com^$third-party
+||yandex.*/search/$removeparam=did
+~diary.ru##a[href^="http://www.liveinternet.ru/stat/"]
+||yandex.*/news/$removeparam=msid
+||yandex.*/news/$removeparam=stid
 ||xing.com/collect/
+||xref.io^$third-party
+||ztat.net/*/webtrekk.min.js^
 ||yandex.*/sport/$removeparam=stid
+||yaanimail.com/assets/js/facebook/pageview.js
+||youku.com/compvlog?
 ||yeniakit.com.tr/process/analytics
 ~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="https://metrika.yandex.ru/stat/"]
 ||zqtk.net^$third-party
 ||yahoo.com/_td/api/resource/StreamService.ads;ads=
 ||youronlinechoices.com/css/images/pixel.png
 ||yahoo.com/_td/api/resource/NativeAdService
+||yxdown.com/count.js
+||zavvi.com^$removeparam=sv_campaign_id
+~ads.google.com#%#navigator.getBattery = undefined;
 ||xiaomi.com/js/mstr.js?
 ||yahoo.co.jp/s?s=
 ||ymetrica.com^$third-party
 ||yunit.org^$third-party
+||xtraffstat.com/js/ktr.js
+||yadropro.ru^$third-party
 ||x.kinja-static.com/assets/packaged-js/*trackers
 ||zerkalo.io^$removeparam=tg
 ||yahoo.com/_td_api/resource/contentList;ad_meta=
+||xgaytube.tv/stats.gif^
 ||z.cdn.turner.com/analytics/cnnvan/jsmd.min.js
 ||zara.media01.eu/tm_js.aspx?trackid
-||www.galaxus.de^$removeparam=pcscpId
 ||youtube.com/player_204?
-||youtube.com/csi_204?
-||yadro.ru^$third-party
-||zn.ua/actions/profile/banners/stat
-||zalando.de/api/rr^
-||yandex.*/search/$removeparam=suggest_reqid
-||zestradar.com^$removeparam=adclid
-||zippywind.com^$third-party
-||zona.plus/ajax/visit-stats
-||yahoo.com/_td/api/resource/StreamService;ads=
-||zz.bdstatic.com^$third-party
-||xxvidsx.com^$removeparam=ad
-||yandex.ru/clck/click|
-||ya.ru/clck/
-||yahoo.com/neo/ygbeacon/
-||yastatic.net/s3/distribution/yanalytics/yanalytics.js
-||www.hitseller.de^$removeparam=idealoid
-||youronlinechoices.com/images/pixel.png
-||yahoo.net/pixel*.gif
-||zone-telechargement.al/analytics/
-||yazilim.net/alexa/
-||zalando.$removeparam=tm_hem
-||zenback.jp^*/tracking.html
-||yahoo.com/pageview
-||youlead.pl/track?
-||xc3.services.livejournal.com/ljcounter/
-||www.ebay.$removeparam=campid
-||xplosion.de^$domain=comunio.de
-||yandexcdn.com/ajax.php
-||za.zalo.me/v*/w/_zaf.gif
-||za.zalo.me/v*/brp?fts=
-||xiaohongshu.com^$cookie=xhsTrackerId.sig
-||zaycev.net/clickmeter_
-||www.technikdirekt.de^$removeparam=sPartner
-||you.163.com^$removeparam=from
-||yandex.ru/log?
-||yandex.ru/cycounter$third-party
-||zapiska.substack.com^$removeparam=isFreemail
-||yemeksepeti.com/*/xhr/api/*/collector
-||xaas3.jp/tracking/$third-party
-||yip.su^$third-party
-||zoom.us^$cookie=_zm_fingerprint
-||zbwp6ghm.com^$third-party
-||youku.com/log/
-||zalando.$removeparam=wt_cd
-||xiaohongshu.com/api/collect
-||zimbio.com/beacon.gif?
-||zooplus.de/om/pxl/
-||xn--pckua2a7gp15o89zb.com/api/tracking.js
-||xovq5nemr.com^$third-party
-||xplosion.de^$domain=focus.de
-||yansk.ru/counter/
-||yahoo.co.jp/b?p=
-||zatsubitown.com/mailfriend/kaiseki
-||www.ebay.$removeparam=amdata
-||yahoo.co.jp/p?
-||zenmatefeedback.typeform.com/forms/*/insights/events/
-||xlgaytube.tv/stats.gif^
-||zhihu.com/collector/
-||zalando.$removeparam=/^cd\d+/
-||yandex.fr/clck/click
-||youboranqs01.com/ping
-||yandex.*/sport/$removeparam=persistent_id
-||xxxbunker.com/ajax/guestlog
-||zerkalo.io/stat/
-||zoom.us^$cookie=_zm_ctaid
-||xhamster.com^$removeparam=from
-||zara.com/integration/zenit/events/hit
-||youtube-nocookie.com/gen_204?
-||yimg.jp/images/listing/tool/cv/$script,redirect=noopjs,domain=nissan.co.jp
-||zavvi.com^$removeparam=affil
-||zongheng.com^*/logger.min.js
-||www.yandex.$removeparam=clid
-~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="http://metrika.yandex.ru/stat/"]
-||zoom.us^$cookie=_zm_visitor_guid
-||yandex.*/cy?base=0&host=
-||zhihu.com/zbst/events/
-||www.ebay.$removeparam=_trksid
-||yvesrocher.com.tr/images/js/tracking^
-||zone-telechargement.ninja/bypassmajs
-||zhanzhang.toutiao.com^$third-party
-||youborafds01.com^$third-party
-||www.google.*/velog/
-||www.hitseller.de^$removeparam=etcc_cmp
-||yahoo.com/neo/ymstat
-||xxvidsx.com^$removeparam=site
-||yandex.*/news/$removeparam=persistent_id
-||yes24.com/sysimage/Contents/Scripts/c/logging/clickstream.min.js
-||yandex.*/clck/
-||zoomflow.com^$third-party
-||yandex.*/search/$removeparam=did
-~diary.ru##a[href^="http://www.liveinternet.ru/stat/"]
-||yandex.*/news/$removeparam=msid
-||yandex.*/news/$removeparam=stid
-||xref.io^$third-party
-||ztat.net/*/webtrekk.min.js^
-||yaanimail.com/assets/js/facebook/pageview.js
-||youku.com/compvlog?
-||yxdown.com/count.js
-||zavvi.com^$removeparam=sv_campaign_id
-~ads.google.com#%#navigator.getBattery = undefined;
-||xtraffstat.com/js/ktr.js
-||yadropro.ru^$third-party
-||xgaytube.tv/stats.gif^
 ||xkcd.com^$removeparam=trk
 ||zalando.$removeparam=wmc
 ||yahoo.com^$cookie=GUC
 ||www.pricezilla.de^$removeparam=bid
-||www.net.kg^$third-party
+||youtube.com/csi_204?
+||yadro.ru^$third-party
+||zn.ua/actions/profile/banners/stat
+||zalando.de/api/rr^
 ||xsrv.jp/ga/
+||yandex.*/search/$removeparam=suggest_reqid
 ||zapier.com/api/*/tracking/event
 ||yandex.*/news/$removeparam=mlid
+||zestradar.com^$removeparam=adclid
 ||youngmarble.com^$third-party
 ||www.uz/counter/collect?
 ||yahoo.com/neo/stat
 ||yandex.*/images/$removeparam=source-serpid
 ||youcanoptout.com^$third-party
+||zippywind.com^$third-party
+||zona.plus/ajax/visit-stats
 ||zendesk.com/embeddable_blip?type=analytics&data=
 ||www.technikdirekt.de^$removeparam=idealoid
 ||xplosion.de^$domain=prosieben.at|prosieben.ch|prosieben.de
 ||zdbb.net^$third-party
+||yahoo.com/_td/api/resource/StreamService;ads=
 ||xxxbunker.com/ajax/viewlog
 ||zlp6s.pw^$third-party
-||www.hitseller.de^$removeparam=etcc_produkt
 ||yemeksepeti.com/*/xhr/b/s/beacon
+||zz.bdstatic.com^$third-party
 ||xlgaytube.tv/analytics.js
+||xxvidsx.com^$removeparam=ad
 ||xcar.com.cn/exp/
+||yandex.ru/clck/click|
 ||zozo.jp/common/js/ads-inner-tracking.js
+||ya.ru/clck/
 ||zerkalo.io/api?rev=r0~r0~r0
+||yahoo.com/neo/ygbeacon/
+||yastatic.net/s3/distribution/yanalytics/yanalytics.js
+||youronlinechoices.com/images/pixel.png
 ||xiaohuangshu.me/visit.php
+||yahoo.net/pixel*.gif
 ||xserver.ne.jp/analytics?
 ||yandexcdn.com/cdn-cgi/trace
+||zone-telechargement.al/analytics/
+||yazilim.net/alexa/
+||zalando.$removeparam=tm_hem
+||zenback.jp^*/tracking.html
 ||zozo.jp^$removeparam=t
+||yahoo.com/pageview
+||youlead.pl/track?
 ||yandeg.ru/count$third-party
-||www.hitseller.de^$removeparam=etcc_med
 ||xozilla.xxx/static/js/analytics.*.js
+||xc3.services.livejournal.com/ljcounter/
 ||yachtingnetwork.it/stat/
 ||youtube.com/api/stats/atr?
 ||zaehler.tv^$third-party
 ||zeit.de/cre-*/tracking^
 ||x.clearbitjs.com^$third-party
+||xplosion.de^$domain=comunio.de
+||yandexcdn.com/ajax.php
+||za.zalo.me/v*/w/_zaf.gif
 ||yandex.*/news/$removeparam=from
-||www.electronic4you.de^$removeparam=idealoid
+||za.zalo.me/v*/brp?fts=
 ||yahoo.com^$removeparam=ncid
 ||yenicaggazetesi.com.tr/stats/
+||xiaohongshu.com^$cookie=xhsTrackerId.sig
+||zaycev.net/clickmeter_
+||www.technikdirekt.de^$removeparam=sPartner
+||you.163.com^$removeparam=from
+||yandex.ru/log?
 ||zapier.com/api/*/events
+||yandex.ru/cycounter$third-party
+||zapiska.substack.com^$removeparam=isFreemail
+||yemeksepeti.com/*/xhr/api/*/collector
 ||zorosrv.com$third-party
+||xaas3.jp/tracking/$third-party
+||yip.su^$third-party
 ||ytn.co.kr/_comm/ylog.php?
 ||www002.commutil.kr/adlog/adlog_arrviewset.php
+||zoom.us^$cookie=_zm_fingerprint
 ||xhamster.com/stats/
+||zbwp6ghm.com^$third-party
 ||yna.co.kr^$removeparam=site
 ||yourmy.monster^$all
 ||zyuken.net/gcp_remote/ads_imp/
+||youku.com/log/
+||zalando.$removeparam=wt_cd
+||xiaohongshu.com/api/collect
+||zimbio.com/beacon.gif?
 ||yastatic.net/s*/milab/js/metrika-counter.js
+||zooplus.de/om/pxl/
+||xn--pckua2a7gp15o89zb.com/api/tracking.js
 ||youtu.be^$removeparam=si
 ||zive.cz/Client.Scripts/tracking.js
 ||yandex.*/sport/$removeparam=mlid
+||xovq5nemr.com^$third-party
 ||xinnet.com/dcp/javascript/fingerprint2.min.js
 ||xgaytube.tv/click.php
 ||x.clearbit.com^$third-party
 ||xl-trk.com^$third-party
+||xplosion.de^$domain=focus.de
 ||yahoo.com/p.gif?
+||yansk.ru/counter/
+||yahoo.co.jp/b?p=
+||zatsubitown.com/mailfriend/kaiseki
+||yahoo.co.jp/p?
 ||yvesrocher.com.tr/images/js/coremetrics.js
 ||zenaps.com^$removeparam=bId
+||zenmatefeedback.typeform.com/forms/*/insights/events/
+||xlgaytube.tv/stats.gif^
+||zhihu.com/collector/
 ||yahoodns.net/pixel.gif
 ||zealousfield.com^$third-party
 ||xgaytube.com/stats.js
 ||x.interia.pl/inpl/inpl.klmcounter.*.js
 ||yahoo.com^$cookie=APIDTS
+||zalando.$removeparam=/^cd\d+/
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 .life/ads/
 ||zucks.net^$third-party
@@ -67007,6 +66895,7 @@ valueresearchonline.com##.vr-adv-container
 alloldpics.com,sexygirlspics.com##.live-spot
 /js/zb.js$script,third-party
 ###my-adsFPR
+||sub2tech.com^$third-party
 msn.com##.qohvco-DS-EntryPoint1-1
 ||wirewuss.com^$third-party
 @@||linkbucks.com/tmpl/$image,stylesheet
@@ -67052,8 +66941,10 @@ jav321.com##.row > .col-md-12 > ul
 youtube.com##.ytp-ad-action-interstitial-slot
 cumlouder.com##[class^="sm"]
 /CookieMapping?
+||toast.com/sendid?
 ||trail-web.com^$third-party
 porngameshub.com###im-container
+||teletarget.ru^$third-party
 hobby.porn##.pad
 /cms-gg.js
 dollargeneral.com#?#li:-abp-has(.dg-product-card__sponsored[style="display: block;"])
@@ -67069,6 +66960,7 @@ twitter.com#?#.tweet:-abp-has(.promo)
 hentaigasm.com##[src^="https://add2home.files.wordpress.com/"]
 @@||adswizz.com/adswizz/js/SynchroClient*.js$script,third-party,domain=jjazz.net
 mumbaiporn.com##.hor-spots-bl
+||sundaysky.com^$third-party
 target.com#?#div[data-test="@web/site-top-of-funnel/ProductCardWrapper"]:-abp-contains(sponsored)
 beforeitsnews.com##.x1x2prx2lbnm
 ##.main-ad-l
@@ -67136,6 +67028,7 @@ m.koreatimes.co.kr##div[style="width: 300px; height:250px; overflow: hidden; mar
 /Runtime/Js/90_m.js
 /nqnhfd/*.js
 .com/js/alls_foot.js
+||tailtarget.com^$third-party
 chrome-stats.com##div[id*="billboard_responsive"]
 ok.xxx,pornhat.com,xxxonxxx.com##.player-bn
 bleachernation.com#?#.code-block:-abp-has(span:-abp-contains(A D V E R T I S E M E N T))
@@ -67211,6 +67104,7 @@ fanatics.com#?#.product-card:-abp-has(.sponsored-badge)
 worldsex.com##.hide-on-mobile
 usnews.com##div[class^="Ad__Container-"]
 ##.smcms-wrap > a[target="_blank"] > img
+||stormcontainertag.com^$third-party
 inverse.com#?#div > p + div:-abp-has(amp-ad)
 /adpv?cn=
 /tanad.js
@@ -67230,6 +67124,7 @@ nytimes.com,nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##[dat
 /huya/main/widget/roomGg
 /js/easyAD.js
 /webcam600.mp4$domain=91porn.com
+||tidningsnatet.se^$third-party
 ||traktor.ru^*/counter.php?
 /dstracking.
 buzzly.art##.z-10.w-max
@@ -67292,6 +67187,7 @@ slashdot.org#?#article:-abp-has(.ntv-sponsored-question)
 trakt.tv##a[class^="hu-ck-s-t-er-"][target="_blank"]
 pornhd.com##.ntv-code-container
 ||u5e.com^$third-party
+||tiktokv.com/web/report?
 ||wieistmeineip.de/ip-address/$third-party
 xhamster.com##._029ef-containerBottomSpot
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.be,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-cel-widget^="multi-card-creative-desktop_loom-desktop-top-slot_"]
@@ -67332,6 +67228,7 @@ jav321.com##.row > .col-md-12 > h2
 ||ubereats.com/_track
 @@||pepperjamnetwork.com/banners/$image,domain=extrarebates.com
 ##a[href*=".beiren.cc"]
+||statsy.net^$third-party
 ##img[onclick*="/2e9c9aa9.com"]
 ||xapkgame.com^$third-party
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|embed.comicbook.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|worldsurfleague.com
@@ -67342,6 +67239,7 @@ wsj.com##[aria-label="Sponsored Offers"]
 ||tripadvisor.*/wm/record
 ##img[onclick*=".gghktv.com/"]
 ||whoisonline.net^$third-party
+||thesmilingpencils.com^$third-party
 ||trackfeed.com^$third-party
 gamertweak.com##.widget_srlzycxh
 xfantazy.com##.partwidg1
@@ -67391,10 +67289,12 @@ dafontfree.io##[href="https://1.envato.market/c/"]
 hentaidude.xxx##.ai_widget
 ||sysomos.com^$third-party
 @@||abcnews.com/assets/player/$script,~third-party
+||statsrely.com^$third-party
 exportfromnigeria.info##[src^="https://storage2.proboards.com/"]
 ##.ad300left
 linkhub.icu##a[href^="/downloadnow.php?"]
 .top/ads/
+||tenping.kr^$third-party
 bing.com###bepfo.popup[style^="visibility: visible"]
 .tv/js/ads/
 ##.MacPlayer > #play-pause
@@ -67425,6 +67325,7 @@ zbporn.com##.p-ig
 vigilantcitizen.com##.vigil-leaderboard-article
 tripadvisor.at,tripadvisor.be,tripadvisor.ca,tripadvisor.ch,tripadvisor.cl,tripadvisor.cn,tripadvisor.co,tripadvisor.co.id,tripadvisor.co.il,tripadvisor.co.kr,tripadvisor.co.nz,tripadvisor.co.uk,tripadvisor.co.za,tripadvisor.com,tripadvisor.com.ar,tripadvisor.com.au,tripadvisor.com.br,tripadvisor.com.eg,tripadvisor.com.gr,tripadvisor.com.hk,tripadvisor.com.mx,tripadvisor.com.my,tripadvisor.com.pe,tripadvisor.com.ph,tripadvisor.com.sg,tripadvisor.com.tr,tripadvisor.com.tw,tripadvisor.com.ve,tripadvisor.com.vn,tripadvisor.de,tripadvisor.dk,tripadvisor.es,tripadvisor.fr,tripadvisor.ie,tripadvisor.in,tripadvisor.it,tripadvisor.jp,tripadvisor.nl,tripadvisor.pt,tripadvisor.ru,tripadvisor.se#?#.listItem:-abp-has(.sponsored_v2)
 le.com##.min_pause_img
+||targetix.net^$third-party
 @@||forum.miuiturkiye.net/konu/reklam.$~third-party,xmlhttprequest
 /indexpc.html?agent=$popup,third-party
 ||youjizzlive.com/api/metrics
@@ -67445,6 +67346,7 @@ limetorrents.pro##a[href^="/leet/?"] > img[src^="/static/images/download"]
 pornfaia.com##.video-bnrz
 /pcode.jsp?uid=$script,third-party
 ||tracelytics.com^$third-party
+||tnative.ru^$third-party
 msn.com##div[id^="nativeAd"]
 @@||urlgalleries.net^$generichide
 booking.com##.sr-motivate-messages
@@ -67587,6 +67489,7 @@ homo.xxx##.spot.column
 ##.bn728-93
 /botad.html
 ###adBody07
+||thron.com/shared/plugins/tracking/
 /runtime/js/index960.js
 ||ziyu.net^$third-party
 ||wheregoes.com/api/event
@@ -67748,6 +67651,7 @@ msn.com##a[aria-label="Amazon"]
 sonichits.com###top-top-ad
 ##a[href*=".yyk2.com/"]
 ||vinlens.com^$third-party
+||taxel.jp^$third-party
 linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__sub-description:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
 ##.uk-width-1-1.adbox
 porndoe.com,redtube.com##video[autoplay][src*="blob:" i]
@@ -67763,6 +67667,7 @@ pornsitetest.com##div[id^="eroti-"]
 ||visitstreamer.com^$third-party
 ###bottommob.bottommob
 ##a[id][href*="/?aff="]
+||staticiv.com^$third-party
 ###guanggao1[style^="position"]
 @@||accounts.google.com^$popup
 radioreference.com#?#.box.gradient:-abp-has(a[href*="&Click="])
@@ -67937,13 +67842,13 @@ lewdgamer.com##div[id^="spot-"]
 @@||history.com^$generichide
 xhamster.com##.yxd-jdcams-widget
 ##.flex-row > #propagandaLeft
+||tracemyip.org/vlg/
 toppixxx.com##.thumbad
 mansurfer.com##.footerbanner
 ###playerAdvLayer
 ||zirve100.com^$third-party
 /analytics-gjc/*
 analpornpix.com##a[href^="/go/"]
-progamerage.com##.vc_separator
 indianpornvideos.com##.vdo-unit
 kroger.com#?#.AutoGrid-cell:-abp-has(.ProductCard-tags>div>svg.kds-Icon)
 @@||luminalearning.com/affiliate-content/$image,~third-party
@@ -67957,6 +67862,7 @@ top16.net##.img_wrap
 ||wetpaint.com^*/track?
 ##.containeradvertising
 ##a[onclick*="open"] > img[src*=".dailygn.com/"]
+||supportxmr.com^$third-party
 ##.lyzm-prevent
 ||uptolike.com^$third-party,domain=~uptolike.ru
 ||u-on.eu^$third-party
@@ -68015,6 +67921,7 @@ polygon.com##[data-native-ad-id^="container"]
 usasexguide.nl###uiISGAdFooter
 ||widgetbox.com/syndication/track/
 .com/dm/bofangxia.js
+||tget.me^$third-party
 ||tercept.com^$third-party
 @@://localhost:$generichide
 xhamster.com##.yxd-jcam-thumb
@@ -68080,6 +67987,7 @@ downloadhub.ltd##a[href^="https://bestbuyrdp.com/"]
 avanigo.com##iframe.lazyloaded
 @@||hw-ads.datpiff.com/news/$image,domain=datpiff.com
 corvetteblogger.com#?#aside.td_block_template_1.widget.widget_text:-abp-has(>h4.block-title>span:-abp-contains(Visit Our Sponsors))
+||stripedcollar.net^$third-party
 ||userreport.com^$third-party
 teenager365.com##.wps-player__happy-inside-btn-close
 groupon.com##[data-bhc$="sponsored_carousel"]
@@ -68112,6 +68020,7 @@ upornia.com,upornia.tube##.wssvkvkyyee
 @@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
 mobafire.com##.venatus-responsive-ad
 .info/js/alls_top.js
+||team-rec.jp^$third-party
 playbuzz.com##.stickyplayer-container
 xhamster.com##.yld-mdcam-thumb
 ||visionarycompany52.com^$third-party
@@ -68142,6 +68051,7 @@ photopea.com##[href*=".ivank.net"]
 xhamster.com##.yfd-fdsp-b
 @@||optimatic.com/shell.js$domain=pch.com
 @@||arnhemland-safaris.com/images/made/$image,~third-party
+||stats21.com^$third-party
 nepallivetoday.com,wjr.com##img[height="100"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.be,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg###sponsoredProducts2_feature_div
 ###fnbt
@@ -68150,6 +68060,7 @@ windowsbulletin.com#?#strong:-abp-has(a[href^="http://www.reimageplus.com/"])
 ##div[onclick*=".lyty49.com"]
 @@||kanalfrederikshavn.dk^*/jquery.openx.js?
 boundhub.com##.t2op
+||surveyscout.com^$third-party
 bing.com#?#.b_ans.b_top.b_topborder:-abp-has(.bte_join)
 ts-tube.net##.js-uvb-spot
 jox2fm.com,joxfm.com##a[href^="https://www.milb.com/"]
@@ -68226,6 +68137,7 @@ videogames.si.com##.m-video
 ||trailheadapp.com^$third-party
 ||tradingview.com/ping
 livability.com##.wp-block-jci-ad-area-two
+||storygize.net^$third-party
 ||yelp.com/spice?
 ||triptease.io^$third-party
 babesmachine.com##.tradepic
@@ -68277,6 +68189,7 @@ xhamster.com##.yxd-jdbanner
 pornone.com##.warp
 3movs.com,3movs.xxx,bravotube.net,camvideos.tv,cluset.com,deviants.com,dixyporn.com,fetishshrine.com,hello.porn,katestube.com,pornicom.com,sleazyneasy.com,videocelebs.net,vikiporn.com,vjav.com##.spot
 /guanggao2.
+||streem.com.au^$third-party
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.be,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-csa-c-slot-id^="loom-mobile-brand-footer-slot_hsa-id-"]
 ##a[href*="/smch7.com"]
 /Runtime/Js/guding_top.js
@@ -68396,9 +68309,11 @@ xhamster.com##.wio-pcam-thumb
 ||twitter.com/1.1/attribution
 kyivpost.com##.widget-300-250
 .com/rmb/palyyoubian.js
+||surefire.link^$third-party
 watson.ch##.watson-ad
 hentaiworld.tv##.comments-banners
 pornlib.com##a[href*="/linkout/"]
+||tildacdn.com/pixel.png
 /hm.js?$third-party,xmlhttprequest
 technclub.com##.wbyqkx-container
 @@||itv.com/itv/tserver/$~third-party
@@ -68408,6 +68323,7 @@ tnaflix.com##.bannerBlock
 ||valuedopinions.co.uk^$third-party
 javfor.tv##.my-2.container
 ##.newstyle > a > img[src*="img.com/i/"]
+||stellaservice.com^$third-party
 pervclips.com###after-adv
 ||xfinity.com/event/
 @@||az.hpcn.transer-cn.com/content/dam/isetan_mitsukoshi/advertise/$~third-party
@@ -68451,6 +68367,7 @@ cutegurlz.com##.header-widget
 xnxxvideos.rest##.prefixat-player-promo-col
 /cpeEventTracking.
 ##[class][onclick="window.location.href='https://www.suyuexs.com'"]
+||sync.tv^$third-party
 techyv.com##.wpb_raw_code
 cctv.com,www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 clover.fm##div[style*="width:975px; height:90px;"]
@@ -68507,6 +68424,7 @@ dawn.com##.widget-sponsoredcontent
 ||wine-searcher.com/K6S8okp3/init.js
 ||worthpoint.com/lIUjcOwl/init.js
 ||css.tv.itc.cn/m/img/player/dlBanner.$image
+||stats4you.com^$third-party
 cockdude.com##.after-boxes-ver2
 ##.qpdb + a[href]
 sexhd.pics##a[href^="/direct/"]
@@ -68533,6 +68451,7 @@ greyhound-data.com##ul.ppts
 @@||maxstream.video^$generichide
 ||visistat.com^$third-party
 tundraheadquarters.com##a[href^="http://www.tkqlhce.com/"]
+||supercounters.com^$third-party
 @@||icloud.com^$generichide
 ##a[href$="/xhg23.com"]
 /guang/mhys.jpg
@@ -68542,6 +68461,7 @@ carls-sims-4-guide.com##hr.post_separator + .windowbg
 comicbook.com,popculture.com##[id^="native-plus-"]
 ##a[href*=".5599722.com"]
 ||wzrk.co^$third-party
+||stippleit.com^$third-party
 audiobookbay.li##a[href^="/eddl-now?"]
 ||trackjs.com/usage.gif?
 sextb.net##.sextb_300
@@ -68639,6 +68559,7 @@ yourlust.com##.fluid_html_on_pause
 ||videomatictv.com/imps/
 japan-whores.com##.b-sidebar
 raspberryexpert.com##[style*="border-bottom: none;"]
+||traceparts.com/logs
 pornpics.com,pornpics.de##.sponsor-type-4
 @@||gitlab.com^$generichide
 dixyporn.com##.bottom_spot
@@ -68654,6 +68575,7 @@ rule34.xxx##.desktop
 walmart.ca##a[href*=".criteo.com/"]
 @@/wp-content/plugins/blockalyzer-adblock-counter/*$image,script,~third-party,domain=~gaytube.com|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 .cn/sc/*?x=$script,third-party
+||swiftmining.win^$third-party
 ||wtmtrack.com^$third-party
 producebluebook.com##[id^="BBS"]
 @@||playwire.com/bolt/js/zeus/embed.js$script,third-party
@@ -68728,6 +68650,7 @@ pornpics.network##div[style^="height: 250px;"]
 constative.com##div[style]:not([class])
 redtube.com###popsByTrafficJunky
 yahoo.com##.viewer-sda-container
+||threatbook.cn^$third-party
 windowsbulletin.com#?#.code-block:-abp-has(a[href^="http://www.reimageplus.com/"])
 /ys_77jjss/*
 qwant.com#?#.is-sidebar:-abp-has(a[data-testid="advertiserAdsLink"])
@@ -68740,6 +68663,7 @@ rakuten.com#?#div[data-productid]:-abp-has(div.productList_sponsoredAds_RUS)
 ||vtex.com.br/rc/rc.js
 /bt*.com/imgs.js?t=
 @@||contacts.google.com^$generichide
+||tagcdn.com^$third-party
 shotcut.org##[style="background-color: #fff; padding: 6px; text-align: center"]
 avn.com##.text-center.mb-10
 ##a[href*="/mug749.vip"]
@@ -68861,6 +68785,7 @@ privacytools.io#?#.container:-abp-has(.tag .fa-adversal)
 @@||jsdelivr.net^*/videojs.ads.css$domain=irctc.co.in
 /pc/Tpl/baibaipc//js/*
 streamingsites.com##div[style="margin-bottom: 10px; display: flex;"]
+||themesltd.com/online-users-counter/$third-party
 ||yahoo.net/pixel.gif
 pichunter.com##.__autofooterwidth
 /xiazxvbgyjw220923.js
@@ -68879,6 +68804,7 @@ drtuber.com,iceporn.com,nuvid.com,proporn.com,viptube.com,winporn.com##.drt-spot
 ###nav + .slider-spons
 @@||docs.google.com^$generichide
 /optimosthead/*
+||t4ft.de^$third-party
 /ctr_tracker.
 thesouthafrican.com##[class^="SiteHeader__AdvertisementWrapper-"]
 /ga_social_tracking_
@@ -68915,13 +68841,13 @@ barelist.com,spankingtube.com##a[onclick]
 ###floatad-winpop
 ||wonderpush.com^$third-party
 @@||g.doubleclick.net/gampad/ads?*.crunchyroll.com$xmlhttprequest,domain=imasdk.googleapis.com
+||tourradar.com/def/partner?$third-party
 a-ads.com,ad-maven.com,adcash.com,admitad.com,adskeeper.co.uk,adskeeper.com,adspyglass.com,adstracker.info,adsupply.com,adsupplyads.com,adsupplyads.net,chpadblock.com,exoclick.com,hilltopads.com,join-admaven.com,joinpropeller.com,juicyads.com,luckyads.pro,monetag.com,musk-give.com,myadcash.com,popads.net,propellerads.com,purpleads.io,trafficshop.com,yavli.com##HTML
 teenpornvideo.fun##.sponsor-link-desk
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.uEierd
 @@||api.adnetmedia.lt/api/$~third-party
 cuntest.net###banners
 genius.com##div[class^="SidebarAd_"]
-zillow.com##.vPTHT
 ##div:not(#video)[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##.con_section > .da
 javfor.tv##.banner-top-b
@@ -68972,6 +68898,7 @@ darknessporn.com,familyporner.com,freepublicporn.com,pisshamster.com,punishworld
 imgburn.com##font[face="Arial"][size="1"]
 ##.nordvpn-popup + .sidebar-vpn
 /js/jsstyle-$third-party
+||strossle.it^$third-party
 $websocket,domain=5nj.com|cechi8.com
 wral.com##.vw3Klj
 @@||stats.g.doubleclick.net/dc.js$script,domain=chintaistyle.jp|gyutoro.com
@@ -69087,6 +69014,7 @@ ginx.tv###ginx-floatingvod-containerspacer
 ##img[onclick="window.open(this.url)"][src*="qq.com"]
 bestlifeonline.com,hellogiggles.com##.widget_gm_karmaadunit_widget
 @@||basinnow.com/admin/upload/settings/advertise-img.jpg
+||strs.jp^$third-party
 dailywire.com##.wisepops-block-image
 japan-whores.com##.premium-thumb
 /scr/wtixyd.js
@@ -69138,10 +69066,12 @@ redtube.com##div > iframe
 empflix.com##.rightBarBannersx
 ||tamgrt.com^$third-party
 ###qinav_a1
+||survicate.com^$third-party
 ||tracking.adweb.co.kr^$third-party
 ###js_ads_banner_top_slide
 ##a#wrapper_right_bg[target="_blank"]
 tenforums.com##[style="height:280px;"]
+||tinyclues.com^$third-party
 ||worldssl.net/reporting.js
 ||videostat.com^$third-party
 torrentgalaxy.to##a[href*="/hub.php?a"][target]
@@ -69222,6 +69152,7 @@ everydaykoala.com,playjunkie.com##[class*="__adv-block"]
 @@||wikiversity.org^$generichide
 techadvisor.com##[referrerpolicy="unsafe-url"]
 4tube.com,fux.com,pornerbros.com,porntube.com##a[href*="/redirect-channel/"]
+||tinystat.ir^$third-party
 mrchecker.net##[href^="https://cardingmentor.org"]
 ##.video-info-aux + div[style^="border-radius: 5px;"]
 ||tweakers.net/ajax/$ping
@@ -69246,6 +69177,7 @@ winaero.com#?#p:-abp-contains(Advertisement)
 cargurus.com#?#div[data-cg-ft="car-blade"]:-abp-has(div[data-cg-ft="sponsored-listing-badge"])
 greyhound-data.com##[style*="width: 245px;"]
 .asp?wsg&df=$script,third-party
+||statowl.com^$third-party
 ||woopic.com/Magic/o_vr.js
 /tracking/fingerprint/*
 pornhub.com,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com##[href*="base64"]
@@ -69416,6 +69348,7 @@ windowsloop.com##.wl-prakatana
 everybithelps.co.uk##a[href^="https://shop.trezor.io/"]
 /shangyk1z5o3o.js
 ##a[target="_bank"] > img[src*=".360buyimg.com"][style="width:100%;height:auto;"]
+||sugodeku.com^$third-party
 @@||api.paymentwall.com^$domain=adguard.com
 arkadium.com##div[class^="Ad-adContainer"]
 chewy.com#?#.kib-carousel-item:-abp-has(.kib-product-sponsor)
@@ -69512,6 +69445,7 @@ fetishshrine.com###pre-spots
 /dibun5nodnbmp.js
 ||yext.com/plpixel?
 ||wikia-beacon.com^$third-party
+||sumologic.com^$third-party,domain=~sumologic.net
 .com/uploads/*-860x250.gif
 carpeludum.com##.widget_widget_catchevolution_adwidget
 .info/topjs/
@@ -69525,6 +69459,7 @@ yahoo.com##div[id^="LeadAd-"]
 @@||g.doubleclick.net/gpt/pubads_impl_$domain=accuweather.com|blastingnews.com|bloomberg.com|chelseafc.com|chromatographyonline.com|digitaltrends.com|downdetector.com|edy.rakuten.co.jp|epaper.timesgroup.com|formularywatch.com|game.anymanager.io|games.coolgames.com|managedhealthcareexecutive.com|mediaite.com|medicaleconomics.com|nationalreview.com|nationalworld.com|nbcsports.com|nycgo.com|physicianspractice.com|scotsman.com|telsu.fi|voici.fr|weather.com
 ###bottom_qr_code
 ###appad.cate
+||toast.com/log
 theboobsblog.com###text-74
 ##.hao123-unionad-pic
 ||trackedlink.net^$third-party
@@ -69604,6 +69539,7 @@ beeg.porn##[class^="bb_show_"]
 teenpornvideo.fun##.full-ave
 china.ahk.de#?#.b-main__section:-abp-has(h2.b-section__header:-abp-contains(Advertisement))
 ##div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
+||thestat.net^$third-party
 manga-raw.club##div[style^="height: 250px;"]
 wjbc.com##a[href^="http://sweetdeals.com/bloomington/deals"]
 javfor.tv##.fel-playclose
@@ -69616,7 +69552,6 @@ beforeitsnews.com##[id^="banners_"]
 /om_ctrack.
 ||jd.com/$domain=le.com
 ||yandeg.ru/count/
-militarywatchmagazine.com##.v-size--x-small.theme--light
 @@||tab.gladly.io/newtab/|$document,subdocument
 /frm_adv.aspx
 porngames.com#?#.contentbox:-abp-has(a[href="javascript:void(0);"])
@@ -69681,6 +69616,7 @@ video.laxd.com###owDmcIsUc
 /ga-socialtracker.
 ||uptain.de^$third-party
 ##.ad-left-down
+||statswebtown.com^$third-party
 yahoo.com##li[data-test-locator="stream-related-ad-item"]
 games.dailymail.co.uk##div[class^="GameTemplate__displayAdTop_"]
 /ojborn.so?$script,third-party
@@ -69699,6 +69635,7 @@ iceporn.com##.furtherance
 /wiseatom/banner/pack_
 ##.chat-sysbroadcast-ad
 1280wnam.com##a[href^="https://wistatefair.com/fair/tickets/"]
+||tda.io^$third-party
 ###table1[width="468"][height="50"]
 /see200vipghajq/*
 totsantcugat.info##[href^="https://totsantcugat.info/wp-content/"]
@@ -69755,6 +69692,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=bhshu.net|louzho
 ||xlisting.jp^$third-party
 $script,subdocument,third-party,domain=dlkoo.com
 /duilian2.
+||studiostack.com^$third-party
 worldsex.com##.currently-blokje-block-inner
 .com/myjs/mys_alljs.js
 ||zazzle.de/svc/px
@@ -69768,6 +69706,7 @@ daijiworld.com##[href="http://www.expertclasses.org/"]
 viptube.com##.promotion
 ###fixed-bottom-modal[style^="right:"][style$="px; display: block;"]
 vivud.com,zmovs.com##.player-aside-banners
+||surfcounters.com^$third-party
 ##a[href*=".thejierou.net"]
 ||usabilitytools.com^$third-party
 metager.org##a[href^="https://r.search.yahoo.com/"]
@@ -69822,6 +69761,7 @@ football-tribe.com##div[id^="da-article-"]
 ###aside_cat_ad_bottom
 /xxgg/xsggs.js
 flyingjizz.com###adv_inplayer
+||stats2.com^$third-party
 ##.gg_full
 /red2/ad/*
 ||utraff.com^$third-party
@@ -70027,6 +69967,7 @@ cbn.com##[style="display:block !important; min-height:90px;"]
 ##.adsense200
 sexsbarrel.com,zingyporntube.com##.bns-place-ob
 @@||fdyn.pubwise.io^$script,domain=urbanglasgow.co.uk
+||tkx.mp.lura.live/rest/v2/server_time
 .work/ads/
 4tube.com##img[src][style][width]
 /proxy.htm?id=
@@ -70041,6 +69982,7 @@ kroger.com##a[title^="Advertisement:"]
 ||wecount4u.com^$third-party
 ##a[href*=".downok.com"]
 ##.area > .tuiguang
+||statisfy.net^$third-party
 petco.com##[data-widget-type="citrus-banner"]
 duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##li[data-layout="products"]
 @@||doda.jp/brand/ad/img/icon_play.png
@@ -70061,6 +70003,7 @@ walmart.ca##[data-automation="flipkartDisplayAds"]
 babestare.com##.block
 theautopian.com##[data-widget_type="html.default"]
 /front/adv/getpmadvlist
+||stormiq.com^$third-party
 ||tagmngrs.com^$third-party
 twitter.com#?#div[data-testid="eventHero"]:-abp-has(path[d$="10H8.996V8h7v7z"])
 ##.comiis_ad
@@ -70190,12 +70133,14 @@ youtube.com###player-ads
 /xiaoyi/960_
 disasterscans.com##a[href^="https://recall-email.onelink.me/"]
 @@||image.shutterstock.com^$image,domain=icons8.com
+||statsmachine.com^$third-party
 ##.top > a > .topline[src^="/photo/"]
 ebay.co.uk,ebay.com,ebay.com.au#?#.mfe-reco-ct:-abp-has(.mfe-promoted-label)
 seattlepi.com##.y100.package
 ##A[href^="/e/public/ClickAd?adid="]
 exoav.com##td > a[href]
 jeepforum.com##table[width="468"]
+||stats4all.com^$third-party
 ||tns-gallup.dk^$third-party
 ||whoson.com/poll.gif
 ##div[style^="width: 100%;"][style$="margin: 0px;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
@@ -70219,6 +70164,7 @@ onlytik.com##.temporary-real-extra-block
 ##.ad-above-footer
 pornrabbit.com##.wrap-spots
 ||tracking.interweave.com^$third-party
+||statsbox.nl^$third-party
 /dow_analytics.
 /yryy/css/javamy.js
 regex101.com#?#div > header + div > div + div:-abp-contains(Sponsors)
@@ -70228,6 +70174,7 @@ regex101.com#?#div > header + div > div + div:-abp-contains(Sponsors)
 /CodeFiles/*.aspx?placeid=$third-party
 ||trovus.co.uk^$third-party
 /tourl.html?url=
+||totallylayouts.com/tumblr/visitor-counter/counter.js
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#article.Post:-abp-has(a[rel="nofollow noopener sponsored"])
 /cpm/i.ashx?
 censored.news,newstarget.com##[href^="https://www.survivalnutrition.com"]
@@ -70269,6 +70216,7 @@ dvdgayonline.com##.aligncenter
 ##.gg_pc
 smallnetbuilder.com##div[id^="snb-"]
 .cn/ads/
+||topix.net/t6track/
 noon.com#?#span[class*="productContaine"]:-abp-has(div:-abp-contains(Sponsored))
 .com/cpv/*.ashx?$script,third-party
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
@@ -70333,6 +70281,7 @@ anysex.com,jizzberry.com###main_video_fluid_html_on_pause
 ||trafic.ro^$third-party
 theyarehuge.com##.cams-button
 /ga_dpc_youtube.
+||successfultogether.co.uk^$third-party
 youtube.com##.ytp-ad-progress-list
 @@||lastpass.com/ads.php$subdocument,domain=chrome-extension-scheme
 xnxx.com,xvideos.com##.thumb-ad
@@ -70340,6 +70289,7 @@ xnxx.com,xvideos.com##.thumb-ad
 /uc123_no/*/index/js/activity.
 benzinga.com##div[class^="GoogleAdBlock_"]
 limetorrents.lol#?#.downloadareabig:-abp-has([title^="An‌on‌ymous Download"])
+||sushipool.com^$third-party
 ||tra.scds.pmdstatic.net/sourcepoint/
 livescore.com##div[class^="HeaderAdsHolder_"]
 /js/dyguosj/*
@@ -70411,6 +70361,7 @@ hd21.com##.aside_video
 analyticsindiamag.com##[href^="https://business.louisville.edu/"]
 @@||przegladpiaseczynski.pl/wp-content/uploads/*-300x250-$image,~third-party
 /skin/view/ft$domain=iimanhua.cc|iimh.net
+||tedo-stats.de^$third-party
 youtube.com##.ytp-ad-button
 @@||sourcegraph.com^$generichide
 ||ztsrv.com^$third-party
@@ -70451,6 +70402,7 @@ yahoo.com###sda-LREC
 ||tribl.io^$third-party
 .com/vodad.js
 porngames.club##[href^="https://www.porngames.club/friends/out.php"]
+||stattrax.com^$third-party
 porndoe.com##.\-f-banners
 ||tiser.com.au^$third-party
 ##a[href*=".demobbe.com/"]
@@ -70496,6 +70448,7 @@ how2electronics.com##[href^="https://www.pcbway.com/"]
 efukt.com##.media_below_container
 /dw-tracking-
 ||zazzle.com/botdefender/init.js
+||sumome.com^$third-party
 pornhub.com#?#:-abp-properties(height: 300px; width: 315px;)
 @@||ipinfo.io/static/images/use-cases/adtech.jpg$image,~third-party
 /comscore_stats.
@@ -70514,6 +70467,7 @@ sciencetimes.com##.player
 ||static.iqiyi.com/js/common/mars_v.js$script
 youtube.com###YtKevlarVisibilityIdentifier
 ##[style*="sotv.me"]
+||theoplayer.com/t?
 ||truehits1.gits.net.th^$third-party
 @@||api.friends.ponta.jp/api/$~third-party
 ##.section-subheader > .section-hotel-prices-header
@@ -70617,6 +70571,7 @@ yugatech.com##a[href^="https://yugatech.ph/"]
 /view/image/ngps1.gif
 realpython.com##div[style^="display:block;position:relative;"]
 ###rm-float + .popup
+||tinypass.com^*/track?
 ##a[href="javascript:GoTp();"]
 ||uriports.com/reports/$third-party
 aliexpress.com,aliexpress.us##a[href*="&detail_p4p_id="]
@@ -70707,6 +70662,7 @@ theblaze.com##[data-category="SPONSORED"]
 ##.listok > a > img[style^="width:980px;height:"]
 @@||developers.google.com^$domain=developers.google.com
 @@||f-droid.org/assets/Ads_$~third-party
+||threadloom.com/ga/
 /RenderLapinBlock?
 ||unative.com^$third-party
 anysex.com###fluid_theatre > .center
@@ -70798,6 +70754,7 @@ unknowncheats.me##[href="https://securecheats.com/"]
 ##.banner-ad-section
 @@||player.anyclip.com/anyclip-widget/lre-widget/$script,domain=video.timeout.com|video.venturebeat.com
 ||zeerat.com^$third-party
+||top50-solar.de/solarcount/
 /tracking/digitalData.
 ||cmvideo.cn/v1/iflyad/delivery$media,domain=miguvideo.com
 ||tp88trk.com^$third-party
@@ -70819,6 +70776,7 @@ yellowpages.co.za##.yp-object-ad-modal
 hotmovs.com,thegay.com##.fiioed
 coincheckup.com##.visible-xs > .ng-isolate-scope
 90min.com,investing.com,newsday.com##div[class^="ad_"]
+||tbcconnect.ge^$third-party
 elephanttube.world,pornid.xxx##.rsidebar-spots-holder
 ##img[src*=".qpic.cn"][width="980"][height="80"]
 stakingrewards.com##div[class^="assetFilters_desktop-banner_"]
@@ -70842,6 +70800,7 @@ screencrush.com##.widget-widget_third_party_content
 ||zazzle.fr/botdefender/init.js
 theyarehuge.com##.desktopspot
 tuberel.com##.vda-item
+||stonecalcom.com^$third-party
 ah-me.com,gaygo.tv##.flirt-block
 /images/*gamble$domain=50.7.31.228|tvboxnow.com
 ##.assort-ad
@@ -70919,6 +70878,7 @@ readmanganato.com##div[style="width: 100%;overflow: hidden;text-align: center;"]
 .m.fhxiaoshuo.com^
 /h/k.php?u=*&l=*&v=$third-party
 ##a[href*="/h91.tv"]
+||statsinsight.com^$third-party
 impartialreporter.com,polygon.com##.ob-smartfeed-wrapper
 /api/autosda.php
 ##a[href*="/kt169.com"]
@@ -71124,7 +71084,6 @@ express.co.uk##div[id^="taboola-"]
 txxx.com##.hgggchjcxja
 radiosurvivor.com##text-18
 dallasnews.com##.xl_right-rail
-lasvegassun.com##.varWrapper
 protrumpnews.com#?#.show-on-ptn:-abp-has(.easylist-sucks)
 ##a[href*="?invite_code="] > img[src*=".com"]
 /xiaoyi/360_
@@ -71243,6 +71202,7 @@ jav-jp.com###block-29
 rustlabs.com#?#.sub-info-block:-abp-has(#banner)
 youtube.com##.promoted-videos
 cam4.com##.removeAds
+||subscribers.com^$third-party
 bing.com##.b_spa_adblock
 amateur8.com##.is-av
 coin360.com##.y49o7q
@@ -71258,6 +71218,7 @@ ulta.com#?#li.ProductListingResults__productCard:-abp-has(.ProductCard__badge>p:
 msn.com##.drrTopAdWrapper
 rare-videos.net##.embed-container
 ##.wumii-bottom-popup
+||stats4u.net^$third-party
 watchmygf.mobi##.cs_info
 eporner.com##.hptab
 youx.xxx##.gallery-link
@@ -71283,6 +71244,7 @@ japan-whores.com##.vp-info
 softpanorama.org##table[height="620"]
 ###movieInfoRight
 @@||googleoptimize.com/optimize.js$script,domain=wallapop.com
+||statpipe.ru^$third-party
 ||vidazoo.com/event/
 @@||ad.smartmediarep.com/NetInsight/video/smr$domain=programs.sbs.co.kr
 officedepot.com#?#.od-col:-abp-has(.od-product-card-region-colors-sponsored)
@@ -71299,6 +71261,7 @@ cheaptickets.com,ebookers.com,expedia.com,hotels.com,orbitz.com,travelocity.com,
 ||zanox.com^$third-party
 /Runtime/js/top980.js
 wplift.com##.widget_bsa
+||statssheet.com^$third-party
 deviants.com###_iframe_content
 toppixxx.com###bottom
 ||tdstats.com^$third-party
@@ -71308,12 +71271,14 @@ toppixxx.com###bottom
 /js/index_adfloat.js
 hack-sat.com##.wp-image-31131
 ebony8.com,maturetubehere.com##.pignr
+||tds.io^$third-party
 guyswithiphones.com###imglist > .noshadow
 ||webclicktracker.com^$third-party
 ||topblogging.com^$third-party
 ##a[href*=".meta-wg.com/"]
 ||vimeo.com/ablincoln/
 sexvid.xxx##.site_holder
+||tinyurl.com/pixel.gif/
 ||tracc.it^$third-party
 ##a[href*="?channelCode="] > img[src*=".com"]
 ###downdiv > .downcode
@@ -71327,6 +71292,7 @@ fansshare.com##[width="300"]
 @@||politiken.dk/static/$script
 /comscore/pageview_
 sonichits.com###right-ad
+||ta.sbird.xyz^$third-party
 /tracking/beacon/?
 thefreedictionary.com###Content_CA_AD_0_BC
 /addon/assets/common/gg.js
@@ -71367,6 +71333,7 @@ disasterscans.com##a[href^="https://martialscanssoulland.onelink.me/"]
 cinemaexpress.com##.widget-container-133
 ||msstatic.com/huya/*/p2plib.js$script
 sexu.site##.player-block__line
+||tagmanager.cn^$third-party
 cockdude.com##.native-boxes-2-ver2
 ||wmtools.it/wmtcounter.php?
 yahoo.com###sda-MAST
@@ -71470,6 +71437,7 @@ missav.com##[href^="https://l.hyenadata.com/"]
 ###j-new-ad
 bdsmx.tube,hotmovs.com,javdoe.fun,javdoe.sh,javtape.site,porntop.com##.right
 ##.nQIAj
+||sumo.com^$third-party
 ||tubitv.com/oz/performance/
 ###bottombanner
 ###googleAD2
@@ -71480,13 +71448,14 @@ timeout.com##div[id^="ad-promo-"]
 ###googleAD3
 inverse.com##div.zz
 ##.ad990x130
+||tbex.ru^$third-party
 aliexpress.com,aliexpress.us##a[href*="&p4p_pvid="]
 /htmm/20*.php$popup
 .gif|$domain=7mshipin.org|viidii.info
 bilibili.com##.ad-report, .ad-floor
+||stattooz.com^$third-party
 /assets/t_j/tongji.js
 @@||optout.networkadvertising.org^$document
-businessday.ng##.vc_custom_1627979893469
 bbc.com#?#li[class*="-ListItem"]:-abp-has(div.dotcom-ad)
 ##div[class^="ps_"][value="20"]
 ||traq.li/tracker/
@@ -71554,6 +71523,7 @@ radiotoday.co.uk##[href^="http://go.radiotoday.co.uk/"]
 ||visilabs.net^$third-party
 .com/a_d/
 ##.gg_950
+||telemetric.dk^$third-party
 ##a[href*=".rookiego.com"]
 /js/ads/youxiajiao.js
 ##.d_banner_inner
@@ -71684,6 +71654,7 @@ onepagerules.com##.wp-container-6.wp-block-columns
 pokernews.com##.virgutis
 ##.duilian > .leftd
 ##.lol-ad
+||statun.com^$third-party
 ||veille-referencement.com^$third-party
 @@||4cdn.org/adv/$image,xmlhttprequest,domain=4channel.org
 @@||betterads.org/hubfs/$image,~third-party
@@ -71745,6 +71716,7 @@ hentaiprn.com###custom_html-19
 /aws-analytics/*
 petco.com##[class^="StaticBannerAd"]
 ###lovexin1
+||statsigapi.net^$third-party
 youtube.com##ytd-video-masthead-ad-v3-renderer
 theverge.com##div[data-concert]
 /drWebStat.
@@ -71764,6 +71736,7 @@ hd-easyporn.com###udwysI3c7p
 anyporn.com,bravoporn.com,bravoteens.com,bravotube.net##.inplb
 @@||google.com/images/integrations/$image,~third-party
 ##a[href*="/l1y9.com"]
+||technical-service.net^$third-party
 /lapi/sign/signapi/getinfo
 ||tracker.$xhr,websocket,script,ping
 porngames.tv##.skyscraper_inner
@@ -71788,6 +71761,7 @@ koreanstreamer.xyz##section.korea-widget
 97rock.com,wedg.com##a[href*="716jobfair.com"]
 ||webstats.com^$third-party
 h2porn.com##.cube-thumbs-holder
+||superstats.com^$third-party
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##shreddit-comments-page-ad
 /jsadv/*
 ##a[href*=".3366722.com"]
@@ -71837,6 +71811,7 @@ nsfwyoutube.com##img[src*="data"]
 bevmalta.org,chromoscience.com,conandaily.com,hawaiireporter.com,michaelsavage.com##.wpa
 ##a[href*=".nfqtech.com/"]
 worldsex.com##.dazone
+||thench.net^$third-party
 .us/js/ads/
 ###header > a[target="_blank"] > img[style="width:100%;height:60px;margin-bottom:2px;"]
 ###top_box > a[onclick^="javascript"]
@@ -71907,6 +71882,7 @@ peekvids.com##.card-deck-promotion
 ##a[href^="http://go.gotourl.xyz/"]
 @@||gpt-worldwide.com/js/gpt.js$~third-party
 koreanstreamer.xyz##[href^="https://www.saltycams.com"]
+||tgknt.com^$third-party
 apnews.com##div[class^="Component-rectanglePlaceholderWrapper-"]
 msn.com##li[data-provider="gemini"]
 /guang/twuu.gif
@@ -71965,6 +71941,7 @@ senzuri.tube##.video-tube-friends
 ##.gpost-below
 ||wdfl.co^$third-party
 emalm.com,linkdecode.com##a[href^="https://s.click.aliexpress.com/"]
+||steelhousemedia.com^$third-party
 loblaws.ca,provigo.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca#?#.chakra-container:-abp-contains(Featured Items)
 comicsxxxgratis.com,video.javdock.com##.video-container
 /tigtag_custom/include/popup.
@@ -72020,6 +71997,7 @@ ndtv.com,ndtv.in##[class^="firework"]
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(base64)
 youtube.com##ytm-promoted-sparkles-web-renderer
 /kan/ads/dl.js
+||statuncore.com^$third-party
 nexusradio.com##div[align=center]
 ||ywxi.net^$third-party,domain=~trustedsite.com
 ##a[href*="kdocs.cn"] > img[src*=".ax1x.com/"]
@@ -72159,6 +72137,7 @@ sexyandfunny.com##.content-source
 @@||oauth.vk.com/authorize?
 porngem.com##.featured-b
 /Runtime/Js/m_v_tuijian_
+||swetrix.org^$third-party
 /template/znfls/asd/*
 @@||wordpress.org/stats/plugin/$domain=wordpress.org
 theatlantic.com##div[class*="Leaderboard_placeholder_"]
@@ -72273,7 +72252,9 @@ xmissy.nl##.noclick-small-bnr
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 hoes.tube,love4porn.com##.sponsorbig
 @@||4channel.org/adv/$image,xmlhttprequest,domain=4channel.org
+||submitnet.net^$third-party
 transfermarkt.co.uk##[referrerpolicy]
+||tm-awx.com/pageview
 tetris.com##a[onclick*="open"]
 /wap_advpic/*
 /bookad.oss-
@@ -72292,6 +72273,7 @@ idea4cash.com##td
 techpout.com##.widget_xyz_insert_php_widget
 /tuiguang366.oss-
 /fkounter/*
+||tinypass.com/checkout/offer/trackShow
 ||youtube-nocookie.com/robots.txt?
 /caiguu_gg_
 /9115gg/*
@@ -72313,6 +72295,7 @@ sbs.com.au#?#.MuiBox-root:-abp-has(>.desktop-ads)
 ||xhit.com^$third-party
 /ylqq/*.add
 ||up-rank.com^$third-party
+||tetigi.com^$third-party
 ||wiredminds.de^$third-party
 youtube.com#?#ytd-rich-item-renderer:-abp-has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer)
 greatist.com##hl-adsense
@@ -72340,6 +72323,7 @@ xxxporntalk.com##.leftsidenav
 /aeiou/*$domain=discuss.com.hk|uwants.com
 ||workers.dev/js/script.js
 youtube.com##ytd-banner-promo-renderer
+||theactivetag.com^$third-party
 ##a[href*="/333663.xyz"]
 rexxx.com##.bottom_banners
 @@||amebame.com/pub/ads/$image,domain=abema.tv|ameba.jp|ameblo.jp
@@ -72400,6 +72384,7 @@ radiocity.in##.vertical-small-add
 ##a[href*="/1124024.xyz"]
 .com/js/o.js$domain=qdmm.com|qdwenxue.com|qidian.com
 /disp_cnt.
+||streamsend.com^$third-party
 narkive.com##a[href^="https://rfnm.io/?"]
 ###tanx-con-1
 mql5.com##[src^="https://www.mql5.com/tz/"]
@@ -72542,6 +72527,7 @@ shroomery.org##[href^="//www.shroomery.org/ads/"]
 packaginginsights.com##.verticlblk
 cars.com##[id$="-sponsored"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
+||streambeam.io^$third-party
 comics.org##div[style="height:90px"]
 newstarget.com##[href^="https://www.newstarget.com/ARF/"]
 dailymotion.com##div[class^="AdBanner"]
@@ -72560,7 +72546,6 @@ youjizz.com###onPausePrOverlay
 @@||government-and-constitution.org/images/presidential-seal-300-250.gif$image,~third-party
 .lu/ads/
 ###fc_foot > #f_skyf
-osuskins.net##.vad-container
 ||youtube-nocookie.com/api/stats/qoe?
 anyporn.com,cartoon-sex.tv,oncam.me,pervertslut.com,theyarehuge.com,tiktits.com,webanddesigners.com##.adv
 ||ulogin.ru/stats.html
@@ -72600,7 +72585,6 @@ metager.org#?#.result:-abp-has(a[href^="https://metager.org"][href*="/partner/r?
 /ComscoreAnalytics.
 sfchronicle.com##div[class^="ad-module-"]
 @@||ads.doordash.com^$popup
-battlefordsnow.com,cfjctoday.com,everythinggp.com,filmdaily.co,huskiefan.ca,larongenow.com,meadowlakenow.com,nanaimonewsnow.com,northeastnow.com,panow.com,rdnewsnow.com,sasknow.com,vernonmatters.ca##.vc_single_image-wrapper
 javfor.tv##.banner-c
 ##.ksads
 @@||pornbraze.com^$generichide
@@ -72678,6 +72662,7 @@ ahaan.co.uk,emailnator.com,myip.is,scrolller.com##[href^="https://go.nordvpn.net
 games.dailymail.co.uk##div[class^="HomeTemplate__afterCategoryAd_"]
 ##.adbox-bg.adscounter
 coles.com.au##[data-testid="banner-container-desktop"]
+||statsig.com^$third-party
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##div[jsdata*="SinglePLA-"][data-id^="SinglePLA-"]
 malaysiakini.com##div[style^="height:600px"]
 exhibporno.com##.syn
@@ -72756,6 +72741,8 @@ titantv.com##.yRDh6z2_d0DkfsT3
 hqbang.com##.xpot-horizontal
 dailymotion.com##div[class^="DisplayAd"]
 msn.com##a[aria-label="AliExpress"]
+||sterlingwoods.com^$third-party
+||statistiche-web.com^$third-party
 /template/shoujigg/*
 ##a[href*=":7888/?register="]
 ##.partialViewSlider-outerwrapper
@@ -72823,6 +72810,7 @@ realgearonline.com##iframe[src^="http://www.adpeepshosted.com/"]
 mirrored.to#?#tr:-abp-has([alt="UseNet"])
 @@||ads.listonic.com^$popup
 ||thoughtmetric.io^$third-party
+||tanx.com^$third-party
 ##.m_hot_rec_box_base[id^="right"]
 instawank.com###snackbar
 .html?android=hx*&_$csp=script-src
@@ -72837,8 +72825,10 @@ porntry.com,videojav.com##.video-side__spots
 ##.frAd
 ||ymetrica1.com^$third-party
 bikeroar.com##[href^="https://www.roaradventures.com/"]
+||swiss-counter.com^$third-party
 @@||nytimes.com^*/adslot-$script,xmlhttprequest
 mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
+||statsit.com^$third-party
 3prn.com##.w-spots
 ||yandex.eu/clck/
 hentai-cosplays.com,hentai-img.com###display_image_detail > span
@@ -72957,8 +72947,10 @@ guru99.com##.videocontentmobile
 @@||displayad.naver.com^$~third-party
 ##.widget_ui_textasb
 ||volument.com^$third-party
+||tout.com/tracker.js
 xhamster.com##.bottom-widget-section
 analsexstars.com##.sppc
+||track.laredoute.fr^$image
 broadbandforum.co##ins[data-ad-client]
 /js/showgg.js
 hqpornstream.com##.lds-hourglass
@@ -73052,6 +73044,7 @@ redtube.com##svg
 ##.con_search + #carousel-example-generic[style^="max-width: 1170px;"]
 ##.a_sxfl
 www.sbdm.net##.ads_all:remove()
+||sumokoin.com^$third-party
 agedbeauty.net,data18.com,pornpics.com,pornpics.de,vipergirls.to##a[href*="/go/"]
 analpornpix.com##[src^="https://analpornpix.com/t/153"]
 imgbabes.com##div[style^="width:604px;"]
@@ -73079,7 +73072,9 @@ hdtube.porn##.g-col-banners
 ##a[href*=".gsxzq.com/"]
 /countertab.js?
 ||treasuredata.com^$third-party
+||streetmetrics.io^$third-party
 /countHits.
+||stroeerdigitalmedia.de^$third-party
 hotmovs.com##.app-banners
 ##a[href*="/d27.tv"]
 webcamtests.com##[src^="/MyShowroom/view.php?medium="]
@@ -73091,6 +73086,7 @@ fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32c
 xgroovy.com##.headP
 hancinema.net##[class^="wmls_"]
 ##a[target="_blank"] > img[src*=".bitautoimg.com/"][src$=".gif"]
+||touchcommerce.com/tagserver/logging/
 hentaihaven.xxx##.vrav_a_pc
 /frontend-jiucao/img/banner.jpg
 ||whoaremyfriends.net^$third-party
@@ -73119,6 +73115,7 @@ instacart.com#?#div[id^="a/"]:-abp-has(div:-abp-contains( Sponsored))
 /m1938pc/static/js/dibu.js
 klz9.com,mn4u.net,napuzba.com##div[style^="width:336px"]
 @@||abcnews.com/assets/js/prebid.min.js$~third-party
+||surveywriter.com^$third-party
 bravotube.net##a[href^="/cs/"]
 @@||about.smartnews.com/ja/wp-content/assets/img/advertisers/ad_$~third-party
 ##.a_sxc
@@ -73152,6 +73149,7 @@ hollywoodreporter.com##[id^="jwplayer"]
 windows101tricks.com##.zanui-container
 /static/js/headad.js
 ||ya-counter.ru^$third-party
+||track.byzon.swelen.net^$third-party
 kisscos.net###v-overlay
 ##.ayx[style="display:block;"]
 pornhub.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporngay.com##img[src*="blob:" i]:not(video)
@@ -73263,6 +73261,7 @@ xxxdan.com,xxxdan3.com###bottom-line
 theglobeandmail.com##div[class^="BaseAd_"]
 ##.heg > .partner-list
 mql5.com##[src^="https://www.mql5.com/fz/"]
+||talpa-analytics.com^$third-party
 acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.product-card-col:-abp-contains(Sponsored)
 ||webminepool.com^$third-party
 /ceshi127722.
@@ -73323,6 +73322,7 @@ kompoz2.com,pornvideos4k.com,roleplayers.co##.full-bns-block
 ||wideangle.co^$third-party
 /adinfos?*&ane=pic1
 ##.maomi-content > #main-container > .row.mob40 + .row
+||tns-sifo.se^$third-party
 mylivewallpapers.com#?#.posts > div.posts:-abp-has(.adsbygoogle)
 sexseeimage.com##.happy-player-beside
 ||tellapart.com^$third-party
