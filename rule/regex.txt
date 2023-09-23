@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2023-09-23 00:08:58
+! Last Modified: 2023-09-23 08:32:11
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||p*.adkwai.com^
@@ -61,11 +61,6 @@
 ||ysdm*.ys137.com.cn^
 ||at*.doubanio.com^
 ||asd8900.oss-*.aliyuncs.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||dm*.yxlady.com^
-||qpb*.sohu.com^
-||static*.365inews.com^
-||ac*.pingguolv.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
 ||iptracker-lb-*.amazonaws.com^
@@ -93,6 +88,11 @@
 ||flurry.agentportal-*.yahoodns.net^
 ||lnqkyvufpn._tcp.aem.hb.tt.omtrdc.net^
 ||bi-eventtracker-*.amazonaws.com^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||dm*.yxlady.com^
+||qpb*.sohu.com^
+||static*.365inews.com^
+||ac*.pingguolv.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.hd21.
 ||collect-v*.51.la^
@@ -232,6 +232,7 @@ directtrack.*.js
 ||events*.cre.ma^
 ||collect-elb-*.amazonaws.com^
 ||c*hit.zerkalo.io^
+||px*.mediahills.ru^
 ||wa.gmx.
 ||log-*.previewnetworks.com^
 ||ubacollect-*.cloud.dbankcloud.cn^
@@ -239,7 +240,6 @@ directtrack.*.js
 ||device-metrics-*.amazon.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||geoloc*.geostats.ovh^
-||px*.mediahills.ru^
 ||piano_log.kingsoft.jp^
 ||zewdpmtypi._tcp.abcnews.hb.tt.omtrdc.net^
 ||analyzer*.fc2.com^
