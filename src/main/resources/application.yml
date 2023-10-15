@@ -30,6 +30,8 @@ application:
         path: 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts'
       - name: 'adblock_privacy'
         path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt'
+      - name: '秋风'  
+        path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt'
     #本地规则请将文件放置到项目路径rule目录中
     local:
       - name: 'DD-AD'
