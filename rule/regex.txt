@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2023-12-03 16:09:13
+! Last Modified: 2023-12-04 00:08:29
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -43,6 +43,28 @@
 ||static*.365inews.com^
 ||union*.365inews.com^
 ||122.225.103.*.htm
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||t*.zcvh.net^
+||pixel*.adswizz.com
+||eum*.instana.io^
+||tracking.olx.
+||sdk.fra-*.braze.eu^
+||ana*.inews24.com^
+||mcdp-*.outbrain.com^
+||rum*.a.trbcdn.net^
+||api*.amplitude.com^
+||geotargetly-api-*.com^
+||geoloc*.geostats.ovh^
+||liveme-sensors-collect2-*.amazonaws.com^
+||piano_log.kingsoft.jp^
+||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
+||ssp*.rtb.beeline.ru^
+||geoloc*.geovisite.ovh^
+||log*-applog-*.tiktokv.com^
+||flurry.agentportal-*.yahoodns.net^
+||tw*.netcore.co.in^
+||sgtm.fashionunited.
+||appanalysis*.banggood.com^
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||sax*.sina.
 ||dm*.ppzuowen.com^
@@ -70,28 +92,6 @@
 ||d*.ruiwen.com^
 ||asd8900.oss-*.aliyuncs.com^
 ||at*.doubanio.com^
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||t*.zcvh.net^
-||pixel*.adswizz.com
-||eum*.instana.io^
-||tracking.olx.
-||sdk.fra-*.braze.eu^
-||ana*.inews24.com^
-||mcdp-*.outbrain.com^
-||rum*.a.trbcdn.net^
-||api*.amplitude.com^
-||geotargetly-api-*.com^
-||geoloc*.geostats.ovh^
-||liveme-sensors-collect2-*.amazonaws.com^
-||piano_log.kingsoft.jp^
-||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
-||ssp*.rtb.beeline.ru^
-||geoloc*.geovisite.ovh^
-||log*-applog-*.tiktokv.com^
-||flurry.agentportal-*.yahoodns.net^
-||tw*.netcore.co.in^
-||sgtm.fashionunited.
-||appanalysis*.banggood.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||grs.dbankcloud.
 ||collect-v*.51.la^
@@ -214,7 +214,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||host*.polaroid.com^
 ||analytics-*-nfl.yinzcam.com^
 ||collect-elb-*.amazonaws.com^
-||invenio_tracking_*.sgnapps.com^
 ||bbfbffvffm._tcp.aem.hb.tt.omtrdc.net^
 ||log*.aliyuncs.com^
 ||track.tiara.
@@ -235,6 +234,7 @@ directtrack.*.js
 ||bnofoabewd._tcp.aem.hb.tt.omtrdc.net^
 ||events*.cre.ma^
 ||track.zalando.
+||invenio_tracking_*.sgnapps.com^
 ||crslhvbltc._tcp.att.hb.tt.omtrdc.net^
 ||host*.carl-ras.dk^
 ||px*.mediahills.ru^
