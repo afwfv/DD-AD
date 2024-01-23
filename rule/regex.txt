@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-01-23 00:09:50
+! Last Modified: 2024-01-23 08:37:59
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -201,7 +201,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||track.*.roku.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.yeptube.
-||cs*.mp3bars.com^
 ||cnt.hd21.
 ||xcztjggjgx._tcp.abcotv.hb.tt.omtrdc.net^
 ||collect-v*.51.la^
@@ -209,7 +208,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||ana*.inews24.com^
 ||track.zalando.
 ||mon*-platform-*.tiktokv.com^
-||collect-elb-*.amazonaws.com^
 ||host*.carl-ras.dk^
 ||collector-*.tvsquared.com^
 ||events-api*.outfit7.com^
@@ -224,12 +222,16 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||ad*.ettoday.net^
 ||cnt.proporn.
 ||piano_log.kingsoft.jp^
-||flurry.agentportal-*.yahoodns.net^
 ||tw*.netcore.co.in^
 ||batchlogging*-noneu.truecaller.com^
 ||imp-*.jampp.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||onetrust.
+||stats*.credit-cooperatif.coop^
+||stats.zone-telechargement.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||iptracker-lb-*.amazonaws.com^
+||cs*.mp3bars.com^
 ||grs.dbankcloud.
 ||clog*.yuanfudao.com^
 ||pixel*.adswizz.com
@@ -239,11 +241,13 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||ads-dmp-collect.*.karrotmarket.com^
 ||analytics*.carambo.la^
 ||api*.amplitude.com^
+||collect-elb-*.amazonaws.com^
 ||invenio_tracking_*.sgnapps.com^
 ||analytics*.prezly.com^
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||pixelapi-*.cs.mysamba.tv^
 ||stats*.videonow.ru^
+||flurry.agentportal-*.yahoodns.net^
 ||track.tiara.
 ||lt*.tritondigital.com^
 ||device-metrics-*.amazon.com^
@@ -264,7 +268,3 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||collector.xhamster*.
 ||host*.ncoi.nl^
 ||analytics.*.sky.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||onetrust.
-||stats*.credit-cooperatif.coop^
-||stats.zone-telechargement.
