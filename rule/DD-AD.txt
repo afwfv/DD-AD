@@ -43,6 +43,9 @@
 @@||c.pc.qq.com^
 #163
 ||dl.reg.163.com^
+#放行log文件,减少重复请求造成的发热
+@@||log-api.pangolin-sdk-toutiao-b.com^
+@@||log-api.pangolin-sdk-toutiao.com^
 
 !-------------黑名单--------------------
 #信息流及评论区广告
@@ -76,7 +79,6 @@
 ||dig.zjurl.cn^
 ||dig.bdurl.net^
 ||ad.zijieapi.com^
-||mssdk.volces.com^
 ||apps.bytesfield.com^
 ||pangolin-sdk-toutiao.com^
 ||pangolin-sdk-toutiao1.com^
@@ -145,7 +147,9 @@
 #gamepass日志
 ||catalog.gamepass.com^
 #杂七杂八
-||volcsirius.com
+||googleads.g.doubleclick.nes^
+||ads.lingyuexiu.cn^
+||adscfg.togothermany.cn^
 ||ads-marketing-vivofs.vivo.com.cn
 ||adsfs.heytapimage.com^
 ||sdklog.adintl.cn^
@@ -244,7 +248,6 @@
 ||adservice.aiyouaiyou.cn^
 ||ads-shopping.shouqianba.com^
 ||ads.superawesome.tv^
-||mssdk3-normal-lf.zijieapi.com^
 ||ads.zhinengxiyifang.cn^
 ||ads.huawei.com^
 ||cross-ad-api.afunapp.com^
