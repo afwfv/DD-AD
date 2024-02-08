@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-02-08 16:10:07
+! Last Modified: 2024-02-09 00:09:11
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -212,7 +212,9 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||cs*.mp3bars.com^
 ||clog*.yuanfudao.com^
 |piwik.
+||cnt.vivatube.
 ||flurry.agentportal.*.yahoodns.net^
+||a*.smlog.co.kr^
 ||mon*-platform-*.tiktokv.com^
 ||zewdpmtypi._tcp.abcnews.hb.tt.omtrdc.net^
 ||stat*.1internet.tv^
@@ -220,6 +222,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||sgtm.fashionunited.
 ||api-*.hismarttv.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats.zone-annuaire.
 ||onetrust.
 ||stats.zone-telechargement.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -227,9 +230,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mobileanalytics.*.amazonaws.com^
 ||pixel*.adswizz.com
 ||log-collector.shopee.
-||cnt.vivatube.
-||a*.smlog.co.kr^
-||stats.zone-annuaire.
+||track.zalando.
 ||analytics*.prezly.com^
 ||liveme-sensors-collect2-*.amazonaws.com^
 ||button.blogs.yandex.
@@ -257,7 +258,6 @@ directtrack.*.js
 ||cnt.tubeon.
 ||analytics-*-nfl.yinzcam.com^
 ||host*.polaroid.com^
-||track.zalando.
 ||collector-*.tvsquared.com^
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||tracking-*.trnox.com^
