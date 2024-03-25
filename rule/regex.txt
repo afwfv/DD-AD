@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-03-25 00:08:18
+! Last Modified: 2024-03-25 08:36:20
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -188,14 +188,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log-*.previewnetworks.com^
 ||analytics.*.sky.com^
 ||fb_servpub-a.akamaihd.net^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||bc.geocities.
-||aff*.kolektiva.net^
-||collector-*.px-client.net^
-||df.infra.sz.shopee.
-||hn-ping*.hashnode.com^
-||faro-collector-prod-*.grafana.net^
-||tracker.twenga.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||xizlxlflsi._dmarc.hb.tt.omtrdc.net^
 ||clog*.yuanfudao.com^
@@ -205,6 +197,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mcdp-*.outbrain.com^
 ||ads-dmp-collect.*.karrotmarket.com^
 ||stat.tiara.
+||aff*.kolektiva.net^
 ||api*.amplitude.com^
 ||crslhvbltc._tcp.att.hb.tt.omtrdc.net^
 ||gscounters.*.gigya.com^
@@ -215,6 +208,13 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||analytics*.clickdimensions.com^
 ||sgtm.fashionunited.
 ||tw*.netcore.co.in^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||bc.geocities.
+||collector-*.px-client.net^
+||df.infra.sz.shopee.
+||hn-ping*.hashnode.com^
+||faro-collector-prod-*.grafana.net^
+||tracker.twenga.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||t*.zcvh.net^
 ||matt.mercadolibre.
@@ -247,7 +247,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log*.vietnamplus.vn^
 ||tracking.olx.
 ||device-metrics-us*.amazon.com^
-||cnt.nuvid.
 ||cnt.tubeon.
 ||bnofoabewd._tcp.aem.hb.tt.omtrdc.net^
 ||bnzkviwpsd._tcp.aarp.hb.tt.omtrdc.net^
@@ -262,6 +261,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||datacollector-*.dt.hicloud.com^
 ||tnc16-*.byteoversea.com^
 ||button.blogs.yandex.
+||cnt.nuvid.
 ||flurry.agentportal-*.yahoodns.net^
 ||counter*-yadro*-ru.unblocked.lol^
 ||api-*.hismarttv.com^
