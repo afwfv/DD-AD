@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-04-19 00:08:51
+! Last Modified: 2024-04-19 08:35:34
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -204,22 +204,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log*-applog-*.tiktokv.com^
 ||log*.byteoversea.com^
 ||api-*.hismarttv.com^
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||tccd.douglas.
-||stats*.credit-cooperatif.coop^
-||ce-global-track-*.amazonaws.com^
-||hn-ping*.hashnode.com^
-||log*-misc-lf.amemv.com^
-||a*.smlog.co.kr^
-||analytics-api.dvdfab.
-||api*.amplitude.com^
-||logservice-*.platform.dbankcloud.cn^
-||ssp*.rtb.beeline.ru^
-||analyzer*.fc2.com^
-||st-*.dynamicyield.com^
-||sta.wawacity.
-||counter*-yadro*-ru.unblocked.lol^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||analytics-api.dvdfab.
 ||geotargetly-api-*.com^
 ||log-*.previewnetworks.com^
 ||mcdp-*.outbrain.com^
@@ -227,12 +213,27 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||faro-collector-prod-*.grafana.net^
 ||tracker.twenga.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||tccd.douglas.
+||stats*.credit-cooperatif.coop^
+||ce-global-track-*.amazonaws.com^
+||hn-ping*.hashnode.com^
+||log*-misc-lf.amemv.com^
+||a*.smlog.co.kr^
+||trk*.vidible.tv^
+||api*.amplitude.com^
+||logservice-*.platform.dbankcloud.cn^
+||ssp*.rtb.beeline.ru^
+||analyzer*.fc2.com^
+||st-*.dynamicyield.com^
+||sta.wawacity.
+||counter*-yadro*-ru.unblocked.lol^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||gtmdev.jabra.
 ||ad*.ettoday.net^
 ||cnt.vivatube.
 ||logger-*.dailymotion.com^
+||ana*.inews24.com^
 ||ads-dmp-collect.*.karrotmarket.com^
-||trk*.vidible.tv^
 ||xlog*-*.tiktokv.com^
 ||rtlog*.tiktokv.com^
 ||events*.cre.ma^
@@ -255,7 +256,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||px*.mediahills.ru^
 ||log*.vietnamplus.vn^
 ||collector.xhamster*.
-||ana*.inews24.com^
 ||host*.rvshare.com^
 ||beacons*.gvt3.com^
 ||ubacollect-*.cloud.dbankcloud.cn^
