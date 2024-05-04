@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-05-04 16:09:22
+! Last Modified: 2024-05-05 00:08:22
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -44,21 +44,6 @@
 ||acookie.*.gif?
 ||ja*.gamersky.com^
 ||static*.365inews.com^
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||pixel*.production-public.tubi.io^
-||iptracker-lb-*.amazonaws.com^
-||cs*.mp3bars.com^
-||collect-v*.51.la^
-||report*.appmetrica.webvisor.com^
-||tccd.douglas.
-||sta.extreme-down.
-||ana*.inews24.com^
-||sock*-goguardian.pusher.com^
-||pixel-*.rubiconproject.com^
-||t.delfi.
-||track.tiara.
-||host*.rigbyandpeller.com^
-||track.*.roku.com^
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||dm*.ppzuowen.com^
 ||adi*.cnool.net^
@@ -84,6 +69,21 @@
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||impservice*.youdao.com^
 ||impservice*.yodao.com^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||pixel*.production-public.tubi.io^
+||iptracker-lb-*.amazonaws.com^
+||cs*.mp3bars.com^
+||collect-v*.51.la^
+||report*.appmetrica.webvisor.com^
+||tccd.douglas.
+||sta.extreme-down.
+||ana*.inews24.com^
+||sock*-goguardian.pusher.com^
+||pixel-*.rubiconproject.com^
+||t.delfi.
+||track.tiara.
+||host*.rigbyandpeller.com^
+||track.*.roku.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||host*.nti.nl^
@@ -219,9 +219,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mapi-log.qoo*.jp^
 ||logger-*.dailymotion.com^
 ||tracking*.euroads.fi^
-||browser-intake-*-datadoghq.com^
-||servo-report.dvdfab.
 ||sta.wawacity.
+||browser-intake-*-datadoghq.com^
 ||analytics*.clickdimensions.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 directtrack.*.js
@@ -241,6 +240,7 @@ directtrack.*.js
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
 ||faro-collector-prod-*.grafana.net^
+||servo-report.dvdfab.
 ||df.infra.shopee.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.yeptube.
