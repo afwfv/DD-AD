@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-05-05 16:09:07
+! Last Modified: 2024-05-06 00:09:12
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -38,6 +38,37 @@
 ||static*.365inews.com^
 ||qpb*.sohu.com^
 ||ky891.oss-*.aliyuncs.com^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||dm*.ppzuowen.com^
+||bd*-ys.km.com^
+||impservice*.youdao.com^
+||dn*.ixinwei.com^
+||bdlm*.hc360.com^
+728x90.jpg|
+||ya*.dwstatic.com^
+||ad*.on.cc^
+||d*.xinshipu.com^
+||ysdm*.ys137.com.cn^
+||ac*.pingguolv.com^
+||zhizhizhizhi.oss-*.aliyuncs.com^
+||tupian888.*.bcebos.com^
+||same*.stockstar.com^
+||impservice*.yodao.com^
+||fpb1.chinacar.
+||ac*.faxingchina.com^
+||ax.*.ifeng.com^
+||121.204.246.*.gif
+||acookie.*.gif?
+||js*.abolezi.com^
+||sam*.baby-kingdom.com^
+||union*.365inews.com^
+||vns86.oss-*.aliyuncs.com^
+||asd8900.oss-*.aliyuncs.com^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||bdcpro*.techweb.com.cn^
+||ja*.gamersky.com^
+||a*.chajiaotong.com^
+||at*.doubanio.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
 ||host*.polaroid.com^
@@ -74,37 +105,6 @@
 ||log*-applog-*.tiktokv.com^
 ||analytics.ticketmaster.
 ||bi-eventtracker-*.amazonaws.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||dm*.ppzuowen.com^
-||bd*-ys.km.com^
-||impservice*.youdao.com^
-||dn*.ixinwei.com^
-||bdlm*.hc360.com^
-728x90.jpg|
-||ya*.dwstatic.com^
-||ad*.on.cc^
-||d*.xinshipu.com^
-||ysdm*.ys137.com.cn^
-||ac*.pingguolv.com^
-||zhizhizhizhi.oss-*.aliyuncs.com^
-||tupian888.*.bcebos.com^
-||same*.stockstar.com^
-||impservice*.yodao.com^
-||fpb1.chinacar.
-||ac*.faxingchina.com^
-||ax.*.ifeng.com^
-||121.204.246.*.gif
-||acookie.*.gif?
-||js*.abolezi.com^
-||sam*.baby-kingdom.com^
-||union*.365inews.com^
-||vns86.oss-*.aliyuncs.com^
-||asd8900.oss-*.aliyuncs.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||bdcpro*.techweb.com.cn^
-||ja*.gamersky.com^
-||a*.chajiaotong.com^
-||at*.doubanio.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -194,7 +194,6 @@ directtrack.*.js
 ||appanalysis*.banggood.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||aff*.kolektiva.net^
-||df.infra.sz.shopee.
 ||mcdp-*.outbrain.com^
 ||adservice.google.
 ||tracker.twenga.
@@ -203,7 +202,6 @@ directtrack.*.js
 ||analytics.streamfab.
 ||collector-*.px-client.net^
 ||xizlxlflsi._dmarc.hb.tt.omtrdc.net^
-||stats-*.p2pnow.ru^
 ||geoloc*.geo20120530.com^
 ||pixel*.adswizz.com
 ||logger-*.dailymotion.com^
@@ -226,17 +224,20 @@ directtrack.*.js
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||auth-*.hismarttv.com^
 ||tracking.*.miui.com^
+||clog*.yuanfudao.com^
+||tracking*.euroads.fi^
+||log*-misc-lf.amemv.com^
 ||stats.zone-annuaire.
 ||app-analytics-*.snapchat.com^
-||clog*.yuanfudao.com^
 ||geoloc*.geovisite.ovh^
 ||st-*.dynamicyield.com^
 ||analyzer*.fc2.com^
 ||collector.xhamster*.
-||log*-misc-lf.amemv.com^
 ||batchlogging*-noneu.truecaller.com^
 ||analytics-rollout-*.amazonaws.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||df.infra.sz.shopee.
+||stats-*.p2pnow.ru^
 ||onetrust.
 ||ubt.tracking.shopee.
 ||servo-report.dvdfab.
@@ -246,7 +247,6 @@ directtrack.*.js
 ||host*.nti.nl^
 ||grs.dbankcloud.
 ||collect-v*.51.la^
-||tracking*.euroads.fi^
 ||track.zalando.
 ||events-api*.outfit7.com^
 ||ssp*.rtb.beeline.ru^
