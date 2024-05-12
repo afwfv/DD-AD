@@ -26,6 +26,8 @@
 
 2.**针对七猫小说广告添加了规则**
 
+3.**私人dns：853.afwfv.cn**
+
 #### 访问次数
 
 ![Visitor Count](https://profile-counter.glitch.me/afwfv/count.svg)
