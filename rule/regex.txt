@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-06-12 00:10:40
+! Last Modified: 2024-06-12 08:38:47
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -25,6 +25,52 @@
 ||ads*-normal-lq.amemv.com^
 ||ads*-normal-lq.zijieapi.com.queniuiq.com^
 ||ads*-normal-lq.zijieapi.com.w.cdngslb.com^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||sax*.sina.
+||dm*.yxlady.com^
+||zhizhizhizhi.oss-*.aliyuncs.com^
+||bd*-ys.km.com^
+||adi*.cnool.net^
+||d*.ruiwen.com^
+||fanpingbi*.gaokao.com^
+||txhfgwgkwt*.asia^
+||ac*.faxingchina.com^
+||fpb1.chinacar.
+||ad*.on.cc^
+||fpb*.51edu.com^
+||d*.xinshipu.com^
+||121.204.246.*.gif
+||static*.365inews.com^
+||vns86.oss-*.aliyuncs.com^
+||ac*.pingguolv.com^
+||ky891.oss-*.aliyuncs.com^
+||at*.doubanio.com^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||bdcpro*.techweb.com.cn^
+||dm*.ppzuowen.com^
+||tupian888.*.bcebos.com^
+||uc*.atobo.com^
+||same*.stockstar.com^
+||impservice*.youdao.com^
+||gcw*.2liang.cn^
+||impservice*.yodao.com^
+||dn*.ixinwei.com^
+||a*.chajiaotong.com^
+||ac*.786ip.com^
+728x90.jpg|
+||iwanshang*.asia^
+||ya*.dwstatic.com^
+||ax.*.ifeng.com^
+||acookie.*.gif?
+||js*.abolezi.com^
+||qpb*.sohu.com^
+||ja*.gamersky.com^
+||ysdm*.ys137.com.cn^
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||sam*.baby-kingdom.com^
+||union*.365inews.com^
+||bdlm*.hc360.com^
+||asd8900.oss-*.aliyuncs.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
 ||analytics.streamfab.
@@ -46,26 +92,6 @@
 ||batchlogging*-noneu.truecaller.com^
 ||track.*.roku.com^
 ||imp-*.jampp.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||sax*.sina.
-||dm*.yxlady.com^
-||zhizhizhizhi.oss-*.aliyuncs.com^
-||bd*-ys.km.com^
-||adi*.cnool.net^
-||d*.ruiwen.com^
-||fanpingbi*.gaokao.com^
-||txhfgwgkwt*.asia^
-||ac*.faxingchina.com^
-||fpb1.chinacar.
-||ad*.on.cc^
-||fpb*.51edu.com^
-||d*.xinshipu.com^
-||121.204.246.*.gif
-||static*.365inews.com^
-||vns86.oss-*.aliyuncs.com^
-||ac*.pingguolv.com^
-||ky891.oss-*.aliyuncs.com^
-||at*.doubanio.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.yeptube.
 ||cnt.winporn.
@@ -88,27 +114,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||host*.rigbyandpeller.com^
 ||lt*.tritondigital.com^
 ||sgtm.fashionunited.
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||bdcpro*.techweb.com.cn^
-||dm*.ppzuowen.com^
-||tupian888.*.bcebos.com^
-||uc*.atobo.com^
-||same*.stockstar.com^
-||impservice*.youdao.com^
-||gcw*.2liang.cn^
-||impservice*.yodao.com^
-||dn*.ixinwei.com^
-||a*.chajiaotong.com^
-||ac*.786ip.com^
-728x90.jpg|
-||iwanshang*.asia^
-||ya*.dwstatic.com^
-||ax.*.ifeng.com^
-||acookie.*.gif?
-||js*.abolezi.com^
-||qpb*.sohu.com^
-||ja*.gamersky.com^
-||ysdm*.ys137.com.cn^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
 ||host*.nti.nl^
@@ -146,8 +151,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||analytics.ticketmaster.
 ||lively-collect-elb-*.amazonaws.com^
 ||analytics.*.sky.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||collector-*.px-client.net^
@@ -242,11 +245,8 @@ directtrack.*.js
 ||collect-elb-*.amazonaws.com^
 ||button.blogs.yandex.
 ||log*-misc-lf.amemv.com^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||sam*.baby-kingdom.com^
-||union*.365inews.com^
-||bdlm*.hc360.com^
-||asd8900.oss-*.aliyuncs.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||spryptvqguhpwt^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
