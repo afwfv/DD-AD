@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-06-23 00:10:00
+! Last Modified: 2024-06-23 08:41:50
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -123,8 +123,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||flurry.agentportal-*.yahoodns.net^
 ||collector*.ex.co^
 ||host*.ncoi.nl^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||iptracker-lb-*.amazonaws.com^
 ||datacollector-*.dt.hicloud.com^
@@ -146,8 +144,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||device-metrics-*.amazon.com^
 ||df.infra.shopee.
 ||analytics-rollout-*.amazonaws.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||spryptvqguhpwt^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
 ||tracking.*.miui.com^
@@ -167,11 +163,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||mon*-*.tiktokv.us^
 ||batchlogging*-noneu.truecaller.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||analytics.streamfab.
 ||batchlogging*-eu.truecaller.com^
@@ -194,12 +185,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||backstory.ebay.
 ||appanalysis*.banggood.com^
 ||api-*.hismarttv.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||allsportsflix.
-||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||collector-*.px-client.net^
@@ -238,9 +223,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||analytics.*.sky.com^
 ||track.*.roku.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||t*.zcvh.net^
 ||matt.mercadolibre.
-||metric*.rediff.com^
+||ubt.tracking.shopee.
 ||ad*.ettoday.net^
 ||logger-*.dailymotion.com^
 ||telemetry*.transcend.io^
@@ -248,6 +232,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||device-metrics-us*.amazon.com^
 ||edgetrksvc.ebay.
 ||sensorsdata*.read.duokan.com^
+||stats2.*.fdnames.com^
 ||rtlog*.tiktokv.com^
 ||report.*.qq.com^
 ||liveme-sensors-collect2-*.amazonaws.com^
@@ -257,8 +242,24 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||pixel.archive.
 ||t.delfi.
 ||log*.byteoversea.com^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||t*.zcvh.net^
+||metric*.rediff.com^
+||tccd.douglas.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||spryptvqguhpwt^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||158.247.208.
+||23.109.82.
+||142.91.159.
+||23.109.87.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||allsportsflix.
+||cintent.streanplay.
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
-||ubt.tracking.shopee.
-||tccd.douglas.
-||stats2.*.fdnames.com^
