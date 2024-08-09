@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-08-09 16:12:10
+! Last Modified: 2024-08-10 00:10:34
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -199,7 +199,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||report*.appmetrica.webvisor.com^
 ||ana*.inews24.com^
 ||sensorsdata*.read.duokan.com^
-%2Fopen.aspx%3F
 ||collector-*.tvsquared.com^
 ||datacollector-*.dt.dbankcloud.cn^
 ||mon-*.tiktokv.com^
@@ -207,9 +206,11 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||bi-eventtracker-*.amazonaws.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||bc.geocities.
+%2Fopen.aspx%3F
 ||analytics-api.dvdfab.
 ||stats-*.p2pnow.ru^
 ||mcdp-*.outbrain.com^
+||analytics.ticketmaster.
 ||faro-collector-prod-*.grafana.net^
 ||servo-report.dvdfab.
 %2Fevent.gif%3F
@@ -226,10 +227,10 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||geoloc*.geostats.ovh^
 ||events-api*.outfit7.com^
 ||rtlog*.tiktokv.us^
+||piano_log.kingsoft.jp^
 ||st-*.dynamicyield.com^
 ||analytics*.clickdimensions.com^
 ||ubacollect-*.cloud.dbankcloud.cn^
-||analytics.ticketmaster.
 ||rum*.cdnvideo.ru^
 ||log*.byteoversea.com^
 ||track.*.roku.com^
@@ -240,11 +241,12 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||batchlogging*-eu.truecaller.com^
 ||ad*.ettoday.net^
 ||geoloc*.geo20120530.com^
+||datacollector-*.dt.hicloud.com^
 ||mapi-log.qoo*.jp^
 ||log*-misc-lf.amemv.com^
+||gscounters.*.gigya.com^
 ||mcs-va-*.tiktokv.com^
 ||pixel-*.rubiconproject.com^
-||piano_log.kingsoft.jp^
 ||px*.mediahills.ru^
 ||button.blogs.yandex.
 ||tracking-*.trnox.com^
@@ -253,15 +255,13 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||cs*.mp3bars.com^
-||datacollector-*.dt.hicloud.com^
-||tracking*.euroads.fi^
-||edgetrksvc.ebay.
 ||api*.amplitude.com^
-||gscounters.*.gigya.com^
+||cs*.mp3bars.com^
 ||report.*.qq.com^
 ||c*hit.zerkalo.io^
+||tracking*.euroads.fi^
 ||collector.xhamster*.
+||edgetrksvc.ebay.
 ||lt*.tritondigital.com^
 ||analytics.*.sky.com^
 ||imp-*.jampp.com^
