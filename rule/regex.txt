@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-08-12 16:12:46
+! Last Modified: 2024-08-13 00:10:55
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -138,6 +138,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||rum*.a.trbcdn.net^
 ||ads-dmp-collect.*.karrotmarket.com^
 ||imp-*.jampp.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
 ||cnt.winporn.
@@ -157,8 +159,6 @@ directtrack.*.js
 ||mon-*.tiktokv.com^
 ||analytics.ticketmaster.
 ||lt*.tritondigital.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
 ||a*.smlog.co.kr^
@@ -171,6 +171,11 @@ directtrack.*.js
 ||host*.rigbyandpeller.com^
 ||stat.tiara.
 ||apple-*.le.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||158.247.208.
+||23.109.82.
+||142.91.159.
+||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||t*.zcvh.net^
@@ -186,6 +191,12 @@ directtrack.*.js
 ||pxl-*.ozone.ru^
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||lively-collect-elb-*.amazonaws.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||allsportsflix.
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||datacollect*.abtasty.com^
 ||eum*.instana.io^
@@ -224,47 +235,36 @@ directtrack.*.js
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
 ||iptracker-lb-*.amazonaws.com^
-||auth-*.hismarttv.com^
 ||clog*.yuanfudao.com^
 ||datacollector-*.dt.hicloud.com^
-||ad*.ettoday.net^
-||cnt.vivatube.
-||telemetry*.transcend.io^
+||tracking*.euroads.fi^
 ||ce-global-track-*.amazonaws.com^
-||cnt.tubeon.
-||flurry.agentportal.*.yahoodns.net^
-%2Fopen.aspx%3F
-||events*.cre.ma^
 ||collect-elb-*.amazonaws.com^
 ||report.*.qq.com^
 ||seller-log-collector.shopee.
 ||collector-*.tvsquared.com^
+||log*-applog-*.tiktokv.com^
+||sgtm.fashionunited.
+||analytics-rollout-*.amazonaws.com^
+||auth-*.hismarttv.com^
+||ad*.ettoday.net^
+||cnt.vivatube.
+||telemetry*.transcend.io^
+||cnt.tubeon.
+||flurry.agentportal.*.yahoodns.net^
+||events*.cre.ma^
+||stats.zone-annuaire.
 ||geoloc*.geovisite.ovh^
 ||collector.xhamster*.
 ||analyzer*.fc2.com^
 ||stats*.videonow.ru^
-||log*-applog-*.tiktokv.com^
-||sgtm.fashionunited.
-||analytics-rollout-*.amazonaws.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||xlog*-*.tiktokv.com^
-||stats.zone-annuaire.
 ||mcs-va-*.tiktokv.com^
 ||log*.aliyuncs.com^
 ||report*.appmetrica.webvisor.com^
-||tracking*.euroads.fi^
-||pixel.archive.
 ||backstory.ebay.
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-||23.109.87.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||allsportsflix.
-||cintent.streanplay.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+%2Fopen.aspx%3F
 ||onetrust.
+||pixel.archive.
