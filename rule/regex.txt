@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-08-16 16:12:19
+! Last Modified: 2024-08-17 00:11:40
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -29,7 +29,6 @@
 ||dm*.ppzuowen.com^
 ||38.33.15.*.gif
 ||bd*-ys.km.com^
-||tupian888.*.bcebos.com^
 ||fanpingbi*.gaokao.com^
 ||d*.ruiwen.com^
 ||a*.chajiaotong.com^
@@ -59,6 +58,7 @@
 ||at*.doubanio.com^
 ||dm*.yxlady.com^
 ||adi*.cnool.net^
+||tupian888.*.bcebos.com^
 ||same*.stockstar.com^
 ||gcw*.2liang.cn^
 ||impservice*.yodao.com^
@@ -183,6 +183,19 @@
 ||analytics*.clickdimensions.com^
 ||rum*.cdnvideo.ru^
 ||batchlogging*-noneu.truecaller.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||bc.geocities.
+||df.infra.sz.shopee.
+||stats-*.p2pnow.ru^
+||hn-ping*.hashnode.com^
+||pixel.archive.
+||mcdp-*.outbrain.com^
+||stats2.*.fdnames.com^
+||analytics.ticketmaster.
+||faro-collector-prod-*.grafana.net^
+||tracker.twenga.
+||fb_servpub-a.akamaihd.net^
+||df.infra.shopee.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.winporn.
 ||auth-*.hismarttv.com^
@@ -202,19 +215,6 @@ directtrack.*.js
 ||tw*.netcore.co.in^
 ||lt*.tritondigital.com^
 ||track.*.roku.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||bc.geocities.
-||df.infra.sz.shopee.
-||stats-*.p2pnow.ru^
-||hn-ping*.hashnode.com^
-||pixel.archive.
-||mcdp-*.outbrain.com^
-||stats2.*.fdnames.com^
-||analytics.ticketmaster.
-||faro-collector-prod-*.grafana.net^
-||tracker.twenga.
-||fb_servpub-a.akamaihd.net^
-||df.infra.shopee.
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||stats.zone-annuaire.
 ||onetrust.
