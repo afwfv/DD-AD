@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-09-06 00:11:05
+! Last Modified: 2024-09-06 08:43:10
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -89,8 +89,6 @@
 ||wa.gmx.
 ||analytics.ticketmaster.
 ||track.*.roku.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||auth-*.hismarttv.com^
 ||stats-*.p2pnow.ru^
@@ -110,6 +108,8 @@
 ||sgtm.fashionunited.
 ||api-*.hismarttv.com^
 %2Fevent.gif%3F
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||cs*.mp3bars.com^
@@ -168,10 +168,6 @@ directtrack.*.js
 ||rtlog*.tiktokv.us^
 ||log*.aliyuncs.com^
 ||imp-*.jampp.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||collect-v*.51.la^
 ||browser-intake-*-datadoghq.com^
@@ -187,6 +183,10 @@ directtrack.*.js
 ||lt*.tritondigital.com^
 ||analytics.*.sky.com^
 ||analytics-rollout-*.amazonaws.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
 ||matt.mercadolibre.
@@ -217,14 +217,13 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||device-metrics-us*.amazon.com^
 ||log*-applog-*.tiktokv.com^
 ||ana*.inews24.com^
-||flurry.agentportal-*.yahoodns.net^
+||faro-collector-prod-*.grafana.net^
 ||device-metrics-*.amazon.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 %2Fopen.aspx%3F
 ||tccd.douglas.
 ||mcdp-*.outbrain.com^
 ||stats2.*.fdnames.com^
-||faro-collector-prod-*.grafana.net^
 ||adservice.google.
 ||servo-report.dvdfab.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -235,21 +234,16 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||eum*.instana.io^
 ||logger-*.dailymotion.com^
 ||tnc16-*.byteoversea.com^
-||telemetry*.transcend.io^
-||tracking.olx.
 ||sta.extreme-down.
-||log*-misc-lf.amemv.com^
 ||rtlog*.tiktokv.com^
 ||trk*.vidible.tv^
 ||stats.zone-annuaire.
 ||px*.mediahills.ru^
 ||sgtm.fairmont.
+||flurry.agentportal-*.yahoodns.net^
 ||t.delfi.
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||apple-*.le.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||onetrust.
-||sta.zone-telechargement.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.winporn.
 ||tracking.*.miui.com^
@@ -257,12 +251,18 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||tracking-v*.a.run.app^
 ||collector.hamsterix.
 ||datacollector-*.dt.hicloud.com^
+||telemetry*.transcend.io^
+||tracking.olx.
 ||fp-*it*.fengkongcloud.com^
+||log*-misc-lf.amemv.com^
 ||invenio_tracking_*.sgnapps.com^
 ||pixel-*.rubiconproject.com^
+||sta.zone-telechargement.
 ||button.blogs.yandex.
 ||analyzer*.fc2.com^
 ||host*.ncoi.nl^
 ||log*.byteoversea.com^
 ||batchlogging*-noneu.truecaller.com^
 ||appanalysis*.banggood.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||onetrust.
