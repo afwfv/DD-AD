@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-10-09 00:11:55
+! Last Modified: 2024-10-09 08:45:40
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -135,13 +135,6 @@
 ||collector*.ex.co^
 ||batchlogging*-noneu.truecaller.com^
 %2Fevent.gif%3F
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-||cas.*.criteo.com^
-||allsportsflix.
-||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
 ||iptracker-lb-*.amazonaws.com^
@@ -168,9 +161,12 @@
 ||lt*.tritondigital.com^
 ||appanalysis*.banggood.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cintent.streanplay.
+||158.247.208.
+||23.109.82.
+||142.91.159.
+||cas.*.criteo.com^
+||allsportsflix.
+||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||ubt.tracking.shopee.
 ||collect-v*.51.la^
@@ -189,6 +185,10 @@
 ||mon*-*.tiktokv.us^
 ||rum*.cdnvideo.ru^
 ||sgtm.fashionunited.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||admob-app-id-*.firebaseio.com^
 ||auth-*.hismarttv.com^
@@ -221,6 +221,22 @@ directtrack.*.js
 ||sta.wawacity.
 ||analyzer*.fc2.com^
 ||host*.ncoi.nl^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||host*.nti.nl^
+||analytics.streamfab.
+||metric*.rediff.com^
+||eum*.instana.io^
+||log-collector.shopee.
+||tnc16-*.byteoversea.com^
+||log*-misc-lf.amemv.com^
+||flurry.agentportal.*.yahoodns.net^
+esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
+||pixel-*.rubiconproject.com^
+||f-log-*.grammarly.io^
+||stats*.videonow.ru^
+||flurry.agentportal-*.yahoodns.net^
+||analytics*.clickdimensions.com^
+||device-metrics-*.amazon.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||geotargetly-api-*.com^
 ||df.infra.sz.shopee.
@@ -232,36 +248,20 @@ directtrack.*.js
 ||faro-collector-prod-*.grafana.net^
 ||tracker.twenga.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||host*.nti.nl^
-||analytics.streamfab.
-||metric*.rediff.com^
-||eum*.instana.io^
-||log-collector.shopee.
-||tnc16-*.byteoversea.com^
-||device-metrics-us*.amazon.com^
-||log*-misc-lf.amemv.com^
-||cnt.nuvid.
-||flurry.agentportal.*.yahoodns.net^
-||gscounters.*.gigya.com^
-esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
-||pixel-*.rubiconproject.com^
-||f-log-*.grammarly.io^
-||stats*.videonow.ru^
-||pixelapi-*.cs.mysamba.tv^
-||flurry.agentportal-*.yahoodns.net^
-||analytics*.clickdimensions.com^
-||device-metrics-*.amazon.com^
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||a*.smlog.co.kr^
-||trk*.vidible.tv^
 ||ad*.ettoday.net^
 ||pixel*.adswizz.com
-||log*.aliyuncs.com^
-||piano_log.kingsoft.jp^
 ||stats*.credit-cooperatif.coop^
-||tracking-*.trnox.com^
 ||browser-intake-*-datadoghq.com^
 ||log*.vietnamplus.vn^
+||device-metrics-us*.amazon.com^
+||cnt.nuvid.
 ||sensorsdata*.read.duokan.com^
+||a*.smlog.co.kr^
+||trk*.vidible.tv^
+||gscounters.*.gigya.com^
+||log*.aliyuncs.com^
+||piano_log.kingsoft.jp^
+||tracking-*.trnox.com^
+||pixelapi-*.cs.mysamba.tv^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
