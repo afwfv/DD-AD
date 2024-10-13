@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: modify.txt
-! Last Modified: 2024-10-13 00:10:26
+! Last Modified: 2024-10-13 08:50:51
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||*-ad.wtzw.com^
@@ -92821,6 +92821,7 @@ email.mg.ukelite.com$image
 email.rtrkidsrugs.com$image
 ||cnstrc.com/behavior?
 email.1001telecommandes.com$image
+5521.ftp-qa1.marketingcloudqaops.com$image
 ||trafficby.net^$third-party
 email.digicomm.com.br$image
 ||technologynetworks.com/ApprovedGuid/
@@ -95296,7 +95297,6 @@ click.s1.deeplinking.sfmctest.com$image
 email.avanzasoluciones.com.pe$image
 ||rocks.io^$third-party
 ||signalfx.com^$third-party
-/gtm-listeners.js
 email.go.sunflowerservices.com$image
 ||hqq.tv/js/gcounter.js
 email.mail.pranaadvisory.com$image
@@ -96924,7 +96924,6 @@ email.outbound.giphy.com$image
 email.appazur.com$image
 email.lc.dmscontractorsllc.com$image
 email.reply.michelleslearninghub.com$image
-.cmail20.com/t/$image
 @@||n8s.jp^$script,domain=nikkei.com
 ||bbvms.com/zone/js/zonestats.js
 click.us-email.n26.com$image
@@ -97166,7 +97165,6 @@ email.ilovehappyclients.hgmail.pro$image
 email.yourvibration.com$image
 cloud.email.zmarta.info$image
 link.airforcetimes.com$image
-/amp-access/set/*
 email.tree-nation.com$image
 email.openrent.co.uk$image
 13806.editor-qa1.marketingcloudqaapis.com$image
@@ -97638,7 +97636,6 @@ email.scuoverdraftsettlement.com$image
 pages.techclient.kering.com$image
 ||mirtesen.ru^$removeparam=nvuuid
 ||raygun.io/events?
-5521.ftp-qa1.marketingcloudqaops.com$image
 email.mail.bucketplace.net$image
 email.crm.shedsuite.com$image
 pages.em-commercial.keurig.com$image
@@ -98381,6 +98378,7 @@ pptv.com##.advView-two,#p-mark
 ##.aab-post
 /tigtag_custom/*_banner
 ##.gpost-below
+/gtm-listeners.js
 ##.player-rm > a[href*="/ad.html?url="]
 ##a#wrapper_left_bg\ llll
 .com/js/alls_top.js
@@ -100080,6 +100078,7 @@ douyu.com##.Title-ad, .DropMenuList-ad, .DropPane-ad
 @@||up-load.io^$generichide
 ###__ads_dp
 ##.a_sxpb
+.cmail20.com/t/$image
 ###propagandaInsert[style="display: flex;"]
 ##.chat-top-ad
 ###leftFloat[style="z-index: 999; position: fixed; left: 0px; bottom: 0px;"]
@@ -100336,6 +100335,7 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 @@||az.hpcn.transer-cn.com/content/dam/isetan_mitsukoshi/advertise/$~third-party
 /getGG.php?key=
 /V.aspx?Bln=$script,third-party
+/amp-access/set/*
 ##a[href*="?register="] > img[width="100%"]
 ##.b_sxp + .zxy
 ###leftCouplet
