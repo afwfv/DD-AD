@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-11-06 16:13:44
+! Last Modified: 2024-11-07 00:12:05
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -226,7 +226,6 @@ directtrack.*.js
 ||xlog*-*.tiktokv.com^
 ||invenio_tracking_*.sgnapps.com^
 ||pixel-*.rubiconproject.com^
-||log*.aliyuncs.com^
 ||t.delfi.
 ||collector*.ex.co^
 ||flurry.agentportal-*.yahoodns.net^
@@ -246,12 +245,12 @@ directtrack.*.js
 ||browser-intake-*-datadoghq.com^
 ||host*.rvshare.com^
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
+||log*.aliyuncs.com^
 ||piano_log.kingsoft.jp^
 ||ssp*.rtb.beeline.ru^
 ||log*.byteoversea.com^
 ||analytics.*.sky.com^
 ||batchlogging*-noneu.truecaller.com^
-||backstory.ebay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||admob-app-id-*.firebaseio.com^
 ||mssdk*.zijieapi.com^
@@ -276,3 +275,4 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||stats*.videonow.ru^
 ||rum*.cdnvideo.ru^
 ||tw*.netcore.co.in^
+||backstory.ebay.
