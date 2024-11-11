@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-11-11 16:13:40
+! Last Modified: 2024-11-12 00:11:51
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -25,6 +25,8 @@
 ||ads*-normal-lq.amemv.com^
 ||ads*-normal-lq.zijieapi.com.queniuiq.com^
 ||ads*-normal-lq.zijieapi.com.w.cdngslb.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||analytics.ahrefs.
 ||host*.nti.nl^
@@ -158,8 +160,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log*-normal-*.tiktokv.us^
 ||bi-eventtracker-*.amazonaws.com^
 ||backstory.ebay.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||flurry.agentportal.*.yahoodns.net^
 ||host*.polaroid.com^
@@ -187,11 +187,6 @@ directtrack.*.js
 ||tracking-*.trnox.com^
 ||lively-collect-elb-*.amazonaws.com^
 ||host*.rigbyandpeller.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||stats-*.p2pnow.ru^
 ||datacollector-*.dt.hicloud.com^
@@ -212,12 +207,6 @@ directtrack.*.js
 ||sgtm.fashionunited.
 ||api-*.hismarttv.com^
 ||track.*.roku.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||allsportsflix.
-||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||a*.smlog.co.kr^
 ||sock*-goguardian.pusher.com^
@@ -228,6 +217,11 @@ directtrack.*.js
 ||host*.rvshare.com^
 ||tw*.netcore.co.in^
 ||apple-*.le.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||158.247.208.
+||23.109.82.
+||142.91.159.
+||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
 ||iptracker-lb-*.amazonaws.com^
@@ -241,6 +235,12 @@ directtrack.*.js
 ||ads-dmp-collect.*.karrotmarket.com^
 ||batchlogging*-noneu.truecaller.com^
 ||analytics.*.sky.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||allsportsflix.
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||bc.geocities.
 ||mobileanalytics.*.amazonaws.com^
@@ -248,15 +248,18 @@ directtrack.*.js
 ||tracking-v*.a.run.app^
 ||pixel*.adswizz.com
 ||tnc16-*.byteoversea.com^
+||tccd.douglas.
 ||cnt.tubeon.
+||tracker.twenga.
+%2Fopen.aspx%3F
+||analytics-api.dvdfab.
 ||trk*.vidible.tv^
 ||log*.zijieapi.com^
 ||c*hit.zerkalo.io^
 ||geoloc*.geostats.ovh^
 ||collector.xhamster*.
 ||mon*-*.tiktokv.us^
-||counter*-yadro*-ru.unblocked.lol^
-||analytics-rollout-*.amazonaws.com^
+%2Fevent.gif%3F
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
 ||rtlog*.tiktokv.com^
@@ -266,12 +269,9 @@ directtrack.*.js
 ||cnt.proporn.
 ||ce-global-track-*.amazonaws.com^
 ||pixelapi-*.cs.mysamba.tv^
+||counter*-yadro*-ru.unblocked.lol^
+||analytics-rollout-*.amazonaws.com^
 ||imp-*.jampp.com^
 ||device-metrics-*.amazon.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-%2Fopen.aspx%3F
-||analytics-api.dvdfab.
 ||onetrust.
-||tccd.douglas.
-%2Fevent.gif%3F
-||tracker.twenga.
