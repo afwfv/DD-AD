@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-11-30 16:12:24
+! Last Modified: 2024-12-01 00:10:49
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -154,6 +154,7 @@
 ||tracking.olx.
 ||sta.wawacity.
 ||flurry.agentportal-*.yahoodns.net^
+||faro-collector-prod-*.grafana.net^
 ||track.*.roku.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||bc.geocities.
@@ -169,7 +170,6 @@
 ||df.infra.sz.shopee.
 ||log-*.previewnetworks.com^
 ||analytics.ticketmaster.
-||faro-collector-prod-*.grafana.net^
 ||df.infra.shopee.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mssdk*.zijieapi.com^
@@ -185,7 +185,6 @@
 ||analytics*.carambo.la^
 ||events*.cre.ma^
 ||app-analytics-*.snapchat.com^
-||track.zalando.
 ||report.*.qq.com^
 ||geoloc*.geostats.ovh^
 ||stat*.1internet.tv^
@@ -205,10 +204,10 @@
 ||rum*.a.trbcdn.net^
 ||polaris*-normal-*.zijieapi.com^
 ||host*.polaroid.com^
+||track.zalando.
 ||mon*-platform-*.tiktokv.com^
 ||invenio_tracking_*.sgnapps.com^
 ||log*.zijieapi.com^
-||log*.aliyuncs.com^
 ||mon-*.tiktokv.com^
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||host*.rigbyandpeller.com^
@@ -225,6 +224,7 @@
 ||edgetrksvc.ebay.
 ||sock*-goguardian.pusher.com^
 ||pixel-*.rubiconproject.com^
+||log*.aliyuncs.com^
 ||piano_log.kingsoft.jp^
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||tracking-*.trnox.com^
@@ -245,40 +245,41 @@
 ||collector-*.tvsquared.com^
 ||seller-log-collector.shopee.
 ||datacollector-*.dt.dbankcloud.cn^
-||log*-normal-*.tiktokv.us^
 ||wa.gmx.
 ||hw-sh-pcdn-*.biliapi.net^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||analytics.streamfab.
-||auth-*.hismarttv.com^
 ||cs*.mp3bars.com^
 ||cnt.hd21.
 ||logger-*.dailymotion.com^
 directtrack.*.js
-||telemetry*.transcend.io^
 ||host*.rvshare.com^
-||tnc*.zijieapi.com^
 ||collect-elb-*.amazonaws.com^
 ||liveme-sensors-collect2-*.amazonaws.com^
 ||telemetry*.api.playstation.com^
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
+||log*-normal-*.tiktokv.us^
 ||analyzer*.fc2.com^
 ||sgtm.fairmont.
 ||mon*-misc-lf.fqnovel.com^
 ||device-metrics-*.amazon.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
+||auth-*.hismarttv.com^
 ||hstats*.hepsiburada.com^
 ||clog*.yuanfudao.com^
 ||report.*.gbqofs.io^
 ||collect-v*.51.la^
+||telemetry*.transcend.io^
 ||log*.vietnamplus.vn^
+||tnc*.zijieapi.com^
 ||xlog*-*.tiktokv.com^
 ||analytics-*-nfl.yinzcam.com^
 ||c*hit.zerkalo.io^
 ||log*-normal-useast1a.lemon8-app.com^
 ||collector.xhamster*.
 ||host*.ncoi.nl^
-||rum*.cdnvideo.ru^
 ||analytics.*.sky.com^
 ||tw*.netcore.co.in^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||rum*.cdnvideo.ru^
