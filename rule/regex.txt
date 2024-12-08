@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-12-08 15:22:01
+! Last Modified: 2024-12-08 16:12:59
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -110,21 +110,6 @@
 ||device-metrics-us*.amazon.com^
 ||pxl-*.ozone.ru^
 ||rum*.cdnvideo.ru^
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||stat.*.v-56.com^
-||eum*.instana.io^
-||collect-v*.51.la^
-||cnt.proporn.
-||ce-global-track-*.amazonaws.com^
-||hn-ping*.hashnode.com^
-||ads-dmp-collect.*.karrotmarket.com^
-||analytics-api.dvdfab.
-||aff*.kolektiva.net^
-||f-log-*.grammarly.io^
-||pixel.archive.
-||collector*.ex.co^
-||lt*.tritondigital.com^
-||df.infra.shopee.
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||adi*.cnool.net^
 ||uc*.atobo.com^
@@ -142,6 +127,24 @@
 ||static*.365inews.com^
 ||ky891.oss-*.aliyuncs.com^
 ||107.167.22.*.gif
+! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
+||ysdm*.ys137.com.cn^
+||asd8900.oss-*.aliyuncs.com^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||stat.*.v-56.com^
+||eum*.instana.io^
+||collect-v*.51.la^
+||cnt.proporn.
+||ce-global-track-*.amazonaws.com^
+||hn-ping*.hashnode.com^
+||ads-dmp-collect.*.karrotmarket.com^
+||analytics-api.dvdfab.
+||aff*.kolektiva.net^
+||f-log-*.grammarly.io^
+||pixel.archive.
+||collector*.ex.co^
+||lt*.tritondigital.com^
+||df.infra.shopee.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||batchlogging*-eu.truecaller.com^
 ||collector.hamsterix.
@@ -268,9 +271,6 @@
 ||stats*.videonow.ru^
 ||sta.extreme-down.
 ||flurry.agentportal-*.yahoodns.net^
-! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
-||ysdm*.ys137.com.cn^
-||asd8900.oss-*.aliyuncs.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
 ||datacollect*.abtasty.com^
@@ -285,7 +285,6 @@
 ||pixel-*.rubiconproject.com^
 ||sgtm.fairmont.
 ||host*.rigbyandpeller.com^
-||servo-report.keepstreams.*^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
 ||sta.zone-telechargement.
@@ -301,19 +300,20 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||ssp*.rtb.beeline.ru^
 ||wa.gmx.
 ||t.delfi.
+||servo-report.keepstreams.*^
 ||sgtm.fashionunited.
 ||track.*.roku.com^
-||mon*-misc-lf.fqnovel.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
-||trk*.vidible.tv^
-||pixel-*.convertagain.net^
 |piwik.
-||mon-*.tiktokv.com^
 directtrack.*.js
 ||telemetry*.transcend.io^
 ||browser-intake-*-datadoghq.com^
 ||beacons*.gvt3.com^
-||api-*.hismarttv.com^
 ||cnt.tubeon.
 ||tnc*.zijieapi.com^
+||trk*.vidible.tv^
+||pixel-*.convertagain.net^
+||mon-*.tiktokv.com^
+||mon*-misc-lf.fqnovel.com^
+||api-*.hismarttv.com^
