@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-12-09 00:11:07
+! Last Modified: 2024-12-09 08:54:05
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -207,8 +207,6 @@
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 %2Fopen.aspx%3F
 ||geotargetly-api-*.com^
-||log-*.previewnetworks.com^
-||mcdp-*.outbrain.com^
 ||adservice.google.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
@@ -236,6 +234,8 @@
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||df.infra.sz.shopee.
 ||tccd.douglas.
+||log-*.previewnetworks.com^
+||mcdp-*.outbrain.com^
 ||analytics.ticketmaster.
 ||faro-collector-prod-*.grafana.net^
 ||tracker.twenga.
@@ -251,12 +251,6 @@
 ||lively-collect-elb-*.amazonaws.com^
 ||rum*.a.trbcdn.net^
 ||apple-*.le.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats.zone-annuaire.
-||onetrust.
-||sta.zone-telechargement.
-||stats*.credit-cooperatif.coop^
-||sta.extreme-down.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||t*.zcvh.net^
@@ -264,6 +258,7 @@
 ||ad*.ettoday.net^
 ||tracking*.euroads.fi^
 ||tracking.olx.
+||sta.extreme-down.
 ||polaris*-normal-*.zijieapi.com^
 ||flurry.agentportal.*.yahoodns.net^
 ||analytics*.carambo.la^
@@ -272,6 +267,11 @@
 ||stats*.videonow.ru^
 ||log*-applog-*.tiktokv.com^
 ||flurry.agentportal-*.yahoodns.net^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats.zone-annuaire.
+||onetrust.
+||sta.zone-telechargement.
+||stats*.credit-cooperatif.coop^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
 ||sock*-goguardian.pusher.com^
@@ -283,7 +283,6 @@
 ||log-collector.shopee.
 ||geoloc*.geo20120530.com^
 ||log*-normal-*.tiktokv.us^
-||cnt.nuvid.
 ||host*.rigbyandpeller.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||iptracker-lb-*.amazonaws.com^
@@ -293,6 +292,7 @@
 ||adcounter*.uptolike.ru^
 ||tnc16-*.byteoversea.com^
 ||fp-*it*.fengkongcloud.com^
+||cnt.nuvid.
 ||analytics.ahrefs.
 ||mon*-platform-*.tiktokv.com^
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
