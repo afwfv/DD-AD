@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-12-09 16:15:27
+! Last Modified: 2024-12-10 00:13:41
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -76,15 +76,6 @@
 ||vns86.oss-*.aliyuncs.com^
 ||ky891.oss-*.aliyuncs.com^
 ||107.167.22.*.gif
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||report.*.qq.com^
-||ad*.ettoday.net^
-||sta.zone-telechargement.
-||geoloc*.geovisite.ovh^
-||counter*-yadro*-ru.unblocked.lol^
-||ubacollect-*.cloud.dbankcloud.cn^
-||fb_servpub-a.akamaihd.net^
-||mon*-misc-lf.fqnovel.com^
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||sax*.sina.
 ||dm*.yxlady.com^
@@ -115,6 +106,15 @@
 ||qpb*.sohu.com^
 ||impservice*.yodao.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||report.*.qq.com^
+||ad*.ettoday.net^
+||sta.zone-telechargement.
+||geoloc*.geovisite.ovh^
+||counter*-yadro*-ru.unblocked.lol^
+||ubacollect-*.cloud.dbankcloud.cn^
+||fb_servpub-a.akamaihd.net^
+||mon*-misc-lf.fqnovel.com^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.yeptube.
 ||mapi-log.qoo*.jp^
 ||tnc16-*.byteoversea.com^
@@ -131,6 +131,8 @@
 ||bi-eventtracker-*.amazonaws.com^
 ||analytics-rollout-*.amazonaws.com^
 ||imp-*.jampp.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
 ||stat.*.v-56.com^
@@ -227,8 +229,6 @@
 ||log-*.previewnetworks.com^
 ||log*.byteoversea.com^
 ||servo-report.keepstreams.*^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||analytics*.carambo.la^
 ||datacollect*.abtasty.com^
@@ -261,11 +261,6 @@ directtrack.*.js
 ||pxl-*.ozone.ru^
 ||host*.rigbyandpeller.com^
 ||df.infra.shopee.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||stats-*.p2pnow.ru^
 ||liveme-sensors-collect2-*.amazonaws.com^
@@ -278,11 +273,10 @@ directtrack.*.js
 ||apple-*.le.com^
 ||tnc*.zijieapi.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||util-*.simply-hentai.com^
-||centent.streamp1ay.
-||cas.*.criteo.com^
-||allsportsflix.
-||cintent.streanplay.
+||158.247.208.
+||23.109.82.
+||142.91.159.
+||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||a*.smlog.co.kr^
 ||api*.amplitude.com^
@@ -291,6 +285,12 @@ directtrack.*.js
 ||piano_log.kingsoft.jp^
 ||tccd.douglas.
 ||beacons*.gvt3.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||util-*.simply-hentai.com^
+||centent.streamp1ay.
+||cas.*.criteo.com^
+||allsportsflix.
+||cintent.streanplay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||hstats*.hepsiburada.com^
 ||clog*.yuanfudao.com^
@@ -311,9 +311,9 @@ directtrack.*.js
 %2Fopen.aspx%3F
 ||analytics.streamfab.
 ||sock*-goguardian.pusher.com^
+%2Frw%2Fbeacon_
 ||c*hit.zerkalo.io^
 ||wa.gmx.
 ||lively-collect-elb-*.amazonaws.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-%2Frw%2Fbeacon_
 ||onetrust.
