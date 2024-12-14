@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-12-14 00:12:37
+! Last Modified: 2024-12-14 08:50:45
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -210,7 +210,6 @@
 ||snowplow-collector.
 ||stats-*.p2pnow.ru^
 ||metric*.rediff.com^
-||ad*.ettoday.net^
 ||device-metrics-us*.amazon.com^
 ||rum*.a.trbcdn.net^
 ||ulog*.kwaipros.com^
@@ -241,6 +240,7 @@
 ||clog*.yuanfudao.com^
 ||c*hit.zerkalo.io^
 ||telemetry*.api.playstation.com^
+||ad*.ettoday.net^
 ||log*.aliyuncs.com^
 ||beacons*.gvt3.com^
 ||servo-report.keepstreams.*^
@@ -251,7 +251,6 @@
 ||stats*.credit-cooperatif.coop^
 ||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||host*.nti.nl^
 ||hstats*.hepsiburada.com^
 ||mssdk*.zijieapi.com^
 ||gtmdev.jabra.
@@ -268,9 +267,9 @@
 ||pixel-*.rubiconproject.com^
 ||log*.byteoversea.com^
 ||rum*.cdnvideo.ru^
-||sgtm.fashionunited.
 ||backstory.ebay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||host*.nti.nl^
 ||iptracker-lb-*.amazonaws.com^
 ||cs*.mp3bars.com^
 |piwik.
@@ -288,6 +287,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||collector*.ex.co^
 ||host*.ncoi.nl^
 ||log*-applog-*.tiktokv.com^
+||sgtm.fashionunited.
 ||apple-*.le.com^
 ||appanalysis*.banggood.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -296,10 +296,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||datacollector-*.dt.hicloud.com^
 ||report*.appmetrica.webvisor.com^
 ||sonar*.xy.fbcdn.net^
-||ana*.inews24.com^
 ||host*.rvshare.com^
 ||invenio_tracking_*.sgnapps.com^
-||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||stat*.1internet.tv^
 ||button.blogs.yandex.
 ||st-*.dynamicyield.com^
@@ -313,9 +311,11 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||rtlog*.tiktokv.com^
 ||sock*-goguardian.pusher.com^
 ||report.*.qq.com^
+||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||collect-v*.51.la^
 ||log-collector.shopee.
 ||piano_log.kingsoft.jp^
 ||mon-*.tiktokv.com^
+||ana*.inews24.com^
 ||imp-*.jampp.com^
 ||track.*.roku.com^
