@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2024-12-18 16:13:58
+! Last Modified: 2024-12-19 00:12:38
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -191,7 +191,6 @@
 ||trk*.vidible.tv^
 ||analytics-*-nfl.yinzcam.com^
 ||app-analytics-*.snapchat.com^
-||track.zalando.
 ||geotargetly-api-*.com^
 ||geoloc*.geostats.ovh^
 ||px*.mediahills.ru^
@@ -208,9 +207,9 @@
 %2Fevent.gif%3F
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||events*.cre.ma^
+||track.zalando.
 ||clog*.yuanfudao.com^
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
-||datacollector-*.dt.hicloud.com^
 ||log*-normal-*.tiktokv.us^
 ||tracking-*.trnox.com^
 ||fp-*it*.fengkongcloud.com^
@@ -229,11 +228,17 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||pixel.archive.
 ||mcdp-*.outbrain.com^
 ||stats2.*.fdnames.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats.zone-annuaire.
+||stat.*.v-56.com^
+||onetrust.
+||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||tracking.*.miui.com^
 ||hstats*.hepsiburada.com^
 ||batchlogging*-eu.truecaller.com^
 ||collector.hamsterix.
+||datacollector-*.dt.hicloud.com^
 ||report.*.gbqofs.io^
 ||log*-misc-lf.amemv.com^
 ||rum*.a.trbcdn.net^
@@ -243,11 +248,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||c*hit.zerkalo.io^
 ||wa.gmx.
 ||track.*.roku.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats.zone-annuaire.
-||stat.*.v-56.com^
-||onetrust.
-||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||admob-app-id-*.firebaseio.com^
 ||invenio_tracking_*.sgnapps.com^
