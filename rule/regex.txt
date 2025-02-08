@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-02-08 16:11:38
+! Last Modified: 2025-02-09 00:10:17
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -175,15 +175,15 @@ directtrack.*.js
 ||rum*.cdnvideo.ru^
 ||beacons*.gvt3.com^
 ||api-*.hismarttv.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||geotargetly-api-*.com^
+%2Frw%2Fbeacon_
+%2Fevent.gif%3F
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||thegreatesthits.
 ||logger-*.dailymotion.com^
 ||tw*.netcore.co.in^
 ||df.infra.shopee.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||geotargetly-api-*.com^
-%2Frw%2Fbeacon_
-%2Fevent.gif%3F
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||iptracker-lb-*.amazonaws.com^
 ||geoloc*.geo20120530.com^
@@ -281,6 +281,7 @@ directtrack.*.js
 ||mcs-va-*.tiktokv.com^
 ||collector-*.tvsquared.com^
 ||events-api*.outfit7.com^
+esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||collector*.ex.co^
 ||pxl-*.ozone.ru^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -295,8 +296,8 @@ directtrack.*.js
 ||log*.vietnamplus.vn^
 ||c*hit.zerkalo.io^
 ||geoloc*.geostats.ovh^
-esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
+||st-*.dynamicyield.com^
 ||flurry.agentportal-*.yahoodns.net^
 ||hw-sh-pcdn-*.biliapi.net^
 ||counter*-yadro*-ru.unblocked.lol^
@@ -309,7 +310,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mapi-log.qoo*.jp^
 ||mon-*.tiktokv.com^
 ||log*-normal-*.tiktokv.us^
-||st-*.dynamicyield.com^
 ||sgtm.fairmont.
 ||mcs-*.lemon8-app.us^
 ||imp-*.jampp.com^
@@ -324,6 +324,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mssdk*.tiktokv.eu^
 ||events*.cre.ma^
 ||app-analytics-*.snapchat.com^
+||report.*.qq.com^
 ||piano_log.kingsoft.jp^
 ||tracking-*.trnox.com^
 ||analyzer*.fc2.com^
@@ -335,7 +336,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||trk*.vidible.tv^
 ||pixel-*.convertagain.net^
 |load.ss.
-||report.*.qq.com^
 ||gtmdev.jabra.
 ||cnt.vivatube.
 ||tracking.olx.
