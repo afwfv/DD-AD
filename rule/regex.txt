@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-02-10 00:10:28
+! Last Modified: 2025-02-10 08:48:31
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -252,7 +252,6 @@ directtrack.*.js
 ||pixel*.adswizz.com
 ||geoloc*.geo20120530.com^
 ||report*.appmetrica.webvisor.com^
-||log-collector.shopee.
 ||logger-*.dailymotion.com^
 ||ce-global-track-*.amazonaws.com^
 ||stat.tiara.
@@ -273,6 +272,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mcs-*.tiktok.com^
 ||mon-*.lemon8-app.us^
 ||log*.zijieapi.com^
+||log-collector.shopee.
 ||ali-bj-pcdn-*.biliapi.net^
 ||cnt.proporn.
 ||ads-dmp-collect.*.karrotmarket.com^
@@ -287,7 +287,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||fp-*it*.fengkongcloud.com^
 ||cnt.nuvid.
 ||rum*.a.trbcdn.net^
-||mcs-*.lemon8-app.us^
 ||invenio_tracking_*.sgnapps.com^
 ||collect-elb-*.amazonaws.com^
 ||clickstream-*.homedepot.com^
@@ -298,18 +297,17 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||bi-eventtracker-*.amazonaws.com^
 ||mon*-misc-lf.fqnovel.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||auth-*.hismarttv.com^
-||ulog*.kwai-pro.com^
-||collector.hamsterix.
-||collect-v*.51.la^
 ||analytics-*-nfl.yinzcam.com^
 ||rtlog*.tiktokv.com^
-||report.*.qq.com^
+||auth-*.hismarttv.com^
+||ulog*.kwai-pro.com^
 ||analytics*.prezly.com^
+||collector.hamsterix.
+||collect-v*.51.la^
 ||ssp*.rtb.beeline.ru^
 ||geoloc*.geovisite.ovh^
 ||sgtm.fairmont.
-||rum*.cdnvideo.ru^
+||mcs-*.lemon8-app.us^
 ||apple-*.le.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||batchlogging*-eu.truecaller.com^
@@ -320,13 +318,14 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||tnc*.zijieapi.com^
 ||xlog*-*.tiktokv.com^
 ||track.zalando.
+||report.*.qq.com^
 ||host*.carl-ras.dk^
 ||mcs-va-*.tiktokv.com^
 |load.gtm.
 ||flurry.agentportal-*.yahoodns.net^
 ||t.delfi.
 ||host*.ncoi.nl^
-||lively-collect-elb-*.amazonaws.com^
+||rum*.cdnvideo.ru^
 ||sgtm.fashionunited.
 ||servo-report.keepstreams.*^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -339,4 +338,5 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||analyzer*.fc2.com^
 ||st-*.dynamicyield.com^
 ||sonar*.xy.fbcdn.net^
+||lively-collect-elb-*.amazonaws.com^
 ||host*.rigbyandpeller.com^
