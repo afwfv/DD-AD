@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-02-20 16:13:45
+! Last Modified: 2025-02-21 00:12:48
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -215,6 +215,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||stats*.videonow.ru^
 ||sta.extreme-down.
 ||collector*.ex.co^
+||faro-collector-prod-*.grafana.net^
 ||appanalysis*.banggood.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||df.infra.sz.shopee.
@@ -222,7 +223,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||tccd.douglas.
 ||hn-ping*.hashnode.com^
 ||pixel.archive.
-||faro-collector-prod-*.grafana.net^
 ||servo-report.dvdfab.
 ||tracker.twenga.
 ||df.infra.shopee.
@@ -230,22 +230,15 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mssdk*.capcutapi.com^
 ||admob-app-id-*.firebaseio.com^
 ||datacollect*.abtasty.com^
+||mssdk*.tiktokw.us^
+||clickstream-*.homedepot.com^
+||c*hit.zerkalo.io^
 ||tracking-v*.a.run.app^
 ||pixel*.adswizz.com
 ||hotapi*.tiktokv.us^
 ||mssdk*.tiktok.com^
-||mssdk*.tiktokw.us^
-||clickstream-*.homedepot.com^
-||c*hit.zerkalo.io^
 ||servo-report.keepstreams.*^
-||sgtm.fashionunited.
 ||imp-*.jampp.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats.zone-annuaire.
-||stat.*.v-56.com^
-||onetrust.
-||sta.zone-telechargement.
-||stats*.credit-cooperatif.coop^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||snowplow-collector.
 ||batchlogging*-eu.truecaller.com^
@@ -259,13 +252,19 @@ directtrack.*.js
 ||hw-sh-pcdn-*.biliapi.net^
 ||mon*-*.tiktokv.us^
 ||rum*.cdnvideo.ru^
+||sgtm.fashionunited.
 ||mon*-misc-lf.fqnovel.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats.zone-annuaire.
+||stat.*.v-56.com^
+||onetrust.
+||sta.zone-telechargement.
+||stats*.credit-cooperatif.coop^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||analytics.streamfab.
 ||ulog*.kwai-pro.com^
 ||collector.hamsterix.
 ||report.*.gbqofs.io^
-||device-metrics-us*.amazon.com^
 ||log*-misc-lf.amemv.com^
 ||tnc*.zijieapi.com^
 ||app-analytics-*.snapchat.com^
@@ -285,7 +284,7 @@ directtrack.*.js
 ||log-collector.shopee.
 ||mapi-log.qoo*.jp^
 ||logger-*.dailymotion.com^
-||fp-*it*.fengkongcloud.com^
+||device-metrics-us*.amazon.com^
 ||polaris*-normal-*.zijieapi.com^
 ||stat.tiara.
 ||mssdk*.tiktokv.eu^
@@ -304,11 +303,10 @@ directtrack.*.js
 ||collector-*.px-client.net^
 ||eum*.instana.io^
 ||tracking*.euroads.fi^
+||fp-*it*.fengkongcloud.com^
 ||ana*.inews24.com^
 ||rum*.a.trbcdn.net^
-||analytics.ahrefs.
 |load.sst.
-||staging-*.ispot.tv^
 |load.gtm.
 ||rtlog*.tiktokv.us^
 ||datacollector-*.dt.dbankcloud.cn^
@@ -318,10 +316,11 @@ directtrack.*.js
 ||t*.zcvh.net^
 ||mon-*.lemon8-app.us^
 |piwik.
-||analytics-*-nfl.yinzcam.com^
+||analytics.ahrefs.
 ||mon*-platform-*.tiktokv.com^
 ||sock*-goguardian.pusher.com^
 ||logservice-*.platform.dbankcloud.cn^
+||staging-*.ispot.tv^
 ||liveme-sensors-collect2-*.amazonaws.com^
 ||mcs-va-*.tiktokv.com^
 ||analytics*.clickdimensions.com^
@@ -339,6 +338,7 @@ directtrack.*.js
 ||cnt.nuvid.
 ||beacons*.gvt3.com^
 ||sensorsdata*.read.duokan.com^
+||analytics-*-nfl.yinzcam.com^
 ||rtlog*.tiktokv.com^
 ||analytics*.carambo.la^
 ||seller-log-collector.shopee.
