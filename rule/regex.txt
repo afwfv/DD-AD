@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-02-28 00:13:04
+! Last Modified: 2025-02-28 08:49:04
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -213,30 +213,29 @@ directtrack.*.js
 ||lively-collect-elb-*.amazonaws.com^
 ||lt*.tritondigital.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||maas-*.phunware.com^
 ||iptracker-lb-*.amazonaws.com^
 ||mssdk*.capcutapi.com^
+||mon*-*.tiktokv.com^
 ||ulog*.kwai-pro.com^
 ||collector.hamsterix.
 ||datacollector-*.dt.hicloud.com^
+||report.*.gbqofs.io^
 ||mapi-log.qoo*.jp^
 ||log*.vietnamplus.vn^
 ||ana*.inews24.com^
+||mssdk*.tiktokv.eu^
 ||analytics.ahrefs.
+||events*.cre.ma^
 ||gscounters.*.gigya.com^
 |load.sst.
 ||collector-*.tvsquared.com^
-||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
-||host*.ncoi.nl^
-||rum*.cdnvideo.ru^
-||backstory.ebay.
-||maas-*.phunware.com^
-||mon*-*.tiktokv.com^
-||report.*.gbqofs.io^
-||mssdk*.tiktokv.eu^
-||events*.cre.ma^
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
+||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||wa.gmx.
+||host*.ncoi.nl^
 ||mon*-*.tiktokv.us^
+||backstory.ebay.
 ||imp-*.jampp.com^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||stats.zone-annuaire.
@@ -254,17 +253,17 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mssdk*.tiktokw.us^
 ||browser-intake-*-datadoghq.com^
 ||t.delfi.
+||rum*.cdnvideo.ru^
 ||rum*.a.trbcdn.net^
 ||stlog*-local.kakao.com^
 ||track.*.roku.com^
-||tnc*.zijieapi.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||collector-*.px-client.net^
 ||cs*.mp3bars.com^
 ||pixel*.adswizz.com
 ||ali-bj-pcdn-*.biliapi.net^
 ||device-metrics-us*.amazon.com^
-||mcs-*.lemon8-app.us^
+||tnc*.zijieapi.com^
 ||report.*.qq.com^
 ||geoloc*.geostats.ovh^
 ||mcs-*.lemon8-app.com^
@@ -287,9 +286,9 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||geoloc*.geo20120530.com^
 ||cnt.proporn.
 ||tracking.olx.
-||ce-global-track-*.amazonaws.com^
 ||ulog*.kwaipros.com^
 ||stat.tiara.
+||mcs-*.lemon8-app.us^
 ||analytics-*-nfl.yinzcam.com^
 ||collect-elb-*.amazonaws.com^
 ||mcs-va-*.tiktokv.com^
@@ -304,11 +303,11 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||logger-*.dailymotion.com^
 ||cnt.vivatube.
 ||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
+||ce-global-track-*.amazonaws.com^
 ||mssdk*.tiktok.com^
 ||polaris*-normal-*.zijieapi.com^
 ||cnt.tubeon.
 ||track.zalando.
-||app-analytics-*.snapchat.com^
 ||mcs-*.tiktok.com^
 ||host*.carl-ras.dk^
 ||button.blogs.yandex.
@@ -323,8 +322,8 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||fp-*it*.fengkongcloud.com^
 ||edgetrksvc.ebay.
 ||beacons*.gvt3.com^
-||sensorsdata*.read.duokan.com^
 ||trk*.vidible.tv^
+||app-analytics-*.snapchat.com^
 ||thegreatesthits.
 ||events-api*.outfit7.com^
 ||stat*.1internet.tv^
@@ -338,6 +337,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||mon-*.lemon8-app.com^
 ||clog*.yuanfudao.com^
 ||telemetry*.transcend.io^
+||sensorsdata*.read.duokan.com^
 ||a*.smlog.co.kr^
 ||xlog*-*.tiktokv.com^
 ||use-trk*.bluevoox.com^
