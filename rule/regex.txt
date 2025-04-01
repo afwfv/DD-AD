@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-04-01 16:14:53
+! Last Modified: 2025-04-02 00:12:27
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -249,18 +249,17 @@ click.official.infomaniak.com%2Fo%2F
 ||sta.wawacity.
 ||sta.extreme-down.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||log-collector.shopee.
-||fp-*it*.fengkongcloud.com^
-||cnt.nuvid.
-||sensorsdata*.read.duokan.com^
 ||flurry.agentportal.*.yahoodns.net^
 ||collect-elb-*.amazonaws.com^
 ||clickstream-*.homedepot.com^
 ||analytics*.prezly.com^
+||log-collector.shopee.
 ||px*.mediahills.ru^
 ||mon-*.tiktokv.com^
-||analyzer*.fc2.com^
+||fp-*it*.fengkongcloud.com^
 ||wa.gmx.
+||cnt.nuvid.
+||sensorsdata*.read.duokan.com^
 ||lt*.tritondigital.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mobileanalytics.*.amazonaws.com^
@@ -273,6 +272,7 @@ click.official.infomaniak.com%2Fo%2F
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||events-api*.outfit7.com^
 ||log*.aliyuncs.com^
+||analyzer*.fc2.com^
 ||st-*.dynamicyield.com^
 ||client.rum.*.amazonaws.com^
 ||collector*.ex.co^
@@ -306,7 +306,6 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||use-trk*.bluevoox.com^
 ||pixel-*.convertagain.net^
 ||staging-*.ispot.tv^
-||thegreatesthits.
 ||mcs-*.lemon8-app.com^
 ||piano_log.kingsoft.jp^
 ||ssp*.rtb.beeline.ru^
@@ -327,6 +326,7 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log*.vietnamplus.vn^
 ||host*.polaroid.com^
 ||xlog*-*.tiktokv.com^
+||thegreatesthits.
 %2Fs-links.producthunt.com%2Foo%2F*%2Fe.gif
 ||button.blogs.yandex.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -338,18 +338,18 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||log*.zijieapi.com^
 ||ce-global-track-*.amazonaws.com^
 ||track.tiara.
-||analytics*.clickdimensions.com^
 ||tnc*.zijieapi.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.winporn.
-||events*.cre.ma^
-||analytics*.carambo.la^
 ||tracking.*.miui.com^
 ||auth-*.hismarttv.com^
 ||t*.zcvh.net^
-||invenio_tracking_*.sgnapps.com^
 ||batchlogging*-eu.truecaller.com^
-||tracking-*.trnox.com^
 ||logger-*.dailymotion.com^
 ||tracking.olx.
 ||mcs-*.lemon8-app.us^
+||events*.cre.ma^
+||analytics*.carambo.la^
+||invenio_tracking_*.sgnapps.com^
+||tracking-*.trnox.com^
+||analytics*.clickdimensions.com^
