@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-06-30 16:17:02
+! Last Modified: 2025-07-01 00:14:13
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -175,9 +175,6 @@ notifications.google.com%2Fg%2Fimg%2F*.gif
 ||beacon-*.helpscout.net^
 ||mon*-misc-lf.fqnovel.com^
 ||apple-*.le.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-%2Fopen.aspx%3F
-||adservice.google.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||acr-*-prd.samsungcloud.tv^
 ||bc.geocities.
@@ -195,6 +192,9 @@ directtrack.*.js
 ||c*hit.zerkalo.io^
 ||analytics*.clickdimensions.com^
 ||device-metrics-*.amazon.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+%2Fopen.aspx%3F
+||adservice.google.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||tnc*.tiktokv.us^
@@ -257,9 +257,8 @@ d4?appid*type*
 ||stats.zone-annuaire.
 ||matt.mercadolibre.
 ||mr.allegro.
-||stats.zone-telechargement.
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||onetrust.
+||stats.zone-telechargement.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mon*-misc.fqnovel.com^
 ||cnt.winporn.
@@ -267,7 +266,6 @@ d4?appid*type*
 ||t*.zcvh.net^
 ||metric*.rediff.com^
 ||collector.hamsterix.
-||collect-v*.51.la^
 ||tracking.olx.
 ||cnt.nuvid.
 ||host*.rvshare.com^
@@ -280,6 +278,7 @@ d4?appid*type*
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||api*.amplitude.com^
 ||events-api*.outfit7.com^
+||collect-v*.51.la^
 ||geoloc*.geo20120530.com^
 ||px*.mediahills.ru^
 ||query*.petametrics.com^
@@ -334,7 +333,6 @@ r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 ||stat.tiara.
 ||collector-*.px-cdn.net^
 ||ulog*.gifshow.com^
-||host*.polaroid.com^
 ||sock*-goguardian.pusher.com^
 ||analytics*.prezly.com^
 ||log*.aliyuncs.com^
@@ -346,6 +344,7 @@ r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 notifications.googleapis.com%2Femail%2Ft%2F*%2Fa.gif
 ||edgetrksvc.ebay.
 ||log*-*.tiktokv.com^
+||host*.polaroid.com^
 ||a*.smlog.co.kr^
 ||analytics-*-nfl.yinzcam.com^
 ||host*.carl-ras.dk^
@@ -376,7 +375,6 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||telemetry*.transcend.io^
 ||mon-*.tiktokv.com^
 ||f-log-*.grammarly.io^
-||customerevents.us-east-*.internal.dradis.netflix.com^
 ||rum*.cdnvideo.ru^
 ||servo-report.keepstreams.*^
 ||analytics-rollout-*.amazonaws.com^
@@ -385,3 +383,4 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 |load.ss.
 ||mcs-va-*.tiktokv.com^
 ||ssp*.rtb.beeline.ru^
+||customerevents.us-east-*.internal.dradis.netflix.com^
