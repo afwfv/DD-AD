@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-08-14 16:16:48
+! Last Modified: 2025-08-15 00:15:21
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -107,11 +107,11 @@
 ||vns86.oss-*.aliyuncs.com^
 ||ac*.pingguolv.com^
 ||107.167.22.*.gif
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||get-me-wow.
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||adi*.cnool.net^
 ||impservice*.yodao.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||pixel*.production-public.tubi.io^
 ||cnt.winporn.
@@ -275,6 +275,10 @@ notifications.googleapis.com%2Femail%2Ft%2F*%2Fa.gif
 ||ubt.tracking.shopee.
 ||pixel.archive.
 ||analytics.ticketmaster.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||onetrust.
+||sta.zone-telechargement.
+||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||hstats*.hepsiburada.com^
 ||t*.zcvh.net^
@@ -309,68 +313,64 @@ directtrack.*.js
 ||track.zalando.
 ||report.*.qq.com^
 ||stat*.1internet.tv^
-||sta.zone-telechargement.
 ||log-va*.capcutapi.com^
+||client.rum.*.amazonaws.com^
 ||ulog-*.ksapisrv.com^
 ||analytics*.clickdimensions.com^
 ||t.delfi.
 ||bi-eventtracker-*.amazonaws.com^
 ||apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com^
 ||lt*.tritondigital.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||onetrust.
-||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||install*.zonastat.com^
 ||mssdk*.capcutapi.com^
-||snowplow-collector.
 ||tracking*.euroads.fi^
 ||logger-*.dailymotion.com^
-||browser-intake-*-datadoghq.com^
 ||tracking.olx.
 ||log*.vietnamplus.vn^
+||sonar*.xy.fbcdn.net^
 ||analytics-*-nfl.yinzcam.com^
-||flurry.agentportal.*.yahoodns.net^
 ||a*.smlog.co.kr^
 notifications.google.com%2Fg%2Fimg%2F*.gif
 ||app-analytics-*.snapchat.com^
+||pixelapi-*.cs.mysamba.tv^
+||host*.ncoi.nl^
+click.official.infomaniak.com%2Fo%2F
+||event.*.shoplive.cloud^
+||install*.zonastat.com^
+||snowplow-collector.
+||browser-intake-*-datadoghq.com^
+||flurry.agentportal.*.yahoodns.net^
 %2Fvia%2Fo%3Fh%3D
 ||use-trk*.bluevoox.com^
 ||ssp*.rtb.beeline.ru^
 ||f-log-*.grammarly.io^
-||client.rum.*.amazonaws.com^
-||host*.ncoi.nl^
 ||api*.moengage.com^
 ||beacon-*.helpscout.net^
-click.official.infomaniak.com%2Fo%2F
-||event.*.shoplive.cloud^
 ||hba*.hepsiburada.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||applog*.matrix.easebar.com^
 ||tracking.*.miui.com^
+||analytics.streamfab.
+||datacollect*.abtasty.com^
+||collector-*.px-client.net^
 ||cs*.mp3bars.com^
 ||clog*.yuanfudao.com^
 ||mapi-log.qoo*.jp^
-||sonar*.xy.fbcdn.net^
+||fp-*it*.fengkongcloud.com^
 ||cnt.nuvid.
+||ulog*.kwaipros.com^
+||beacons*.gvt3.com^
 ||collect-elb-*.amazonaws.com^
 ||mcs-*.tiktok.com^
 ||host*.carl-ras.dk^
 ||thegreatesthits.
-||st-*.dynamicyield.com^
-||pixelapi-*.cs.mysamba.tv^
-||hw-sh-pcdn-*.biliapi.net^
-||api-*.hismarttv.com^
-||applog*.matrix.easebar.com^
-||analytics.streamfab.
-||datacollect*.abtasty.com^
-||collector-*.px-client.net^
-||fp-*it*.fengkongcloud.com^
-||ulog*.kwaipros.com^
-||beacons*.gvt3.com^
 ||mcs-*.lemon8-app.com^
 ||datacollector-*.dt.dbankcloud.cn^
 ||log*-normal-useast1a.lemon8-app.com^
 ||geoloc*.geovisite.ovh^
+||st-*.dynamicyield.com^
+||hw-sh-pcdn-*.biliapi.net^
+||api-*.hismarttv.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mon*-misc.fqnovel.com^
 ||t*.playdigo.live^
