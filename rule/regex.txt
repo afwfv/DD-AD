@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-08-18 16:18:10
+! Last Modified: 2025-08-19 00:14:26
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -153,6 +153,12 @@ esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 ||analytics*.clickdimensions.com^
 ||pxl-*.ozone.ru^
 ||event.*.shoplive.cloud^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||158.247.208.
+||23.109.82.
+||142.91.159.
+|167.206.10.148^
+||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||cnt.yeptube.
 ||mssdk*.capcutapi.com^
@@ -179,12 +185,6 @@ directtrack.*.js
 ||collector.xhamster*.
 ||wa.gmx.
 ||servo-report.keepstreams.*^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||158.247.208.
-||23.109.82.
-||142.91.159.
-|167.206.10.148^
-||23.109.87.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mon*-misc.fqnovel.com^
 ||ali-bj-pcdn-*.biliapi.net^
@@ -222,6 +222,28 @@ directtrack.*.js
 |load.gtm.
 ||api*.moengage.com^
 ||appanalysis*.banggood.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stats-*.p2pnow.ru^
+||ubt.tracking.shopee.
+||ub.galaxus.
+||stats2.*.fdnames.com^
+||servo-report.dvdfab.
+%2Fopen.aspx%3F
+||geotargetly-api-*.com^
+||df.infra.sz.shopee.
+%2Frw%2Fbeacon_
+||pixel.archive.
+||faro-collector-prod-*.grafana.net^
+%2Fevent.gif%3F
+||df.infra.shopee.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||stw.extreme-down.
+||stats.zone-annuaire.
+||stat.*.v-56.com^
+||mr.allegro.
+||onetrust.
+||stats*.credit-cooperatif.coop^
+||sta.wawacity.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||hstats*.hepsiburada.com^
 ||cs*.mp3bars.com^
@@ -240,107 +262,78 @@ directtrack.*.js
 ||backstory.ebay.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||mon-va*.capcutapi.com^
+||adcounter*.uptolike.ru^
 ||batchlogging*-eu.truecaller.com^
 ||grs.dbankcloud.
 ||collector.hamsterix.
 ||report.*.gbqofs.io^
-||stats*.credit-cooperatif.coop^
+||tnc16-*.byteoversea.com^
+||tracking.olx.
 ||ana*.inews24.com^
+r.rakuten.co.jp%2F*.gif%3Fmpe%3D
+||track.zalando.
 ||host*.carl-ras.dk^
 ||report.*.qq.com^
-||mr.allegro.
 ||log*-normal-*.tiktokv.us^
+||analyzer*.fc2.com^
+||log-va*.capcutapi.com^
 ||host*.ncoi.nl^
 ||collector*.ex.co^
 ||mon*-*.tiktokv.us^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats-*.p2pnow.ru^
-||ubt.tracking.shopee.
-||ub.galaxus.
-||stats2.*.fdnames.com^
-||servo-report.dvdfab.
-%2Fopen.aspx%3F
-||geotargetly-api-*.com^
-||df.infra.sz.shopee.
-%2Frw%2Fbeacon_
-||pixel.archive.
-||faro-collector-prod-*.grafana.net^
-%2Fevent.gif%3F
-||df.infra.shopee.
-! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||stw.extreme-down.
-||adcounter*.uptolike.ru^
-||tnc16-*.byteoversea.com^
-||tracking.olx.
-||fp-*it*.fengkongcloud.com^
-r.rakuten.co.jp%2F*.gif%3Fmpe%3D
-||rtlog*.tiktokv.com^
-||track.zalando.
-||seller-log-collector.shopee.
-||analyzer*.fc2.com^
-||log-va*.capcutapi.com^
-||ulog-*.ksapisrv.com^
 ||counter*-yadro*-ru.unblocked.lol^
 ||track.*.roku.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||stats.zone-annuaire.
-||onetrust.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||stat.*.v-56.com^
-||t*.zcvh.net^
 ||metric*.rediff.com^
 ||cnt.vivatube.
 ||telemetry*.transcend.io^
+||fp-*it*.fengkongcloud.com^
 ||ulog*.gifshow.com^
-notifications.google.com%2Fg%2Fimg%2F*.gif
+||rtlog*.tiktokv.com^
 ||analytics*.carambo.la^
-||logs-*.rebxgame.com^
 ||pixel-*.convertagain.net^
 ||thegreatesthits.
+||seller-log-collector.shopee.
 ||datacollector-*.dt.dbankcloud.cn^
 %2Fs-links.producthunt.com%2Foo%2F*%2Fe.gif
 ||ssp*.rtb.beeline.ru^
-||sta.wawacity.
+||ulog-*.ksapisrv.com^
 ||hw-sh-pcdn-*.biliapi.net^
-||track.tiara.
 ||host*.rigbyandpeller.com^
-||lively-collect-elb-*.amazonaws.com^
 ||lt*.tritondigital.com^
-||sgtm.fashionunited.
 click.official.infomaniak.com%2Fo%2F
 ||mon*-misc-lf.fqnovel.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||iptracker-lb-*.amazonaws.com^
+||t*.zcvh.net^
 |piwik.
-||collect-v*.51.la^
 ||cnt.nuvid.
+notifications.google.com%2Fg%2Fimg%2F*.gif
 ||sock*-goguardian.pusher.com^
 ||rtlog*.tiktokv.us^
-||st-*.dynamicyield.com^
+||lively-collect-elb-*.amazonaws.com^
+||sgtm.fashionunited.
 google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||device-metrics-*.amazon.com^
 ||acr-*-prd.samsungcloud.tv^
 ||mon*-*.tiktokv.com^
-||snowplow-collector.
 ||mssdk*.zijieapi.com^
-||datacollect*.abtasty.com^
 ||ulog*.kwaipros.com^
 ||ads-dmp-collect.*.karrotmarket.com^
 ||tnc*.zijieapi.com^
 d4?appid*type*
+||logs-*.rebxgame.com^
 ||analytics*.prezly.com^
-||query*.petametrics.com^
-||button.blogs.yandex.
 ||stats*.videonow.ru^
+||track.tiara.
 ||stlog*-local.kakao.com^
-||beacon-*.helpscout.net^
 ||apple-*.le.com^
 ||hba*.hepsiburada.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||applog*.matrix.easebar.com^
+||snowplow-collector.
+||datacollect*.abtasty.com^
 ||ecommerce-events*.adscale.com^
+||collect-v*.51.la^
 ||geoloc*.geo20120530.com^
-||ad*.ettoday.net^
 ||logger-*.dailymotion.com^
 ||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
 ||sonar*.xy.fbcdn.net^
@@ -349,36 +342,43 @@ d4?appid*type*
 ||analytics.ahrefs.
 ||host*.polaroid.com^
 ||gscounters.*.gigya.com^
-||sdk-*.moengage.com^
+||query*.petametrics.com^
 ||log*.aliyuncs.com^
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
-||mcs-*.lemon8-app.com^
+||button.blogs.yandex.
+||st-*.dynamicyield.com^
 ||sgtm.fairmont.
-||imp-*.jampp.com^
+||beacon-*.helpscout.net^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||cnt.hd21.
-||gtmdev.jabra.
 ||tracking-v*.a.run.app^
 ||tracking*.euroads.fi^
 ||customerevents.us-east-*.internal.dradis.netflix.com^
 ||polaris*-normal-*.zijieapi.com^
 ||xlog*-*.tiktokv.com^
-||analytics-*-nfl.yinzcam.com^
 ||api*.amplitude.com^
 |load.ss.
+||sdk-*.moengage.com^
 ||events-api*.outfit7.com^
 ||ubacollect-*.cloud.dbankcloud.cn^
 ||api-*.hismarttv.com^
+||applog*.matrix.easebar.com^
 ||tnc-va*.capcutapi.com^
 ||mon-*.lemon8-app.com^
-||cnt.proporn.
+||ad*.ettoday.net^
 ||browser-intake-*-datadoghq.com^
 ||host*.rvshare.com^
 ||stat.tiara.
 ||collector-*.px-cdn.net^
 ||clickstream-*.homedepot.com^
 ||pixel-*.rubiconproject.com^
+||mcs-*.lemon8-app.com^
 ||f-log-*.grammarly.io^
 ||flurry.agentportal-*.yahoodns.net^
 ||batchlogging*-noneu.truecaller.com^
+||imp-*.jampp.com^
+! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||analytics-*-nfl.yinzcam.com^
+||gtmdev.jabra.
+||cnt.proporn.
