@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-08-26 00:13:39
+! Last Modified: 2025-08-26 08:54:42
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -273,15 +273,16 @@ click.official.infomaniak.com%2Fo%2F
 ||df.infra.shopee.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||acr-*-prd.samsungcloud.tv^
-||xlog*-*.tiktokv.com^
 ||stat.*.v-56.com^
-||geoloc*.geostats.ovh^
 |piwik.
+||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
+||log*-misc-lf.amemv.com^
+||host*.rvshare.com^
+||xlog*-*.tiktokv.com^
+||geoloc*.geostats.ovh^
 %2Fs-links.producthunt.com%2Foo%2F*%2Fe.gif
 ||log-va*.capcutapi.com^
 ||attr-logs.*.amazonaws.com^
-||log*-misc-lf.amemv.com^
-||host*.rvshare.com^
 ||stlog*-local.kakao.com^
 ||apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -292,7 +293,6 @@ click.official.infomaniak.com%2Fo%2F
 ||ecommerce-events*.adscale.com^
 ||event.*.karrotmarket.com^
 ||eum*.instana.io^
-||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
 ||mapi-log.qoo*.jp^
 ||ulog*.gifshow.com^
 ||log*-*.tiktokv.com^
@@ -354,6 +354,7 @@ notifications.googleapis.com%2Femail%2Ft%2F*%2Fa.gif
 ||install*.zonastat.com^
 ||hstats*.hepsiburada.com^
 ||adcounter*.uptolike.ru^
+||mon-*.lemon8-app.com^
 ||log-collector.shopee.
 ||cnt.proporn.
 directtrack.*.js
@@ -366,8 +367,8 @@ directtrack.*.js
 ||admob-app-id-*.firebaseio.com^
 ||auth-*.hismarttv.com^
 ||cs*.mp3bars.com^
-||mon-*.lemon8-app.com^
 ||report.*.gbqofs.io^
+||logger-*.dailymotion.com^
 ||stat.tiara.
 ||ads-dmp-collect.*.karrotmarket.com^
 ||rtlog*.tiktokv.com^
@@ -385,5 +386,4 @@ directtrack.*.js
 ||mon*-misc-lf.fqnovel.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||t*.playdigo.live^
-||logger-*.dailymotion.com^
 ||bi-eventtracker-*.amazonaws.com^
