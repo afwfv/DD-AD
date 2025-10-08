@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-10-08 16:15:41
+! Last Modified: 2025-10-09 00:14:00
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -217,6 +217,7 @@ d4?appid*type*
 ||host*.nti.nl^
 ||cnt.winporn.
 ||mon-va*.capcutapi.com^
+||tracking-v*.a.run.app^
 ||datacollector-*.dt.hicloud.com^
 ||collect-v*.51.la^
 ||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
@@ -237,6 +238,7 @@ d4?appid*type*
 ||collector-*.px-cdn.net^
 ||flurry.agentportal.*.yahoodns.net^
 ||logs-*.rebxgame.com^
+%2Fvia%2Fo%3Fh%3D
 ||logservice-*.platform.dbankcloud.cn^
 ||mon*.tiktokv.us^
 ||analyzer*.fc2.com^
@@ -250,12 +252,10 @@ d4?appid*type*
 ||mon-*.lemon8-app.us^
 ||grs.dbankcloud.
 ||gtmdev.jabra.
-||tracking-v*.a.run.app^
 ||logger-*.dailymotion.com^
 ||mgbsdk*.matrix.easebar.com^
 ||tnc*.zijieapi.com^
 ||host*.polaroid.com^
-%2Fvia%2Fo%3Fh%3D
 ||liveme-sensors-collect2-*.amazonaws.com^
 ||pixel-*.rubiconproject.com^
 ||attr-logs.*.amazonaws.com^
