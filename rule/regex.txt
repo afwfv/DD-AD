@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-10-21 16:16:14
+! Last Modified: 2025-10-22 00:14:35
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -108,6 +108,8 @@
 ||ky891.oss-*.aliyuncs.com^
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||ysdm*.ys137.com.cn^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||admi2fib4exit^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||acr-*-prd.samsungcloud.tv^
 ||pixel*.production-public.tubi.io^
@@ -129,8 +131,6 @@
 ||beacon-*.helpscout.net^
 ||stlog*-local.kakao.com^
 ||hba*.hepsiburada.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||admi2fib4exit^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -358,6 +358,7 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||cnt.winporn.
+||iptracker-lb-*.amazonaws.com^
 ||tnc*.tiktokv.us^
 ||datacollect*.abtasty.com^
 ||mon-va*.capcutapi.com^
@@ -378,7 +379,6 @@ r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 ||track.*.roku.com^
 ||apple-*.le.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
-||iptracker-lb-*.amazonaws.com^
 ||collect-v*.51.la^
 ||ali-bj-pcdn-*.biliapi.net^
 ||mapi-log.qoo*.jp^
