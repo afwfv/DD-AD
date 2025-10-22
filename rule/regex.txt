@@ -1,6 +1,6 @@
 [ADFS Adblock List]
 ! Title: regex.txt
-! Last Modified: 2025-10-22 00:14:35
+! Last Modified: 2025-10-22 08:55:06
 ! Homepage: https://github.com/afwfv/DD-AD
 ! 👇This Part Merge from: DD-AD (/home/runner/work/DD-AD/DD-AD/rule/DD-AD.txt)
 @@||v*.douyinvod.com^
@@ -108,8 +108,6 @@
 ||ky891.oss-*.aliyuncs.com^
 ! 👇This Part Merge from: adblock_list (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt)
 ||ysdm*.ys137.com.cn^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||admi2fib4exit^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||acr-*-prd.samsungcloud.tv^
 ||pixel*.production-public.tubi.io^
@@ -131,6 +129,8 @@
 ||beacon-*.helpscout.net^
 ||stlog*-local.kakao.com^
 ||hba*.hepsiburada.com^
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||admi2fib4exit^
 ! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
 ||get-me-wow.
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
@@ -276,13 +276,6 @@ d4?appid*type*
 ||faro-collector-prod-*.grafana.net^
 google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||api-*.hismarttv.com^
-! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
-||collector-*.luigisbox.com^
-||ubt.tracking.shopee.
-||mcdp-*.outbrain.com^
-||stats2.*.fdnames.com^
-||analytics.ticketmaster.
-||fb_servpub-a.akamaihd.net^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||install*.zonastat.com^
 ||hstats*.hepsiburada.com^
@@ -303,13 +296,18 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||log-va*.capcutapi.com^
 ||pixelapi-*.cs.mysamba.tv^
 ||log*.byteoversea.com^
-||counter*-yadro*-ru.unblocked.lol^
 ||backstory.ebay.
+! 👇This Part Merge from: halflife (https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt)
+||collector-*.luigisbox.com^
+||ubt.tracking.shopee.
+||mcdp-*.outbrain.com^
+||stats2.*.fdnames.com^
+||analytics.ticketmaster.
+||fb_servpub-a.akamaihd.net^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||maas-*.phunware.com^
 ||ulog*.kwai-pro.com^
 ||geoloc*.geo20120530.com^
-||mcs.*.tiktokv.com^
 ||host*.rvshare.com^
 ||polaris*-normal-*.zijieapi.com^
 ||host*.polaroid.com^
@@ -323,6 +321,7 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||telemetry.*.pvp.net^
 ||wa.gmx.
 ||collector*.ex.co^
+||counter*-yadro*-ru.unblocked.lol^
 ||api*.moengage.com^
 ||tw*.netcore.co.in^
 ||apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com^
@@ -339,6 +338,7 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||cnt.yeptube.
 ||analytics.streamfab.
 ||adcounter*.uptolike.ru^
+||mcs.*.tiktokv.com^
 |piwik.
 ||ulog.*.ksapisrv.com^
 ||edgetrksvc.ebay.
@@ -358,7 +358,6 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
 ||host*.nti.nl^
 ||cnt.winporn.
-||iptracker-lb-*.amazonaws.com^
 ||tnc*.tiktokv.us^
 ||datacollect*.abtasty.com^
 ||mon-va*.capcutapi.com^
@@ -367,7 +366,6 @@ google.com%2Fappserve%2Fmkt%2Fproof%2Fimg%2F*.gif
 ||log*-misc-lf.amemv.com^
 ||sensorsdata*.read.duokan.com^
 r.rakuten.co.jp%2F*.gif%3Fmpe%3D
-||logservice-*.platform.dbankcloud.cn^
 ||staging-*.ispot.tv^
 ||report.*.qq.com^
 ||pixel-*.rubiconproject.com^
@@ -375,10 +373,10 @@ r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 ||client.rum.*.amazonaws.com^
 ||lively-collect-elb-*.amazonaws.com^
 ||lt*.tritondigital.com^
-||sgtm.fashionunited.
 ||track.*.roku.com^
 ||apple-*.le.com^
 ! 👇This Part Merge from: adblock_privacy (https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt)
+||iptracker-lb-*.amazonaws.com^
 ||collect-v*.51.la^
 ||ali-bj-pcdn-*.biliapi.net^
 ||mapi-log.qoo*.jp^
@@ -388,7 +386,9 @@ r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 ||xlog*-*.tiktokv.com^
 ||t*.playdigo.live^
 ||track.zalando.
+||logservice-*.platform.dbankcloud.cn^
 |load.sst.
 ||analytics*.prezly.com^
 ||button.blogs.yandex.
 ||rum*.cdnvideo.ru^
+||sgtm.fashionunited.
