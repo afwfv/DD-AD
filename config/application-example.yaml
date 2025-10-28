@@ -1,0 +1,84 @@
+##########################################
+## !!! 示例配置，修改无效 !!!
+## !!! example config, modify invalid !!!
+##########################################
+application:
+
+  # 程序配置（可选）
+  # ！以下为默认值，如非了解不建议修改
+  config:
+    expected_quantity: 2000000  #预期规则数量
+    fault_tolerance: 0.001 #容错率
+    warn_limit: 6 #警告阈值, 原始规则长度小于该值时会输出警告日志
+
+    # 域名检测，启用时将进行解析以验证域名有效性
+    # ！开启此功能可能导致处理时间大幅延长
+    # ！仅支持特定规则，具体原因请查看项目主页说明
+    domain-detect:
+      enable: false   # 是否启用
+      timeout: 2000   # 查询超时（毫秒）
+      concurrency: 10 # 并发查询数
+      provider:       # 使用的 DNS 服务器，仅支持 IP，多个之间具备优先级; 为空则使用默认DNS
+        - 223.5.5.5
+
+    # 排除指定内容
+    # 在解析结束后，规则内容命中此列表将直接认定为无效
+    exclude:
+      - "www.example.org"
+
+
+  # 规则源配置
+  # remote为远程规则，local为本地规则，支持多个规则源
+  rule:
+    #远程订阅规则 （！使用前请删除下方示例配置, 注意缩进）
+    remote:
+      - name: 'Subscription 1'               #可选参数: 规则名称，如无将使用 path 作为名称
+        path: 'https://example.org/rule.txt' #必要参数: 规则url，仅支持 http/https，不限定响应内容格式
+        type: easylist                       #可选参数: 规则类型：easylist (默认)、dnsmasq、clash、smartdns、hosts
+
+      - name: 'Subscription 2'
+        path: 'http://example.org/rule.txt'
+
+    #本地规则文件
+    local:
+      - name: 'local rule'
+        path: 'local-rule.txt' #支持绝对/相对路径
+
+
+  #输出配置
+  output:
+    #文件头配置，将自动作为注释添加至每个规则文件开始
+    #可使用占位符 ${name}、${type}、${desc} 以及 ${date} (当前日期)
+    file_header: |
+      ADFS AdBlock ${type}
+      Last Modified: ${date}
+      Homepage: https://github.com/fordes123/ad-filters-subscriber/
+
+    #输出规则文件列表 （！注意缩进，且每个类型只能输出一个文件）
+    files:
+      - name: easylist.txt     #必要参数: 文件名
+        type: easylist         #必要参数: 文件类型: easylist、dnsmasq、clash、smartdns、hosts
+        file_header:           #可选参数: 文件头配置，将自动作为注释添加至每个规则文件开始 (此处优先于 output.file_header)
+        desc: 'ADFS EasyList'  #可选参数: 文件描述，可在file_header中通过 ${} 中使用
+        filter:
+          - basic              #基本规则，不包含任何控制、匹配符号, 可以转换为 hosts
+          - wildcard           #通配规则，仅使用通配符
+          - unknown            #其他规则，如使用了正则、高级修饰符号等，这表示目前无法支持
+
+      - name: dns.txt
+        type: easylist
+        filter:
+          - basic
+          - wildcard
+
+      - name: dnsmasq.txt
+        type: dnsmasq
+
+      - name: clash.yaml
+        type: clash
+
+      - name: smartdns.txt
+        type: smartdns
+
+      - name: hosts.txt
+        type: hosts

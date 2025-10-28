@@ -1,0 +1,141 @@
+# 参考 `application-example.yaml` 并在处添加订阅规则，请注意缩进
+# Refer to `application-example.yaml` and add subscription rules there，please note the indentation
+
+application:
+  config:
+    domain-detect:
+      enable: true
+      timeout: 3000
+      concurrency: 128
+      provider:
+        - 1.1.1.1
+        - 8.8.8.8
+
+    exclude:
+      # 屏蔽此域会导致Edge浏览器翻译不可用
+      - "edge.microsoft.com"
+      # 屏蔽此域会导致小米天气网络异常
+      - "metok.sys.miui.com"
+      # 屏蔽此域会导致10086 App登陆异常
+      - "client.app.coc.10086.cn"
+      # 屏蔽此域会导致MSN页面无法正常加载
+      - "assets.msn.com"
+
+  rule:
+    remote:
+      - name: AdGuard 基础过滤器
+        path: https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
+        type: easylist
+
+      - name: AdGuard 移动广告过滤器
+        path: https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
+        type: easylist
+
+#      - name: AdGuard 防跟踪保护过滤器
+#        path: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
+#        type: easylist
+#
+#      - name: AdGuard URL跟踪过滤器
+#        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
+#        type: easylist
+#
+#      - name: AdGuard 恼人广告过滤器
+#        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+#        type: easylist
+
+      - name: AdGuard 解除搜索广告和自我推销过滤器
+        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt
+        type: easylist
+
+      - name: AdGuard 中文过滤器
+        path: https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt
+        type: easylist
+
+      - name: AWAvenue-Adblock-Rule
+        path: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
+        type: easylist
+
+      - name: NoAppDownload
+        path: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
+        type: easylist
+
+      - name: xndeye web-ad-rule
+        path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
+        type: easylist
+
+      - name: xinggsf movie
+        path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+
+      - name: damengzhu jiekouAD
+        path: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+
+      - name: cjxlist annoyance
+        path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+
+      - name: ABP filters
+        path: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+
+      - name: ABP 反广告过滤
+        path: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+
+      - name: uBlockOrigin privacy
+        path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+
+      - name: Telemetry Lists - Aggregated
+        path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
+
+      - name: GoodbyeAds-Xiaomi
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
+
+      - name: GoodbyeAds-Huawei
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
+
+      - name: GoodbyeAds-Samsung
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
+
+
+    local:
+      - name: 'DD-AD'
+        path: 'rule/DD-AD.txt'
+        type: easylist
+
+  output:
+    file_header: |
+      Title: DD-AD of ${type}
+      Last Modified: ${date}
+      Homepage: https://github.com/afwfv/DD-AD
+
+    files:
+      - name: easylist.txt
+        type: easylist
+        filter:
+          - basic
+          - wildcard
+          - unknown
+
+      - name: dns.txt
+        type: easylist
+        file_header: |
+          Title: xndeye adblock list of dns 
+          Last Modified: ${date}
+          Homepage: https://github.com/afwfv/DD-AD
+        filter:
+          - basic
+          - wildcard
+
+      - name: modify.txt
+        type: easylist
+        filter:
+          - unknown
+
+      - name: dnsmasq.conf
+        type: dnsmasq
+
+      - name: clash.yaml
+        type: clash
+
+      - name: smartdns.conf
+        type: smartdns
+
+      - name: hosts
+        type: hosts

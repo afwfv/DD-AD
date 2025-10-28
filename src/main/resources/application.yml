@@ -1,8 +1,8 @@
 spring:
   application:
-    name: DD-AD
+    name: ad-filters-subscriber
   profiles:
-    active: prod  #切换至 dev 即可输出调试信息
+    active: dev  #切换至 dev 即可输出调试信息
 
 logging:
   file:
@@ -12,49 +12,10 @@ application:
   config:
     expected_quantity: 2000000  #预期规则数量
     fault_tolerance: 0.001 #容错率
-    warn_limit: 7 #警告阈值, 规则长度小于该值时会输出警告日志
-    batch_size: 10000 #写入文件的批次大小
+    warn_limit: 6 #警告阈值, 原始规则长度小于该值时会输出警告日志
 
-  # 规则源配置，remote为远程规则，local为本地规则，支持多个规则源
-  rule:
-
-    # 仅支持 http/https，不限定响应内容格式
-    remote:
-      - name: '大圣净化'
-        path: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts'
-      - name: 'adblock_list'
-        path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt'
-      - name: 'halflife'
-        path: 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt'
-      - name: '1024网站及澳门皇家赌场及恶意广告主机列表'
-        path: 'https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts'
-      - name: 'adblock_privacy'
-        path: 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt'
-    local:
-      - name: 'DD-AD'
-        path: 'DD-AD.txt'
-  output:
-    file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
-      [ADFS Adblock List]
-      ! Title: ${name}
-      ! Last Modified: ${date}
-      ! Homepage: https://github.com/afwfv/DD-AD
-    path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
-    files:
-      all.txt: #输出文件名
-        - DOMAIN  #域名规则，仅完整域名
-        - REGEX   #正则规则，包含正则的域名规则，AdGH支持
-        - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
-        - HOSTS   #Hosts规则
-      dns.txt:
-        - DOMAIN
-        - REGEX
-        - HOSTS
-      hosts.txt:
-        - HOSTS
-      regex.txt:
-        - REGEX
-      domain.txt:
-        - DOMAIN
-      modify.txt:
-        - MODIFY
+    # 域名检测，启用时将进行解析以验证域名有效性
+    # 注意: 开启此功能可能导致处理时间大幅延长
+    domain-detect:
+      enable: false
+      timeout: 10
