@@ -8,15 +8,16 @@
 > AdGuardHome 推荐使用：`dns.txt`</br>
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
-| 名称         | 说明                                                                                        |                                         Github                                         |                                 jsdelivr                                  |
-| ------------ | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| `all.txt`    | 去重的规则合集，包含`DOMAIN`、`REGEX`、`MODIFY`、`HOSTS`，适用于 `AdGuard`、`AdBlock`等     |      [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/all.txt)       |  [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//all.txt)   |
-| `dns.txt`    | 包含 `DOMAIN`、`REGEX`、`HOSTS`规则，适用于`AdGuardHome` 等基于 DNS 的过滤工具              |      [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/dns.txt)       |  [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//dns.txt)   |
-| `domain.txt` | `DOMAIN` 域名规则，仅完整域名                                                               | [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt) | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//domain.txt) |
-| `hosts.txt`  | `HOSTS` 规则，适用于几乎所有设备                                                            |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/hosts.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//hosts.txt)  |
-| `modify.txt` | `MODIFY` 修饰规则，添加了一些修饰符号的规则，AdG 支持, `modify.txt` + `dns.txt` = `all.txt` |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/modify.txt)     | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//modify.txt) |
-| `DD-AD.txt`  | 由本仓库维护的私有规则，主要是对上游规则的补充                                              |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//DD-AD.txt)  |
-| `regex.txt`  | `REGEX` 正则规则，包含正则的域名规则，AdGH 支持                                             |     [**订阅**](https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/regex.txt)      | [**订阅**](https://cdn.jsdelivr.net/gh/afwfv/DD-AD@main/rule//regex.txt)  |
+| 文件              | 说明                          |        github        |         ghproxy          |         jsdelivr          |
+|-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
+| `easylist.txt`  | 完整主规则                       | [link][easylist-raw] | [link][easylist-ghproxy] | [link][easylist-jsdelivr] |
+| `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [link][modify-raw]  |  [link][modify-ghproxy]  |  [link][modify-jsdelivr]  |
+| `dns.txt`       | 仅含 DNS 过滤规则的 `easylist.txt` |   [link][dns-raw]    |   [link][dns-ghproxy]    |   [link][dns-jsdelivr]    |
+| `dnsmasq.conf`  | dnsmasq 及其衍生版本              | [link][dnsmasq-raw]  | [link][dnsmasq-ghproxy]  | [link][dnsmasq-jsdelivr]  |
+| `clash.yaml`    | clash 及其衍生版本                |  [link][clash-raw]   |  [link][clash-ghproxy]   |  [link][clash-jsdelivr]   |
+| `smartdns.conf` | smartdns                    | [link][smartdns-raw] | [link][smartdns-ghproxy] | [link][smartdns-jsdelivr] |
+| `hosts`         | 几乎所有操作系统原生支持                |  [link][hosts-raw]   |  [link][hosts-ghproxy]   |  [link][hosts-jsdelivr]   |
+| `private.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [link][private-raw]  | [link][private-ghproxy]  | [link][private-jsdelivr]  |
 
 ### 说明
 
