@@ -4,7 +4,7 @@
 
 ## 🎯 ***规则订阅***
 
-> AdGuard客户端(软件、扩展)、AdBlock、AdBlockPlus、uBlock Origin 推荐使用：`all.txt`</br>
+> AdGuard客户端(软件、扩展)、AdBlock、AdBlockPlus、uBlock Origin 推荐使用：`easylist`</br>
 > AdGuardHome 推荐使用：`dns.txt`</br>
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
