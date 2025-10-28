@@ -116,7 +116,7 @@ application:
       - name: dns.txt
         type: easylist
         file_header: |
-          Title: xndeye adblock list of dns 
+          Title: DD-AD 
           Last Modified: ${date}
           Homepage: https://github.com/afwfv/DD-AD
         filter:
