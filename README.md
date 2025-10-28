@@ -17,7 +17,7 @@
 | `clash.yaml`    | clash 及其衍生版本                |  [link][clash-raw]   |  [link][clash-ghproxy]   |  [link][clash-jsdelivr]   |
 | `smartdns.conf` | smartdns                    | [link][smartdns-raw] | [link][smartdns-ghproxy] | [link][smartdns-jsdelivr] |
 | `hosts`         | 几乎所有操作系统原生支持                |  [link][hosts-raw]   |  [link][hosts-ghproxy]   |  [link][hosts-jsdelivr]   |
-| `private.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [link][private-raw]  | [link][private-ghproxy]  | [link][private-jsdelivr]  |
+| `DD-AD.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [link][DD-AD-raw]  | [link][DD-AD-ghproxy]  | [link][DD-AD-jsdelivr]  |
 
 [easylist-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt
 
@@ -61,11 +61,11 @@
 
 [hosts-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/hosts
 
-[private-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/private.txt
+[DD-AD-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt
 
-[private-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/private.txt
+[DD-AD-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt
 
-[private-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/private.txt
+[DD-AD-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/DD-AD.txt
 
 ### 说明
 
