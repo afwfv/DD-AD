@@ -10,14 +10,14 @@
 
 | 文件              | 说明                          |        github        |         ghproxy          |         jsdelivr          |
 |-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
-| `easylist.txt`  | 完整主规则                       | [link][easylist-raw] | [link][easylist-ghproxy] | [link][easylist-jsdelivr] |
-| `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [link][modify-raw]  |  [link][modify-ghproxy]  |  [link][modify-jsdelivr]  |
-| `dns.txt`       | 仅含 DNS 过滤规则的 `easylist.txt` |   [link][dns-raw]    |   [link][dns-ghproxy]    |   [link][dns-jsdelivr]    |
-| `dnsmasq.conf`  | dnsmasq 及其衍生版本              | [link][dnsmasq-raw]  | [link][dnsmasq-ghproxy]  | [link][dnsmasq-jsdelivr]  |
-| `clash.yaml`    | clash 及其衍生版本                |  [link][clash-raw]   |  [link][clash-ghproxy]   |  [link][clash-jsdelivr]   |
-| `smartdns.conf` | smartdns                    | [link][smartdns-raw] | [link][smartdns-ghproxy] | [link][smartdns-jsdelivr] |
-| `hosts`         | 几乎所有操作系统原生支持                |  [link][hosts-raw]   |  [link][hosts-ghproxy]   |  [link][hosts-jsdelivr]   |
-| `DD-AD.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [link][DD-AD-raw]  | [link][DD-AD-ghproxy]  | [link][DD-AD-jsdelivr]  |
+| `easylist.txt`  | 完整主规则                       | [订阅][easylist-raw] | [订阅][easylist-ghproxy] | [订阅][easylist-jsdelivr] |
+| `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [订阅][modify-raw]  |  [订阅][modify-ghproxy]  |  [订阅][modify-jsdelivr]  |
+| `dns.txt`       | 仅含 DNS 过滤规则的 `easylist.txt` |   [订阅][dns-raw]    |   [订阅][dns-ghproxy]    |   [订阅][dns-jsdelivr]    |
+| `dnsmasq.conf`  | dnsmasq 及其衍生版本              | [订阅][dnsmasq-raw]  | [订阅][dnsmasq-ghproxy]  | [订阅][dnsmasq-jsdelivr]  |
+| `clash.yaml`    | clash 及其衍生版本                |  [订阅][clash-raw]   |  [订阅][clash-ghproxy]   |  [订阅][clash-jsdelivr]   |
+| `smartdns.conf` | smartdns                    | [订阅][smartdns-raw] | [订阅][smartdns-ghproxy] | [订阅][smartdns-jsdelivr] |
+| `hosts`         | 几乎所有操作系统原生支持                |  [订阅][hosts-raw]   |  [订阅][hosts-ghproxy]   |  [订阅][hosts-jsdelivr]   |
+| `DD-AD.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [订阅][DD-AD-raw]  | [订阅][DD-AD-ghproxy]  | [订阅][DD-AD-jsdelivr]  |
 
 [easylist-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt
 
