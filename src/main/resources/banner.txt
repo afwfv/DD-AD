@@ -1,3 +1,6 @@
-${AnsiColor.BRIGHT_CYAN} :: Application :: ${AnsiColor.BRIGHT_RED}${spring.application.name}
-${AnsiColor.BRIGHT_CYAN} :: Developers :: ${AnsiColor.BRIGHT_RED}afwfv
-${AnsiColor.BRIGHT_CYAN} :: Github :: ${AnsiColor.BRIGHT_RED}https://github.com/afwfv/DD-AD${AnsiColor.BRIGHT_WHITE}
+${AnsiColor.BRIGHT_YELLOW}  ⚡${AnsiColor.BRIGHT_WHITE} ${spring.application.name} ${AnsiColor.BRIGHT_BLACK}v${spring.application.version:1.0.0}
+${AnsiColor.BRIGHT_BLACK}  ─────────────────────────────────────────────────────────
+${AnsiColor.BRIGHT_WHITE}  ➤ Runtime ${AnsiColor.BRIGHT_BLACK}${os.name} • Java ${java.version} • Spring Boot v${spring-boot.version}
+${AnsiColor.BRIGHT_WHITE}  ➤ Profile ${AnsiColor.BRIGHT_YELLOW}${spring.profiles.active:default} ${AnsiColor.BRIGHT_BLACK}• ${AnsiColor.BRIGHT_WHITE}${server.port:N/A} ${AnsiColor.BRIGHT_BLACK}• ${AnsiColor.BRIGHT_BLACK}PID ${AnsiColor.BRIGHT_WHITE}${PID}
+${AnsiColor.BRIGHT_WHITE}  ➤ Issue tracker: ${AnsiColor.BRIGHT_BLACK}https://github.com/afwfv/DD-AD/issues
+${AnsiColor.BRIGHT_WHITE}

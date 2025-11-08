@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.fordes.adfs.constant.Constants.*;
+import static org.fordes.adfs.constant.Constants.Symbol.CRLF;
 import static org.fordes.adfs.constant.RegConstants.PATTERN_DOMAIN;
 
 /**
@@ -30,31 +31,31 @@ public final class ClashHandler extends Handler implements InitializingBean {
 
         Rule rule = new Rule();
         rule.setOrigin(line);
-        rule.setSource(RuleSet.EASYLIST);
+        rule.setSourceType(RuleSet.EASYLIST);
 
         //只匹配 domain 规则，ipcidr、classical 规则暂不支持
-        String content = (line.startsWith(DASH) ? line.substring(DASH.length()) : line).trim();
-        if (content.startsWith(SINGLE_QUOTE)) {
-            content = Util.subBetween(line, SINGLE_QUOTE, SINGLE_QUOTE).trim();
-        } else if (content.startsWith(QUOTE)) {
-            content = Util.subBetween(line, QUOTE, QUOTE).trim();
+        String content = (line.startsWith(Symbol.DASH) ? line.substring(Symbol.DASH.length()) : line).trim();
+        if (content.startsWith(Symbol.SINGLE_QUOTE)) {
+            content = Util.subBetween(line, Symbol.SINGLE_QUOTE, Symbol.SINGLE_QUOTE).trim();
+        } else if (content.startsWith(Symbol.QUOTE)) {
+            content = Util.subBetween(line, Symbol.QUOTE, Symbol.QUOTE).trim();
         }
 
         //通配符 * 一次只能匹配一级域名，无法转换为easylist
-        if (content.startsWith(ASTERISK)) {
+        if (content.startsWith(Symbol.ASTERISK)) {
             rule.setType(Rule.Type.UNKNOWN);
             return rule;
         }
 
         //通配符 +
-        if (content.startsWith(ADD)) {
+        if (content.startsWith(Symbol.ADD)) {
             content = content.substring(content.startsWith("+.") ? 2 : 1);
             rule.setControls(Set.of(Rule.Control.OVERLAY));
         }
 
         //判断是否是domain
-        boolean haveAsterisk = content.contains(ASTERISK);
-        String temp = haveAsterisk ? content.replace(ASTERISK, A) : content;
+        boolean haveAsterisk = content.contains(Symbol.ASTERISK);
+        String temp = haveAsterisk ? content.replace(Symbol.ASTERISK, Symbol.A) : content;
         if (PATTERN_DOMAIN.matcher(temp).matches()) {
             rule.setType(haveAsterisk ? Rule.Type.WILDCARD : Rule.Type.BASIC);
         }
@@ -72,20 +73,20 @@ public final class ClashHandler extends Handler implements InitializingBean {
     @Override
     public String format(Rule rule) {
         if (Rule.Type.UNKNOWN == rule.getType()) {
-            if (RuleSet.CLASH == rule.getSource()) {
+            if (RuleSet.CLASH == rule.getSourceType()) {
                 return rule.getOrigin();
             }
             return null;
         } else if (rule.getMode() == Rule.Mode.DENY && rule.getScope() == Rule.Scope.DOMAIN) {
             StringBuilder builder = new StringBuilder();
-            builder.append(WHITESPACE).append(WHITESPACE).append(DASH).append(WHITESPACE).append(QUOTE);
+            builder.append(Symbol.WHITESPACE).append(Symbol.WHITESPACE).append(Symbol.DASH).append(Symbol.WHITESPACE).append(Symbol.QUOTE);
 
             Set<Rule.Control> controls = Optional.ofNullable(rule.getControls()).orElse(Set.of());
             if (controls.contains(Rule.Control.OVERLAY)) {
-                builder.append(ADD).append(DOT);
+                builder.append(Symbol.ADD).append(Symbol.DOT);
             }
             builder.append(rule.getTarget());
-            builder.append(QUOTE);
+            builder.append(Symbol.QUOTE);
             return builder.toString();
         }
         return null;
@@ -93,18 +94,18 @@ public final class ClashHandler extends Handler implements InitializingBean {
 
     @Override
     public String headFormat() {
-        return PAYLOAD + COLON;
+        return PAYLOAD + Symbol.COLON;
     }
 
     @Override
     public boolean isComment(String line) {
-        return line.startsWith(HASH);
+        return line.startsWith(Symbol.HASH);
     }
 
     @Override
     public String commented(String value) {
-        return Util.splitIgnoreBlank(value, LF).stream()
-                .map(e -> HASH + e.trim())
+        return Util.splitIgnoreBlank(value, Symbol.LF).stream()
+                .map(e -> Symbol.HASH + e.trim())
                 .collect(Collectors.joining(CRLF));
     }
 

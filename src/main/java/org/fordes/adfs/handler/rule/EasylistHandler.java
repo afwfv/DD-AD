@@ -25,7 +25,7 @@ public final class EasylistHandler extends Handler implements InitializingBean {
     public Rule parse(String line) {
         Rule rule = new Rule();
         rule.setOrigin(line);
-        rule.setSource(RuleSet.EASYLIST);
+        rule.setSourceType(RuleSet.EASYLIST);
         rule.setMode(Rule.Mode.DENY);
 
         if (line.startsWith(DOUBLE_AT)) {
@@ -34,21 +34,21 @@ public final class EasylistHandler extends Handler implements InitializingBean {
         }
 
         int _head = 0;
-        if (line.startsWith(OR)) {
-            _head = OR.length();
+        if (line.startsWith(Symbol.OR)) {
+            _head = Symbol.OR.length();
             rule.getControls().add(Rule.Control.OVERLAY);
         }
 
 
         //修饰部分
-        int _tail = line.indexOf(CARET);
+        int _tail = line.indexOf(Symbol.CARET);
         if (_tail > 0) {
             rule.getControls().add(Rule.Control.QUALIFIER);
 
             String modify = line.substring(_tail + 1);
             if (!modify.isEmpty()) {
-                modify = modify.startsWith(DOLLAR) ? modify.substring(1) : modify;
-                String[] array = modify.split(COMMA);
+                modify = modify.startsWith(Symbol.DOLLAR) ? modify.substring(1) : modify;
+                String[] array = modify.split(Symbol.COMMA);
                 if (Arrays.stream(array).allMatch(IMPORTANT::equals)) {
                     rule.getControls().add(Rule.Control.IMPORTANT);
                 } else {
@@ -56,16 +56,16 @@ public final class EasylistHandler extends Handler implements InitializingBean {
                     return rule;
                 }
             }
-        } else if (line.endsWith(DOLLAR + IMPORTANT)) {
+        } else if (line.endsWith(Symbol.DOLLAR + IMPORTANT)) {
             rule.getControls().add(Rule.Control.IMPORTANT);
-            _tail = line.length() - (DOLLAR.length() + IMPORTANT.length());
+            _tail = line.length() - (Symbol.DOLLAR.length() + IMPORTANT.length());
         }
 
 
         //内容部分
         String content = line.substring(_head, _tail > 0 ? _tail : line.length());
 
-        if (content.startsWith(SLASH) && content.endsWith(SLASH)) {
+        if (content.startsWith(Symbol.SLASH) && content.endsWith(Symbol.SLASH)) {
             content = content.substring(1, content.length() - 1);
             rule.setType(Rule.Type.UNKNOWN);
         }
@@ -83,9 +83,9 @@ public final class EasylistHandler extends Handler implements InitializingBean {
         }, e -> {
             Map.Entry<String, String> entry = Util.parseHosts(e);
             if (entry != null) {
-                rule.setSource(RuleSet.HOSTS);
+                rule.setSourceType(RuleSet.HOSTS);
                 rule.setTarget(entry.getValue());
-                rule.setMode(LOCAL_IP.contains(entry.getKey()) && !LOCAL_DOMAIN.contains(entry.getValue()) ? Rule.Mode.DENY : Rule.Mode.REWRITE);
+                rule.setMode(LOCAL_IPS.contains(entry.getKey()) && !LOCAL_DOMAINS.contains(entry.getValue()) ? Rule.Mode.DENY : Rule.Mode.REWRITE);
                 rule.setDest(Rule.Mode.DENY == rule.getMode() ? UNKNOWN_IP : entry.getKey());
                 rule.setScope(Rule.Scope.DOMAIN);
                 rule.setType(Rule.Type.BASIC);
@@ -107,22 +107,22 @@ public final class EasylistHandler extends Handler implements InitializingBean {
 
             Optional.of(rule.getControls())
                     .filter(e -> e.contains(Rule.Control.OVERLAY))
-                    .ifPresent(c -> builder.append(OR));
+                    .ifPresent(c -> builder.append(Symbol.OR));
 
             builder.append(rule.getTarget());
 
             Optional.of(rule.getControls())
                     .filter(e -> e.contains(Rule.Control.QUALIFIER))
-                    .ifPresent(c -> builder.append(CARET));
+                    .ifPresent(c -> builder.append(Symbol.CARET));
 
             Optional.of(rule.getControls())
                     .filter(e -> e.contains(Rule.Control.IMPORTANT))
-                    .ifPresent(c -> builder.append(DOLLAR).append(IMPORTANT));
+                    .ifPresent(c -> builder.append(Symbol.DOLLAR).append(IMPORTANT));
             return builder.toString();
         }
 
         //同源未知规则可直接写出
-        if (Rule.Type.UNKNOWN == rule.getType() && RuleSet.EASYLIST == rule.getSource()) {
+        if (Rule.Type.UNKNOWN == rule.getType() && RuleSet.EASYLIST == rule.getSourceType()) {
             return rule.getOrigin();
         }
         return null;
@@ -130,9 +130,9 @@ public final class EasylistHandler extends Handler implements InitializingBean {
 
     @Override
     public String commented(String value) {
-        return Util.splitIgnoreBlank(value, LF).stream()
-                .map(e -> EXCLAMATION + WHITESPACE + e.trim())
-                .collect(Collectors.joining(CRLF));
+        return Util.splitIgnoreBlank(value, Symbol.LF).stream()
+                .map(e -> Symbol.EXCLAMATION + Symbol.WHITESPACE + e.trim())
+                .collect(Collectors.joining(Symbol.CRLF));
     }
 
     @Override
@@ -142,6 +142,6 @@ public final class EasylistHandler extends Handler implements InitializingBean {
 
     @Override
     public boolean isComment(String line) {
-        return Util.startWithAny(line, HASH, EXCLAMATION) || Util.between(line, LEFT_BRACKETS, RIGHT_BRACKETS);
+        return Util.startWithAny(line, Symbol.HASH, Symbol.EXCLAMATION) || Util.between(line, Symbol.LEFT_BRACKETS, Symbol.RIGHT_BRACKETS);
     }
 }

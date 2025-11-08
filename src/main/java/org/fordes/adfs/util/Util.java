@@ -67,7 +67,7 @@ public class Util {
                 return str.substring(0, index);
             }
         }
-        return EMPTY;
+        return Symbol.EMPTY;
     }
 
     /**
@@ -86,7 +86,7 @@ public class Util {
                 return content.substring(index + flag.length());
             }
         }
-        return EMPTY;
+        return Symbol.EMPTY;
     }
 
     /**
@@ -106,7 +106,7 @@ public class Util {
                 return content.substring(startIndex + start.length(), endIndex);
             }
         }
-        return EMPTY;
+        return Symbol.EMPTY;
     }
 
     /**
@@ -146,10 +146,10 @@ public class Util {
      * @return {@link Map.Entry} key:ip, value:域名
      */
     public static @Nullable Map.Entry<String, String> parseHosts(String content) {
-        if (content.contains(TAB)) {
-            content = content.replace(TAB, WHITESPACE);
+        if (content.contains(Symbol.TAB)) {
+            content = content.replace(TAB, Symbol.WHITESPACE);
         }
-        List<String> list = splitIgnoreBlank(content, WHITESPACE);
+        List<String> list = splitIgnoreBlank(content, Symbol.WHITESPACE);
         if (list.size() == 2) {
             String ip = list.get(0).trim();
             String domain = list.get(1).trim();
@@ -186,7 +186,7 @@ public class Util {
         boolean isAbsPath = '/' == path.charAt(0) || PATTERN_PATH_ABSOLUTE.matcher(path).matches();
 
         if (!isAbsPath) {
-            if (path.startsWith(DOT)) {
+            if (path.startsWith(Symbol.DOT)) {
                 path = path.substring(1);
             }
             if (path.startsWith(FILE_SEPARATOR)) {
@@ -200,15 +200,15 @@ public class Util {
 
     public static void isBaseRule(String content, BiConsumer<String, Rule.Type> ifPresent, Consumer<String> orElse) {
         String temp = content;
-        if (temp.contains(ASTERISK)) {
-            temp = content.replace(ASTERISK, A);
+        if (temp.contains(Symbol.ASTERISK)) {
+            temp = content.replace(Symbol.ASTERISK, Symbol.A);
         }
 
-        if (temp.startsWith(DOT)) {
+        if (temp.startsWith(Symbol.DOT)) {
             temp = temp.substring(1);
         }
 
-        if (temp.endsWith(DOT)) {
+        if (temp.endsWith(Symbol.DOT)) {
             temp = temp.substring(0, temp.length() - 1);
         }
 

@@ -16,7 +16,7 @@ public abstract sealed class Handler permits EasylistHandler, DnsmasqHandler, Cl
 
     /**
      * 解析规则<br/>
-     * 返回 null 即表示解析失败
+     * 返回 {@link Rule#EMPTY} 即表示解析失败
      *
      * @param line 规则文本
      * @return {@link Rule}
@@ -42,14 +42,14 @@ public abstract sealed class Handler permits EasylistHandler, DnsmasqHandler, Cl
      * 某些规则格式拥有固定的头部内容，可实现此方法以返回
      */
     public String headFormat() {
-        return Constants.EMPTY;
+        return Constants.Symbol.EMPTY;
     }
 
     /**
      * 某些规则格式拥有固定的尾部内容，可实现此方法以返回
      */
     public String tailFormat() {
-        return Constants.EMPTY;
+        return Constants.Symbol.EMPTY;
     }
 
     /**

@@ -29,10 +29,10 @@ public final class HostsHandler extends Handler implements InitializingBean {
         }
 
         Rule rule = new Rule();
-        rule.setSource(RuleSet.HOSTS);
+        rule.setSourceType(RuleSet.HOSTS);
         rule.setOrigin(line);
         rule.setTarget(entry.getValue());
-        rule.setMode(LOCAL_IP.contains(entry.getKey()) && !LOCAL_DOMAIN.contains(entry.getValue()) ? Rule.Mode.DENY : Rule.Mode.REWRITE);
+        rule.setMode(LOCAL_IPS.contains(entry.getKey()) && !LOCAL_DOMAINS.contains(entry.getValue()) ? Rule.Mode.DENY : Rule.Mode.REWRITE);
         rule.setDest(Rule.Mode.DENY == rule.getMode() ? UNKNOWN_IP : entry.getKey());
         rule.setScope(Rule.Scope.DOMAIN);
         rule.setType(Rule.Type.BASIC);
@@ -44,21 +44,21 @@ public final class HostsHandler extends Handler implements InitializingBean {
         if (Rule.Scope.DOMAIN == rule.getScope() &&
                 Rule.Type.BASIC == rule.getType() &&
                 Rule.Mode.ALLOW != rule.getMode()) {
-            return Optional.ofNullable(rule.getDest()).orElse(UNKNOWN_IP) + TAB + rule.getTarget();
+            return Optional.ofNullable(rule.getDest()).orElse(UNKNOWN_IP) + Symbol.TAB + rule.getTarget();
         }
         return null;
     }
 
     @Override
     public String commented(String value) {
-        return Util.splitIgnoreBlank(value, LF).stream()
-                .map(e -> HASH + WHITESPACE + e.trim())
-                .collect(Collectors.joining(CRLF));
+        return Util.splitIgnoreBlank(value, Symbol.LF).stream()
+                .map(e -> Symbol.HASH + Symbol.WHITESPACE + e.trim())
+                .collect(Collectors.joining(Symbol.CRLF));
     }
 
     @Override
     public boolean isComment(String line) {
-        return line.startsWith(HASH);
+        return line.startsWith(Symbol.HASH);
     }
 
     @Override

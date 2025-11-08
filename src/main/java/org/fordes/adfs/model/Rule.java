@@ -12,15 +12,50 @@ import java.util.Set;
  */
 @Data
 public class Rule {
-    private RuleSet source;
+
+    /**
+     * 规则来源名称，及 {@link org.fordes.adfs.config.AdFSProperties.InputProperties#name}
+     */
+    private String sourceName;
+
+    /**
+     * 规则来源类型 {@link RuleSet}
+     */
+    private RuleSet sourceType;
+
+    /**
+     * 原始规则
+     */
     private String origin;
 
+    /**
+     * 作用目标
+     */
     private String target;
+
+    /**
+     * 重定向/重写目标
+     */
     private String dest;
 
+    /**
+     * 模式 {@link Mode}
+     */
     private Mode mode;
+
+    /**
+     * 作用范围 {@link Scope}
+     */
     private Scope scope;
+
+    /**
+     * 规则类型 {@link Type}
+     */
     private Type type;
+
+    /**
+     * 控制符集 {@link Control}
+     */
     private Set<Control> controls = new HashSet<>(Control.values().length, 1.0f);
 
     public static final Rule EMPTY = new Rule();

@@ -23,17 +23,17 @@ public final class SmartdnsHandler extends Handler implements InitializingBean {
     public Rule parse(String line) {
 
         String content = Util.subAfter(line, SMARTDNS_HEADER, true);
-        List<String> data = Util.splitIgnoreBlank(content, SLASH);
+        List<String> data = Util.splitIgnoreBlank(content, Symbol.SLASH);
         if (data.size() == 2) {
             String domain = data.getFirst();
             String control = data.get(1);
             Rule rule = new Rule();
             rule.setOrigin(line);
-            rule.setSource(RuleSet.EASYLIST);
+            rule.setSourceType(RuleSet.EASYLIST);
 
             switch (control) {
-                case HASH -> rule.setMode(Rule.Mode.DENY);
-                case DASH -> rule.setMode(ALLOW);
+                case Symbol.HASH -> rule.setMode(Rule.Mode.DENY);
+                case Symbol.DASH -> rule.setMode(ALLOW);
                 default -> {
                     //未知或不支持的控制符 如 #6 #4
                     rule.setType(Rule.Type.UNKNOWN);
@@ -42,17 +42,17 @@ public final class SmartdnsHandler extends Handler implements InitializingBean {
             }
 
             //仅匹配主域名
-            if (domain.startsWith(DASH)) {
-                domain = domain.substring(0, line.length() - DASH.length());
+            if (domain.startsWith(Symbol.DASH)) {
+                domain = domain.substring(0, line.length() - Symbol.DASH.length());
             } else {
                 rule.setControls(Set.of(Rule.Control.OVERLAY));
             }
 
-            if (domain.startsWith(DOT)) {
-                domain = domain.substring(0, line.length() - DOT.length());
+            if (domain.startsWith(Symbol.DOT)) {
+                domain = domain.substring(0, line.length() - Symbol.DOT.length());
             }
 
-            rule.setType(domain.startsWith(ASTERISK) ? Rule.Type.WILDCARD : Rule.Type.BASIC);
+            rule.setType(domain.startsWith(Symbol.ASTERISK) ? Rule.Type.WILDCARD : Rule.Type.BASIC);
             rule.setTarget(domain);
             rule.setDest(UNKNOWN_IP);
             rule.setScope(Rule.Scope.DOMAIN);
@@ -64,7 +64,7 @@ public final class SmartdnsHandler extends Handler implements InitializingBean {
     @Override
     public String format(Rule rule) {
         if (Rule.Type.UNKNOWN == rule.getType()) {
-            if (RuleSet.SMARTDNS == rule.getSource()) {
+            if (RuleSet.SMARTDNS == rule.getSourceType()) {
                 return rule.getOrigin();
             }
             return null;
@@ -74,15 +74,15 @@ public final class SmartdnsHandler extends Handler implements InitializingBean {
                 case BASIC -> {
                     return SMARTDNS_HEADER +
                             (!rule.getControls().contains(Rule.Control.OVERLAY) ?
-                                    (ASTERISK + DOT) : EMPTY) +
+                                    (Symbol.ASTERISK + Symbol.DOT) : Symbol.EMPTY) +
                             rule.getTarget() +
-                            SLASH +
-                            (Rule.Mode.DENY.equals(rule.getMode()) ? HASH : DASH);
+                            Symbol.SLASH +
+                            (Rule.Mode.DENY.equals(rule.getMode()) ? Symbol.HASH : Symbol.DASH);
                 }
                 case WILDCARD -> {
                     String domain = rule.getTarget();
-                    if (domain.lastIndexOf(ASTERISK) == 0) {
-                        return SMARTDNS_HEADER + domain + SLASH + DASH;
+                    if (domain.lastIndexOf(Symbol.ASTERISK) == 0) {
+                        return SMARTDNS_HEADER + domain + Symbol.SLASH + Symbol.DASH;
                     }
                 }
             }
@@ -92,14 +92,14 @@ public final class SmartdnsHandler extends Handler implements InitializingBean {
 
     @Override
     public String commented(String value) {
-        return Util.splitIgnoreBlank(value, LF).stream()
-                .map(e -> HASH + WHITESPACE + e.trim())
-                .collect(Collectors.joining(CRLF));
+        return Util.splitIgnoreBlank(value, Symbol.LF).stream()
+                .map(e -> Symbol.HASH + Symbol.WHITESPACE + e.trim())
+                .collect(Collectors.joining(Symbol.CRLF));
     }
 
     @Override
     public boolean isComment(String line) {
-        return line.startsWith(HASH);
+        return line.startsWith(Symbol.HASH);
     }
 
     @Override
