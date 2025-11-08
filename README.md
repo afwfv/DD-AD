@@ -80,4 +80,4 @@
 ### 赞助
 #### 如果你觉得本项目对你有帮助，欢迎赞助支持我继续维护这个项目。
 ![赞赏码][zs]
-[zs]: https://github.com/afwfv/DD-AD/blob/main/zs.png
+[zs]: https://raw.githubusercontent.com/afwfv/DD-AD/main/zs.png
