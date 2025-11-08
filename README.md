@@ -8,7 +8,7 @@
 > AdGuardHome 推荐使用：`dns.txt`</br>
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
-| 文件              | 说明                          |        github        |         ghproxy          |         jsdelivr          |
+| 文件              | 说明                          |        github        |         ghproxy(国内加速)          |         jsdelivr(国内加速)           |
 |-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
 | `easylist.txt`  | 完整主规则                       | [订阅][easylist-raw] | [订阅][easylist-ghproxy] | [订阅][easylist-jsdelivr] |
 | `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [订阅][modify-raw]  |  [订阅][modify-ghproxy]  |  [订阅][modify-jsdelivr]  |
