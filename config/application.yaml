@@ -51,10 +51,6 @@ application:
         path: https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt
         type: easylist
 
-      - name: AWAvenue-Adblock-Rule
-        path: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
-        type: easylist
-
       - name: NoAppDownload
         path: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
         type: easylist
@@ -83,15 +79,6 @@ application:
 
       - name: Telemetry Lists - Aggregated
         path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
-
-      - name: GoodbyeAds-Xiaomi
-        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
-
-      - name: GoodbyeAds-Huawei
-        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
-
-      - name: GoodbyeAds-Samsung
-        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 
 
     local:
