@@ -25,29 +25,26 @@ application:
     remote:
       - name: AdGuard 基础过滤器
         path: https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
-        typ: easylist
+        type: easylist
 
       - name: AdGuard 移动广告过滤器
         path: https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
-        typ: easylist
-
-      - name: AdGuard 解除搜索广告和自我推销过滤器
-        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt
-        typ: easylist
+        type: easylist
 
       - name: AdGuard 中文过滤器
         path: https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt
-        typ: easylist
-        
+        type: easylist
+
+      - name: NoAppDownload
+        path: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
+        type: easylist
+
       - name: xndeye web-ad-rule
         path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
-        typ: easylist
+        type: easylist
 
       - name: xinggsf movie
         path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
-
-      - name: damengzhu jiekouAD
-        path: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 
       - name: cjxlist annoyance
         path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
@@ -58,11 +55,14 @@ application:
       - name: ABP 反广告过滤
         path: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 
+      - name: uBlockOrigin privacy
+        path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+
 
     local:
       - name: 'DD-AD'
         path: 'rule/DD-AD.txt'
-        typ: easylist
+        type: easylist
 
   output:
     file_header: |
@@ -72,14 +72,14 @@ application:
 
     files:
       - name: easylist.txt
-        typ: easylist
+        type: easylist
         filter:
           - basic
           - wildcard
           - unknown
 
       - name: dns.txt
-        typ: easylist
+        type: easylist
         file_header: |
           Title: DD-AD 
           Last Modified: ${date}
@@ -89,18 +89,18 @@ application:
           - wildcard
 
       - name: modify.txt
-        typ: easylist
+        type: easylist
         filter:
           - unknown
 
       - name: dnsmasq.conf
-        typ: dnsmasq
+        type: dnsmasq
 
       - name: clash.yaml
-        typ: clash
+        type: clash
 
       - name: smartdns.conf
-        typ: smartdns
+        type: smartdns
 
       - name: hosts
-        typ: hosts
+        type: hosts
