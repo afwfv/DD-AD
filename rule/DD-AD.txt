@@ -1,5 +1,5 @@
 ! Title: AFWFV DD-AD list of DD-AD
-! Last Modified: 2025-11-05 00:00:00
+! Last Modified: 2026-7-29 00:00:00
 ! Homepage: https://github.com/afwfv/DD-AD/
 ! Description: 对本仓库上游规则的补充与修正, 不定期更新.
 !-------------白名单---------------
@@ -124,7 +124,6 @@
 @@||auth.zijieapi.com^
 @@||aweme.snssdk.com^
 @@||v*.douyinvod.com^
-@@||lf3-cdn-tos.bytegoofy.com^
 @@||saveu*-normal-lf.zijieapi.com^
 @@||lf-webcast-gr-sourcecdn.bytegecko.com^
 @@||lf*-webcast-cdn-tos-ncdn.bytegecko.com^
@@ -190,8 +189,6 @@
 @@||dinamicx.alibabausercontent.com^
 ##今日头条极速版
 @@||lf3-search.searchpstatp.com^
-@@||monsetting.toutiao.com^
-@@||gecko.zijieapi.com^
 @@||polaris.zijieapi.com^
 @@||tnc3-bjlgy.zijieapi.com^
 ##囧次元
@@ -205,9 +202,7 @@
 ##当鸟动漫
 @@||mooc-image.nosdn.127.net^
 ##头条PRO
-@@||ib.snssdk.com^
 @@||ic.snssdk.com^
-@@||is.snssdk.com^
 ##360防骚扰大师
 @@||s.mvconf.f.360.cn^
 @@||scan.call.f.360.cn^
@@ -281,77 +276,132 @@
 ##钉钉
 @@||adash-emas.cn-hangzhou.aliyuncs.com^
 !-------------黑名单--------------------
-#信息流及评论区广告
-||s2s.adjust.cn^
-||ctobsnssdk.com^
-||pangolin.snssdk.com^
-||ulogs.umeng.com^
-||aaid.umeng.com^
-||mssdk-bu.bytedance.com^
-#帖子详情好物推荐
-||api2.coolapk.com/v6/feed/detail$replace=/&quot;include_goods_ids&quot;:\[.*?]\,&quot;include_goods&quot;:\[.*?]\,/ /
-#帖子详情赞助内容
-||api2.coolapk.com/v6/feed/detail$replace=/\,&quot;detailSponsorCard&quot;:{.*}/}}/
-#发现页去除酷品
-||api2.coolapk.com/v6/main/init$replace=/{&quot;id&quot;:1170.*?}\,/ /
-#应用游戏页去除推广视频
-||api2.coolapk.com/v6/page/dataList$replace=/{&quot;entityType&quot;:&quot;card&quot;\,&quot;entityTemplate&quot;:&quot;apkImageCard&quot;.*?\\u0022}&quot;}\,/ /
-#去除首页还有什么值得买推广
-||api2.coolapk.com/v6/main/indexV8$replace=/{&quot;entityType&quot;:&quot;card&quot;\,&quot;entityTemplate&quot;:&quot;listCard&quot;.*?}&quot;}\,/ /
+#穿山甲/字节 ===
+||api-access.pangolin-sdk-toutiao-b.com^
+||api-access.pangolin-sdk-toutiao.com^
+||api-access.pangolin-sdk-toutiao1.com^
+||log-api.pangolin-sdk-toutiao.com^
+||toblog.ctobsnssdk.com^
+||sf3-fe-tos.pglstatp-toutiao.com^
+||sf6-fe-tos.pglstatp-toutiao.com^
+||lf6-ad-union-sdk.pglstatp-toutiao.com^
+||lf9-ad-union-sdk.pglstatp-toutiao.com^
+||lf-cdn-tos.bytescm.com^
+||lf1-cdn-tos.bytegoofy.com^
+||lf-event-manager.oceanengine.com^
+||analytics.oceanengine.com^
+||mssdk.volces.com^
+||v.adintl.cn^
+||tnc3-bjlgy.zijieapi.com^
+#快手 ===
+||open.e.kuaishou.com^
+||open.kwaizt.com^
+||p4-lm.adukwai.com^
+||p66-ad.adkwai.com^
+#优量汇 GDT ===
+||win.gdt.qq.com^
+||c3.gdt.qq.com^
+||v3.gdt.qq.com^
+||v2mi.gdt.qq.com^
+||sdk.e.qq.com^
+||pgdt.ugdtimg.com^
+||adsmind.ugdtimg.com^
+||qzs.gdtimg.com^
+||rdelivery.qq.com^
+#Vlion 维龙 ===
+||bid-adx2.vlion.cn^
+||bj-td-menta-01-callback.advlion.com^
+||td-nexus.advlion.com^
+#Sigmob ===
+||adservice.sigmob.cn^
+||tm.sigmob.cn^
+||dc.sigmob.cn^
+||rtbcallback.sigmob.cn^
+#AdBid ===
+||bid.adbiding.com^
+||sdkconf.adbiding.com^
+||sl.adbiding.com^
+||t.adbiding.com^
+#百鹤 ===
+||ad.baihemob.com^
+#贝子 ===
+||sdk.beizi.biz^
+||api-htp.beizi.biz^
+#MentaMob ===
+||api-nxs-v4.mentamob.com^
+||api-v3.mentamob.com^
+#LeadMoa ===
+||ads-bid.leadmoad.com^
+||adsbid.leadmoad.com^
+#FancyDSP ===
+||mpcfg.fancydsp.com^
+||g.fancyapi.com^
+||t2.fancyapi.com^
+||lftxali.fancyapi.com^
+#1RTB ===
+||s.1rtb.net^
+||sdk.1rtb.net^
+||sdk-report.1rtb.com^
+#掌驭移动 ===
+||sdk.zhangyuyidong.cn^
+||sdklog.zhangyuyidong.cn^
+||adm.zhangyuyidong.cn^
+#ADN Plus ===
+||ad-api.adn-plus.com.cn^
+||adx-track.adn-plus.com.cn^
+||ssp-track.adn-plus.com.cn^
+#顺昌之行 ===
+||ad.shunchangzhixing.com^
+||report.shunchangzhixing.com^
+#大事选 ===
+||event.dashisx.com^
+#HubCloud ===
+||sdktmp.hubcloud.com.cn^
+||res1.hubcloud.com.cn^
+#Gameley ===
+||jp.ad.gameley.com^
+||de.ad.gameley.com^
+||lemon.gameley.com^
+#小米广告 ===
+||log.ad.xiaomi.com^
+||t2.a.market.xiaomi.com^
+#Ad-Scope ===
+||resource.ad-scope.com.cn^
+#RichMob ===
+||adsdk.richmob.cn^
+||sdkapi.richmob.cn^
+#DigitalCloudShield ===
+||monitor-pro.digitalcloudshield.com^
+#NDCJL ===
+||v66-ad.ndcjl.com^
+#UBiX ===
+||e-u1.ubixioe.com^
+||entry-su1.ubixioe.com^
+||adx-cfg-u1.ubixioe.com^
+||adx-data-u1.ubixioe.com^
+#多盟 Domob ===
+||adx-track.domob.cn^
+#ADX VIP ===
+||s.adxvip.com^
 #夏普电视开机广告
 ||flnet.com^
 ||miaozhen.com^
 #QQ浏览器小说广告
 ||kde.qq.com^
 #字节系 AD API SDK 屏蔽
-#/pangolin-sdk.*/
-#/pangolin-sdk-toutiao.*/
-#/pangolin-sdk-toutiao1.*/
-#/pglstatp-toutiao.*/
-#||bsccdn.net^
-#||dig.zjurl.cn^
-#||dig.bdurl.net^
-#||ad.zijieapi.com^
-#||apps.bytesfield.com^
-#||pangolin-sdk-toutiao.com^
-#||pangolin-sdk-toutiao1.com^
-#||pangolin-sdk-toutiao-b.com^
-#||pglstatp-toutiao.com^
-#||vcs.zijieapi.com^
-#||ads*-normal.amemv.com^
-#||ads*-normal-lq.amemv.com^
-#||ads*-normal-lf.amemv.com^
-#||ads*-normal-hl.amemv.com^
-#||ads*-normal.zijieapi.com^
-#||ads*-normal-lq.zijieapi.com^
-#||ads*-normal-lf.zijieapi.com^
-#||ads*-normal-hl.zijieapi.com^
-#||ads*-normal-lq.zijieapi.com.w.cdngslb.com^
-#||ads*-normal-lq.zijieapi.com.queniuiq.com^
-#||p*-ad-sign.byteimg.com^
-#||p*-ad.byteimg.com^
-#||lf*-orange.byteorge.com^
-#||v*-novelapp.fqnovelvod.com^
-#||sf*-ttcdn-tos.pstatp.com^
-#||p*-local-ads.byteimg.com.queniuso.com^
-#||p*-local-ads.byteimg.com^
-#||localads.chengzijianzhan.cn^
-#||localads.chengzijianzhan.cn.queniurc.com^
-#||ads*-normal-lf.zijieapi.com.dhcp^
-#==========================================
-#番茄小说 / Pangle 穿山甲 广告过滤规则
 ||ad.zijieapi.com^
 ||mon.zijieapi.com^
 ||log.zijieapi.com^
 ||rtlog.zijieapi.com^
 ||applog.zijieapi.com^
+||gecko.zijieapi.com^
 ||mon.snssdk.com^
+||mon.toutiao.com^
+||mon.toutiaocloud.com^
+||mon.toutiaocloud.net^
 ||log.snssdk.com^
 ||crash.snssdk.com^
-#穿山甲开发者平台（广告 SDK 配置/策略下发）---
-||csjdeveloper.com^
-#巨量引擎（广告投放平台）---
-||oceanengine.com^
+||monsetting.toutiao.com^
 #电商广告（小说内的电商推广）---
 ||ecombdapi.com^
 ||ecombdpage.com^
@@ -380,11 +430,12 @@
 #小游戏广告（如不使用可屏蔽，用则去掉）---
 ||dailygn.com^
 ||minigame.zijieapi.com^
+||pangolin.snssdk.com^
+||dm.toutiao.com^
+||ad.toutiao.com
+||p*-ad.bytecdn.cn
+||i.snssdk.com^
 #==========================================
-#七猫免费小说
-||cdn-new-ad.wtzw.com^
-||a-remad.qm989.com^
-||open.kuaishouzt.com^
 #得间
 ||*-ad.wtzw.com^
 ||aiclk.com^
@@ -412,14 +463,62 @@
 ||mos.m.taobao.com^
 ||sdk-log.partner.sm.cn^
 ||opehs.tanx.com^
-#OPPO
-||sms.ads.heytapmobi.com^
-||cl-data.ads.heytapmobi.com^
+#Tanx 阿里巴巴广告 SDK ──
+||task.tanx.com^
+||et.tanx.com^
+||sdk-config.tanx.com^
+||videoproxy.tanx.com^
+||pre-sdk-config.alibaba-inc.com^
+#KS 快手广告 SDK ──
+||beta2-ad-open-api.test.gifshow.com^
+||style-browse-openapi.test.gifshow.com^
+||static.yximgs.com^
+||downali.game.uc.cn^
+#ByteDance Pangle 穿山甲广告 SDK ──
+||scc.bytedance.com^
+||log-api.pangolin-sdk-toutiao-b.com^
+||apps.bytesfield.com^
+||thefatherofsalmon.com^
+||www.pangle.cn^
+#Aggmore 聚合广告 SDK ──
+||s01.peplle.cn^
+||s.peplle.cn^
+#Vivo 广告 SDK ──
+||adsdk.vivo.com.cn^
+||risk-fp-openapi.vivo.com.cn^
+#Baidu 百度广告 SDK ──
+||union.baidu.com^
+#Noah / UC 广告中介 ──
+#七猫自建广告 SDK (QMAD / MSDK) ──
+||a-qmad.qm989.com^
+||a6-remad.qm989.com^
+||t-qmad.qimao.com^
+||t-remad.qm989.com^
+#GDT 腾讯广点通广告 ──
+||mi.gdt.qq.com^
+||sdk.gdt.qq.com^
+||v.gdt.qq.com^
+||ttc.gdt.qq.com^
+||c2.gdt.qq.com^
+||qzs.gdt.qq.com^
+#OPPO 广告 SDK ──
+||adx.oppomobile.com^
+||api.adx.oppomobile.com^
+#Huawei 华为广告 SDK ──
+||ads.huawei.com^
+||adservice.huawei.com^
+#Domob 多盟广告 ──
+||adx.domobcdn.com^
+||r.domobcdn.com^
+#iFlytek 讯飞广告 ──
+||ad.voiceads.cn^
+||api.voiceads.cn^
+#京东广告 ──
+||adx.jd.com^
 !-----------------待定-----------------
 #小米浏览器热点资讯
 ||hot.browser.miui.com^
 #未知来源 广告/日志
-||toblog.ctobsnssdk.com^
 #gamepass日志
 ||catalog.gamepass.com^
 #杂七杂八
@@ -432,10 +531,8 @@
 ||sdk-infra.inmobi.cn^
 ||sv.adintl.cn^
 ||trc-sdk.inmobi.cn^
-||sdk.beizi.biz^
 ||sdk.alibaba.com.ailbaba.me^
 ||telemetry-sdk-metrics.inmobi.cn^
-||api-htp.beizi.biz^
 ||sdkcfg.adintl.cn^
 ||p1-lm.adukwai.com^
 ||union.w.inmobi.cn^
@@ -516,7 +613,6 @@
 ||ads.serving-sys.cn^
 ||ads.uutest.cn^
 ||adserver.html.it^
-||adsmind.ugdtimg.com^
 ||mobads.baidu.com^
 ||ads.api.fakeloc.cc^
 ||api.installer.xiaomi.com^
@@ -525,7 +621,6 @@
 ||ads-shopping.shouqianba.com^
 ||ads.superawesome.tv^
 ||ads.zhinengxiyifang.cn^
-||ads.huawei.com^
 ||cross-ad-api.afunapp.com^
 ||t.jmads.net^
 ||adserv.ontek.com.tr^
@@ -542,7 +637,6 @@
 ||googleads.g.doubleclick.net^
 ||stg-data.ads.heytapmobi.com^
 ||is.snssdk.com.queniukw.com^
-||i.snssdk.com^
 ||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^、
 ||4pn.cn^
 ||4a9.cn^
@@ -623,7 +717,6 @@
 ||ad.xmmnsl.com^
 ||ad-*file.myqcloud.com^
 ||ads.iosappsworld.com^
-||ads.adfox.ru^
 ||data-ads.oneplusmobile.com^
 ||dgstatic.jd.com^
 ||wdr160gz.dayugslb.com^
@@ -641,9 +734,7 @@
 ||pmp-ad.cdn.bcebos.com^
 ||market-ad.oss-accelerate.aliyuncs.com^
 ||api-ad-adapter-sg.wps.com^
-||p10528-ad-server.ejoy.com^
 ||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com.gds.alibabadns.com^
-||metrics-ad-drcn.dt.hihonorcloud.com^
 ||ad-ga.nocode.com^
 ||ai.advertisement.alibabacorp.sm.cn^
 ||cdn-cbd-advert-prod.shuxinyc.com^
@@ -665,7 +756,6 @@
 ||ads-api.twitter.com^
 ||multi-az-ad.kuaishou.com^
 ||sdkconfig.ad.xiaomi.com.mshome.net^
-||hw-ot-ad.a.yximgs.com^
 ||ad.99jiasu.com^
 ||ad.tk.cn^
 ||*-ad.adbkwai.com^
@@ -678,7 +768,6 @@
 ||*-ad.adukwai.com^
 ||ads.lejuliang.cn^
 ||ads.inmobi.com^
-||sdk.1rtb.net^
 ||volcsirius.com^
 ||vegslb.com^
 ||weilayun.com^
