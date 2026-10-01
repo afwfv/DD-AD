@@ -124,7 +124,7 @@ adfs:
     # 乘以 (服务器数 × 尝试次数 + 1)，且 A/AAAA 分别查询，托管 runner 上很容易
     # 每个域名吃满十几秒，整个任务直接跑不动。
     dns:
-      enabled: true
+      enabled: false
       concurrency: 256
       timeout: 2s
       retries: 0
