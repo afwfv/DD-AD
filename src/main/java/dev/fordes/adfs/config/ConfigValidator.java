@@ -10,6 +10,7 @@ import dev.fordes.adfs.rule.model.DomainName;
 import jakarta.inject.Singleton;
 import lombok.RequiredArgsConstructor;
 
+import java.io.IOException;
 import java.net.*;
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
@@ -332,9 +333,10 @@ public final class ConfigValidator {
     private static void validateOutputDir(
             Path outputDir, Path workingDir, List<InputSpec> inputs, List<OutputSpec> outputs) {
         Path parent = outputDir.getParent();
-        if (parent == null || !Files.isDirectory(parent) || !Files.isWritable(parent)) {
-            throw new ConfigurationException("output-dir 的父目录必须存在且可写: " + outputDir);
+        if (parent == null || !Files.isDirectory(parent)) {
+            throw new ConfigurationException("output-dir 的父目录必须存在: " + outputDir);
         }
+        probeWritable(parent, outputDir);
         if (Files.isSymbolicLink(outputDir) || Files.exists(outputDir) && !Files.isDirectory(outputDir)) {
             throw new ConfigurationException("output-dir 不得是符号链接或非目录对象: " + outputDir);
         }
@@ -362,6 +364,21 @@ public final class ConfigValidator {
                             "输出文件不得与本地输入路径冲突: " + target + " --> " + input);
                 }
             }
+        }
+    }
+
+    /**
+     * 用一次真实的临时文件写入来判断目录是否可写。
+     *
+     * <p>{@link Files#isWritable} 不能作为判据：在 Windows + JDK 25 上它对任何目录都返回
+     * false（连 {@code %TEMP%} 也一样），会让程序在 Windows 上完全无法启动。
+     */
+    private static void probeWritable(Path directory, Path outputDir) {
+        try {
+            Path probe = Files.createTempFile(directory, ".adfs-write-probe", ".tmp");
+            Files.deleteIfExists(probe);
+        } catch (IOException exception) {
+            throw new ConfigurationException("output-dir 的父目录不可写: " + outputDir, exception);
         }
     }
 
