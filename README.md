@@ -8,17 +8,18 @@
 ## 规则订阅
 
 > 推荐使用：
-> - AdGuard 客户端（软件、扩展）、AdBlock、AdBlock Plus、uBlock Origin：`easylist.txt`
+> - uBlock Origin：`easylist.txt`（主规则为 uBO 方言）
+> - AdGuard 客户端（软件、扩展）：`easylist.txt`（uBO 专有修饰符会被忽略）或 `dns.txt`
 > - AdGuard Home：`dns.txt`
 > - AdAway 及其他仅支持 hosts 的工具：`hosts`
-> - Clash / Mihomo：`clash.yaml`
+> - Mihomo / Clash.Meta：`clash.yaml`（rule-provider，`behavior: domain`）
 
 | 文件 | 说明 | github | ghproxy | jsdelivr |
 | --- | --- | --- | --- | --- |
 | `easylist.txt` | 完整主规则 | [订阅][easylist-raw] | [订阅][easylist-ghproxy] | [订阅][easylist-jsdelivr] |
 | `dns.txt` | 仅含 DNS 过滤规则 | [订阅][dns-raw] | [订阅][dns-ghproxy] | [订阅][dns-jsdelivr] |
 | `dnsmasq.conf` | dnsmasq 及其衍生版本 | [订阅][dnsmasq-raw] | [订阅][dnsmasq-ghproxy] | [订阅][dnsmasq-jsdelivr] |
-| `clash.yaml` | Clash 及其衍生版本 | [订阅][clash-raw] | [订阅][clash-ghproxy] | [订阅][clash-jsdelivr] |
+| `clash.yaml` | Mihomo / Clash.Meta 规则集（`behavior: domain`） | [订阅][clash-raw] | [订阅][clash-ghproxy] | [订阅][clash-jsdelivr] |
 | `smartdns.conf` | smartdns | [订阅][smartdns-raw] | [订阅][smartdns-ghproxy] | [订阅][smartdns-jsdelivr] |
 | `hosts` | 几乎所有操作系统原生支持 | [订阅][hosts-raw] | [订阅][hosts-ghproxy] | [订阅][hosts-jsdelivr] |
 | `DD-AD.txt` | 本仓库维护的私有规则，以 easylist 形式提供 | [订阅][DD-AD-raw] | [订阅][DD-AD-ghproxy] | [订阅][DD-AD-jsdelivr] |
