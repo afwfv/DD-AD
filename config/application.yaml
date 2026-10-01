@@ -71,6 +71,10 @@ adfs:
     - name: easylist.txt
       type: adblock
       dialect: ubo
+      file-header: |
+        Title: DD-AD of easylist
+        Last Modified: {{date}}
+        Homepage: https://github.com/afwfv/DD-AD
 
     # 仅含 DNS 可拦截的域名规则（AdGuard Home）
     - name: dns.txt
