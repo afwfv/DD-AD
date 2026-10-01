@@ -41,6 +41,18 @@ java {
 }
 
 
+// 源码含中文及非 ASCII 字面量。javac 默认使用平台编码（Windows 中文/日文环境下是 GBK）
+// 解码源文件，会静默损坏字符串常量：IDN 用例会算出错误的 punycode，日志文本变成乱码，
+// 连 "{}" 占位符都会被破坏。必须显式指定 UTF-8。
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test).configureEach {
+    defaultCharacterEncoding = 'UTF-8'
+}
+
+
 graalvmNative {
     binaries {
         all {
