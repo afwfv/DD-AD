@@ -1,0 +1,31 @@
+name: DNS Probe
+
+on:
+  push: {}
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe DNS reachability
+        run: |
+          set -x
+          echo "== system resolver =="
+          cat /etc/resolv.conf
+          echo "== getent (system) =="
+          time getent hosts github.com || true
+          echo "== dig @1.1.1.1 =="
+          (command -v dig >/dev/null && time dig +time=3 +tries=1 @1.1.1.1 github.com A) || echo "dig 不可用或超时"
+          echo "== dig @8.8.8.8 =="
+          (command -v dig >/dev/null && time dig +time=3 +tries=1 @8.8.8.8 github.com AAAA) || echo "dig 不可用或超时"
+          echo "== nslookup @1.1.1.1 =="
+          time nslookup github.com 1.1.1.1 || echo "nslookup 超时"
+          echo "== 一个只有 A 没有 AAAA 的域名 =="
+          time dig +time=3 +tries=1 @1.1.1.1 example.com AAAA || true
+          echo "== 不存在的域名（NXDOMAIN 应该很快）=="
+          time dig +time=3 +tries=1 @1.1.1.1 this-domain-should-not-exist-dd-ad.example A || true
