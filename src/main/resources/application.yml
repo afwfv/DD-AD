@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "@project.name@"
+    version: "@project.version@"
+  profiles:
+    active: prod
+
+logging:
+  file:
+    path: ./logs
+
+application:
+  input:
+  config:
+    tracking:
+      enable: true
+      path: logs/tracking.list
