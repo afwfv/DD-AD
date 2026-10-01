@@ -10,11 +10,18 @@ import org.xbill.DNS.lookup.*;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
+import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 import java.util.concurrent.CompletionException;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.LongAdder;
 
 @Slf4j
 public final class DnsjavaResolver implements DnsResolver {
@@ -22,6 +29,7 @@ public final class DnsjavaResolver implements DnsResolver {
     private static final int DEFAULT_DNS_PORT = 53;
     private final Cache cache;
     private final LookupSession session;
+    private final Map<String, LongAdder> failureCauses = new ConcurrentHashMap<>();
 
     public DnsjavaResolver(DnsConfig config) {
         this.cache = createCache(config.cache());
@@ -40,8 +48,55 @@ public final class DnsjavaResolver implements DnsResolver {
             return queryAddress(name);
         } catch (DnsException | LookupFailedException exception) {
             log.debug("DNS 查询失败:  {} --> A/AAAA | {}", domain.value(), exception.getMessage());
+            failureCauses.computeIfAbsent(classify(exception), _ -> new LongAdder()).increment();
             return DnsResult.FAILED;
         }
+    }
+
+    @Override
+    public Map<String, Long> failureCauses() {
+        Map<String, Long> snapshot = new LinkedHashMap<>();
+        failureCauses.entrySet().stream()
+                .sorted(Map.Entry.<String, LongAdder>comparingByValue(
+                        Comparator.comparingLong(LongAdder::sum)).reversed())
+                .forEach(entry -> snapshot.put(entry.getKey(), entry.getValue().sum()));
+        return snapshot;
+    }
+
+    /**
+     * 把异常归到一个人能看懂的类别，用于区分"超时"（多半是并发过高或网络受限）
+     * 与"SERVFAIL"、"连接被拒绝"（域名本身或权威服务器的问题）。
+     */
+    private static String classify(Throwable exception) {
+        for (Throwable cause = exception; cause != null; cause = cause.getCause()) {
+            if (cause instanceof SocketTimeoutException) {
+                return "超时";
+            }
+            if (cause instanceof ServerFailedException) {
+                return "SERVFAIL";
+            }
+        }
+        String message = exception.getMessage();
+        if (message != null) {
+            String lower = message.toLowerCase(Locale.ROOT);
+            if (lower.contains("timed out") || lower.contains("timeout")) {
+                return "超时";
+            }
+            if (lower.contains("servfail")) {
+                return "SERVFAIL";
+            }
+            if (lower.contains("refused")) {
+                return "连接被拒绝";
+            }
+            if (lower.contains("unreachable") || lower.contains("no route")) {
+                return "网络不可达";
+            }
+        }
+        Throwable root = exception;
+        while (root.getCause() != null) {
+            root = root.getCause();
+        }
+        return root.getClass().getSimpleName();
     }
 
     private DnsResult queryAddress(Name name) {

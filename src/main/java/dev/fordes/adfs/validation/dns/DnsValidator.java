@@ -89,6 +89,23 @@ public final class DnsValidator {
             }
         }
         metrics.finishDns(resolver.cacheSize());
+        logFailureCauses(resolver);
+    }
+
+    /**
+     * 失败域名会被保留（fail-open），所以"失败"这一项的构成直接决定产物质量：
+     * 如果绝大多数是超时，说明并发过高或解析器受限；如果是 SERVFAIL，则是域名侧的问题。
+     */
+    private static void logFailureCauses(DnsResolver resolver) {
+        Map<String, Long> causes = resolver.failureCauses();
+        if (causes.isEmpty()) {
+            return;
+        }
+        long total = causes.values().stream().mapToLong(Long::longValue).sum();
+        String detail = String.join("; ", causes.entrySet().stream()
+                .map(entry -> entry.getKey() + " " + entry.getValue())
+                .toList());
+        log.info("DNS 查询失败原因（共 {} 条，这些规则已按 fail-open 保留）: {}", total, detail);
     }
 
     private DnsResolver createResolver(DnsConfig config) {

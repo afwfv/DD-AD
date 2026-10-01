@@ -1,0 +1,19 @@
+# 统一换行符：避免在 Windows 上 checkout 出 CRLF 后提交回仓库，
+# 导致 Linux CI 上 gradlew 等脚本出现 "bad interpreter: /bin/sh^M" 之类的问题。
+* text=auto eol=lf
+
+# Shell 脚本必须 LF
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Windows 批处理必须 CRLF
+*.bat text eol=crlf
+gradlew.bat text eol=crlf
+
+# 二进制文件不做换行转换
+*.jar binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+gradle/wrapper/gradle-wrapper.jar binary
