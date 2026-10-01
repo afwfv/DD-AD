@@ -1,92 +1,101 @@
-##########################################
-## !!! 示例配置，修改无效 !!!
-## !!! example config, modify invalid !!!
-##########################################
-application:
-
-  # 规则源配置
-  # ！使用前请删除下方示例配置, 注意缩进
+# 示例配置：请先替换输入源，再通过 adfs -c config/application-example.yaml 加载。
+# 输入、输出的相对路径均以当前工作目录为基准。
+adfs:
+  # 名称必须唯一；name、path、type 均为必填字段。
+  # 格式：adblock、dns、hosts、dnsmasq、smartdns、mihomo、sing-box。
   input:
+    - name: upstream
+      path: https://example.org/filter.txt
+      type: adblock
+      dialect: ubo  # Adblock 方言：core（默认）、abp、adguard、ubo。
 
-    - name: 'Subscription 1'               #必要参数: 规则名称，请勿重复
-      path: 'https://example.org/rule.txt' #必要参数: 规则 url (http/https) 或 本地文件位置 (绝对/相对路径)
-      type: easylist                       #可选参数: 规则类型：easylist (默认)、dnsmasq、clash、smartdns、hosts
-
-    - name: 'Subscription 2'
-      path: 'rule/local.txt'
+    - name: local-hosts
+      path: inputs/hosts.txt
       type: hosts
 
-  #输出配置
+  # 所有输出使用全部输入源；同一格式可输出多个文件，但路径不得重复或冲突。
+  # name 为输出目录内的相对文件路径；type 必填。
+  # file-header 未填写或为 null 时继承全局模板，非空字符串覆盖，空字符串或纯空白关闭。
+  # 模板只填写正文，程序自动逐行添加注释前缀；JSON 不继承模板，显式设置非空模板会报错。
   output:
-    #文件头配置，将自动作为注释添加至每个规则文件开始
-    #可使用占位符 ${name}、${type}、${desc} 以及 ${date} (当前日期)、${total} (规则总数)
-    file_header: |
-      ADFS AdBlock ${type}
-      Last Modified: ${date}
-      Total Size: ${total}
-      Homepage: https://github.com/fordes123/ad-filters-subscriber/
+    - name: easylist.txt
+      type: adblock
+      dialect: ubo
+      # file-header: "自定义标题：{{name}}"
 
-    #输出规则文件列表 （！注意缩进，且每个类型只能输出一个文件）
-    files:
-      - name: easylist.txt     #必要参数: 文件名
-        type: easylist         #必要参数: 文件类型: easylist、dnsmasq、clash、smartdns、hosts
-        file_header:           #可选参数: 文件头配置，将自动作为注释添加至每个规则文件开始 (此处优先于 output.file_header)
-        desc: 'ADFS EasyList'  #可选参数: 文件描述，可在file_header中通过 ${} 中使用
-        filter:
-          - basic              #基本规则，不包含任何控制、匹配符号, 可以转换为 hosts
-          - wildcard           #通配规则，仅使用通配符
-          - unknown            #其他规则，如使用了正则、高级修饰符号的规则，这些规则目前无法转换为其他格式
+    - name: dns.txt
+      type: dns
+      dialect: adguard  # DNS 仅支持 adguard，也是默认方言。
 
-        rule:                  #可选参数: 限定此文件使用的规则源，如果不指定则使用 input 中的所有规则源
-          - Subscription 1
-          - Subscription 2
+    - name: hosts.txt
+      type: hosts
+      # file-header: ""  # 关闭此输出的文件头。
 
-      - name: dns.txt
-        type: easylist
-        filter:
-          - basic
-          - wildcard
+    - name: dnsmasq.txt
+      type: dnsmasq
 
-      - name: dnsmasq.txt
-        type: dnsmasq
+    - name: smartdns.txt
+      type: smartdns
 
-      - name: clash.yaml
-        type: clash
+    - name: clash.yaml
+      type: mihomo
+      dialect: domain  # Mihomo 方言：classical（默认）、domain、ipcidr。
+      container: yaml  # Mihomo 支持 yaml（默认）或 text。
 
-      - name: smartdns.txt
-        type: smartdns
+    - name: sing-box.json
+      type: sing-box
+      container: json  # sing-box 仅支持 JSON；其余非 Mihomo 格式仅支持 text。
 
-      - name: hosts.txt
-        type: hosts
-
-
-  # 程序运行配置（可选）
-  # ！删除即使用默认配置
+  # 以下运行选项均可省略，所示数值为默认值。
   config:
+    # 输出目录；仅替换本次声明的输出文件，保留其他文件。父目录必须存在且可写。
+    # 当前路径校验仍要求输出目录不得包含本地输入文件。
+    output-dir: rule
 
-    expected_quantity: 2000000  #预期规则数量
-    fault_tolerance: 0.001 #容错率
-    warn_limit: 6 #警告阈值, 原始规则长度小于该值时会输出警告日志
+    # 默认自动生成文件头；设为 "" 可全局关闭，单文件仍可覆盖。
+    # 支持 {{name}}（输出相对路径）、{{type}}、{{dialect}}（无方言时等同于 type）、
+    # {{date}}（同次运行共用的带时区生成时间）、{{total}}（最终规则数，含补充白名单）。
+    # 未知或不完整变量会报错；旧版 ${...} 模板需改为 {{...}}。
+    # 如需相同规则生成相同内容，请从模板中移除 {{date}}。
+    file-header: |
+      Title: adblock list of {{dialect}}
+      Total Size: {{total}}
+      Last Modified: {{date}}
+      Powered by https://github.com/fordes123/ad-filters-subscriber
 
-    # 域名检测，启用时将进行解析以验证域名有效性
-    # ！开启此功能可能导致处理时间大幅延长
-    # ！仅支持特定规则，具体原因请查看项目主页说明
-    domain-detect:
-      enable: false   # 是否启用
-      timeout: 2000   # 查询超时（毫秒）
-      concurrency: 10 # 并发查询数
-      cache-ttl-min: 600            # 缓存最小TTL（秒）
-      cache-ttl-max: 86400          # 缓存最大TTL（秒）
-      cache-negative-ttl: 300       # 失败结果缓存TTL（秒）
-      provider:       # 使用的 DNS 服务器，仅支持 IP，多个之间具备优先级; 为空则使用默认DNS
-        - 223.5.5.5
+    input:
+      max-size: 67108864  # 单个输入的大小上限，单位为字节（64 MiB）。
+      max-line-length: 262144
 
-    # 排除指定内容
-    # 在解析结束后，规则内容命中此列表将直接认定为无效
-    exclude:
-      - "www.example.org"
+    http:
+      connect-timeout: 10s
+      read-timeout: 30s
+      max-redirects: 5
+      retries: 2
+      user-agent: AdFS/2.0
 
-    # 通过文件收集程序认定无效的规则，用于排查问题
-    tracking:
-      enable: true
-      path: logs/tracking.list
+    rules:
+      min-length: 1
+      max-length: 65536  # 存在文本输入时，不得超过 input.max-line-length。
+      whitelist: []  # 域名白名单，例如 [www.example.org]。
+      preprocessor:
+        max-depth: 32
+        max-include-depth: 8
+        true-tokens: []  # 输入条件环境的附加真值标记，例如 [env_firefox]；所有输入共享，false 不可配置。
+
+    conversion:
+      allow-expansion: false  # 是否允许转换扩大匹配范围。
+      allow-reduction: true  # 是否允许转换缩小匹配范围。
+
+    dns:
+      enabled: false  # 启用后对可提取确定域名的规则进行 DNS 验证。
+      strict-mode: false  # 启用后只检测语义严格为精确域名的规则，关闭时，对形式如 ||example.com^ 的规则也将启用检测
+      servers: []  # 留空使用系统 DNS；支持 IP 或 IP:端口，IPv6 使用方括号。
+      concurrency: 64
+      timeout: 3s
+      retries: 1
+      max-cname-depth: 16
+      cache:
+        max-entries: 50000
+        max-ttl: 5m
+        max-negative-ttl: 1m  # 不得大于 max-ttl。

@@ -1,0 +1,6 @@
+applicationType: cli
+defaultPackage: dev.fordes.adfs
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ app-name, graalvm, gradle, http-client-test, java, junit, logback, lombok, micronaut-build, micronaut-configuration-validation-gradle-plugin, picocli, picocli-java-application, picocli-junit, readme, serialization-jackson, shade, validation, yaml, yaml-build ]

@@ -24,17 +24,24 @@ hs_err_pid*
 
 .idea
 target
-src/test
+.gradle
+build/
+logs/
 
 # ---------- 生成产物 ----------
-# 这些文件由 CI 每次运行时生成，只以「单提交快照」形式发布到 release 分支，
+# 这些文件由 CI 每次运行时生成，只以「单提交快照」形式发布到 release 分支。
 # 绝对不要 commit 进源码历史，否则仓库会以每次约 10MB 的速度膨胀。
+# 注意：rule/DD-AD.txt 是手工维护的输入规则，必须保留在版本控制里，所以这里不整目录忽略。
 /easylist.txt
-/modify.txt
 /dns.txt
-/dnsmasq.conf
-/clash.yaml
-/smartdns.conf
 /hosts
+/clash.yaml
+/dnsmasq.conf
+/smartdns.conf
 /DD-AD.txt
-/logs/
+/rule/easylist.txt
+/rule/dns.txt
+/rule/hosts
+/rule/clash.yaml
+/rule/dnsmasq.conf
+/rule/smartdns.conf

@@ -1,17 +1,8 @@
-spring:
+micronaut:
   application:
-    name: "@project.name@"
-    version: "@project.version@"
-  profiles:
-    active: prod
+    name: adfs
+    default-charset: UTF-8
 
-logging:
-  file:
-    path: ./logs
-
-application:
-  input:
-  config:
-    tracking:
-      enable: true
-      path: logs/tracking.list
+logger:
+  levels:
+    dev.fordes.adfs: INFO

@@ -1,97 +1,85 @@
 name: Update Filters
+
 on:
   push:
     paths-ignore:
       - 'README.md'
-      - 'README_en.md'
       - '.github/**'
       - '.devcontainer/**'
       - 'LICENSE'
   schedule:
-    - cron: 0 */8 * * *
+    - cron: '0 */8 * * *'
   workflow_dispatch:
     inputs:
-      profile:
-        required: false
-        default: 'prod'
-        type: string
-        description: 'application running profile'
-
-      should-commit:
-        required: false
-        default: true
-        type: boolean
-        description: 'Whether to publish output files'
-
       release-branch:
+        description: 'Release branch name'
         required: false
         default: 'release'
         type: string
-        description: 'Release branch name, if should-commit is false, this parameter will be ignored'
+
 env:
   TZ: Asia/Shanghai
 
+concurrency:
+  group: update-filters-${{ inputs.release-branch || 'release' }}
+  cancel-in-progress: false
+
 jobs:
-  Update_Filters:
+  update-filters:
+    # 分支上的 push 不触发，避免在测试分支上覆盖正式订阅分支
+    if: github.event_name != 'push' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
       actions: write
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
+      - name: Set up JDK 25
+        uses: actions/setup-java@v6
         with:
-          java-version: '21'
-          distribution: 'temurin'
-          cache: maven
+          java-version: '25'
+          distribution: temurin
+          cache: gradle
 
-      - name: Set default values
-        id: defaults
+      - name: Build filters
         run: |
-          echo "profile=${{ github.event.inputs.profile || 'prod' }}" >> $GITHUB_OUTPUT
-          echo "should-commit=${{ github.event.inputs.should-commit || 'true' }}" >> $GITHUB_OUTPUT
-          echo "release-branch=${{ github.event.inputs.release-branch || 'release' }}" >> $GITHUB_OUTPUT
+          bash ./gradlew --no-daemon shadowJar
+          mkdir -p logs
+          java -jar "$(find build/libs -maxdepth 1 -name 'adfs-*-all.jar')" -c config/application.yaml
 
-      - name: Run Jar
-        run:  mvn spring-boot:run -Dspring-boot.run.profiles=${{ steps.defaults.outputs.profile }}
-
-      - name: Archive tracking log
-        if: hashFiles('logs/tracking.list') != ''
-        uses: actions/upload-artifact@v4
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
         with:
-          name: tracking-log
-          path: logs/tracking.list
+          name: logs
+          path: logs/*.log
 
       # ------------------------------------------------------------------
       # 发布产物：只保留「一份快照」，历史绝不累积。
       #
-      # 旧写法用 stefanzweifel/git-auto-commit-action 在 release 分支上
-      # 每次都追加一个约 10MB 的提交，三千多次之后仓库膨胀到 4.5GB。
-      #
-      # 现在改成：造一个没有父提交的孤立提交，force push 覆盖 release。
-      # release 分支永远只有 1 个 commit，仓库体积 = 一份产物（约 10MB），
+      # 每次造一个没有父提交的孤立提交，force push 覆盖发布分支：
+      # 分支永远只有 1 个 commit，仓库体积 = 一份产物（约 10MB），
       # 而 raw / ghproxy / jsdelivr 的订阅地址完全不变。
       # ------------------------------------------------------------------
       - name: Publish snapshot
-        if: steps.defaults.outputs.should-commit == 'true'
         env:
-          RELEASE_BRANCH: ${{ steps.defaults.outputs.release-branch }}
+          RELEASE_BRANCH: ${{ inputs.release-branch || 'release' }}
         run: |
           set -euo pipefail
 
-          # 1. 清空工作区，只留下本次生成的产物
-          find . -maxdepth 1 ! -name 'rule' ! -name '.' ! -name '.git' -exec rm -rf {} +
+          # 1. 清空工作区，只留下本次生成的产物（含手工维护的 rule/DD-AD.txt）
+          find . -maxdepth 1 ! -name 'rule' ! -name '.' ! -name '.git' -exec rm -rf -- {} +
           mv rule/* .
           rmdir rule
 
           # 2. 造孤立提交（无父提交）
           git branch -D snapshot-release 2>/dev/null || true
           git checkout -q --orphan snapshot-release
-          git rm -rq --cached . || true
+          git rm -rqf --cached . || true
           git add -A -f .
           git -c user.name='github-actions[bot]' \
               -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
@@ -106,7 +94,7 @@ jobs:
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           retain_days: 1
           keep_minimum_runs: 1

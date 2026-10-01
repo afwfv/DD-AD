@@ -8,15 +8,15 @@
 ## 规则订阅
 
 > 推荐使用：
-> - AdGuard 客户端（软件、扩展）、AdBlock、AdBlock Plus、uBlock Origin：`easylist`
+> - AdGuard 客户端（软件、扩展）、AdBlock、AdBlock Plus、uBlock Origin：`easylist.txt`
 > - AdGuard Home：`dns.txt`
-> - AdAway 及其他仅支持 hosts 的工具：`hosts.txt`
+> - AdAway 及其他仅支持 hosts 的工具：`hosts`
+> - Clash / Mihomo：`clash.yaml`
 
 | 文件 | 说明 | github | ghproxy | jsdelivr |
 | --- | --- | --- | --- | --- |
 | `easylist.txt` | 完整主规则 | [订阅][easylist-raw] | [订阅][easylist-ghproxy] | [订阅][easylist-jsdelivr] |
-| `modify.txt` | 不含 DNS 过滤规则的 `easylist.txt` | [订阅][modify-raw] | [订阅][modify-ghproxy] | [订阅][modify-jsdelivr] |
-| `dns.txt` | 仅含 DNS 过滤规则的 `easylist.txt` | [订阅][dns-raw] | [订阅][dns-ghproxy] | [订阅][dns-jsdelivr] |
+| `dns.txt` | 仅含 DNS 过滤规则 | [订阅][dns-raw] | [订阅][dns-ghproxy] | [订阅][dns-jsdelivr] |
 | `dnsmasq.conf` | dnsmasq 及其衍生版本 | [订阅][dnsmasq-raw] | [订阅][dnsmasq-ghproxy] | [订阅][dnsmasq-jsdelivr] |
 | `clash.yaml` | Clash 及其衍生版本 | [订阅][clash-raw] | [订阅][clash-ghproxy] | [订阅][clash-jsdelivr] |
 | `smartdns.conf` | smartdns | [订阅][smartdns-raw] | [订阅][smartdns-ghproxy] | [订阅][smartdns-jsdelivr] |
@@ -28,12 +28,6 @@
 [easylist-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt
 
 [easylist-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/easylist.txt
-
-[modify-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/modify.txt
-
-[modify-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/modify.txt
-
-[modify-jsdelivr]: https://gcore.jsdelivr.net/gh/afwfv/DD-AD@refs/heads/release/modify.txt
 
 [dns-raw]: https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/dns.txt
 
@@ -76,7 +70,17 @@
 - 针对番茄小说广告添加规则
 - 针对七猫小说广告添加规则
 - 私人 DNS：`dd.afwfv.cn`
+- 上游 v2 起不再支持「按规则种类过滤输出」，因此 `modify.txt` 已停止提供；
+  需要非 DNS 规则的用户请改用 `easylist.txt`，或自行与 `dns.txt` 做差集。
+
+### 本地构建
+
+```bash
+./gradlew --no-daemon shadowJar
+java -jar build/libs/adfs-*-all.jar -c config/application.yaml
+```
+
+需要 JDK 25，产物输出到 `rule/`。
 
 > `release` 分支是一份**单提交快照**：每次运行会用一个全新的孤立提交强制覆盖它，
 > 分支永远只有一个 commit，订阅地址始终保持不变，仓库不会随运行次数膨胀。
-

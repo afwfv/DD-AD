@@ -1,0 +1,12 @@
+package dev.fordes.adfs.rule.conversion;
+
+/** 转换过程中发生的稳定、可统计语义变化。 */
+public enum ConversionLoss {
+    ROOT_EXPANDED_TO_SUBDOMAINS,
+    SUFFIX_REDUCED_TO_ROOT,
+    DROPPED_REQUEST_CONSTRAINT,
+    DROPPED_PRIORITY,
+    DROPPED_PLATFORM_CONSTRAINT,
+    URL_REGEX_PROJECTED_TO_DOMAIN,
+    HOST_MAPPING_EXPANDED_TO_SUBDOMAINS
+}

@@ -1,0 +1,10 @@
+{
+  "resources": {
+    "includes": [
+      { "pattern": "\\Qapplication.yml\\E" },
+      { "pattern": "\\Qbanner.txt\\E" },
+      { "pattern": "\\Qlogback.xml\\E" },
+      { "pattern": "META-INF/services/.*" }
+    ]
+  }
+}
