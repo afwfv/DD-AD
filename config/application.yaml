@@ -119,12 +119,19 @@ adfs:
         # 屏蔽此域会导致MSN页面无法正常加载
         - assets.msn.com
 
+    # 转换策略。
+    # 注意：上游示例注释声称 allow-reduction 默认 true，但代码里是 Java boolean，
+    # 实际默认 false。不显式打开，hosts 输出会被整表判为 REDUCED 而全部丢弃（生成 0 条）。
+    conversion:
+      allow-expansion: false
+      allow-reduction: true
+
     # 域名有效性检测：解析不到的域名不写入输出
     # 注意：servers 留空即使用系统 DNS。显式指定公共 DNS 时，dnsjava 的超时会被
     # 乘以 (服务器数 × 尝试次数 + 1)，且 A/AAAA 分别查询，托管 runner 上很容易
     # 每个域名吃满十几秒，整个任务直接跑不动。
     dns:
-      enabled: false
+      enabled: true
       concurrency: 256
       timeout: 2s
       retries: 0
