@@ -29,11 +29,6 @@ adfs:
       type: adblock
       dialect: ubo
 
-    - name: xndeye web-ad-rule
-      path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
-      type: adblock
-      dialect: ubo
-
     - name: xinggsf movie
       path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
       type: adblock
@@ -134,8 +129,14 @@ adfs:
     # 注意：servers 留空即使用系统 DNS。显式指定公共 DNS 时，dnsjava 的超时会被
     # 乘以 (服务器数 × 尝试次数 + 1)，且 A/AAAA 分别查询，托管 runner 上很容易
     # 每个域名吃满十几秒，整个任务直接跑不动。
+    #
+    # concurrency 必须是 32 这一档，别再调回 256：系统解析器扛不住那么高的突发并发，
+    # 查询会成批抛 SocketException，被 fail-open 当成"失败但保留"。实测同一份 11 个源：
+    #   256 → 检查 35,431 条，失败 24,838 条（70%，其中 SocketException 24,790），耗时 344 s
+    #    32 → 检查 35,431 条，失败 242 条（0.68%，其中 SocketException 178），耗时 205 s
+    # 低并发不只是更准，还更快：高并发下大量时间花在重开 socket 上。
     dns:
       enabled: true
-      concurrency: 256
+      concurrency: 32
       timeout: 2s
       retries: 0
