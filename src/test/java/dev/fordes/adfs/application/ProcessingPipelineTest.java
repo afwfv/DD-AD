@@ -3,6 +3,7 @@ package dev.fordes.adfs.application;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.IOException;
@@ -26,6 +27,7 @@ import dev.fordes.adfs.config.InputSpec;
 import dev.fordes.adfs.config.OutputSpec;
 import dev.fordes.adfs.config.RuleDialect;
 import dev.fordes.adfs.config.RuleType;
+import dev.fordes.adfs.error.InputException;
 import dev.fordes.adfs.format.FormatRegistry;
 import dev.fordes.adfs.publish.OutputPublisher;
 import dev.fordes.adfs.publish.StagingWorkspace;
@@ -237,6 +239,44 @@ final class ProcessingPipelineTest {
                 + "domain-rules /white.example/ -address #\naddress /blocked.example/#\n"
                 + "address /white.example/-\n",
                 Files.readString(outputDir.resolve("smartdns.conf")));
+    }
+
+    @Test
+    void keepsPublishingWhenOneInputSourceFails() throws IOException {
+        Path healthy = temporaryDirectory.resolve("healthy.txt");
+        Files.writeString(healthy, "||ads.example^\n", StandardCharsets.UTF_8);
+        Path missing = temporaryDirectory.resolve("removed-upstream.txt");
+        Path outputDir = temporaryDirectory.resolve("partial-output");
+        EffectiveConfig base = TestConfigs.create(healthy, RuleType.ADBLOCK, RuleDialect.ADGUARD, outputDir,
+                List.of(TestConfigs.textOutput("adguard.txt", RuleType.ADBLOCK, RuleDialect.ADGUARD)), false);
+        EffectiveConfig config = new EffectiveConfig(base.outputDir(), base.inputLimits(), base.http(), base.rules(),
+                base.conversion(), base.dns(), List.of(
+                        new InputSpec("healthy", new LocalSource(healthy), RuleType.ADBLOCK, RuleDialect.ADGUARD),
+                        new InputSpec("gone", new LocalSource(missing), RuleType.ADBLOCK, RuleDialect.ADGUARD)),
+                base.outputs());
+
+        ProcessingResult result = pipeline().process(config);
+
+        assertTrue(Files.readString(outputDir.resolve("adguard.txt")).contains("||ads.example^"));
+        assertEquals(1, result.uniqueRules());
+        assertFalse(result.sources().containsKey("gone"));
+    }
+
+    @Test
+    void failsInsteadOfPublishingEmptyArtifactsWhenEveryInputFails() {
+        Path missingA = temporaryDirectory.resolve("missing-a.txt");
+        Path missingB = temporaryDirectory.resolve("missing-b.txt");
+        Path outputDir = temporaryDirectory.resolve("all-failed-output");
+        EffectiveConfig base = TestConfigs.create(missingA, RuleType.ADBLOCK, RuleDialect.ADGUARD, outputDir,
+                List.of(TestConfigs.textOutput("adguard.txt", RuleType.ADBLOCK, RuleDialect.ADGUARD)), false);
+        EffectiveConfig config = new EffectiveConfig(base.outputDir(), base.inputLimits(), base.http(), base.rules(),
+                base.conversion(), base.dns(), List.of(
+                        new InputSpec("gone-a", new LocalSource(missingA), RuleType.ADBLOCK, RuleDialect.ADGUARD),
+                        new InputSpec("gone-b", new LocalSource(missingB), RuleType.ADBLOCK, RuleDialect.ADGUARD)),
+                base.outputs());
+
+        assertThrows(InputException.class, () -> pipeline().process(config));
+        assertFalse(Files.exists(outputDir.resolve("adguard.txt")));
     }
 
     private static Map<Path, byte[]> readOutput(Path outputDir) throws IOException {

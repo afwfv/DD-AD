@@ -2,6 +2,7 @@ package dev.fordes.adfs.application;
 
 import java.nio.file.Path;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -89,6 +90,7 @@ public final class ProcessingPipeline {
 
     private void parseInputs(EffectiveConfig config, Path runDir, RuleSpool spool, ProcessingMetrics metrics) {
         int inputIndex = 0;
+        List<InputException> failures = new ArrayList<>();
         for (InputSpec input : config.inputs()) {
             long started = System.nanoTime();
             log.debug("开始解析输入源「{}」", input.name());
@@ -98,27 +100,45 @@ public final class ProcessingPipeline {
             }
             MDC.put(RuleSpool.INPUT, input.name() + " (" + format + ")");
             MDC.remove(RuleSpool.INPUT_RULE);
-            SourceReader sourceReader = sourceReaders.stream()
-                    .filter(reader -> reader.supports(input))
-                    .findFirst()
-                    .orElseThrow(() -> new InputException("没有可用的来源读取器: " + input.name()));
-            RuleParser parser = formats.createParser(input, config);
-            long parsedBefore = metrics.parsedCount();
-            Path inputSpoolPath = runDir.resolve("input-" + inputIndex + ".bin");
-            try (RuleSpool inputSpool = new RuleSpool(inputSpoolPath, config.rules().maxLength());
-                    SourceSession session = sourceReader.open(input, config)) {
-                ParseResult result = parser.parse(session, entry -> inputSpool.accept(RuleNormalizer.normalize(entry)));
-                inputSpool.finishWriting();
-                if (result == ParseResult.COMPLETE) {
-                    inputSpool.replay(entry -> {
-                        metrics.parsed(entry);
-                        spool.accept(entry);
-                    });
+            try {
+                SourceReader sourceReader = sourceReaders.stream()
+                        .filter(reader -> reader.supports(input))
+                        .findFirst()
+                        .orElseThrow(() -> new InputException("没有可用的来源读取器: " + input.name()));
+                RuleParser parser = formats.createParser(input, config);
+                long parsedBefore = metrics.parsedCount();
+                Path inputSpoolPath = runDir.resolve("input-" + inputIndex + ".bin");
+                try (RuleSpool inputSpool = new RuleSpool(inputSpoolPath, config.rules().maxLength());
+                        SourceSession session = sourceReader.open(input, config)) {
+                    ParseResult result = parser.parse(session, entry -> inputSpool.accept(RuleNormalizer.normalize(entry)));
+                    inputSpool.finishWriting();
+                    if (result == ParseResult.COMPLETE) {
+                        inputSpool.replay(entry -> {
+                            metrics.parsed(entry);
+                            spool.accept(entry);
+                        });
+                    }
+                    metrics.inputFinished(input.name(), session.metrics(metrics.parsedCount() - parsedBefore));
                 }
-                metrics.inputFinished(input.name(), session.metrics(metrics.parsedCount() - parsedBefore));
+                log.info("输入源「{}」解析完成, 耗时 {} ms", input.name(), (System.nanoTime() - started) / 1_000_000);
+            } catch (InputException exception) {
+                // 单个上游源失效（仓库被删、路径改名、持续 5xx）不应该让整条流水线零产出：
+                // 其余来源照常解析，失败来源记 WARN 并在汇总里留痕。全部来源都失败时才终止，
+                // 否则会发布一份空产物，把订阅端清空。
+                failures.add(exception);
+                log.warn("输入源「{}」读取失败, 已跳过: {} --> {}",
+                        input.name(), exception.stage(), exception.getMessage());
             }
-            log.info("输入源「{}」解析完成, 耗时 {} ms", input.name(), (System.nanoTime() - started) / 1_000_000);
             inputIndex++;
+        }
+        if (!failures.isEmpty()) {
+            if (failures.size() == config.inputs().size()) {
+                InputException first = failures.getFirst();
+                failures.stream().skip(1).forEach(first::addSuppressed);
+                throw first;
+            }
+            log.warn("本轮有 {} 个输入源读取失败, 已跳过并继续处理剩余 {} 个来源",
+                    failures.size(), config.inputs().size() - failures.size());
         }
     }
 
