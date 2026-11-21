@@ -46,6 +46,14 @@ jobs:
           cache: gradle
 
       - name: Build filters
+        env:
+          # 并发必须按环境分开，别只留一份数字在配置里：
+          # - 本地/Windows：系统解析器扛不住高并发，256 会有 70% 查询抛 SocketException
+          #   （fail-open 保留 = 等于没校验），配置文件里固定 32。
+          # - GitHub runner（Azure）：解析器延迟高得多，32 并发下 3.5 万条查询
+          #   19 分钟还没跑完，会撞上 30 分钟超时；256 并发那次也就是 352 s。
+          # 这里用环境变量覆盖配置文件的值（Micronaut 的 env property source 优先级更高）。
+          ADFS_CONFIG_DNS_CONCURRENCY: 256
         run: |
           bash ./gradlew --no-daemon shadowJar
           mkdir -p logs
