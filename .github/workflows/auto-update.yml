@@ -29,7 +29,9 @@ jobs:
     # 分支上的 push 不触发，避免在测试分支上覆盖正式订阅分支
     if: github.event_name != 'push' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # DNS 校验耗时随 runner 解析器状况波动很大（实测同一份规则 352 s ～ 779 s），
+    # 30 分钟余量不够稳，放宽到 45 分钟；真正卡死的运行仍会被掐断。
+    timeout-minutes: 45
     permissions:
       contents: write
       actions: write
